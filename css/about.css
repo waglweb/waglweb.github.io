@@ -1,0 +1,329 @@
+/* init */
+
+@import url(NotoSansKR-Hestia.css);
+
+body {
+  font-family: 'Noto Sans Korean', sans-serif;
+  padding: 0;
+  margin: 0;
+  min-width: 1280px;
+}
+
+/* text size */
+
+h1 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 35px;
+  letter-spacing: -2px;
+}
+
+/* section */
+
+.section {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.section > .content {
+  width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section > .content.center {
+  text-align: center;
+}
+
+.section > .content.bot_space {
+  padding-bottom: 190px;
+}
+
+/* button */
+
+.button {
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.button.green {
+  background-color: #16b475;
+  color: #fff;
+}
+
+/* header */
+
+#header {
+  position: fixed;
+  background-color: rgba(256, 256, 256, 0.75);
+  height: 100px;
+  width: 100%;
+  padding: 0;
+  z-index: 999;
+}
+
+#header > .content {
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo {
+  height: 35px;
+}
+
+#search {
+  float: right;
+  height: 35px;
+  width: 200px;
+  line-height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  color: #999898;
+}
+
+#menu {
+  float: right;
+  margin-left: 20px;
+}
+
+#space_header {
+  height: 100px;
+}
+
+/* footer */
+
+#footer {
+  background: #d1d3d4;
+  color: #414042;
+  font-size: 16px;
+}
+
+#footer > .content {
+  padding: 40px 50px;
+}
+
+#footer > .content > .icon {
+  float: right;
+  margin-left: 14px;
+}
+
+/* message */
+
+.message {
+  height: 400px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  background: #16b475;
+  background-size: cover;
+  color: #fff;
+}
+
+#message1 {
+  background: linear-gradient(
+    rgba(16, 173, 106, 0.9), 
+    rgba(16, 173, 106, 0.9)
+    ), url('../img/about/01_BW.jpg');
+  background-size: cover;
+}
+
+#message1 > .content {
+  padding-top: 182px;
+  line-height: 36px;  
+}
+
+#message2 {
+  background: linear-gradient(
+    rgba(16, 173, 106, 0.9), 
+    rgba(16, 173, 106, 0.9)
+    ), url('../img/about/02_BW.jpg');
+  background-size: cover;
+}
+
+#message2 > .content {
+  font-size: 32px;
+  line-height: 50px;
+  padding-top: 150px;
+}
+
+#message3 {
+  background: linear-gradient(
+    rgba(16, 173, 106, 0.9), 
+    rgba(16, 173, 106, 0.9)
+    ), url('../img/about/09_BW.jpg');
+  background-size: cover;
+}
+
+#message3 > .content {
+  font-size: 32px;
+  line-height: 50px;
+  padding-top: 150px;
+}
+
+/* article */
+
+.header {
+  color: #004d2f;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 190px;
+  margin-bottom: 120px;
+}
+
+.header > .sub {
+  font-size: 30px;
+  color: #16b475;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #16b475;
+}
+
+.title.left {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  width: 500px;
+  margin-left: 150px;
+}
+
+.motto {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.paragraph {
+  display: inline-block;
+  color: #414042;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.article > .picture.small > img {
+  display: block;
+  width: 590px;
+  height: 420px;
+  margin: 0;
+  padding: 0;
+}
+
+.article > .picture.big > img {
+  display: block;
+  width: 1180px;
+  height: 440px;
+  margin: 0;
+  padding: 0;
+}
+
+.article > .picture.left {
+  float: left;
+  margin-right: 100px;
+}
+
+.article > .picture.right {
+  float: right;
+}
+
+.article > .picture.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+#article1 {
+  height: 370px;
+}
+
+#article2 {
+  height: 410px;
+}
+
+#bi {
+  margin-top: 40px;
+  margin-left: 90px;
+}
+
+#bi > img {
+  height: 64px;
+  margin-bottom: 32px;
+}
+
+#article3 {
+  position: relative;
+  height: 840px;
+}
+
+#article3 > .title {
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+#article3 > .paragraph {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+}
+
+#article4 {
+  position: relative;
+  height: 1280px;
+}
+
+#article4 > .title {
+  margin-bottom: 100px;
+  margin-left: 50px;
+}
+
+#article4 > .paragraph {
+  margin-left: 50px;
+}
+
+#article5 {
+  height: 450px;
+  margin-bottom: 140px;
+}
+
+#article5 > .title {
+  margin-bottom: 60px;
+}
+
+/* profile */
+
+.profile {
+  display: inline-block;
+  width: 180px;
+  height: 360px;
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.profile > img {
+  width: 180px;
+  margin-bottom: 18px;
+}
+
+.profile > .name {
+  font-size: 20px;
+  font-weight: bold;
+}
