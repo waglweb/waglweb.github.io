@@ -112,14 +112,17 @@
   text-align: center;
   border-right: 2px solid #d3d3d4;
   margin-right: -3px;
+  font-size: 18px;
+  color: #939598;
+  font-family: 'Noto Sans Korean Medium';
 }
 
-.action_logo:first-child{
+.action_logo:first-child {
   border-left: 2px solid #fff;
 }
 
-.action_logo:last-child{
-  border-right: 0;
+.action_logo:last-child {
+  border-right: 2px solid #fff;
 }
 
 .action_logo > img {
