@@ -268,10 +268,14 @@
       
       // nav menu button event
       $('#btn_menu').click(function(){
+        $('#btn_menu').hide()
+        $('#search').hide()
         $('nav').show()
       })
       
       $('nav').mouseleave(function(){
+        $('#btn_menu').show()
+        $('#search').show()
         $(this).hide()
       })
       
