@@ -51,13 +51,34 @@ h2 {
   padding-bottom: 190px;
 }
 
+/* title */
+
+.title {
+  color: #004d2f;
+  font-size: 35px;
+  line-height: 35px;
+  font-family: 'Noto Sans Korean Bold';
+  text-align: center;
+  margin-top: 135px;
+}
+
+.title > .decorator {
+  width: 45px;
+  height: 48px;
+  border-bottom: 2px solid #004d2f;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 98px;
+}
+
 /* message */
 
 .message {
   height: 400px;
   text-align: center;
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: 'Noto Sans Korean Bold';
   background: #16b475;
   background-size: cover;
   color: #fff;
