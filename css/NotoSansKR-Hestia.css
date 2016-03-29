@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Noto Sans Korean';
+    font-family: 'Noto Sans Korean Thin';
     font-style: normal;
     font-weight: 100;
     src: local('Noto Sans Thin'), local('NotoSans-Thin'),
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: 'Noto Sans Korean';
+    font-family: 'Noto Sans Korean Light';
     font-style: normal;
     font-weight: 300;
     src: local('Noto Sans Light'), local('NotoSans-Light'),
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-    font-family: 'Noto Sans Korean';
+    font-family: 'Noto Sans Korean DemiLight';
     font-style: normal;
     font-weight: 350;
     src: local('Noto Sans DemiLight'), local('NotoSans-DemiLight'),
@@ -32,7 +32,7 @@
 }
 
 @font-face {
-    font-family: 'Noto Sans Korean';
+    font-family: 'Noto Sans Korean Regualr';
     font-style: normal;
     font-weight: 400;
     src: local('Noto Sans Regular'), local('NotoSans-Regular'),
@@ -43,7 +43,7 @@
 }
 
 @font-face {
-    font-family: 'Noto Sans Korean';
+    font-family: 'Noto Sans Korean Medium';
     font-style: normal;
     font-weight: 500;
     src: local('Noto Sans Medium'), local('NotoSans-Medium'),
@@ -54,7 +54,7 @@
 }
 
 @font-face {
-    font-family: 'Noto Sans Korean';
+    font-family: 'Noto Sans Korean Bold';
     font-style: normal;
     font-weight: 700;
     src: local('Noto Sans Bold'), local('NotoSans-Bold'),
@@ -65,7 +65,7 @@
 }
 
 @font-face {
-    font-family: 'Noto Sans Korean';
+    font-family: 'Noto Sans Korean Black';
     font-style: normal;
     font-weight: 900;
     src: local('Noto Sans Black'), local('NotoSans-Black'),

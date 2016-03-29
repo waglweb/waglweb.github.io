@@ -1,0 +1,203 @@
+/* init */
+
+@import url(NotoSansKR-Hestia.css);
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Noto Sans Korean Regualr', sans-serif;
+  padding: 0;
+  margin: 0;
+  min-width: 1280px;
+  letter-spacing: -0.02em;
+}
+
+/* text size */
+
+h1 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 35px;
+  letter-spacing: -2px;
+}
+
+/* section */
+
+.section {
+  padding-left: 49px;
+  padding-right: 49px;
+}
+
+.section.green {
+  background-color: #22b476;
+}
+
+.section > .content {
+  width: 1182px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section > .content.center {
+  text-align: center;
+}
+
+.section > .content.bot_space {
+  padding-bottom: 190px;
+}
+
+/* message */
+
+.message {
+  height: 400px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  background: #16b475;
+  background-size: cover;
+  color: #fff;
+}
+
+/* button */
+
+.button {
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 13px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.button.green {
+  background-color: #16b475;
+  color: #fff;
+}
+
+/* header */
+
+#header {
+  position: fixed;
+  background-color: rgba(256, 256, 256, 0.75);
+  height: 100px;
+  width: 100%;
+  padding: 0;
+  z-index: 999;
+}
+
+#header > .content {
+  position: relative;
+  padding-top: 30px;
+  padding-left: 49px;
+  padding-right: 49px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo {
+  height: 42px;
+}
+
+nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 49px;
+  background: #fff;
+  padding: 33px 30px 53px 30px;
+  height: 14px;
+}
+
+nav > a {
+  display: inline-block;
+  margin-right: 35px;
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 14px;
+  line-height: 14px;
+  color: #16b475;
+}
+
+nav > a:last-child {
+  margin-right: 0;
+}
+
+nav > a:link {
+    text-decoration: none;
+}
+
+nav > a:visited {
+    text-decoration: none;
+}
+
+nav > a:hover {
+    text-decoration: none;
+}
+
+nav > a:active {
+    text-decoration: none;
+}
+
+#search {
+  float: right;
+  height: 35px;
+  width: 160px;
+  line-height: 35px;
+  font-size: 15px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  color: #999898;
+}
+
+#btn_menu {
+  float: right;
+  width: 98px;
+  height: 35px;
+  margin-left: 25px;
+}
+
+#space_header {
+  height: 100px;
+}
+
+.btnIcon {
+  height: 15px;
+  float: right;
+  margin-top: 10px;
+}
+
+/* footer */
+
+#footer {
+  background: #d1d3d4;
+  color: #414042;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: normal;
+}
+
+#footer > .content {
+  padding: 55px 49px;
+  height: 112px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 55px;
+  left: 49px;
+}
+
+#footer > .content > .icon {
+  float: right;
+  margin-left: 15px;
+}

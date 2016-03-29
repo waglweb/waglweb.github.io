@@ -2,17 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
     <link href="css/about.css" rel="stylesheet" type="text/css">
-    <title>와글 WAGL | about</title>
+    <title>와글 WAGL | 와글 소개</title>
   </head>
   <body>
-    <div id="header" class="section">
+    <div id="header" class="section transparent">
       <div class="content">
         <a>
           <img id="logo" src="img/Wagl_logo_Kor.png">
         </a>
-        <div id="menu" class="button green">Menu&nbsp;&nbsp;<img src="img/about/menu.png"></div>
-        <div id="search">Search</div>
+        <nav>
+          <a href="index.html">처음으로</a>
+          <a href="about.html">와글 소개</a>
+          <a href="#">시민의 목소리</a>
+          <a href="#">액션 루트</a>
+          <a href="#">프로젝트</a>
+          <a href="#">미디엄</a>
+        </nav>
+        <img id="btn_menu" src="img/menu.png">
+        <div id="search"><img class="btnIcon" src="img/search.png">Search</div>
       </div>
     </div>
     <div id="space_header"></div>
@@ -241,17 +250,30 @@
     <div id="footer" class="section">
       <div class="content">
         <a class="icon" href="#">
-          <img  src="img/about/youtube.png">
+          <img  src="img/youtube.png">
         </a>
         <a class="icon" href="https://www.facebook.com/wagl2015">
-          <img  src="img/about/facebook.png">
+          <img  src="img/facebook.png">
         </a>
         서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
         T. 070-8250-0346<br>
         info@wagl.net<br>
         <br>
-        ©WAGL since 2015
+        <span id="copyright">©WAGL since 2015</span>
       </div>
     </div>
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script>
+      
+      // nav menu button event
+      $('#btn_menu').click(function(){
+        $('nav').show()
+      })
+      
+      $('nav').mouseleave(function(){
+        $(this).hide()
+      })
+      
+    </script>
   </body>
 </html>

@@ -1,0 +1,258 @@
+/* header */
+
+#header {
+  -webkit-transition: background-color 0.65s ease-in-out;
+  transition: background-color 0.65s ease-in-out;
+}
+
+#header.transparent {
+  background-color: rgba(256, 256, 256, 0);
+}
+
+/* section1 - main */
+
+#section1 {
+  height: 800px;
+  overflow: hidden;
+  padding: 0;
+}
+
+#bgvideo {
+  position: relative;
+  z-index: -100;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+#text {
+  position: absolute;
+  z-index: 1;
+  top: 433px;
+}
+
+#title {
+  font-family: 'Noto Sans Korean Black';
+  color: #006633;
+  font-size: 100px;
+  line-height: 100px;
+}
+
+#slogan {
+  display: inline;
+  font-family: 'Noto Sans Korean DemiLight';
+  font-size: 30px;
+  margin-left: 25px;
+  vertical-align: baseline;
+}
+
+#message {
+  font-family: 'Noto Sans Korean Medium';
+  font-size: 20px;
+  line-height: 30px;
+  color: #414042;
+}
+
+#section2 {
+  height: 580px;
+  background-image: url('../img/main/voice.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* title - for section3&4 */
+
+.title {
+  color: #004d2f;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: 'Noto Sans Korean Bold';
+  text-align: center;
+  margin-top: 100px;
+}
+
+.subtitle {
+  color: #414042;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'Noto Sans Korean Medium';
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+
+/* section3 - action route */
+
+#actions {
+  height: 460px;
+}
+
+.action_line {
+  height: 227px;
+  border-top: 2px solid #d3d3d4;
+  border-bottom: 2px solid #d3d3d4;
+  position: relative;
+}
+
+.action_line:last-child {
+  border-top: 0;
+}
+
+.middle {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.action_logo {
+  display: inline-block;
+  height: 227px;
+  width: 234px;
+  text-align: center;
+  border-right: 2px solid #d3d3d4;
+  margin-right: -3px;
+}
+
+.action_logo:first-child{
+  border-left: 2px solid #fff;
+}
+
+.action_logo:last-child{
+  border-right: 0;
+}
+
+.action_logo > img {
+  vertical-align: middle;
+}
+
+.action_detail {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  z-index: 99;
+  display: none;
+  vertical-align: top;
+  width: 208px;
+  height: 186px;
+  padding-top: 45px;
+  padding-left: 30px;
+  background-color: #16b475;
+  color: #fff;
+}
+
+.action_name {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: 'Noto Sans Korean Bold';
+  margin-bottom: 20px;
+}
+
+.action_explain {
+  font-size: 12px;
+  line-height: 22px;
+  font-family: 'Noto Sans Korean Regualr';
+}
+
+/* section4 - project */
+
+#projects {
+  height: 455px;
+  margin-bottom: 100px;
+}
+
+.project {
+  width: 275px;
+  height: 455px;
+  position: relative;
+  background-color: #000;
+  margin-right: 27px;
+  float: left;
+}
+
+.project:last-child {
+  margin-right: 0;
+}
+
+.project_category {
+  position: absolute;
+  left: 25px;
+  top: 55px;
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 20px;
+  line-height: 20px;
+  color: #d1d3d4;
+}
+
+.project_name {
+  position: absolute;
+  left: 25px;
+  top: 90px;
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.project_explain {
+  position: absolute;
+  left: 25px;
+  bottom: 60px;
+  font-family: 'Noto Sans Korean Regualr';
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.project_more {
+  position: absolute;
+  width: 61px;
+  height: 26px;
+  right: 25px;
+  bottom: 20px;
+}
+
+#project_camp {
+  background-image: url(../img/project/Camp_grey.png);
+}
+
+#project_camp.on {
+  background-image: url(../img/project/Camp_green.png);
+}
+
+#project_campaign {
+  background-image: url(../img/project/Campaign_grey.png);
+}
+
+#project_campaign.on {
+  background-image: url(../img/project/Campaign_green.png);
+}
+
+#project_it {
+  background-image: url(../img/project/IT_grey.png);
+}
+
+#project_it.on {
+  background-image: url(../img/project/IT_green.png);
+}
+
+#project_event {
+  background-image: url(../img/project/Event_grey.png);
+}
+
+#project_event.on {
+  background-image: url(../img/project/Event_green.png);
+}
+
+/* section5 - Want to with us? */
+
+#section5 {
+  height: 430px;
+  background-image: url('../img/main/want-to-work-with-us.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #414042;
+}
+
+
+
