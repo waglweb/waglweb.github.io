@@ -1,0 +1,73 @@
+#section1 {
+  background: url('../img/manifesto/slogan.png');
+  background-size: cover;
+  padding-top: 149.5px;
+  height: 250.5px;
+}
+
+.content.article {
+  width: 1280px;
+  position: relative;
+}
+
+.article > .article_title {
+  position: absolute;
+  left: 98px;
+  top: 150px;
+  font-size: 35px;
+  line-height: 50px;
+  font-family: 'Noto Sans Korean Bold';
+  color: #004d2f;
+}
+
+.article > .article_title > .article_subtitle {
+  font-size: 25px;
+  line-height: 25px;
+  color: #16b475;
+  margin-bottom: 17.5px;
+}
+
+.article > .text {
+  position: absolute;
+  left: 98px;
+  bottom: 155px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #414042;
+}
+
+.article > .text > .key-sentence {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'Noto Sans Korean Medium';
+  color: #16b475;
+}
+
+#article1 {
+  height: 1093px;
+  background: url('../img/manifesto/why-wagl.png');
+}
+
+#article1 > .article_title {
+  top: 100px;
+}
+
+#article2 {
+  height: 967px;
+  background: url('../img/manifesto/how.png');
+}
+
+#article2 > .article_title {
+  left: 738px;
+}
+
+#article2 > .text {
+  left: 738px;
+}
+
+#article3 {
+  height: 1122px;
+  background: url('../img/manifesto/so-what.png');
+}
+
