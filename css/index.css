@@ -12,7 +12,7 @@
 /* section1 - main */
 
 #section1 {
-  height: 800px;
+  height: 714px;
   overflow: hidden;
   padding: 0;
 }
@@ -29,30 +29,39 @@
 #text {
   position: absolute;
   z-index: 1;
-  top: 433px;
+  top: 313px;
+  padding-left: 35px;
 }
 
 #title {
   font-family: 'Noto Sans Korean Black';
   color: #006633;
-  font-size: 100px;
-  line-height: 100px;
+  font-size: 90px;
+  line-height: 90px;
 }
 
 #slogan {
-  display: inline;
-  font-family: 'Noto Sans Korean DemiLight';
-  font-size: 30px;
-  margin-left: 25px;
-  vertical-align: baseline;
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 38.67px;
+  line-height: 38.67px;
+  color: #414042;
+  margin-top: 5px;
 }
 
 #message {
-  font-family: 'Noto Sans Korean Medium';
-  font-size: 20px;
-  line-height: 30px;
+  font-family: 'Noto Sans Korean Regualr';
+  font-size: 14.54px;
+  line-height: 25.45px;
   color: #414042;
+  margin-top: 38px;
 }
+
+.bold {
+  font-family: 'Noto Sans Korean Bold';
+  color: #006633;
+}
+
+/* section2 - voice */
 
 #section2 {
   height: 580px;
@@ -82,10 +91,95 @@
   margin-bottom: 60px;
 }
 
-/* section3 - action route */
+/* section3 - projects */
+
+#projects {
+  height: 455px;
+  margin-bottom: 100px;
+}
+
+.project {
+  width: 275px;
+  height: 455px;
+  position: relative;
+  background-color: #000;
+  margin-right: 27px;
+  float: left;
+}
+
+.project:last-child {
+  margin-right: 0;
+}
+
+.project_category {
+  position: absolute;
+  left: 25px;
+  top: 53px;
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 20px;
+  line-height: 20px;
+  color: #d1d3d4;
+}
+
+.project_name {
+  position: absolute;
+  left: 25px;
+  top: 87px;
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.project_explain {
+  position: absolute;
+  left: 25px;
+  top: 334px;
+  font-family: 'Noto Sans Korean Regualr';
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.project_more {
+  position: absolute;
+  width: 61px;
+  height: 26px;
+  right: 25px;
+  bottom: 20px;
+}
+
+.project {
+  background-color: #77787b;
+  background-blend-mode: multiply;
+}
+
+.project.on {
+  background-color: #16b475;
+}
+
+#project_collaboration {
+ background-image: url(../img/project/collaboration.png); 
+}
+
+#project_campaign {
+ background-image: url(../img/project/campaign.png); 
+}
+
+#project_civictech {
+ background-image: url(../img/project/civictech.png); 
+}
+
+#project_community {
+ background-image: url(../img/project/community.png); 
+}
+
+
+/* section4 - waglpedia */
 
 #actions {
   height: 460px;
+  margin-bottom: 105px;
 }
 
 .action_line {
@@ -99,12 +193,6 @@
   border-top: 0;
 }
 
-.middle {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-
 .action_logo {
   display: inline-block;
   height: 227px;
@@ -115,18 +203,20 @@
   font-size: 18px;
   color: #939598;
   font-family: 'Noto Sans Korean Medium';
+  vertical-align: top;
+  line-height: 227px;
 }
 
-.action_logo:first-child {
+.action_logo>img {
+  width: 234px;
+}
+
+.action_logo:first-of-type {
   border-left: 2px solid #fff;
 }
 
-.action_logo:last-child {
+.action_logo.last {
   border-right: 2px solid #fff;
-}
-
-.action_logo > img {
-  vertical-align: middle;
 }
 
 .action_detail {
@@ -157,105 +247,78 @@
   font-family: 'Noto Sans Korean Regualr';
 }
 
-/* section4 - project */
+/* section6 - Want to with us? */
 
-#projects {
-  height: 455px;
-  margin-bottom: 100px;
-}
-
-.project {
-  width: 275px;
-  height: 455px;
-  position: relative;
-  background-color: #000;
-  margin-right: 27px;
-  float: left;
-}
-
-.project:last-child {
-  margin-right: 0;
-}
-
-.project_category {
-  position: absolute;
-  left: 25px;
-  top: 55px;
-  font-family: 'Noto Sans Korean Bold';
-  font-size: 20px;
-  line-height: 20px;
-  color: #d1d3d4;
-}
-
-.project_name {
-  position: absolute;
-  left: 25px;
-  top: 90px;
-  font-family: 'Noto Sans Korean Bold';
-  font-size: 18px;
-  line-height: 18px;
-  color: #fff;
-}
-
-.project_explain {
-  position: absolute;
-  left: 25px;
-  bottom: 60px;
-  font-family: 'Noto Sans Korean Regualr';
-  font-size: 15px;
-  line-height: 25px;
-  color: #fff;
-}
-
-.project_more {
-  position: absolute;
-  width: 61px;
-  height: 26px;
-  right: 25px;
-  bottom: 20px;
-}
-
-#project_camp {
-  background-image: url(../img/project/Camp_grey.png);
-}
-
-#project_camp.on {
-  background-image: url(../img/project/Camp_green.png);
-}
-
-#project_campaign {
-  background-image: url(../img/project/Campaign_grey.png);
-}
-
-#project_campaign.on {
-  background-image: url(../img/project/Campaign_green.png);
-}
-
-#project_it {
-  background-image: url(../img/project/IT_grey.png);
-}
-
-#project_it.on {
-  background-image: url(../img/project/IT_green.png);
-}
-
-#project_event {
-  background-image: url(../img/project/Event_grey.png);
-}
-
-#project_event.on {
-  background-image: url(../img/project/Event_green.png);
-}
-
-/* section5 - Want to with us? */
-
-#section5 {
-  height: 430px;
-  background-image: url('../img/main/want-to-work-with-us.png');
-  background-repeat: no-repeat;
-  background-position: center;
+#section6 {
+  height: 380px;
   background-color: #414042;
 }
 
+#join {
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  padding-top: 43px;
+  margin-bottom: 69px;
+}
 
+#sns {
+  text-align: center;
+  margin-bottom: 89px;
+}
 
+#facebook {
+  margin-right: 88px;
+}
+
+#twitter {
+  margin-right: 77px;
+}
+
+#instagram {
+  margin-right: 81px;
+}
+
+#youtube {
+  margin-right: 79px;
+}
+
+#subscribe {
+  text-align: center;
+}
+
+#sub_email {
+  display: none;
+  /*display: inline-block;*/
+  height: 48px;
+  width: 264px;
+  background: #fff;
+  margin-right: 10px;
+  vertical-align: top;
+  overflow: hidden;
+  padding: 0 18px;
+}
+
+#sub_email_value {
+  display: inline-block;
+  font-family: 'Noto Sans Korean Regualr';
+  border: none;
+  font-size: 18px;
+  line-height: 48px;
+  color: #414042;
+  margin-top: -2px;
+  width: 264px;
+}
+
+#sub_button {
+  display: inline-block;
+  font-family: 'Noto Sans Korean Bold';
+  height: 48px;
+  background: #16b475;
+  font-size: 18px;
+  line-height: 48px;
+  padding: 0 20px;
+  color: #fff;
+  vertical-align: top;
+}

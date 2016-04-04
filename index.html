@@ -21,23 +21,33 @@
           <a href="#">프로젝트</a>
           <a href="#">미디엄</a>
         </nav>
+        <div id="lang">
+          <div id="lang_kor" class="lang on">KOR</div>
+          <div id="lang_eng" class="lang">ENG</div>
+        </div>
         <img id="btn_menu" src="img/menu.png">
         <div id="search"><img class="btnIcon" src="img/search.png">Search</div>
       </div>
     </div>
     <div id="section1" class="section">
-      <video id="bgvideo" autoplay loop>
-        <source src="media/bg_main.mp4" type="video/webm">
+      <video id="bgvideo" muted autoplay loop>
         <source src="media/bg_main.mp4" type="video/mp4">
       </video>
       <div class="content">
         <div id="text">
           <div id="title">
-            WAGL<span id="slogan">We All Govern Lab</span>
+            WAGL
+          </div>
+          <div id="slogan">
+            We All Govern Lab
           </div>
           <div id="message">
-            시민 모두가 정치의 주인공이 되는 세상을 꿈꾸는 와글은, 와글와글 다양한 목소리로<br>
-            터져 나오는 군중의 아우성으로 더 나은 민주주의를 만들어가는 실험실입니다.
+            시민 모두가 정치의 주인공이 되는 세상을 꿈꾸는 와글은,<br>
+            와글와글 다양한 목소리로 터져 나오는 군중의 아우성으로<br>
+            <span class="bold">책임감과 합리성(Accountability)<br>
+            유연하고 기민한 반응성(Responsiveness)<br>
+            정보와 권한 사용의 투명성(Transparency)</span>을 갖춘<br>
+            A.R.T. 민주주의를 만들어가는 실험실입니다.
           </div>
         </div>
       </div>
@@ -48,13 +58,57 @@
     </div>
     <div id="section3" class="section">
       <div class="content">
-        <div class="title">액션루트 ICT</div>
+        <div class="title">프로젝트</div>
+        <div class="subtitle">와글의 프로젝트를 소개합니다.</div>
+        <div id="projects">
+          <div id="project_collaboration" class="project">
+            <div class="project_category">Collaboration</div>
+            <div class="project_name">협업과 네트워킹</div>
+            <div class="project_explain">
+              세상을 바꾸고자 행동하는 지성과<br>
+              만납니다.
+            </div>
+            <img class="project_more" src="img/project/btnMore.png">
+          </div>
+          <div id="project_campaign" class="project">
+            <div class="project_category">Campaign</div>
+            <div class="project_name">A.R.T. 민주주의 연구와 소개</div>
+            <div class="project_explain">
+              더 나은 민주주의의 구체적인 사례를<br>
+              발굴하고, 연구하고, 소개합니다.
+            </div>
+            <img class="project_more" src="img/project/btnMore.png">
+          </div>
+          <div id="project_civictech" class="project">
+            <div class="project_category">Civic tech</div>
+            <div class="project_name">일상기술과 민주주의의 만남</div>
+            <div class="project_explain">
+              시민의 목소리를 정치적 자산으로<br>
+              만들 일상기술을 제안합니다.
+            </div>
+            <img class="project_more" src="img/project/btnMore.png">
+          </div>
+          <div id="project_community" class="project">
+            <div class="project_category">Community</div>
+            <div class="project_name">풀뿌리 커뮤니티 지원 및 발굴</div>
+            <div class="project_explain">
+              남녀노소 모든 시민 그룹과 만나<br>
+              아이디어를 구체적인 실천으로<br>
+              옮깁니다.
+            </div>
+            <img class="project_more" src="img/project/btnMore.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section4" class="section">
+      <div class="content">
+        <div class="title">와글피디아</div>
         <div class="subtitle">당신의 참여를 북돋울 도구를 소개합니다</div>
         <div id="actions">
           <div class="action_line">
             <div class="action_logo" num=1>
-              <span class="middle"></span>
-              <img src="img/action/logo/loomio.png">
+              <img src="img/waglpedia/logo/loomio.png">
             </div>
             <div id="action_detail1" class="action_detail">
               <div class="action_name">Loomio</div>
@@ -67,8 +121,7 @@
               </div>
             </div>
             <div class="action_logo" num=2>
-              <span class="middle"></span>
-              <img src="img/action/logo/democracy-os.png">
+              <img src="img/waglpedia/logo/democracy-os.png">
             </div>
             <div id="action_detail2" class="action_detail">
               <div class="action_name">Loomio</div>
@@ -81,8 +134,7 @@
               </div>
             </div>
             <div class="action_logo" num=3>
-              <span class="middle"></span>
-              <img src="img/action/logo/brigade.png">
+              <img src="img/waglpedia/logo/brigade.png">
             </div>
             <div id="action_detail3" class="action_detail">
               <div class="action_name">Loomio</div>
@@ -95,8 +147,7 @@
               </div>
             </div>
             <div class="action_logo" num=4>
-              <span class="middle"></span>
-              <img src="img/action/logo/citizen-budget.png">
+              <img src="img/waglpedia/logo/Gov-zero.png">
             </div>
             <div id="action_detail4" class="action_detail">
               <div class="action_name">Loomio</div>
@@ -108,6 +159,9 @@
                 옮길 수 있도록 지원합니다.
               </div>
             </div>
+            <div class="action_logo last" num=5>
+              <img src="img/waglpedia/logo/ping.png">
+            </div>
             <div id="action_detail5" class="action_detail">
               <div class="action_name">Loomio</div>
               <div class="action_explain">
@@ -118,15 +172,10 @@
                 옮길 수 있도록 지원합니다.
               </div>
             </div>
-            <div class="action_logo" num=5>
-              <span class="middle"></span>
-              <img src="img/action/logo/gov-zero.png">
-            </div>
           </div>
           <div class="action_line">
             <div class="action_logo" num=6>
-              <span class="middle"></span>
-              <img src="img/action/logo/open-ministry.png">
+              <img src="img/waglpedia/logo/open-ministry.png">
             </div>
             <div id="action_detail6" class="action_detail">
               <div class="action_name">Loomio</div>
@@ -139,8 +188,7 @@
               </div>
             </div>
             <div class="action_logo" num=7>
-              <span class="middle"></span>
-              <img src="img/action/logo/decide-madrid.png">
+              <img src="img/waglpedia/logo/decide-madrid.png">
             </div>
             <div id="action_detail7" class="action_detail">
               <div class="action_name">Loomio</div>
@@ -153,8 +201,7 @@
               </div>
             </div>
             <div class="action_logo" num=8>
-              <span class="middle"></span>
-              <img src="img/action/logo/2016-총선시민네트워크.png">
+              <img src="img/waglpedia/logo/citizen-budget.png">
             </div>
             <div id="action_detail8" class="action_detail">
               <div class="action_name">Loomio</div>
@@ -167,8 +214,7 @@
               </div>
             </div>
             <div class="action_logo" num=9>
-              <span class="middle"></span>
-              <img src="img/action/logo/정치넷.png">
+              <img src="img/waglpedia/logo/시민네트워크.png">
             </div>
             <div id="action_detail9" class="action_detail">
               <div class="action_name">Loomio</div>
@@ -180,74 +226,39 @@
                 옮길 수 있도록 지원합니다.
               </div>
             </div>
-            <div class="action_logo" num=10>
-              <span class="middle"></span>
+            <div class="action_logo last" num=10>
               ＋MORE
             </div>
           </div>
         </div>      
       </div>
     </div>
-    <div id="section4" class="section">
-      <div class="content">
-        <div class="title">프로젝트</div>
-        <div class="subtitle">와글의 프로젝트를 소개합니다.</div>
-        <div id="projects">
-          <div id="project_camp" class="project">
-            <div class="project_category">와글 국제 컨퍼런스</div>
-            <div class="project_name">국내외 사회혁신가 네트워킹</div>
-            <div class="project_explain">
-              와글 캠프는 세상을<br>
-              바꾸기 위해 행동하는 지성들을<br>
-              만날 수 있는 자리입니다.
-            </div>
-            <img class="project_more" src="img/project/btnMore.png">
-          </div>
-          <div id="project_campaign" class="project">
-            <div class="project_category">캠페인</div>
-            <div class="project_name">더 나은 민주주의 연구와 소개</div>
-            <div class="project_explain">
-              더 나은 민주주의의<br>
-              구체적인 사례를 발굴하고,<br>
-              연구하고, 소개합니다.
-            </div>
-            <img class="project_more" src="img/project/btnMore.png">
-          </div>
-          <div id="project_it" class="project">
-            <div class="project_category">IT 기획</div>
-            <div class="project_name">일상기술과 민주주의의 만남</div>
-            <div class="project_explain">
-              시민의 목소리를<br>
-              정치적 자산으로 만들<br>
-              일상기술을 제안합니다.
-            </div>
-            <img class="project_more" src="img/project/btnMore.png">
-          </div>
-          <div id="project_event" class="project">
-            <div class="project_category">청(소)년 </div>
-            <div class="project_name">청소년 참정권 확장</div>
-            <div class="project_explain">
-              청년 및 청소년 참정권 강화를 통해<br>
-              다음 시대/세대 정치를<br>
-              준비해갑니다.
-            </div>
-            <img class="project_more" src="img/project/btnMore.png">
-          </div>
-        </div>
-      </div>
-    </div>
     <div id="section5" class="section">
       <div class="content">
       </div>
     </div>
+    <div id="section6" class="section">
+      <div class="content">
+        <div id="join">
+          Join Our WAGL
+        </div>
+        <div id="sns">
+          <img id="facebook" src="img/main/facebook.png">
+          <img id="twitter" src="img/main/twitter.png">
+          <img id="instagram" src="img/main/instagram.png">
+          <img id="youtube" src="img/main/youtube.png">
+          <img id="medium" src="img/main/medium.png">
+        </div>
+        <div id="subscribe">
+          <div id="sub_email">
+            <input id="sub_email_value" type="text" placeholder="Enter yout email address">
+          </div>
+          <div id="sub_button">뉴스레터 구독하기</div>
+        </div>
+      </div>
+    </div>
     <div id="footer" class="section">
       <div class="content">
-        <a class="icon" href="#">
-          <img  src="img/youtube.png">
-        </a>
-        <a class="icon" href="https://www.facebook.com/wagl2015">
-          <img  src="img/facebook.png">
-        </a>
         서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
         T. 070-8250-0346<br>
         info@wagl.net<br>
@@ -259,7 +270,7 @@
     <script>
       
       // nav menu button event
-      $('#btn_menu').click(function(){
+      $('#btn_menu').mouseover(function(){
         $('#btn_menu').hide()
         $('#search').hide()
         $('nav').show()
@@ -273,7 +284,7 @@
       
       // header scroll event
       $(window).scroll(function(){
-        if($(window).scrollTop() > 700){
+        if($(window).scrollTop() > 614){
           $('#header').removeClass('transparent')
         } else {
           $('#header').addClass('transparent')
@@ -281,21 +292,28 @@
       })
       
       // action hover event
-      $('.action_logo').hover(
-        function(){
-          var position = $(this).position()
-          var detail = $('#action_detail'+$(this).attr('num'))
-          var correction = 236
-          if(position.left > 936) {
-            correction = -239
-          }
-          $(detail).css('left',position.left + correction + 'px').show()
-        },
-        function(){
-          var detail = $('#action_detail'+$(this).attr('num'))
-          $(detail).hide()
-        }
-      )
+      /*
+      function action_mouseover(target){
+        //alert('over')
+        var position = $(target).position()
+        var detail = $('#action_detail'+$(target).attr('num'))
+        $(detail).css('left', position.left + 'px').show()
+        $(this).unbind('mouseover')
+        $(this).bind('mouseleave', this, action_mouseleave)
+      }
+      
+      function action_mouseleave(target){
+        //alert('leave')
+        var detail = $('#action_detail'+$(target).attr('num'))
+        $(detail).hide()
+        $(this).unbind('mouseleave')
+        $(this).bind('mouseover', this, action_mouseover)
+      }
+      
+      $('.action_logo').mouseover(function(){
+        action_mouseover(this)
+      })
+      */
       
       // project hover event
       $('.project').hover(
