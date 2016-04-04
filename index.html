@@ -54,13 +54,18 @@
     </div>
     <div id="section2" class="section green">
       <div class="content">
+        <img id="voice_quote" src="img/main/quote.png">
+        <img id="voice_before" src="img/main/before.png">
+        <img id="voice_next" src="img/main/next.png">
         <div class="voice_message">
           사회에 관심을 갖고 내 의견을 내는 것이 정치의 시작이라고<br>
           생각합니다. 사회에 관심을 갖고 내 의견을 내는 것이 정치의 시작이라고<br>
           생각합니다. 그렇고 그렇고 그렇습니다.<br>
         </div>
         <div class="voice_speaker">박아람 님</div>
-        <div id="voice_go">시민의 목소리 바로가기</div>
+        <div id="voice_go_container">
+          <div id="voice_go">시민의 목소리 바로가기</div>
+        </div>        
       </div>
     </div>
     <div id="section3" class="section">
@@ -114,128 +119,148 @@
         <div class="subtitle">당신의 참여를 북돋울 도구를 소개합니다</div>
         <div id="actions">
           <div class="action_line">
-            <div class="action_logo" num=1>
-              <img src="img/waglpedia/logo/loomio.png">
-            </div>
-            <div id="action_detail1" class="action_detail">
-              <div class="action_name">Loomio</div>
-              <div class="action_explain">
-                루미오는 모두 함께 결정을 내릴 수<br>
-                있는 가장 쉬운 방법입니다.<br>
-                루미오는 사람들이 어디에 있더라도<br>
-                단체나 커뮤니티가 논의를 행동으로<br>
-                옮길 수 있도록 지원합니다.
+            <div class="action first">
+              <div class="action_logo">
+                <img src="img/waglpedia/logo/loomio.png">
+              </div>
+              <div class="action_detail">
+                <div class="action_name">Loomio</div>
+                <div class="action_explain">
+                  루미오는 모두 함께 결정을 내릴 수<br>
+                  있는 가장 쉬운 방법입니다.<br>
+                  루미오는 사람들이 어디에 있더라도<br>
+                  단체나 커뮤니티가 논의를 행동으로<br>
+                  옮길 수 있도록 지원합니다.
+                </div>
               </div>
             </div>
-            <div class="action_logo" num=2>
-              <img src="img/waglpedia/logo/democracy-os.png">
-            </div>
-            <div id="action_detail2" class="action_detail">
-              <div class="action_name">Loomio</div>
-              <div class="action_explain">
-                루미오는 모두 함께 결정을 내릴 수<br>
-                있는 가장 쉬운 방법입니다.<br>
-                루미오는 사람들이 어디에 있더라도<br>
-                단체나 커뮤니티가 논의를 행동으로<br>
-                옮길 수 있도록 지원합니다.
+            <div class="action">
+              <div class="action_logo">
+                <img src="img/waglpedia/logo/democracy-os.png">
+              </div>
+              <div class="action_detail">
+                <div class="action_name">이름</div>
+                <div class="action_explain">
+                  설명입니다 설명이에요<br>
+                  세상에 이렇게 좋은 것이<br>
+                  있었다니 정말 놀라운 것을 발견<br>
+                  해버렷 와글피디아<br>
+                  에서 쉽게찾아보아요
+                </div>
               </div>
             </div>
-            <div class="action_logo" num=3>
-              <img src="img/waglpedia/logo/brigade.png">
-            </div>
-            <div id="action_detail3" class="action_detail">
-              <div class="action_name">Loomio</div>
-              <div class="action_explain">
-                루미오는 모두 함께 결정을 내릴 수<br>
-                있는 가장 쉬운 방법입니다.<br>
-                루미오는 사람들이 어디에 있더라도<br>
-                단체나 커뮤니티가 논의를 행동으로<br>
-                옮길 수 있도록 지원합니다.
+            <div class="action">
+              <div class="action_logo">
+                <img src="img/waglpedia/logo/brigade.png">
+              </div>
+              <div class="action_detail">
+                <div class="action_name">이름</div>
+                <div class="action_explain">
+                  설명입니다 설명이에요<br>
+                  세상에 이렇게 좋은 것이<br>
+                  있었다니 정말 놀라운 것을 발견<br>
+                  해버렷 와글피디아<br>
+                  에서 쉽게찾아보아요
+                </div>
               </div>
             </div>
-            <div class="action_logo" num=4>
-              <img src="img/waglpedia/logo/Gov-zero.png">
-            </div>
-            <div id="action_detail4" class="action_detail">
-              <div class="action_name">Loomio</div>
-              <div class="action_explain">
-                루미오는 모두 함께 결정을 내릴 수<br>
-                있는 가장 쉬운 방법입니다.<br>
-                루미오는 사람들이 어디에 있더라도<br>
-                단체나 커뮤니티가 논의를 행동으로<br>
-                옮길 수 있도록 지원합니다.
+            <div class="action">
+              <div class="action_logo">
+                <img src="img/waglpedia/logo/Gov-zero.png">
+              </div>
+              <div class="action_detail">
+                <div class="action_name">이름</div>
+                <div class="action_explain">
+                  설명입니다 설명이에요<br>
+                  세상에 이렇게 좋은 것이<br>
+                  있었다니 정말 놀라운 것을 발견<br>
+                  해버렷 와글피디아<br>
+                  에서 쉽게찾아보아요
+                </div>
               </div>
             </div>
-            <div class="action_logo last" num=5>
-              <img src="img/waglpedia/logo/ping.png">
-            </div>
-            <div id="action_detail5" class="action_detail">
-              <div class="action_name">Loomio</div>
-              <div class="action_explain">
-                루미오는 모두 함께 결정을 내릴 수<br>
-                있는 가장 쉬운 방법입니다.<br>
-                루미오는 사람들이 어디에 있더라도<br>
-                단체나 커뮤니티가 논의를 행동으로<br>
-                옮길 수 있도록 지원합니다.
+            <div class="action last">
+              <div class="action_logo last">
+                <img src="img/waglpedia/logo/ping.png">
+              </div>
+              <div class="action_detail">
+                <div class="action_name">이름</div>
+                <div class="action_explain">
+                  설명입니다 설명이에요<br>
+                  세상에 이렇게 좋은 것이<br>
+                  있었다니 정말 놀라운 것을 발견<br>
+                  해버렷 와글피디아<br>
+                  에서 쉽게찾아보아요
+                </div>
               </div>
             </div>
           </div>
           <div class="action_line">
-            <div class="action_logo" num=6>
-              <img src="img/waglpedia/logo/open-ministry.png">
-            </div>
-            <div id="action_detail6" class="action_detail">
-              <div class="action_name">Loomio</div>
-              <div class="action_explain">
-                루미오는 모두 함께 결정을 내릴 수<br>
-                있는 가장 쉬운 방법입니다.<br>
-                루미오는 사람들이 어디에 있더라도<br>
-                단체나 커뮤니티가 논의를 행동으로<br>
-                옮길 수 있도록 지원합니다.
+            <div class="action first">
+              <div class="action_logo">
+                <img src="img/waglpedia/logo/open-ministry.png">
+              </div>
+              <div class="action_detail">
+                <div class="action_name">이름</div>
+                <div class="action_explain">
+                  설명입니다 설명이에요<br>
+                  세상에 이렇게 좋은 것이<br>
+                  있었다니 정말 놀라운 것을 발견<br>
+                  해버렷 와글피디아<br>
+                  에서 쉽게찾아보아요
+                </div>
               </div>
             </div>
-            <div class="action_logo" num=7>
-              <img src="img/waglpedia/logo/decide-madrid.png">
-            </div>
-            <div id="action_detail7" class="action_detail">
-              <div class="action_name">Loomio</div>
-              <div class="action_explain">
-                루미오는 모두 함께 결정을 내릴 수<br>
-                있는 가장 쉬운 방법입니다.<br>
-                루미오는 사람들이 어디에 있더라도<br>
-                단체나 커뮤니티가 논의를 행동으로<br>
-                옮길 수 있도록 지원합니다.
+            <div class="action">
+              <div class="action_logo">
+                <img src="img/waglpedia/logo/decide-madrid.png">
+              </div>
+              <div class="action_detail">
+                <div class="action_name">이름</div>
+                <div class="action_explain">
+                  설명입니다 설명이에요<br>
+                  세상에 이렇게 좋은 것이<br>
+                  있었다니 정말 놀라운 것을 발견<br>
+                  해버렷 와글피디아<br>
+                  에서 쉽게찾아보아요
+                </div>
               </div>
             </div>
-            <div class="action_logo" num=8>
-              <img src="img/waglpedia/logo/citizen-budget.png">
-            </div>
-            <div id="action_detail8" class="action_detail">
-              <div class="action_name">Loomio</div>
-              <div class="action_explain">
-                루미오는 모두 함께 결정을 내릴 수<br>
-                있는 가장 쉬운 방법입니다.<br>
-                루미오는 사람들이 어디에 있더라도<br>
-                단체나 커뮤니티가 논의를 행동으로<br>
-                옮길 수 있도록 지원합니다.
+            <div class="action">
+              <div class="action_logo">
+                <img src="img/waglpedia/logo/citizen-budget.png">
+              </div>
+              <div class="action_detail">
+                <div class="action_name">이름</div>
+                <div class="action_explain">
+                  설명입니다 설명이에요<br>
+                  세상에 이렇게 좋은 것이<br>
+                  있었다니 정말 놀라운 것을 발견<br>
+                  해버렷 와글피디아<br>
+                  에서 쉽게찾아보아요
+                </div>
               </div>
             </div>
-            <div class="action_logo" num=9>
-              <img src="img/waglpedia/logo/시민네트워크.png">
-            </div>
-            <div id="action_detail9" class="action_detail">
-              <div class="action_name">Loomio</div>
-              <div class="action_explain">
-                루미오는 모두 함께 결정을 내릴 수<br>
-                있는 가장 쉬운 방법입니다.<br>
-                루미오는 사람들이 어디에 있더라도<br>
-                단체나 커뮤니티가 논의를 행동으로<br>
-                옮길 수 있도록 지원합니다.
+            <div class="action">
+              <div class="action_logo">
+                <img src="img/waglpedia/logo/시민네트워크.png">
+              </div>
+              <div class="action_detail">
+                <div class="action_name">이름</div>
+                <div class="action_explain">
+                  설명입니다 설명이에요<br>
+                  세상에 이렇게 좋은 것이<br>
+                  있었다니 정말 놀라운 것을 발견<br>
+                  해버렷 와글피디아<br>
+                  에서 쉽게찾아보아요
+                </div>
               </div>
             </div>
-            <div class="action_logo last" num=10>
-              ＋MORE
-            </div>
+            <div class="action last">
+              <div class="action_logo last" num=10>
+                ＋MORE
+              </div>
+            </div>            
           </div>
         </div>      
       </div>
@@ -354,7 +379,7 @@
       
       // header scroll event
       $(window).scroll(function(){
-        if($(window).scrollTop() > 614){
+        if($(window).scrollTop() > 250){
           $('#header').removeClass('transparent')
         } else {
           $('#header').addClass('transparent')

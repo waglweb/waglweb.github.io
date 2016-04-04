@@ -64,23 +64,53 @@
 /* section2 - voice */
 
 #section2 {
-  height: 538px;
-  background-image: url('../img/main/voice.png');
-  background-size: cover;
-  position: relative;
   text-align: center;
   color: #fff;
+}
+
+#section2 > .content {
+  height: 538px;
+  position: relative;
+}
+
+#voice_quote {
+  height: 24px;
+  margin-top: 113px;
+  margin-bottom: 65.5px;
+}
+
+#voice_before {
+  position: absolute;
+  left: 49px;
+  top: 253.5px;
+  height: 31px;
+}
+
+#voice_next {
+  position: absolute;
+  right: 49px;
+  top: 253.5px;
+  height: 31px;
 }
 
 .voice_message {
   font-size: 22px;
   line-height: 35px;
+  margin-bottom: 51px;
 }
 
 .voice_speaker {
   font-family: 'Noto Sans Korean Bold';
   font-size: 18px;
   line-height: 18px;
+}
+
+#voice_go_container {
+  position: absolute;
+  bottom: 57px;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 #voice_go {
@@ -218,7 +248,8 @@
   border-top: 0;
 }
 
-.action_logo {
+.action {
+  position: relative;
   display: inline-block;
   height: 227px;
   width: 234px;
@@ -232,31 +263,45 @@
   line-height: 227px;
 }
 
-.action_logo>img {
+.action_logo {
   width: 234px;
+  height: 227px;
 }
 
-.action_logo:first-of-type {
+.action_logo > img {
+  width: 232px;
+}
+
+.action:first-child {
   border-left: 2px solid #fff;
 }
 
-.action_logo.last {
+.action:last-child {
   border-right: 2px solid #fff;
 }
 
 .action_detail {
   position: absolute;
+  display: inline-block;
   top: -2px;
-  left: 0;
+  left: -2px;
   z-index: 99;
-  display: none;
-  vertical-align: top;
-  width: 208px;
+  width: 207px;
   height: 186px;
   padding-top: 45px;
-  padding-left: 30px;
+  padding-left: 31px;
   background-color: #16b475;
   color: #fff;
+  text-align: left;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  -moz-transition: opacity 300ms ease-in-out;
+  -o-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.action:hover > .action_detail {
+  opacity: 1;
 }
 
 .action_name {
