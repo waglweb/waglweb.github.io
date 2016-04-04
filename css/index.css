@@ -64,13 +64,38 @@
 /* section2 - voice */
 
 #section2 {
-  height: 580px;
+  height: 538px;
   background-image: url('../img/main/voice.png');
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: #fff;
 }
 
-/* title - for section3&4 */
+.voice_message {
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.voice_speaker {
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 18px;
+  line-height: 18px;
+}
+
+#voice_go {
+  display: inline-block;
+  width: 215px;
+  height: 48px;
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 18px;
+  line-height: 48px;
+  color: #fff;
+  background: rgba(0, 77, 47, 0.4);
+  text-align: center;
+}
+
+/* title - for section3~5 */
 
 .title {
   color: #004d2f;
@@ -245,6 +270,101 @@
   font-size: 12px;
   line-height: 22px;
   font-family: 'Noto Sans Korean Regualr';
+}
+
+/* section5 - story */
+
+#storys {
+  margin-bottom: 104px;
+}
+
+.story {
+  display: inline-block;
+  position: relative;
+  width: 394px;
+  height: 530px;
+  margin-right: -3px;
+  vertical-align: top;
+  background-color: #fff;
+  -webkit-transition: background-color 300ms ease-in-out;
+  -moz-transition: background-color 300ms ease-in-out;
+  -o-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+}
+
+.story:hover {
+  background-color: #f1f2f2;
+}
+
+.story_photo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: auto;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  -moz-transition: opacity 300ms ease-in-out;
+  -o-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.story_top {
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 26px;
+  line-height: 26px;
+  height: 149px;
+  padding: 48px 31px;
+}
+
+.story_title {
+  position: relative;
+  z-index: 1;
+}
+
+.story:hover .story_photo {
+  opacity: 1;
+}
+
+.story_title > div {
+  z-index: 2;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+  margin-bottom: 4px;
+  padding: 0 4px 5px;
+}
+
+.story_summary {
+  font-size: 12px;
+  line-height: 23px;
+  width: 322px;
+  margin-left: 36px;
+  margin-top: 36px;
+  word-break: keep-all;
+}
+
+.story_separator {
+  position: absolute;
+  border-top: solid 1px #979798;
+  width: 325px;
+  left: 34.5px;
+  bottom: 119px;
+}
+
+.story_date {
+  position: absolute;
+  font-size: 12px;
+  line-height: 23px;
+  left: 36px;
+  bottom: 72px
+}
+
+.story_source {
+  position: absolute;
+  font-size: 12px;
+  line-height: 23px;
+  left: 36px;
+  bottom: 50px;
 }
 
 /* section6 - Want to with us? */
