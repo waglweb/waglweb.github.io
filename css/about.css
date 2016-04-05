@@ -1,197 +1,244 @@
 /* message */
 
 #message1 {
-  background: linear-gradient(
-    rgba(16, 173, 106, 0.9), 
-    rgba(16, 173, 106, 0.9)
-    ), url('../img/about/01_BW.jpg');
+  background: url('../img/about/division1.png');
   background-size: cover;
 }
 
 #message1 > .content {
-  padding-top: 182px;
-  line-height: 36px;  
+  height: 250.5px;
+  padding-top: 149.5px;
+  font-size: 40px;
+  line-height: 55px;
 }
 
 #message2 {
-  background: linear-gradient(
-    rgba(16, 173, 106, 0.9), 
-    rgba(16, 173, 106, 0.9)
-    ), url('../img/about/02_BW.jpg');
+  background: url('../img/about/division2.png');
   background-size: cover;
 }
 
 #message2 > .content {
-  font-size: 32px;
-  line-height: 50px;
-  padding-top: 150px;
-}
-
-#message3 {
-  background: linear-gradient(
-    rgba(16, 173, 106, 0.9), 
-    rgba(16, 173, 106, 0.9)
-    ), url('../img/about/09_BW.jpg');
-  background-size: cover;
-}
-
-#message3 > .content {
-  font-size: 32px;
-  line-height: 50px;
-  padding-top: 150px;
-}
-
-/* article */
-
-.header {
-  color: #004d2f;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 36px;
-  text-align: center;
-  margin-top: 190px;
-  margin-bottom: 120px;
-}
-
-.header > .sub {
+  height: 241px;
+  padding-top: 166px;
   font-size: 30px;
-  color: #16b475;
-  margin-bottom: 24px;
+  line-height: 45px;  
 }
 
-.title {
-  font-size: 24px;
-  font-weight: 700;
-  color: #16b475;
+/* introduce */
+
+#introduce {
+  text-align: center;
 }
 
-.title.left {
+.article {
+  display: inline-block;
+  margin-bottom: 100px;
+  text-align: left;
+}
+
+.article_title {
   display: inline-block;
   vertical-align: top;
-  height: 100%;
-  width: 500px;
-  margin-left: 150px;
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 25px;
+  color: #16b475;
+  width: 536px;
+}
+
+.article_paragraph {
+  display: inline-block;
+  vertical-align: top;
+  color: #414042;
+  font-family: 'Noto Sans Korean DemiLight';
+  font-size: 15px;
+  line-height: 25px;
 }
 
 .motto {
+  font-family: 'Noto Sans Korean Bold';
   font-size: 30px;
-  font-weight: 900;
-  margin-bottom: 40px;
-}
-
-.paragraph {
-  display: inline-block;
-  color: #414042;
-  font-size: 14px;
-  line-height: 26px;
-}
-
-.article > .picture.small > img {
-  display: block;
-  width: 590px;
-  height: 420px;
-  margin: 0;
-  padding: 0;
-}
-
-.article > .picture.big > img {
-  display: block;
-  width: 1180px;
-  height: 440px;
-  margin: 0;
-  padding: 0;
-}
-
-.article > .picture.left {
-  float: left;
-  margin-right: 100px;
-}
-
-.article > .picture.right {
-  float: right;
-}
-
-.article > .picture.bottom {
-  position: absolute;
-  bottom: 0;
-}
-
-#article1 {
-  height: 370px;
-}
-
-#article2 {
-  height: 410px;
+  line-height: 30px;
+  margin-bottom: 45px;
 }
 
 #bi {
-  margin-top: 40px;
-  margin-left: 90px;
+  margin-left: 19px;
+  height: 226px;
 }
 
 #bi > img {
-  height: 64px;
-  margin-bottom: 32px;
+  height: 95px;
+  margin-bottom: 55px;
 }
 
-#article3 {
-  position: relative;
-  height: 840px;
+.article:last-child {
+  margin-bottom: 198px;
 }
 
-#article3 > .title {
-  position: absolute;
-  top: 0;
-  left: 50px;
-}
+/* people */
 
-#article3 > .paragraph {
-  position: absolute;
-  bottom: 0;
-  left: 50px;
-}
-
-#article4 {
-  position: relative;
-  height: 1280px;
-}
-
-#article4 > .title {
-  margin-bottom: 100px;
-  margin-left: 50px;
-}
-
-#article4 > .paragraph {
-  margin-left: 50px;
-}
-
-#article5 {
-  height: 450px;
-  margin-bottom: 140px;
-}
-
-#article5 > .title {
-  margin-bottom: 60px;
-}
-
-/* profile */
-
-.profile {
+#people {
   display: inline-block;
-  width: 180px;
-  height: 360px;
-  margin: 0;
-  padding: 30px;
-  text-align: center;
-  font-size: 16px;
+  width: 1012px;
+  height: 890px;
 }
 
-.profile > img {
-  width: 180px;
-  margin-bottom: 18px;
+.people {
+  float: left;
+  position: relative;
 }
 
-.profile > .name {
-  font-size: 20px;
-  font-weight: bold;
+.people_line {
+  margin-bottom: 100px;
+  height: 355.5px;
+}
+
+.people .people_photo {
+  width: 178px;
+  height: 254px;
+  margin-bottom: 22px;
+}
+
+.people .people_name {
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 11.5px;
+}
+
+.people .people_job {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.people .people_email {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.people > .off {
+  display: inline-block;
+  padding: 0 37.5px;
+  color: #414042;
+}
+
+.people > .on {
+  display: none;
+}
+
+.people > .on > .people_photo {
+  position: absolute;
+  left: 34px;
+  top: 34px;
+}
+
+.people > .on > .people_name {
+  position: absolute;
+  left: 34px;
+  width: 178px;
+  top: 315px;
+}
+
+.people > .on > .people_job {
+  position: absolute;
+  left: 34px;
+  width: 178px;
+  top: 345px;
+}
+
+.people > .on > .people_email {
+  position: absolute;
+  left: 34px;
+  width: 178px;
+  top: 368px;
+}
+
+.people .people_bio {
+  position: absolute;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 22px;
+  width: 178px;
+  left: 245px;
+  top: 34px;
+  word-break: keep-all;
+  text-align: left;
+}
+
+.people:hover > .on {
+  z-index: 2;
+  position: absolute;
+  display: inline-block;
+  color: #fff;
+  background-color: #16b475;
+  left: 3px;
+  top: -34px;
+  width: 465px;
+  height: 412px;
+}
+
+.people:last-child > .on {
+  left: auto;
+  right: 4px;
+}
+
+.people:last-child > .on > .people_photo {
+  left: 253px;
+}
+
+.people:last-child > .on > .people_name {
+  left: 253px;
+}
+
+.people:last-child > .on > .people_job {
+  left: 253px;
+}
+
+.people:last-child > .on > .people_email {
+  left: 253px;
+}
+
+.people:last-child .people_bio {
+  left: 34px;
+}
+
+/* contact */
+
+#contact {
+  margin-bottom: 97px;
+  margin-top: -46px;
+}
+
+#google_map {
+  display: inline-block;
+  vertical-align: top;
+  width: 469px;
+  height: 428px;
+  background: #ddd;
+  margin-right: -4px;
+}
+
+#contact_info {
+  display: inline-block;
+  vertical-align: top;
+  width: 422px;
+  height: 339px;
+  background: #16b475;
+  text-align: left;
+  margin-right: -4px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  padding-top: 89px;
+  padding-left: 47px;
+}
+
+.big {
+  display: inline-block;
+  font-family: 'Noto Sans Korean Bold';
+  margin-bottom: 10px;
+}
+
+.small {
+  font-size: 14px;
 }
