@@ -209,7 +209,7 @@
   background-blend-mode: multiply;
 }
 
-.project.on {
+.project:hover {
   background-color: #16b475;
 }
 
