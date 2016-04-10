@@ -49,7 +49,7 @@
 }
 
 #message {
-  font-family: 'Noto Sans Korean Regualr';
+  font-family: 'Noto Sans Korean Regular';
   font-size: 14.54px;
   line-height: 25.45px;
   color: #414042;
@@ -190,7 +190,7 @@
   position: absolute;
   left: 25px;
   top: 334px;
-  font-family: 'Noto Sans Korean Regualr';
+  font-family: 'Noto Sans Korean Regular';
   font-size: 15px;
   line-height: 25px;
   color: #fff;
@@ -314,7 +314,7 @@
 .action_explain {
   font-size: 12px;
   line-height: 22px;
-  font-family: 'Noto Sans Korean Regualr';
+  font-family: 'Noto Sans Korean Regular';
 }
 
 /* section5 - story */
@@ -428,9 +428,15 @@
   margin-bottom: 69px;
 }
 
+#join > .small {
+  font-family: 'Noto Sans Korean Medium';
+  font-size: 18px;
+  margin-top: 15px;
+}
+
 #sns {
   text-align: center;
-  margin-bottom: 89px;
+  margin-bottom: 65px;
 }
 
 #facebook {
@@ -467,7 +473,7 @@
 
 #sub_email_value {
   display: inline-block;
-  font-family: 'Noto Sans Korean Regualr';
+  font-family: 'Noto Sans Korean Regular';
   border: none;
   font-size: 18px;
   line-height: 48px;
