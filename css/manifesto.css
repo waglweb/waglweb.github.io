@@ -85,9 +85,9 @@
 
 #section3 {
   background: url('../img/manifesto/why.jpg');
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+  background-size: auto 1093px;
   height: 1093px;
 }
 
@@ -110,9 +110,9 @@
 
 #section4 {
   background: url('../img/manifesto/how.jpg');
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
+  background-size: auto 967px;
   height: 967px;
 }
 
@@ -133,9 +133,9 @@
 
 #section5 {
   background: url('../img/manifesto/what.jpg');
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+  background-size: auto 1122px;
   height: 1122px;
 }
 

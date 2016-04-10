@@ -1,0 +1,111 @@
+#cover {
+  background: url(../img/cover_waglpedia.png);
+  background-size: cover;
+  height: 225px;
+  padding-top: 182px;
+}
+
+.text {
+  text-align: center;
+  color: #16b475;
+  font-family: 'Noto Sans Korean Medium';
+  font-size: 18px;
+  line-height: 30px;
+}
+
+#tags {
+  margin-top: 133px;
+  margin-bottom: 14px;
+}
+
+#tags > .tag {
+  height: 42px;
+  color: #bcbec0;
+  font-family: 'Noto Sans Korean Medium';
+  font-size: 20px;
+  background-color: #16b475;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 0 15px;
+  border-radius: 42px;
+  line-height: 42px;
+}
+
+#tags > .tag.on {
+  color: #fff;
+}
+
+#actions {
+  border-top: solid 1px #bebebe;
+  margin-bottom: 135px;
+}
+
+.action_line {
+  min-height: 389px;
+}
+
+.action {
+  float: left;
+  display: inline-block;
+  width: 393px;
+  height: 389px;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  border-right: solid 1px #bebebe;
+  border-bottom: solid 1px #bebebe;
+  margin: 0;
+  text-align: center;
+}
+
+.action:first-of-type {
+  border-left: none;
+}
+
+.action:last-of-type {
+  border-right: none;
+}
+
+.action > .action_name_kor {
+  margin-top: 154px;
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 40px;
+  line-height: 40px;
+  color: #004d2f;
+}
+
+.action > .action_name_eng {
+  margin-top: 18px;
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 20px;
+  line-height: 20px;
+  color: #004d2f;
+}
+
+.action > .action_tags {
+  margin-top: 60px;
+}
+
+.action > .action_tags > .action_tag {
+  display: inline-block;
+  font-family: 'Noto Sans Korean Regualr';
+  font-size: 14.55px;
+  line-height: 31px;
+  color: #fff;
+  background-color: #16b475;
+  padding: 0 8px;
+  height: 31px;
+  border-radius: 31px;
+  margin: 0 10px 10px 0;
+}
+
+.action > .action_tags > .action_tag:last-of-type {
+  margin-right: 0;
+}
+
+.action_detail {
+  position: relative;
+  height: 1169px;
+  border-top: solid 3px #bebebe;
+  border-bottom: solid 2px #bebebe;
+  background-color: #eef8f4;
+}
