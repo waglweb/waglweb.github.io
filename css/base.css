@@ -147,19 +147,19 @@ nav > a:last-child {
   margin-right: 0;
 }
 
-nav > a:link {
+a:link {
     text-decoration: none;
 }
 
-nav > a:visited {
+a:visited {
     text-decoration: none;
 }
 
-nav > a:hover {
+a:hover {
     text-decoration: none;
 }
 
-nav > a:active {
+a:active {
     text-decoration: none;
 }
 
@@ -180,7 +180,7 @@ nav > a:active {
   float: right;
   width: 98px;
   height: 35px;
-  margin-left: 25px;
+  margin-left: 18px;
 }
 
 #space_header {
@@ -217,22 +217,15 @@ nav > a:active {
   background: #d1d3d4;
   color: #414042;
   font-size: 15px;
-  line-height: 25px;
+  line-height: 20px;
   font-weight: normal;
 }
 
 #footer > .content {
-  padding: 55px 49px;
-  height: 112px;
+  padding: 30px 49px 40px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
-}
-
-#copyright {
-  position: absolute;
-  bottom: 55px;
-  left: 49px;
 }
 
 #footer > .content > .icon {

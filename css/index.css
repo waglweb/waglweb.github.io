@@ -335,6 +335,7 @@
   -moz-transition: background-color 300ms ease-in-out;
   -o-transition: background-color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
+  color: #000;
 }
 
 .story:hover {
