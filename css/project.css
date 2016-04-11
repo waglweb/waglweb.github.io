@@ -1,0 +1,46 @@
+#main {
+  padding: 135px 0 155px;
+}
+
+.paragraph {
+  padding: 0 122px;
+  margin-bottom: 145px;
+}
+
+.paragraph.small_bot_margin {
+  margin-bottom: 50px;
+}
+
+.header2 {
+  float: left;
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 25px;
+  line-height: 35px;
+  color: #004d2f;
+}
+
+.text {
+  width: 552px;
+  font-family: 'Noto Sans Korean Regular';
+  font-size: 15px;
+  line-height: 25px;
+  color: #414042;
+  margin-left: 326px;
+  border-left: solid 2px #16b475;
+  padding-left: 60px;
+  word-break: keep-all;
+}
+
+.header3 {        
+  font-family: 'Noto Sans Korean Medium';
+  font-size: 18px;
+  line-height: 27px;
+  color: #16b475;
+  margin-bottom: 50px;
+}
+
+.media {
+  width: 552px;
+  height: 310.5px;
+  margin-bottom: 40px;
+}
