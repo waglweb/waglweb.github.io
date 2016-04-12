@@ -5,6 +5,7 @@
 .paragraph {
   padding: 0 122px;
   margin-bottom: 145px;
+  text-align: left;
 }
 
 .paragraph.small_bot_margin {
@@ -39,7 +40,7 @@
   margin-bottom: 50px;
 }
 
-.media {
+.video {
   width: 552px;
   height: 310.5px;
   margin-bottom: 40px;
