@@ -40,7 +40,12 @@
   margin-bottom: 50px;
 }
 
-.video {
+.text > img {
+  width: 552px;
+  margin-bottom: 40px;
+}
+
+.text > .video {
   width: 552px;
   height: 310.5px;
   margin-bottom: 40px;
