@@ -266,10 +266,14 @@
 .action_logo {
   width: 234px;
   height: 227px;
+  text-align: center;
 }
 
 .action_logo > img {
-  width: 232px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 140px;
+  opacity: 0.6;
 }
 
 .action:first-child {
@@ -286,14 +290,16 @@
   top: -2px;
   left: -2px;
   z-index: 99;
-  width: 207px;
+  width: 176px;
   height: 186px;
   padding-top: 45px;
   padding-left: 31px;
+  padding-right: 31px;
   background-color: #16b475;
   color: #fff;
   text-align: left;
   opacity: 0;
+  word-break: keep-all;
   -webkit-transition: opacity 300ms ease-in-out;
   -moz-transition: opacity 300ms ease-in-out;
   -o-transition: opacity 300ms ease-in-out;

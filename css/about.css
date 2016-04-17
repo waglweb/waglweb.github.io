@@ -199,12 +199,14 @@
 
 .people {
   float: left;
+  padding: 0 37.5px;
   position: relative;
+  color: #414042;
 }
 
 .people_line {
+  min-height: 355.5px;
   margin-bottom: 100px;
-  height: 355.5px;
 }
 
 .people .people_photo {
@@ -230,90 +232,62 @@
   line-height: 22px;
 }
 
-.people > .off {
-  display: inline-block;
-  padding: 0 37.5px;
-  color: #414042;
+.people.on {
+  color: #16b475;
 }
 
-.people > .on {
+.people.on > .people_photo {
+  border: solid 5px #16b475;
+  margin: -5px;
+  margin-bottom: 17px;
+}
+
+.people_detail {
   display: none;
-}
-
-.people > .on > .people_photo {
-  position: absolute;
-  left: 34px;
-  top: 34px;
-}
-
-.people > .on > .people_name {
-  position: absolute;
-  left: 34px;
-  width: 178px;
-  top: 315px;
-}
-
-.people > .on > .people_job {
-  position: absolute;
-  left: 34px;
-  width: 178px;
-  top: 345px;
-}
-
-.people > .on > .people_email {
-  position: absolute;
-  left: 34px;
-  width: 178px;
-  top: 368px;
-}
-
-.people .people_bio {
-  position: absolute;
-  display: inline-block;
-  font-size: 14px;
-  line-height: 22px;
-  width: 178px;
-  left: 245px;
-  top: 34px;
-  word-break: keep-all;
+  position: relative;
+  border-top: solid 1px #16b475;
+  border-bottom: solid 1px #16b475;
+  padding: 72px 30px;
+  margin-top: -70px;
+  margin-bottom: 67px;
   text-align: left;
+  width: 877px;
+  word-break: keep-all;
+  background: #fff;
 }
 
-.people:hover > .on {
-  z-index: 2;
-  position: absolute;
+.people_detail.on {
   display: inline-block;
-  color: #fff;
-  background-color: #16b475;
-  left: 3px;
-  top: -34px;
-  width: 465px;
-  height: 412px;
 }
 
-.people:last-child > .on {
-  left: auto;
-  right: 4px;
+.people_quote {
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 20px;
+  line-height: 30px;
+  color: #16b475;
+  margin-top: -5px;
+  margin-bottom: 40px;
+  width: 550px;
 }
 
-.people:last-child > .on > .people_photo {
-  left: 253px;
+.people_bio {
+  font-family: 'Noto Sans Korean Regular';
+  font-size: 14px;
+  line-height: 24px;
+  color: #414042;
+  margin-top: -5px;
+  width: 550px;
 }
 
-.people:last-child > .on > .people_name {
-  left: 253px;
-}
-
-.people:last-child > .on > .people_job {
-  left: 253px;
-}
-
-.people:last-child > .on > .people_email {
-  left: 253px;
-}
-
-.people:last-child .people_bio {
-  left: 34px;
+.people_career {
+  position: absolute;
+  right: 0;
+  bottom: 72px;
+  font-family: 'Noto Sans Korean Regular';
+  font-size: 14px;
+  line-height: 24px;
+  color: #16b475;
+  width: 300px;
 }
 
 /* contact */
@@ -345,6 +319,10 @@
   line-height: 28px;
   padding-top: 89px;
   padding-left: 47px;
+  background-image: url(../img/about/WAGL_logo_opacity_40%25.png);
+  background-repeat: no-repeat;
+  background-size: 111px 47px;
+  background-position: 315px 48px;
 }
 
 .big {
