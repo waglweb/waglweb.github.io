@@ -1,0 +1,188 @@
+#cover {
+  background: url(../img/voice/cover.png);
+  background-size: cover;
+  height: 224px;
+  padding-top: 186px;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.title {
+  font-size: 35px;
+  margin-top: 135px;
+}
+
+.text {
+  text-align: center;
+  color: #16b475;
+  font-family: 'Noto Sans Korean Regular';
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: -38px;;
+  margin-bottom: 113px;
+}
+
+#voice_wrapper {
+  background-color: #e6e7e8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#tags {
+  margin-bottom: 15px;
+}
+
+#tags > .tag {
+  display: inline-block;
+  color: #fff;
+  font-size: 13px;
+  line-height: 30px;
+  margin-right: 8px;
+  background: #16b475;
+  border-radius: 30px;
+  padding: 0 10px;
+}
+
+#speak_content {
+  position: relative;
+  background: #f1f2f2;
+  min-height: 235px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  color: #939598;
+  padding: 10px 10px;
+}
+
+#speak_content > textarea {
+  font-family: 'Noto Sans Korean Regular';
+  font-size: 18px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  height: 235px;
+  resize: none;
+}
+
+#letter_count {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  font-size: 14px;
+}
+
+#hashtag {
+  background: #f1f2f2;
+  height: 34px;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+#hashtag > input {
+  font-family: 'Noto Sans Korean Regular';
+  background: none;
+  border: none;
+  padding: 0;
+  height: 34px;
+  width: 325px;
+}
+
+#button_speak {
+  float: right;
+  display: inline-block;
+  background: #16b475;
+  color: #fff;
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 18px;
+  line-height: 36px;
+  height: 36px;
+  padding: 0 20px;
+}
+
+/* voice */
+
+.voice {
+  display: inline-block;
+  background: #fff;
+  padding: 20px 15px;
+  width: 345px;
+  margin-bottom: 28px;
+}
+
+.speaker {
+  display: inline-block;
+  margin-bottom: 35px;
+  color: #fff;
+  background: #16b475;
+}
+
+.speaker.color1 {
+  background: #f1746e;
+}
+
+.speaker.color2 {
+  background: #ffb8a4;
+}
+
+.speaker.color3 {
+  background: #84c5bd;
+}
+
+.speaker.color4 {
+  background: #317067;
+}
+
+.speaker.color5 {
+  background: #68a176;
+}
+
+.speaker > .speaker_img {
+  float: left;
+  height: 35px;
+  width: 35px;
+}
+
+.speaker > .speaker_name {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 35px;
+  font-family: 'Noto Sans Korean Bold';
+}
+
+.voice_content {
+  margin-bottom: 90px;
+  color: #414042;
+  word-break: keep-all;
+  padding: 0 10px;
+  margin-bottom: 90px;
+  font-family: 'Noto Sans Korean Medium';
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.voice_content.short {
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 35px;
+  line-height: 47px;
+}
+
+.voice_content.long {
+  font-family: 'Noto Sans Korean Regular';
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.voice_tag {
+  font-family: 'Noto Sans Korean Medium';
+  line-height: 30px;
+  font-size: 15px;
+  color: #939598;
+  margin-bottom: 25px;
+}
+
+.button_voice {
+  float: right;
+  height: 22px;
+  margin-left: 15px;
+}
