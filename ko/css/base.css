@@ -1,0 +1,234 @@
+/* init */
+
+@import url(NotoSansKR-Hestia.css);
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Noto Sans Korean Regular';
+  padding: 0;
+  margin: 0;
+  min-width: 1280px;
+  letter-spacing: -0.02em;
+}
+
+/* text size */
+
+h1 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 35px;
+  letter-spacing: -2px;
+}
+
+/* section */
+
+.section {
+  padding-left: 49px;
+  padding-right: 49px;
+}
+
+.section.green {
+  background-color: #22b476;
+}
+
+.section > .content {
+  width: 1182px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section > .content.center {
+  text-align: center;
+}
+
+.section > .content.bot_space {
+  padding-bottom: 190px;
+}
+
+/* title */
+
+.title {
+  color: #004d2f;
+  font-size: 35px;
+  line-height: 35px;
+  font-family: 'Noto Sans Korean Bold';
+  text-align: center;
+  margin-top: 135px;
+}
+
+.title > .decorator {
+  width: 45px;
+  height: 48px;
+  border-bottom: 2px solid #004d2f;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 98px;
+}
+
+/* message */
+
+.message {
+  height: 400px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: 'Noto Sans Korean Bold';
+  background: #16b475;
+  background-size: cover;
+  color: #fff;
+}
+
+/* button */
+
+.button {
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 13px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.button.green {
+  background-color: #16b475;
+  color: #fff;
+}
+
+/* header */
+
+#header {
+  position: fixed;
+  background-color: rgba(256, 256, 256, 0.75);
+  height: 100px;
+  width: 100%;
+  padding: 0;
+  z-index: 999;
+}
+
+#header > .content {
+  position: relative;
+  padding-top: 30px;
+  padding-left: 49px;
+  padding-right: 49px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo {
+  height: 42px;
+}
+
+nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 73px;
+  padding: 33px 30px 53px 30px;
+  height: 14px;
+}
+
+nav > a {
+  display: inline-block;
+  margin-right: 35px;
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 14px;
+  line-height: 14px;
+  color: #16b475;
+}
+
+nav > a:last-child {
+  margin-right: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+#search {
+  float: right;
+  height: 35px;
+  width: 160px;
+  line-height: 35px;
+  font-size: 15px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  color: #999898;
+}
+
+#btn_menu {
+  float: right;
+  width: 98px;
+  height: 35px;
+  margin-left: 18px;
+}
+
+#space_header {
+  height: 100px;
+}
+
+.btnIcon {
+  height: 15px;
+  float: right;
+  margin-top: 10px;
+}
+
+#lang {
+  float: right;
+  margin-left: 13px;
+  padding-top: 1px;
+}
+
+.lang {
+  font-family: 'Noto Sans Korean Medium';
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 8px;
+  color: #999898;
+}
+
+.lang.on {
+  color: #16b475;
+}
+
+/* footer */
+
+#footer {
+  background: #d1d3d4;
+  color: #414042;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+#footer > .content {
+  padding: 30px 49px 40px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer > .content > .icon {
+  float: right;
+  margin-left: 15px;
+}

@@ -1,0 +1,154 @@
+#section1 {
+  background: url('../img/manifesto/cover.png');
+  background-size: cover;
+  padding-top: 149.5px;
+  height: 250.5px;
+}
+
+.section {
+  position: relative;
+}
+
+.article {
+  position: relative;
+  width: 580px;
+  background: #fff;
+}
+
+.article.left {
+  float: left;
+}
+
+.article.right {
+  float: right;
+}
+
+.article > .article_title {
+  position: absolute;
+  left: 49px;
+  top: 150px;
+  font-size: 35px;
+  line-height: 50px;
+  font-family: 'Noto Sans Korean Bold';
+  color: #004d2f;
+}
+
+.article > .article_title > .article_subtitle {
+  font-size: 25px;
+  line-height: 25px;
+  color: #16b475;
+  margin-bottom: 17.5px;
+}
+
+.article > .text {
+  position: absolute;
+  left: 49px;
+  bottom: 155px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #414042;
+}
+
+.article > .text > .key-sentence {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'Noto Sans Korean Medium';
+  color: #16b475;
+}
+
+.gradient {
+  width: 400px;
+}
+
+.gradient.left {
+  float: left;
+  background: -webkit-linear-gradient(left, #fff, rgba(255, 255, 255, 0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #fff, rgba(255, 255, 255, 0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #fff, rgba(255, 255, 255, 0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0)); /* Standard syntax */
+}
+
+.gradient.right {
+  float: right;
+  background: -webkit-linear-gradient(right, #fff, rgba(255, 255, 255, 0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #fff, rgba(255, 255, 255, 0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #fff, rgba(255, 255, 255, 0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #fff, rgba(255, 255, 255, 0)); /* Standard syntax */
+}
+
+.quote {
+  position: absolute;
+  width: 79px;
+  height: 59px;
+}
+
+#section3 {
+  background: url('../img/manifesto/why.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 1093px;
+  height: 1093px;
+}
+
+#article1 {
+  height: 1093px;
+}
+
+#section3 .gradient {
+  height: 1093px;
+}
+
+#section3 .quote {
+  right: 333px;
+  top: 270px;
+}
+
+#article1 > .article_title {
+  top: 100px;
+}
+
+#section4 {
+  background: url('../img/manifesto/how.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto 967px;
+  height: 967px;
+}
+
+#article2 {
+  height: 967px;
+  background: #fff;
+  width: 550px;
+}
+
+#section4 .gradient {
+  height: 967px;
+}
+
+#section4 .quote {
+  left: 222px;
+  top: 368px;
+}
+
+#section5 {
+  background: url('../img/manifesto/what.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 1122px;
+  height: 1122px;
+}
+
+#article3 {
+  height: 1122px;
+  width: 554px
+}
+
+#section5 .gradient {
+  height: 1122px;
+}
+
+#section5 .quote {
+  right: 276px;
+  top: 255px;
+}
