@@ -50,7 +50,7 @@
 
 #message {
   font-family: 'Noto Sans Korean Regular';
-  font-size: 14.54px;
+  font-size: 15.5px;
   line-height: 25.45px;
   color: #414042;
   margin-top: 38px;
@@ -115,7 +115,7 @@
 
 #voice_go {
   display: inline-block;
-  width: 215px;
+  width: 300px;
   height: 48px;
   font-family: 'Noto Sans Korean Bold';
   font-size: 18px;
@@ -180,7 +180,7 @@
   position: absolute;
   left: 25px;
   top: 87px;
-  font-family: 'Noto Sans Korean Bold';
+  font-family: 'Noto Sans Korean Regular';
   font-size: 18px;
   line-height: 18px;
   color: #fff;
@@ -189,10 +189,10 @@
 .project_explain {
   position: absolute;
   left: 25px;
-  top: 334px;
-  font-family: 'Noto Sans Korean Regular';
+  top: 319px;
+  font-family: 'Noto Sans Korean DemiLight';
   font-size: 15px;
-  line-height: 25px;
+  line-height: 22px;
   color: #fff;
 }
 
@@ -422,7 +422,7 @@
 /* section6 - Want to with us? */
 
 #section6 {
-  height: 380px;
+  height: 400px;
   background-color: #414042;
 }
 
