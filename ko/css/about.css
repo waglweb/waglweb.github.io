@@ -21,7 +21,7 @@
   height: 241px;
   padding-top: 166px;
   font-size: 30px;
-  line-height: 45px;  
+  line-height: 45px;
 }
 
 /* introduce */
@@ -194,7 +194,7 @@
 #people {
   display: inline-block;
   width: 1012px;
-  height: 890px;
+  min-height: 890px;
 }
 
 .people {
