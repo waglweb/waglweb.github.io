@@ -200,6 +200,7 @@ a:active {
 }
 
 .lang {
+  display: block;
   font-family: 'Noto Sans Korean Medium';
   font-size: 12px;
   line-height: 12px;
