@@ -28,6 +28,7 @@
 
 #introduce {
   text-align: center;
+  margin-bottom: -100px;
 }
 
 .article {
@@ -310,14 +311,14 @@
   display: inline-block;
   vertical-align: top;
   width: 422px;
-  height: 339px;
+  height: 309px;
   background: #16b475;
   text-align: left;
   margin-right: -4px;
   color: #fff;
   font-size: 18px;
   line-height: 28px;
-  padding-top: 89px;
+  padding-top: 119px;
   padding-left: 47px;
   background-image: url(../img/about/WAGL_logo_opacity_40%25.png);
   background-repeat: no-repeat;
