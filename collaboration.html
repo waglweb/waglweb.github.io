@@ -1,191 +1,172 @@
+---
+# Front matter block to use liquid tags                                                              
+---
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="css/base.css" rel="stylesheet" type="text/css">
-    <link href="css/project.css" rel="stylesheet" type="text/css">
-    <style>
-    
-      #cover {
-        background: url(img/project/collaboration/cover.png);
-        background-size: cover;
-        height: 225px;
-        padding-top: 155px;
-      }
+<head>
+  <meta charset="utf-8">
+  <link href="css/base.css" rel="stylesheet" type="text/css">
+  <link href="css/project.css" rel="stylesheet" type="text/css">
+  <style>
+  
+    #cover {
+      background: url(img/project/collaboration/cover.png);
+      background-size: cover;
+      height: 225px;
+      padding-top: 155px;
+    }
 
-      #lectures {
-        padding: 0 122px;
-      }
-      
-      .lecture {
-        vertical-align: top;
-        display: inline-block;
-        width: 460px;
-        margin-right: 14px;
-        color: #414042;
-      }
-      
-      .lecture:last-of-type {
-        margin-right: 0;
-      }
-      
-      .lecture_photo {
-        width: 460px;
-        margin-bottom: 35.5px;
-      }
-      
-      .lecture_title {
-        margin-bottom: 35px;
-        font-family: 'Noto Sans Korean Bold';
-        font-size: 18px;
-        line-height: 27px;
-      }
-      
-      .lecture_detail {
-        font-size: 15px;
-        line-height: 25px;
-        min-height: 100px;
-        margin-bottom: 20px;
-        word-break: keep-all;
-      }
-      
-      .lecture_link {
-        float: right;
-        display: inline-block;
-        font-size: 14px;
-        line-height: 34px;
-        color: #fff;
-        background: #16b475;
-        width: 84px;
-        height: 34px;
-        text-align: center;
-        margin-left: 12px;
-      }
-      
-    </style>
-    <title>와글 WAGL | 프로젝트</title>
-  </head>
-  <body>
-    <div id="header" class="section transparent">
-      <div class="content">
-        <a href="index.html">
-          <img id="logo" src="img/Wagl_logo_Kor.png">
-        </a>
-        <nav>
-          <a href="index.html">처음으로</a>
-          <a href="about.html">와글 소개</a>
-          <a href="manifesto.html">매니페스토</a>
-          <!--
-          <a href="voice.html">우리의 목소리</a>
-          <a href="waglpedia.html">와글피디아</a>
-          <a href="project.html">프로젝트</a>
-          -->
-          <a target="_blank" href="https://medium.com/wagl-art">블로그</a>
-        </nav>
-        <div id="lang">
-          <a id="lang_kor" class="lang on">KOR</a>
-          <a id="lang_eng" class="lang" href="en/collaboration.html">ENG</a>
-        </div>
-        <img id="btn_menu" src="img/menu.png">
-        <div id="search"><img class="btnIcon" src="img/search.png">Search</div>
-      </div>
+    #lectures {
+      padding: 0 122px;
+    }
+    
+    .lecture {
+      vertical-align: top;
+      display: inline-block;
+      width: 460px;
+      margin-right: 14px;
+      color: #414042;
+    }
+    
+    .lecture:last-of-type {
+      margin-right: 0;
+    }
+    
+    .lecture_photo {
+      width: 460px;
+      margin-bottom: 35.5px;
+    }
+    
+    .lecture_title {
+      margin-bottom: 35px;
+      font-family: 'Noto Sans Korean Bold';
+      font-size: 18px;
+      line-height: 27px;
+    }
+    
+    .lecture_detail {
+      font-size: 15px;
+      line-height: 25px;
+      min-height: 100px;
+      margin-bottom: 20px;
+      word-break: keep-all;
+    }
+    
+    .lecture_link {
+      float: right;
+      display: inline-block;
+      font-size: 14px;
+      line-height: 34px;
+      color: #fff;
+      background: #16b475;
+      width: 84px;
+      height: 34px;
+      text-align: center;
+      margin-left: 12px;
+    }
+    
+  </style>
+  <title>와글 WAGL | 프로젝트</title>
+</head>
+<body>
+  {% include navbar.html %}
+  <div id="space_header"></div>
+  <div id="cover" class="section message">
+    <div class="content">
+      Collaboration / Network<br>
+      국내외 협업과 네트워킹
     </div>
-    <div id="space_header"></div>
-    <div id="cover" class="section message">
-      <div class="content">
-        Collaboration / Network<br>
-        국내외 협업과 네트워킹
+  </div>
+  <div class="section">
+    <div id="main" class="content">
+      <div class="paragraph">
+        <div class="header2">
+          만나고, 소통하고, 협업합니다
+        </div>
+        <div class="text">
+          <div class="header3">
+            와글은 다양한 영역에서 사회 혁신을 위해 일하고 있는 분들을 초청해 캠프, 강연 등 다양한 형태로 소통하고 협업할 기회를 마련하는 만남의 장을 마련합니다.
+          </div>
+          정치, 풀뿌리운동, 시빅 테크, 저널리즘 등 다양한 영역에서 일상기술과 와글와글한 군중의 힘을 모아내고 행동하는 분들의 경험과 아이디어를 나누고, 국내외 사회혁신 운동의 흐름을 공유합니다.
+        </div>          
       </div>
-    </div>
-    <div class="section">
-      <div id="main" class="content">
-        <div class="paragraph">
-          <div class="header2">
-            만나고, 소통하고, 협업합니다
-          </div>
-          <div class="text">
-            <div class="header3">
-              와글은 다양한 영역에서 사회 혁신을 위해 일하고 있는 분들을 초청해 캠프, 강연 등 다양한 형태로 소통하고 협업할 기회를 마련하는 만남의 장을 마련합니다.
-            </div>
-            정치, 풀뿌리운동, 시빅 테크, 저널리즘 등 다양한 영역에서 일상기술과 와글와글한 군중의 힘을 모아내고 행동하는 분들의 경험과 아이디어를 나누고, 국내외 사회혁신 운동의 흐름을 공유합니다.
-          </div>          
+      <div class="paragraph">
+        <div class="header2">
+          와글 국제 컨퍼런스<br>
+          Camp: by the Crowd '15
         </div>
-        <div class="paragraph">
-          <div class="header2">
-            와글 국제 컨퍼런스<br>
-            Camp: by the Crowd '15
+        <div class="text">
+          <iframe class="video" src="https://www.youtube.com/embed/BQZ7UEvD7G8?rel=0" frameborder="0" allowfullscreen></iframe>
+          <div class="header3">
+            해외 여러 나라와 국내에서 사회혁신을 위해 몸담고 있는 30여 명이 한국에 모였습니다.
           </div>
-          <div class="text">
-            <iframe class="video" src="https://www.youtube.com/embed/BQZ7UEvD7G8?rel=0" frameborder="0" allowfullscreen></iframe>
-            <div class="header3">
-              해외 여러 나라와 국내에서 사회혁신을 위해 몸담고 있는 30여 명이 한국에 모였습니다.
-            </div>
-            “와글와글한 군중의 힘”을 모아내기 위해 지혜를 발휘하고 있는 참가자들은 2015년 12월 3일부터 6일까지 3박 4일간 제주도에서 형식과 내용에 제한이 없는 ‘언컨퍼런스’ 행사를 통해 각자의 경험, 생각을 나누면서 치열하게 고민하는 시간을 가졌습니다. 와글은 이 행사를 계기로 연결된 국내외 혁신가들과 지속적으로 소통하면서 협업 기회를 모색하고 있습니다.
-          </div> 
+          “와글와글한 군중의 힘”을 모아내기 위해 지혜를 발휘하고 있는 참가자들은 2015년 12월 3일부터 6일까지 3박 4일간 제주도에서 형식과 내용에 제한이 없는 ‘언컨퍼런스’ 행사를 통해 각자의 경험, 생각을 나누면서 치열하게 고민하는 시간을 가졌습니다. 와글은 이 행사를 계기로 연결된 국내외 혁신가들과 지속적으로 소통하면서 협업 기회를 모색하고 있습니다.
+        </div> 
+      </div>
+      <div class="paragraph small_bot_margin">
+        <div class="header2">
+          2015 시리즈 공개강연
         </div>
-        <div class="paragraph small_bot_margin">
-          <div class="header2">
-            2015 시리즈 공개강연
+        <div class="text">
+          <div class="header3">
+            2015년 캠프에 초청한 해외 혁신가들이 한국의 시민들과 생각을 나누는 자리로 두 차례 강연이 열렸습니다.
           </div>
-          <div class="text">
-            <div class="header3">
-              2015년 캠프에 초청한 해외 혁신가들이 한국의 시민들과 생각을 나누는 자리로 두 차례 강연이 열렸습니다.
-            </div>
-            주로 정치혁신 분야의 해외 인사들이 참여한 이 행사에서 청중들은 디지털 도구를 활용해 연사들에게 직접 질문하고 코멘트하면서 열띤 대화를 이어갔습니다. 시민주도의 정치혁신과 새로운 정당 건설을 주도하고 제도정치에서 배제되어 온 99%를 위한 민주주의 구현에 앞장서온 해외 활동가, 개발자, 이론가들이 정치혁신에 목마른 한국의 시민들에게 자신의 경험담을 들려주는 자리였습니다.
-          </div>
+          주로 정치혁신 분야의 해외 인사들이 참여한 이 행사에서 청중들은 디지털 도구를 활용해 연사들에게 직접 질문하고 코멘트하면서 열띤 대화를 이어갔습니다. 시민주도의 정치혁신과 새로운 정당 건설을 주도하고 제도정치에서 배제되어 온 99%를 위한 민주주의 구현에 앞장서온 해외 활동가, 개발자, 이론가들이 정치혁신에 목마른 한국의 시민들에게 자신의 경험담을 들려주는 자리였습니다.
         </div>
-        <div id="lectures">
-          <div class="lecture">
-            <img class="lecture_photo" src="img/project/collaboration/lecture01.jpg">
-            <div class="lecture_title">
-              시민을 위한 일상기술(Civic Tech)로 혁신하다: 99% 민주주의
-            </div>
-            <div class="lecture_detail">
-              일시 : 2015년 12월 2일<br>
-              장소 : 은행권청년창업재단 디캠프<br>
-              연사 : 리처드 바틀렛(엔스파이럴), 야고 베르메호(라보데모), 크리스티나 플레셔(애버딘 대학)
-            </div>
-            <a class="lecture_link" target="_blank" href="http://news.joins.com/article/19200693">관련기사 2</a>
-            <a class="lecture_link" target="_blank" href="http://www.bloter.net/archives/245286">관련기사 1</a>
+      </div>
+      <div id="lectures">
+        <div class="lecture">
+          <img class="lecture_photo" src="img/project/collaboration/lecture01.jpg">
+          <div class="lecture_title">
+            시민을 위한 일상기술(Civic Tech)로 혁신하다: 99% 민주주의
           </div>
-          <div class="lecture">
-            <img class="lecture_photo" src="img/project/collaboration/lecture02.jpg">
-            <div class="lecture_title">
-              오픈 소스 정치의 개막: 99%의 지혜 + 1%의 상상
-            </div>
-            <div class="lecture_detail">
-              일시 : 2015년 12월 7일<br>
-              장소 : 연세대학교 신용재홀<br>
-              연사 : 벤 나이트(루미오), 미겔 아라나(마드리드 시), 제임스 매키니(오픈 노스)
-            </div>
-            <a class="lecture_link" target="_blank" href="http://www.mediatoday.co.kr/news/articleView.html?idxno=126505">관련기사</a>
+          <div class="lecture_detail">
+            일시 : 2015년 12월 2일<br>
+            장소 : 은행권청년창업재단 디캠프<br>
+            연사 : 리처드 바틀렛(엔스파이럴), 야고 베르메호(라보데모), 크리스티나 플레셔(애버딘 대학)
           </div>
+          <a class="lecture_link" target="_blank" href="http://news.joins.com/article/19200693">관련기사 2</a>
+          <a class="lecture_link" target="_blank" href="http://www.bloter.net/archives/245286">관련기사 1</a>
+        </div>
+        <div class="lecture">
+          <img class="lecture_photo" src="img/project/collaboration/lecture02.jpg">
+          <div class="lecture_title">
+            오픈 소스 정치의 개막: 99%의 지혜 + 1%의 상상
+          </div>
+          <div class="lecture_detail">
+            일시 : 2015년 12월 7일<br>
+            장소 : 연세대학교 신용재홀<br>
+            연사 : 벤 나이트(루미오), 미겔 아라나(마드리드 시), 제임스 매키니(오픈 노스)
+          </div>
+          <a class="lecture_link" target="_blank" href="http://www.mediatoday.co.kr/news/articleView.html?idxno=126505">관련기사</a>
         </div>
       </div>
     </div>
-    <div id="footer" class="section">
-      <div class="content">
-        서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
-        T. 070-8250-0346 info@wagl.net<br>
-        ©WAGL since 2015
-      </div>
+  </div>
+  <div id="footer" class="section">
+    <div class="content">
+      서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
+      T. 070-8250-0346 info@wagl.net<br>
+      ©WAGL since 2015
     </div>
-    <script src="js/jquery-2.2.2.min.js"></script>
-    <script>
-      
-      // nav menu button event
-      $('#btn_menu').mouseover(function(){
-        $('#btn_menu').hide()
-        $('#search').hide()
-        $('nav').show()
-      })
-      
-      $('nav').mouseleave(function(){
-        $('#btn_menu').show()
-        $('#search').show()
-        $(this).hide()
-      })
-      
-    </script>
-  </body>
+  </div>
+  <script src="js/jquery-2.2.2.min.js"></script>
+  <script>
+    
+    // nav menu button event
+    $('#btn_menu').mouseover(function(){
+      $('#btn_menu').hide()
+      $('#search').hide()
+      $('nav').show()
+    })
+    
+    $('nav').mouseleave(function(){
+      $('#btn_menu').show()
+      $('#search').show()
+      $(this).hide()
+    })
+    
+  </script>
+</body>
 </html>

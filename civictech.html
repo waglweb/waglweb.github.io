@@ -1,207 +1,188 @@
+---
+# Front matter block to use liquid tags                                                              
+---
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="css/base.css" rel="stylesheet" type="text/css">
-    <link href="css/project.css" rel="stylesheet" type="text/css">
-    <style>
+<head>
+  <meta charset="utf-8">
+  <link href="css/base.css" rel="stylesheet" type="text/css">
+  <link href="css/project.css" rel="stylesheet" type="text/css">
+  <style>
+  
+    #cover {
+      background: url(img/project/civictech/cover.png);
+      background-size: cover;
+      height: 225px;
+      padding-top: 155px;
+    }
     
-      #cover {
-        background: url(img/project/civictech/cover.png);
-        background-size: cover;
-        height: 225px;
-        padding-top: 155px;
-      }
-      
-      #btn_ping {
-        font-family: 'Noto Sans Korean Medium';
-        font-size: 15px;
-        line-height: 35px;
-        color: #fff;
-        height: 35px;
-        width: 143px;
-        text-align: center;
-        border-radius: 2px;
-        background: #16b475;
-        float: right;
-        margin-top: 35px;
-      }
-      
-      #news {
-        display: inline-block;
-        border-top: solid 1px #b0b1b4;
-        width: 938px;
-      }
-      
-      .news {
-        position: relative;
-        display: inline-block;
-        text-align: left;
-        width: 938px;
-        min-height: 103px;
-        border-bottom: solid 1px #b0b1b4;
-        color: #414042;
-      }
+    #btn_ping {
+      font-family: 'Noto Sans Korean Medium';
+      font-size: 15px;
+      line-height: 35px;
+      color: #fff;
+      height: 35px;
+      width: 143px;
+      text-align: center;
+      border-radius: 2px;
+      background: #16b475;
+      float: right;
+      margin-top: 35px;
+    }
+    
+    #news {
+      display: inline-block;
+      border-top: solid 1px #b0b1b4;
+      width: 938px;
+    }
+    
+    .news {
+      position: relative;
+      display: inline-block;
+      text-align: left;
+      width: 938px;
+      min-height: 103px;
+      border-bottom: solid 1px #b0b1b4;
+      color: #414042;
+    }
 
-      .news_source {
-        position: absolute;
-        display: inline-block;
-        font-family: 'Noto Sans Korean Bold';
-        font-size: 18px;
-        line-height: 25px;
-        border-bottom: solid 3px #16b475;
-        top: 21px;
-        left: 14px;
-      }
+    .news_source {
+      position: absolute;
+      display: inline-block;
+      font-family: 'Noto Sans Korean Bold';
+      font-size: 18px;
+      line-height: 25px;
+      border-bottom: solid 3px #16b475;
+      top: 21px;
+      left: 14px;
+    }
 
-      .news_date {
-        position: absolute;
-        display: inline-block;
-        font-size: 18px;
-        line-height: 18px;
-        top: 62px;
-        left: 14px;
-      }
+    .news_date {
+      position: absolute;
+      display: inline-block;
+      font-size: 18px;
+      line-height: 18px;
+      top: 62px;
+      left: 14px;
+    }
 
-      .news_title {
-        margin-top: 12.5px;
-        height: 68px;
-        line-height: 68px;
-        margin-left: 389px;
-        -webkit-transition: color 250ms ease-in-out;
-        -moz-transition: color 250ms ease-in-out;
-        -o-transition: color 250ms ease-in-out;
-        transition: color 250ms ease-in-out;
-      }
-      
-      .news:hover > .news_title {
-        color: #16b475;
-      }
+    .news_title {
+      margin-top: 12.5px;
+      height: 68px;
+      line-height: 68px;
+      margin-left: 389px;
+      -webkit-transition: color 250ms ease-in-out;
+      -moz-transition: color 250ms ease-in-out;
+      -o-transition: color 250ms ease-in-out;
+      transition: color 250ms ease-in-out;
+    }
+    
+    .news:hover > .news_title {
+      color: #16b475;
+    }
 
-      .news_title > span {
-        display: inline-block;
-        vertical-align: middle;
-        font-family: 'Noto Sans Korean Bold';
-        font-size: 24px;
-        line-height: 34px;
-      }
-      
-      #news_more {
-        display: inline-block;
-        font-family: 'Noto Sans Korean Medium';
-        color: #808285;
-        font-size: 18px;
-        line-height: 18px;
-        padding-bottom: 8px;
-        border-bottom: solid 1px #b0b1b4;
-        margin-top: 33px;
-        float: right;
-      }
-      
-    </style>
-    <title>와글 WAGL | 프로젝트</title>
-  </head>
-  <body>
-    <div id="header" class="section transparent">
-      <div class="content">
-        <a href="index.html">
-          <img id="logo" src="img/Wagl_logo_Kor.png">
+    .news_title > span {
+      display: inline-block;
+      vertical-align: middle;
+      font-family: 'Noto Sans Korean Bold';
+      font-size: 24px;
+      line-height: 34px;
+    }
+    
+    #news_more {
+      display: inline-block;
+      font-family: 'Noto Sans Korean Medium';
+      color: #808285;
+      font-size: 18px;
+      line-height: 18px;
+      padding-bottom: 8px;
+      border-bottom: solid 1px #b0b1b4;
+      margin-top: 33px;
+      float: right;
+    }
+    
+  </style>
+  <title>와글 WAGL | 프로젝트</title>
+</head>
+<body>
+  {% include navbar.html %}
+  <div id="space_header"></div>
+  <div id="cover" class="section message">
+    <div class="content">
+      Civic-tech<br>
+      일상기술과 민주주의가 만나다
+    </div>
+  </div>
+  <div class="section">
+    <div id="main" class="content center">
+      <div class="paragraph">
+        <div class="header2">
+          민주주의 아티스트가 되는<br>
+          가장 확실한 방법
+        </div>
+        <div class="text">
+          <div class="header3">
+            와글와글한 시민들의 목소리야말로<br>
+            더 나은 민주주의를 꽃피울 소중한 정치적 자산입니다.
+          </div>
+          와글은 일상기술과 민주주의가 만날 수 있는 디지털 플랫폼을 연구하고 제공함으로써, 더 많은 사람들이 정치적 효능감을 갖고 공동체의 문제를 해결하기 위해 지속적으로 참여함으로써 A.R.T. 민주주의를 만들어가는 아티스트가 되기를 희망합니다.
+        </div>
+      </div>
+      <img src="img/project/civictech/Ping_img.png">
+      <div class="paragraph">
+        <div class="header2">
+          P!NG KOREA 핑코리아
+        </div>
+        <div class="text">
+          “국내 최초의 온라인 투표 가이드 서비스”를 표방하는 핑코리아는 와글 내에서 인큐베이팅한 정치 애플리케이션 프로젝트 팀에 의해 탄생했습니다. 다차원 정치 성향 분석을 통해 정치, 외교, 경제, 사회 등 여러 영역의 구체적인 이슈에 대한 이용자의 답변을 토대로 서비스 이용자와 정당 또는 후보 간의 궁합을 시각적으로 보여줌으로써, 이용자의 정책 투표를 독려합니다.<br>
+          <a id="btn_ping" href="http://pingkorea.com/">핑코리아 바로가기</a>
+        </div>
+      </div>
+      <div id="news">
+        <a class="news" href="http://www.mediaus.co.kr/news/articleView.html?idxno=54934">
+          <div class="news_source">미디어스</div>
+          <div class="news_date">2016.04.07</div>
+          <div class="news_title">
+            <span>나와 맞는 정당 찾기, 1분 30초면 충분!</span>
+          </div>
         </a>
-        <nav>
-          <a href="index.html">처음으로</a>
-          <a href="about.html">와글 소개</a>
-          <a href="manifesto.html">매니페스토</a>
-          <!--
-          <a href="voice.html">우리의 목소리</a>
-          <a href="waglpedia.html">와글피디아</a>
-          -->
-          <a href="project.html">프로젝트</a>
-          <a target="_blank" href="https://medium.com/wagl-art">블로그</a>
-        </nav>
-        <div id="lang">
-          <a id="lang_kor" class="lang on">KOR</a>
-          <a id="lang_eng" class="lang" href="en/civictech.html">ENG</a>
-        </div>
-        <img id="btn_menu" src="img/menu.png">
-        <div id="search"><img class="btnIcon" src="img/search.png">Search</div>
+        <a class="news" href="http://www.bloter.net/archives/253185">
+          <div class="news_source">블로터</div>
+          <div class="news_date">2016.03.30</div>
+          <div class="news_title">
+            <span>“잠깐! 나와 궁합 맞는 정당은 확인하고 투표하시나요?”</span>
+          </div>
+        </a>
+        <a id="news_more">
+          + 핑코리아 관련 기사 더 보기
+        </a>
       </div>
     </div>
-    <div id="space_header"></div>
-    <div id="cover" class="section message">
-      <div class="content">
-        Civic-tech<br>
-        일상기술과 민주주의가 만나다
-      </div>
+  </div>
+  <div id="footer" class="section">
+    <div class="content">
+      서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
+      T. 070-8250-0346 info@wagl.net<br>
+      ©WAGL since 2015
     </div>
-    <div class="section">
-      <div id="main" class="content center">
-        <div class="paragraph">
-          <div class="header2">
-            민주주의 아티스트가 되는<br>
-            가장 확실한 방법
-          </div>
-          <div class="text">
-            <div class="header3">
-              와글와글한 시민들의 목소리야말로<br>
-              더 나은 민주주의를 꽃피울 소중한 정치적 자산입니다.
-            </div>
-            와글은 일상기술과 민주주의가 만날 수 있는 디지털 플랫폼을 연구하고 제공함으로써, 더 많은 사람들이 정치적 효능감을 갖고 공동체의 문제를 해결하기 위해 지속적으로 참여함으로써 A.R.T. 민주주의를 만들어가는 아티스트가 되기를 희망합니다.
-          </div>
-        </div>
-        <img src="img/project/civictech/Ping_img.png">
-        <div class="paragraph">
-          <div class="header2">
-            P!NG KOREA 핑코리아
-          </div>
-          <div class="text">
-            “국내 최초의 온라인 투표 가이드 서비스”를 표방하는 핑코리아는 와글 내에서 인큐베이팅한 정치 애플리케이션 프로젝트 팀에 의해 탄생했습니다. 다차원 정치 성향 분석을 통해 정치, 외교, 경제, 사회 등 여러 영역의 구체적인 이슈에 대한 이용자의 답변을 토대로 서비스 이용자와 정당 또는 후보 간의 궁합을 시각적으로 보여줌으로써, 이용자의 정책 투표를 독려합니다.<br>
-            <a id="btn_ping" href="http://pingkorea.com/">핑코리아 바로가기</a>
-          </div>
-        </div>
-        <div id="news">
-          <a class="news" href="http://www.mediaus.co.kr/news/articleView.html?idxno=54934">
-            <div class="news_source">미디어스</div>
-            <div class="news_date">2016.04.07</div>
-            <div class="news_title">
-              <span>나와 맞는 정당 찾기, 1분 30초면 충분!</span>
-            </div>
-          </a>
-          <a class="news" href="http://www.bloter.net/archives/253185">
-            <div class="news_source">블로터</div>
-            <div class="news_date">2016.03.30</div>
-            <div class="news_title">
-              <span>“잠깐! 나와 궁합 맞는 정당은 확인하고 투표하시나요?”</span>
-            </div>
-          </a>
-          <a id="news_more">
-            + 핑코리아 관련 기사 더 보기
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="footer" class="section">
-      <div class="content">
-        서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
-        T. 070-8250-0346 info@wagl.net<br>
-        ©WAGL since 2015
-      </div>
-    </div>
-    <script src="js/jquery-2.2.2.min.js"></script>
-    <script>
-      
-      // nav menu button event
-      $('#btn_menu').mouseover(function(){
-        $('#btn_menu').hide()
-        $('#search').hide()
-        $('nav').show()
-      })
-      
-      $('nav').mouseleave(function(){
-        $('#btn_menu').show()
-        $('#search').show()
-        $(this).hide()
-      })
-      
-    </script>
-  </body>
+  </div>
+  <script src="js/jquery-2.2.2.min.js"></script>
+  <script>
+    
+    // nav menu button event
+    $('#btn_menu').mouseover(function(){
+      $('#btn_menu').hide()
+      $('#search').hide()
+      $('nav').show()
+    })
+    
+    $('nav').mouseleave(function(){
+      $('#btn_menu').show()
+      $('#search').show()
+      $(this).hide()
+    })
+    
+  </script>
+</body>
 </html>

@@ -1,137 +1,118 @@
+---
+# Front matter block to use liquid tags                                                              
+---
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="css/base.css" rel="stylesheet" type="text/css">
-    <link href="css/index.css" rel="stylesheet" type="text/css">
-    <style>
+<head>
+  <meta charset="utf-8">
+  <link href="css/base.css" rel="stylesheet" type="text/css">
+  <link href="css/index.css" rel="stylesheet" type="text/css">
+  <style>
+  
+    #cover {
+      background: url(img/project/cover.png);
+      background-size: cover;
+      height: 225px;
+      padding-top: 182px;
+    }
     
-      #cover {
-        background: url(img/project/cover.png);
-        background-size: cover;
-        height: 225px;
-        padding-top: 182px;
-      }
-      
-      .text {
-        text-align: center;
-        color: #16b475;
-        font-family: 'Noto Sans Korean Medium';
-        font-size: 18px;
-        line-height: 30px;
-        margin-top: -38px;;
-        margin-bottom: 113px;
-      }
-      
-    </style>
-    <title>와글 WAGL | 프로젝트</title>
-  </head>
-  <body>
-    <div id="header" class="section transparent">
-      <div class="content">
-        <a href="index.html">
-          <img id="logo" src="img/Wagl_logo_Kor.png">
+    .text {
+      text-align: center;
+      color: #16b475;
+      font-family: 'Noto Sans Korean Medium';
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: -38px;;
+      margin-bottom: 113px;
+    }
+    
+  </style>
+  <title>와글 WAGL | 프로젝트</title>
+</head>
+<body>
+  {% include navbar.html %}
+  <div id="space_header"></div>
+  <div id="cover" class="section message">
+    <div class="content">
+      더 나은 민주주의에 관한 사례 소개 및 컨텐츠 제작
+    </div>
+  </div>
+  <div id="section3" class="section">
+    <div class="content">
+      <div class="title">
+        프로젝트
+        <div class="decorator"></div>
+      </div>
+      <div class="text">
+        와글은 "군중의 힘으로 만들어가는 더 나은 민주주의"라는 비전을<br>
+        다양한 프로젝트를 통해 이루어나가고 있습니다.<br>
+        프로젝트에 대한 아이디어와 협업 제안은 언제나 환영합니다.
+      </div>
+      <div id="projects">
+        <a id="project_collaboration" class="project" href="collaboration.html">
+          <div class="project_category">Collaboration</div>
+          <div class="project_name">협업과 네트워킹</div>
+          <div class="project_explain">
+            세상을 바꾸고자 행동하는 지성과<br>
+            만납니다.
+          </div>
+          <img class="project_more" src="img/project/btnMore.png">
         </a>
-        <nav>
-          <a href="index.html">처음으로</a>
-          <a href="about.html">와글 소개</a>
-          <a href="manifesto.html">매니페스토</a>
-          <!--
-          <a href="voice.html">우리의 목소리</a>
-          <a href="waglpedia.html">와글피디아</a>
-          -->
-          <a href="project.html">프로젝트</a>
-          <a target="_blank" href="https://medium.com/wagl-art">블로그</a>
-        </nav>
-        <div id="lang">
-          <a id="lang_kor" class="lang on">KOR</a>
-          <a id="lang_eng" class="lang" href="en/project.html">ENG</a>
-        </div>
-        <img id="btn_menu" src="img/menu.png">
-        <div id="search"><img class="btnIcon" src="img/search.png">Search</div>
+        <a id="project_campaign" class="project" href="campaign">
+          <div class="project_category">Campaign</div>
+          <div class="project_name">A.R.T. 민주주의 연구와 소개</div>
+          <div class="project_explain">
+            더 나은 민주주의의 구체적인 사례를<br>
+            발굴하고, 연구하고, 소개합니다.
+          </div>
+          <img class="project_more" src="img/project/btnMore.png">
+        </a>
+        <a id="project_civictech" class="project" href="civictech.html">
+          <div class="project_category">Civic tech</div>
+          <div class="project_name">일상기술과 민주주의의 만남</div>
+          <div class="project_explain">
+            시민의 목소리를 정치적 자산으로<br>
+            만들 일상기술을 제안합니다.
+          </div>
+          <img class="project_more" src="img/project/btnMore.png">
+        </a>
+        <a id="project_community" class="project" href="community.html">
+          <div class="project_category">Community</div>
+          <div class="project_name">풀뿌리 커뮤니티 지원 및 발굴</div>
+          <div class="project_explain">
+            남녀노소 모든 시민 그룹과 만나<br>
+            아이디어를 구체적인 실천으로<br>
+            옮깁니다.
+          </div>
+          <img class="project_more" src="img/project/btnMore.png">
+        </a>
       </div>
     </div>
-    <div id="space_header"></div>
-    <div id="cover" class="section message">
-      <div class="content">
-        더 나은 민주주의에 관한 사례 소개 및 컨텐츠 제작
-      </div>
+  </div>
+  <div id="footer" class="section">
+    <div class="content">
+      서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
+      T. 070-8250-0346 info@wagl.net<br>
+      ©WAGL since 2015
     </div>
-    <div id="section3" class="section">
-      <div class="content">
-        <div class="title">
-          프로젝트
-          <div class="decorator"></div>
-        </div>
-        <div class="text">
-          와글은 "군중의 힘으로 만들어가는 더 나은 민주주의"라는 비전을<br>
-          다양한 프로젝트를 통해 이루어나가고 있습니다.<br>
-          프로젝트에 대한 아이디어와 협업 제안은 언제나 환영합니다.
-        </div>
-        <div id="projects">
-          <a id="project_collaboration" class="project" href="collaboration.html">
-            <div class="project_category">Collaboration</div>
-            <div class="project_name">협업과 네트워킹</div>
-            <div class="project_explain">
-              세상을 바꾸고자 행동하는 지성과<br>
-              만납니다.
-            </div>
-            <img class="project_more" src="img/project/btnMore.png">
-          </a>
-          <a id="project_campaign" class="project" href="campaign">
-            <div class="project_category">Campaign</div>
-            <div class="project_name">A.R.T. 민주주의 연구와 소개</div>
-            <div class="project_explain">
-              더 나은 민주주의의 구체적인 사례를<br>
-              발굴하고, 연구하고, 소개합니다.
-            </div>
-            <img class="project_more" src="img/project/btnMore.png">
-          </a>
-          <a id="project_civictech" class="project" href="civictech.html">
-            <div class="project_category">Civic tech</div>
-            <div class="project_name">일상기술과 민주주의의 만남</div>
-            <div class="project_explain">
-              시민의 목소리를 정치적 자산으로<br>
-              만들 일상기술을 제안합니다.
-            </div>
-            <img class="project_more" src="img/project/btnMore.png">
-          </a>
-          <a id="project_community" class="project" href="community.html">
-            <div class="project_category">Community</div>
-            <div class="project_name">풀뿌리 커뮤니티 지원 및 발굴</div>
-            <div class="project_explain">
-              남녀노소 모든 시민 그룹과 만나<br>
-              아이디어를 구체적인 실천으로<br>
-              옮깁니다.
-            </div>
-            <img class="project_more" src="img/project/btnMore.png">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="footer" class="section">
-      <div class="content">
-        서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
-        T. 070-8250-0346 info@wagl.net<br>
-        ©WAGL since 2015
-      </div>
-    </div>
-    <script src="js/jquery-2.2.2.min.js"></script>
-    <script>
-      
-      // nav menu button event
-      $('#btn_menu').mouseover(function(){
-        $('#btn_menu').hide()
-        $('#search').hide()
-        $('nav').show()
-      })
-      
-      $('nav').mouseleave(function(){
-        $('#btn_menu').show()
-        $('#search').show()
-        $(this).hide()
-      })
-      
-    </script>
-  </body>
+  </div>
+  <script src="js/jquery-2.2.2.min.js"></script>
+  <script>
+    
+    // nav menu button event
+    $('#btn_menu').mouseover(function(){
+      $('#btn_menu').hide()
+      $('#search').hide()
+      $('nav').show()
+    })
+    
+    $('nav').mouseleave(function(){
+      $('#btn_menu').show()
+      $('#search').show()
+      $(this).hide()
+    })
+    
+  </script>
+</body>
 </html>

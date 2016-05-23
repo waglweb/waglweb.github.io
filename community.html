@@ -1,158 +1,139 @@
+---
+# Front matter block to use liquid tags                                                              
+---
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="css/base.css" rel="stylesheet" type="text/css">
-    <link href="css/project.css" rel="stylesheet" type="text/css">
-    <style>
+<head>
+  <meta charset="utf-8">
+  <link href="css/base.css" rel="stylesheet" type="text/css">
+  <link href="css/project.css" rel="stylesheet" type="text/css">
+  <style>
+  
+    #cover {
+      background: url(img/project/community/cover.png);
+      background-size: cover;
+      height: 225px;
+      padding-top: 155px;
+    }
     
-      #cover {
-        background: url(img/project/community/cover.png);
-        background-size: cover;
-        height: 225px;
-        padding-top: 155px;
-      }
-      
-      #main {
-        padding: 135px 0 162px;
-      }
-      
-      .paragraph {
-        margin-bottom: 162px;
-      }
-      
-      .paragraph.small_bot_margin {
-        margin-bottom: 75px; 
-      }
-      
-      .paragraph.small_top_margin {
-        margin-top: 70px;
-      }
-      
-      .tiles {
-        display: inline-block;
-        border-top: solid 1px #bebebe;
-        width: 938px;
-      }
-      
-      .tile_line {
-        border-bottom: solid 1px #bebebe;
-        height: 227px;
-      }
-      
-      .tile {
-        display: inline-block;
-        width: 312px;
-        height: 227px;
-        border-right: solid 1px #bebebe;
-        overflow: hidden;
-        float: left;
-      }
-      
-      .tile.last {
-        border-right: 0;
-      }
-      
-    </style>
-    <title>와글 WAGL | 프로젝트</title>
-  </head>
-  <body>
-    <div id="header" class="section transparent">
-      <div class="content">
-        <a href="index.html">
-          <img id="logo" src="img/Wagl_logo_Kor.png">
-        </a>
-        <nav>
-          <a href="index.html">처음으로</a>
-          <a href="about.html">와글 소개</a>
-          <a href="manifesto.html">매니페스토</a>
-          <!--
-          <a href="voice.html">우리의 목소리</a>
-          <a href="waglpedia.html">와글피디아</a>
-          -->
-          <a href="project.html">프로젝트</a>
-          <a target="_blank" href="https://medium.com/wagl-art">블로그</a>
-        </nav>
-        <div id="lang">
-          <a id="lang_kor" class="lang on">KOR</a>
-          <a id="lang_eng" class="lang" href="en/community.html">ENG</a>
-        </div>
-        <img id="btn_menu" src="img/menu.png">
-        <div id="search"><img class="btnIcon" src="img/search.png">Search</div>
-      </div>
+    #main {
+      padding: 135px 0 162px;
+    }
+    
+    .paragraph {
+      margin-bottom: 162px;
+    }
+    
+    .paragraph.small_bot_margin {
+      margin-bottom: 75px; 
+    }
+    
+    .paragraph.small_top_margin {
+      margin-top: 70px;
+    }
+    
+    .tiles {
+      display: inline-block;
+      border-top: solid 1px #bebebe;
+      width: 938px;
+    }
+    
+    .tile_line {
+      border-bottom: solid 1px #bebebe;
+      height: 227px;
+    }
+    
+    .tile {
+      display: inline-block;
+      width: 312px;
+      height: 227px;
+      border-right: solid 1px #bebebe;
+      overflow: hidden;
+      float: left;
+    }
+    
+    .tile.last {
+      border-right: 0;
+    }
+    
+  </style>
+  <title>와글 WAGL | 프로젝트</title>
+</head>
+<body>
+  {% include navbar.html %}
+  <div id="space_header"></div>
+  <div id="cover" class="section message">
+    <div class="content">
+      Community<br>
+      풀뿌리 커뮤니티 지원과 발굴
     </div>
-    <div id="space_header"></div>
-    <div id="cover" class="section message">
-      <div class="content">
-        Community<br>
-        풀뿌리 커뮤니티 지원과 발굴
+  </div>
+  <div class="section">
+    <div id="main" class="content center">
+      <div class="paragraph">
+        <div class="header2">
+          와글와글, 풀뿌리의 힘
+        </div>
+        <div class="text">
+          <div class="header3">
+            기존의 정치와 권력으로부터 독립된 풀뿌리 단위야말로<br>
+            새로운 정치적 상상력을 공유하고 실현시킬 주체입니다.
+          </div>
+          와글은 마을기업, 협동조합, 지역공동체 청년/청소년 네트워크. 사회적기업, 소셜벤처 등 유연하고 자율적인 모임과 함께 가장 아름다운 민주주의 이상을 그려나갑니다.
+        </div>
       </div>
-    </div>
-    <div class="section">
-      <div id="main" class="content center">
-        <div class="paragraph">
-          <div class="header2">
-            와글와글, 풀뿌리의 힘
-          </div>
-          <div class="text">
-            <div class="header3">
-              기존의 정치와 권력으로부터 독립된 풀뿌리 단위야말로<br>
-              새로운 정치적 상상력을 공유하고 실현시킬 주체입니다.
-            </div>
-            와글은 마을기업, 협동조합, 지역공동체 청년/청소년 네트워크. 사회적기업, 소셜벤처 등 유연하고 자율적인 모임과 함께 가장 아름다운 민주주의 이상을 그려나갑니다.
-          </div>
+      <img src="img/project/community/Community_img.png">
+      <div class="paragraph small_top_margin small_bot_margin">
+        <div class="header2">
+          청소년 정치참여 프로젝트
         </div>
-        <img src="img/project/community/Community_img.png">
-        <div class="paragraph small_top_margin small_bot_margin">
-          <div class="header2">
-            청소년 정치참여 프로젝트
+        <div class="text">
+          <div class="header3">
+            청소년들이 가진 문제와 의견을 드러내고 함께 이야기할<br>
+            온라인 청소년 공론장을 만듭니다.
           </div>
-          <div class="text">
-            <div class="header3">
-              청소년들이 가진 문제와 의견을 드러내고 함께 이야기할<br>
-              온라인 청소년 공론장을 만듭니다.
-            </div>
-            청소년들이 독자적인 사회 구성원으로 자리매김하기 위해서는 자신들의 이야기를 할 수 있는 공간을 만들고, 이곳에서 적극적인 의견 교류를 통해 청소년의 다양한 목소리를 묶어내고, 이것이 사회적으로 대변될 수 있는 기회를 탐색할 수 있습니다.
-          </div>
+          청소년들이 독자적인 사회 구성원으로 자리매김하기 위해서는 자신들의 이야기를 할 수 있는 공간을 만들고, 이곳에서 적극적인 의견 교류를 통해 청소년의 다양한 목소리를 묶어내고, 이것이 사회적으로 대변될 수 있는 기회를 탐색할 수 있습니다.
         </div>
-        <div class="tiles">
-          <div class="tile_line">
-            <div class="tile">
-              <img src="img/project/community/더민플.png">
-            </div>
-            <div class="tile">
-              <img src="img/project/community/코드포서울.png">
-            </div>
-            <div class="tile last">
-              <img src="img/project/community/cck.png">
-            </div>
+      </div>
+      <div class="tiles">
+        <div class="tile_line">
+          <div class="tile">
+            <img src="img/project/community/더민플.png">
+          </div>
+          <div class="tile">
+            <img src="img/project/community/코드포서울.png">
+          </div>
+          <div class="tile last">
+            <img src="img/project/community/cck.png">
           </div>
         </div>
       </div>
     </div>
-    <div id="footer" class="section">
-      <div class="content">
-        서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
-        T. 070-8250-0346 info@wagl.net<br>
-        ©WAGL since 2015
-      </div>
+  </div>
+  <div id="footer" class="section">
+    <div class="content">
+      서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
+      T. 070-8250-0346 info@wagl.net<br>
+      ©WAGL since 2015
     </div>
-    <script src="js/jquery-2.2.2.min.js"></script>
-    <script>
-      
-      // nav menu button event
-      $('#btn_menu').mouseover(function(){
-        $('#btn_menu').hide()
-        $('#search').hide()
-        $('nav').show()
-      })
-      
-      $('nav').mouseleave(function(){
-        $('#btn_menu').show()
-        $('#search').show()
-        $(this).hide()
-      })
-      
-    </script>
-  </body>
+  </div>
+  <script src="js/jquery-2.2.2.min.js"></script>
+  <script>
+    
+    // nav menu button event
+    $('#btn_menu').mouseover(function(){
+      $('#btn_menu').hide()
+      $('#search').hide()
+      $('nav').show()
+    })
+    
+    $('nav').mouseleave(function(){
+      $('#btn_menu').show()
+      $('#search').show()
+      $(this).hide()
+    })
+    
+  </script>
+</body>
 </html>

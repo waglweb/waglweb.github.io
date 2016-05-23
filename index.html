@@ -1,383 +1,364 @@
+---
+# Front matter block to use liquid tags                                                              
+---
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="css/base.css" rel="stylesheet" type="text/css">
-    <link href="css/index.css" rel="stylesheet" type="text/css">
-    <title>와글 WAGL</title>
-  </head>
-  <body>
-    <div id="header" class="section transparent">
-      <div class="content">
-        <a href="index.html">
-          <img id="logo" src="img/Wagl_logo_Kor.png">
-        </a>
-        <nav>
-          <a href="index.html">처음으로</a>
-          <a href="about.html">와글 소개</a>
-          <a href="manifesto.html">매니페스토</a>
-          <!--
-          <a href="voice.html">우리의 목소리</a>
-          <a href="waglpedia.html">와글피디아</a>
-          -->
-          <a href="project.html">프로젝트</a>
-          <a target="_blank" href="https://medium.com/wagl-art">블로그</a>
-        </nav>
-        <div id="lang">
-          <a id="lang_kor" class="lang on">KOR</a>
-          <a id="lang_eng" class="lang" href="en/index.html">ENG</a>
+<head>
+  <meta charset="utf-8">
+  <link href="css/base.css" rel="stylesheet" type="text/css">
+  <link href="css/index.css" rel="stylesheet" type="text/css">
+  <title>와글 WAGL</title>
+</head>
+<body>
+  {% include navbar.html %}
+  <div id="section1" class="section">
+    <video id="bgvideo" muted autoplay loop>
+      <source src="media/bg_main.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <div id="text">
+        <div id="title">
+          WAGL
         </div>
-        <img id="btn_menu" src="img/menu.png">
-        <div id="search"><img class="btnIcon" src="img/search.png">Search</div>
+        <div id="slogan">
+          We All Govern Lab
+        </div>
+        <div id="message">
+          시민 모두가 정치의 주인공이 되는 세상을 꿈꾸는 와글은,<br>
+          와글와글 다양한 목소리로 터져 나오는 군중의 아우성으로<br>
+          <span class="bold">약속한 바에 대해 책임을 지고(Accountable)<br>
+          시민의 요구에 유연하고 기민하게 반응하며(Responsive)<br>
+          정보와 권한행사 과정이 투명하게 드러나는(Transparent)</span><br>
+          A.R.T. 민주주의를 만들어가는 정치 스타트업(Politics Startup)입니다.
+        </div>
       </div>
     </div>
-    <div id="section1" class="section">
-      <video id="bgvideo" muted autoplay loop>
-        <source src="media/bg_main.mp4" type="video/mp4">
-      </video>
-      <div class="content">
-        <div id="text">
-          <div id="title">
+  </div>
+  <!--
+  <div id="section2" class="section green">
+    <div class="content">
+      <img id="voice_quote" src="img/main/quote.png">
+      <img id="voice_before" src="img/main/before.png">
+      <img id="voice_next" src="img/main/next.png">
+      <div class="voice_message">
+        사회에 관심을 갖고 내 의견을 내는 것이 정치의 시작이라고<br>
+        생각합니다. 사회에 관심을 갖고 내 의견을 내는 것이 정치의 시작이라고<br>
+        생각합니다. 그렇고 그렇고 그렇습니다.<br>
+      </div>
+      <div class="voice_speaker">박아람 님</div>
+      <div id="voice_go_container">
+        <a id="voice_go" href="voice.html">우리의 목소리 바로가기</a>
+      </div>        
+    </div>
+  </div>
+  -->
+  <div id="section3" class="section">
+    <div class="content">
+      <div class="title">프로젝트</div>
+      <div class="subtitle">와글의 프로젝트를 소개합니다.</div>
+      <div id="projects">
+        <a id="project_collaboration" class="project" href="collaboration.html">
+          <div class="project_category">Collaboration</div>
+          <div class="project_name">협업과 네트워킹</div>
+          <div class="project_explain">
+            세상을 바꾸고자 행동하는 지성과<br>
+            만납니다.
+          </div>
+          <img class="project_more" src="img/project/btnMore.png">
+        </a>
+        <a id="project_campaign" class="project" href="campaign.html">
+          <div class="project_category">Campaign</div>
+          <div class="project_name">A.R.T. 민주주의 연구와 소개</div>
+          <div class="project_explain">
+            더 나은 민주주의의 구체적인 사례를<br>
+            발굴하고, 연구하고, 소개합니다.
+          </div>
+          <img class="project_more" src="img/project/btnMore.png">
+        </a>
+        <a id="project_civictech" class="project" href="civictech.html">
+          <div class="project_category">Civic tech</div>
+          <div class="project_name">일상기술과 민주주의의 만남</div>
+          <div class="project_explain">
+            시민의 목소리를 정치적 자산으로<br>
+            만들 일상기술을 제안합니다.
+          </div>
+          <img class="project_more" src="img/project/btnMore.png">
+        </a>
+        <a id="project_community" class="project" href="community.html">
+          <div class="project_category">Community</div>
+          <div class="project_name">풀뿌리 커뮤니티 지원 및 발굴</div>
+          <div class="project_explain">
+            남녀노소 모든 시민 그룹과 만나<br>
+            아이디어를 구체적인 실천으로<br>
+            옮깁니다.
+          </div>
+          <img class="project_more" src="img/project/btnMore.png">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="section4" class="section">
+    <div class="content">
+      <div class="title">와글피디아</div>
+      <div class="subtitle">당신의 참여를 북돋울 도구를 소개합니다</div>
+      <div id="actions">
+        <div class="action_line">
+          <div class="action first">
+            <div class="action_logo">
+              <img src="waglpedia/Parti/parti.png">
+            </div>
+            <div class="action_detail">
+              <div class="action_name">Parti</div>
+              <div class="action_explain">
+                이슈 토론과 찬반투표, 자료 아카이빙을 한 번에 할 수 있는 온라인 공론장
+              </div>
+            </div>
+          </div>
+          <div class="action">
+            <div class="action_logo">
+              <img src="waglpedia/loomio/loomio.png">
+            </div>
+            <div class="action_detail">
+              <div class="action_name">Loomio</div>
+              <div class="action_explain">
+                전세계인이 사용하는, 가장 널리 알려진 의사결정 플랫폼
+              </div>
+            </div>
+          </div>
+          <div class="action">
+            <div class="action_logo">
+              <img src="waglpedia/polis/polis.png">
+            </div>
+            <div class="action_detail">
+              <div class="action_name">Polis</div>
+              <div class="action_explain">
+                의사결정에 따라 2차원 매핑 기능을 지원하는 다중 의사결정 플랫폼
+              </div>
+            </div>
+          </div>
+          <div class="action">
+            <div class="action_logo">
+              <img src="waglpedia/brigade/brigade.png">
+            </div>
+            <div class="action_detail">
+              <div class="action_name">Brigade</div>
+              <div class="action_explain">
+                페이스북 공동설립에 참여한 션 파커의 '브리게이드 미디어'가 만든 종합 정치 SNS
+              </div>
+            </div>
+          </div>
+          <div class="action last">
+            <div class="action_logo last">
+              <img src="waglpedia/decide_madrid/decide_madrid.png">
+            </div>
+            <div class="action_detail">
+              <div class="action_name">Decide Madrid</div>
+              <div class="action_explain">
+                마드리드 시를 이끌고 있는 시민 정당 아호라 마드리드의 시민 참여 온라인 플랫폼
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="action_line">
+          <div class="action first">
+            <div class="action_logo">
+              <img src="waglpedia/citizen_budget/citizen_budget.png">
+            </div>
+            <div class="action_detail">
+              <div class="action_name">Citizen Budget</div>
+              <div class="action_explain">
+                캐나다 비영리 벤처 오픈노스가 개발한 예산 시뮬레이션 프로그램
+              </div>
+            </div>
+          </div>
+          <div class="action">
+            <div class="action_logo">
+              <img src="waglpedia/open_ministry/open_ministry.png">
+            </div>
+            <div class="action_detail">
+              <div class="action_name">Open Ministry</div>
+              <div class="action_explain">
+                핀란드의 국민발의 제도를 정착시킨 위키형 온라인 법안발의 플랫폼
+              </div>
+            </div>
+          </div>
+          <div class="action">
+            <div class="action_logo">
+              <img src="waglpedia/ping/ping.png">
+            </div>
+            <div class="action_detail">
+              <div class="action_name">핑코리아</div>
+              <div class="action_explain">
+                자체 알고리즘을 기반으로 만든 투표 가이드 서비스로 이용자와 정당/정치인을 매칭
+              </div>
+            </div>
+          </div>
+          <div class="action">
+            <div class="action_logo">
+              <img src="waglpedia/g0v/g0v.png">
+            </div>
+            <div class="action_detail">
+              <div class="action_name">g0v</div>
+              <div class="action_explain">
+                대만의 공공 데이터 아카이브이자 개발자 커뮤니티로 다양한 오픈 소스 프로젝트 확인이 가능
+              </div>
+            </div>
+          </div>
+          <div class="action last">
+            <div class="action_logo last" num=10>
+              ＋MORE
+            </div>
+          </div>            
+        </div>
+      </div>      
+    </div>
+  </div>
+  <div id="section5" class="section">
+    <div class="content">
+      <div class="title">와글 스토리</div>
+      <div class="subtitle">와글이 전하는 따끈따끈한 소식들</div>
+      <div id="storys">
+        <div id="story1" class="story">
+          <div class="story_top">
+            <div class="story_title">
+              <div>와글 홈페이지가</div>
+              <div>새로 문을 열었습니다.</div>
+            </div>
+          </div>
+          <div class="story_summary">
+            와글 홈페이지가 새 단장을 했습니다. '와글은 어떤 곳인가요? '와글에선 무슨 일을 하나요?' 기본적인 질문에서부터 더 나은 민주주의를 고민하는 분들께 도움이 될 만한 정보를 앞으로 계속 소개해드릴 예정입니다.
+          </div>
+          <div class="story_separator"></div>
+          <div class="story_date">
+            2016. 04. 08.
+          </div>
+          <div class="story_source">
             WAGL
           </div>
-          <div id="slogan">
-            We All Govern Lab
+        </div>
+        <div id="story2" class="story">
+          <div class="story_top">
+            <img class="story_photo" src="img/main/story2.png">
+            <div class="story_title">
+              <div>"잠깐! 나와 궁합 맞는 정당은</div>
+              <div>확인하고 투표하시나요?"</div>
+              <div>투표가이드 서비스</div>
+              <div>P!NG 코리아 소개</div>
+            </div>
           </div>
-          <div id="message">
-            시민 모두가 정치의 주인공이 되는 세상을 꿈꾸는 와글은,<br>
-            와글와글 다양한 목소리로 터져 나오는 군중의 아우성으로<br>
-            <span class="bold">약속한 바에 대해 책임을 지고(Accountable)<br>
-            시민의 요구에 유연하고 기민하게 반응하며(Responsive)<br>
-            정보와 권한행사 과정이 투명하게 드러나는(Transparent)</span><br>
-            A.R.T. 민주주의를 만들어가는 정치 스타트업(Politics Startup)입니다.
+          <div class="story_summary">
+            와글이 인큐베이팅한 정치 앱 프로젝트 팀 '핑코리아' 서비스가 개시되었습니다. 여러 정책 분야에 대한 간단한 설문으로 자신과 맞는 정당과 정치인을 찾아드립니다.
+          </div>
+          <div class="story_separator"></div>
+          <div class="story_date">
+            2016. 03. 30.
+          </div>
+          <div class="story_source">
+            블로터
           </div>
         </div>
-      </div>
-    </div>
-    <!--
-    <div id="section2" class="section green">
-      <div class="content">
-        <img id="voice_quote" src="img/main/quote.png">
-        <img id="voice_before" src="img/main/before.png">
-        <img id="voice_next" src="img/main/next.png">
-        <div class="voice_message">
-          사회에 관심을 갖고 내 의견을 내는 것이 정치의 시작이라고<br>
-          생각합니다. 사회에 관심을 갖고 내 의견을 내는 것이 정치의 시작이라고<br>
-          생각합니다. 그렇고 그렇고 그렇습니다.<br>
-        </div>
-        <div class="voice_speaker">박아람 님</div>
-        <div id="voice_go_container">
-          <a id="voice_go" href="voice.html">우리의 목소리 바로가기</a>
-        </div>        
-      </div>
-    </div>
-    -->
-    <div id="section3" class="section">
-      <div class="content">
-        <div class="title">프로젝트</div>
-        <div class="subtitle">와글의 프로젝트를 소개합니다.</div>
-        <div id="projects">
-          <a id="project_collaboration" class="project" href="collaboration.html">
-            <div class="project_category">Collaboration</div>
-            <div class="project_name">협업과 네트워킹</div>
-            <div class="project_explain">
-              세상을 바꾸고자 행동하는 지성과<br>
-              만납니다.
-            </div>
-            <img class="project_more" src="img/project/btnMore.png">
-          </a>
-          <a id="project_campaign" class="project" href="campaign.html">
-            <div class="project_category">Campaign</div>
-            <div class="project_name">A.R.T. 민주주의 연구와 소개</div>
-            <div class="project_explain">
-              더 나은 민주주의의 구체적인 사례를<br>
-              발굴하고, 연구하고, 소개합니다.
-            </div>
-            <img class="project_more" src="img/project/btnMore.png">
-          </a>
-          <a id="project_civictech" class="project" href="civictech.html">
-            <div class="project_category">Civic tech</div>
-            <div class="project_name">일상기술과 민주주의의 만남</div>
-            <div class="project_explain">
-              시민의 목소리를 정치적 자산으로<br>
-              만들 일상기술을 제안합니다.
-            </div>
-            <img class="project_more" src="img/project/btnMore.png">
-          </a>
-          <a id="project_community" class="project" href="community.html">
-            <div class="project_category">Community</div>
-            <div class="project_name">풀뿌리 커뮤니티 지원 및 발굴</div>
-            <div class="project_explain">
-              남녀노소 모든 시민 그룹과 만나<br>
-              아이디어를 구체적인 실천으로<br>
-              옮깁니다.
-            </div>
-            <img class="project_more" src="img/project/btnMore.png">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="section4" class="section">
-      <div class="content">
-        <div class="title">와글피디아</div>
-        <div class="subtitle">당신의 참여를 북돋울 도구를 소개합니다</div>
-        <div id="actions">
-          <div class="action_line">
-            <div class="action first">
-              <div class="action_logo">
-                <img src="waglpedia/Parti/parti.png">
-              </div>
-              <div class="action_detail">
-                <div class="action_name">Parti</div>
-                <div class="action_explain">
-                  이슈 토론과 찬반투표, 자료 아카이빙을 한 번에 할 수 있는 온라인 공론장
-                </div>
-              </div>
-            </div>
-            <div class="action">
-              <div class="action_logo">
-                <img src="waglpedia/loomio/loomio.png">
-              </div>
-              <div class="action_detail">
-                <div class="action_name">Loomio</div>
-                <div class="action_explain">
-                  전세계인이 사용하는, 가장 널리 알려진 의사결정 플랫폼
-                </div>
-              </div>
-            </div>
-            <div class="action">
-              <div class="action_logo">
-                <img src="waglpedia/polis/polis.png">
-              </div>
-              <div class="action_detail">
-                <div class="action_name">Polis</div>
-                <div class="action_explain">
-                  의사결정에 따라 2차원 매핑 기능을 지원하는 다중 의사결정 플랫폼
-                </div>
-              </div>
-            </div>
-            <div class="action">
-              <div class="action_logo">
-                <img src="waglpedia/brigade/brigade.png">
-              </div>
-              <div class="action_detail">
-                <div class="action_name">Brigade</div>
-                <div class="action_explain">
-                  페이스북 공동설립에 참여한 션 파커의 '브리게이드 미디어'가 만든 종합 정치 SNS
-                </div>
-              </div>
-            </div>
-            <div class="action last">
-              <div class="action_logo last">
-                <img src="waglpedia/decide_madrid/decide_madrid.png">
-              </div>
-              <div class="action_detail">
-                <div class="action_name">Decide Madrid</div>
-                <div class="action_explain">
-                  마드리드 시를 이끌고 있는 시민 정당 아호라 마드리드의 시민 참여 온라인 플랫폼
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="action_line">
-            <div class="action first">
-              <div class="action_logo">
-                <img src="waglpedia/citizen_budget/citizen_budget.png">
-              </div>
-              <div class="action_detail">
-                <div class="action_name">Citizen Budget</div>
-                <div class="action_explain">
-                  캐나다 비영리 벤처 오픈노스가 개발한 예산 시뮬레이션 프로그램
-                </div>
-              </div>
-            </div>
-            <div class="action">
-              <div class="action_logo">
-                <img src="waglpedia/open_ministry/open_ministry.png">
-              </div>
-              <div class="action_detail">
-                <div class="action_name">Open Ministry</div>
-                <div class="action_explain">
-                  핀란드의 국민발의 제도를 정착시킨 위키형 온라인 법안발의 플랫폼
-                </div>
-              </div>
-            </div>
-            <div class="action">
-              <div class="action_logo">
-                <img src="waglpedia/ping/ping.png">
-              </div>
-              <div class="action_detail">
-                <div class="action_name">핑코리아</div>
-                <div class="action_explain">
-                  자체 알고리즘을 기반으로 만든 투표 가이드 서비스로 이용자와 정당/정치인을 매칭
-                </div>
-              </div>
-            </div>
-            <div class="action">
-              <div class="action_logo">
-                <img src="waglpedia/g0v/g0v.png">
-              </div>
-              <div class="action_detail">
-                <div class="action_name">g0v</div>
-                <div class="action_explain">
-                  대만의 공공 데이터 아카이브이자 개발자 커뮤니티로 다양한 오픈 소스 프로젝트 확인이 가능
-                </div>
-              </div>
-            </div>
-            <div class="action last">
-              <div class="action_logo last" num=10>
-                ＋MORE
-              </div>
-            </div>            
-          </div>
-        </div>      
-      </div>
-    </div>
-    <div id="section5" class="section">
-      <div class="content">
-        <div class="title">와글 스토리</div>
-        <div class="subtitle">와글이 전하는 따끈따끈한 소식들</div>
-        <div id="storys">
-          <div id="story1" class="story">
+        <a href="https://medium.com/wagl-art/공공데이터-는-민주주의로-가는-지름길-747718748e50">
+          <div id="story3" class="story">
             <div class="story_top">
+              <img class="story_photo" src="img/main/story3.png">
               <div class="story_title">
-                <div>와글 홈페이지가</div>
-                <div>새로 문을 열었습니다.</div>
+                <div>[와글이 만난 몽상가들]</div>
+                <div>'공공데이터'는 민주주의로</div>
+                <div>가는 지름길</div>
               </div>
             </div>
             <div class="story_summary">
-              와글 홈페이지가 새 단장을 했습니다. '와글은 어떤 곳인가요? '와글에선 무슨 일을 하나요?' 기본적인 질문에서부터 더 나은 민주주의를 고민하는 분들께 도움이 될 만한 정보를 앞으로 계속 소개해드릴 예정입니다.
+              시민은 어떻게 '똑똑한 유권자'가 될 수 있을까요? 나의 한 표가 절실한 정치인들에게 우리의 의견을 정확하게 알릴 방법은 없을까요? '오픈 노스'의 제임스 매키니가 힌트를 알려드립니다.
             </div>
             <div class="story_separator"></div>
             <div class="story_date">
-              2016. 04. 08.
+              2016. 03. 21.
             </div>
             <div class="story_source">
-              WAGL
+              한겨레21
             </div>
           </div>
-          <div id="story2" class="story">
-            <div class="story_top">
-              <img class="story_photo" src="img/main/story2.png">
-              <div class="story_title">
-                <div>"잠깐! 나와 궁합 맞는 정당은</div>
-                <div>확인하고 투표하시나요?"</div>
-                <div>투표가이드 서비스</div>
-                <div>P!NG 코리아 소개</div>
-              </div>
-            </div>
-            <div class="story_summary">
-              와글이 인큐베이팅한 정치 앱 프로젝트 팀 '핑코리아' 서비스가 개시되었습니다. 여러 정책 분야에 대한 간단한 설문으로 자신과 맞는 정당과 정치인을 찾아드립니다.
-            </div>
-            <div class="story_separator"></div>
-            <div class="story_date">
-              2016. 03. 30.
-            </div>
-            <div class="story_source">
-              블로터
-            </div>
-          </div>
-          <a href="https://medium.com/wagl-art/공공데이터-는-민주주의로-가는-지름길-747718748e50">
-            <div id="story3" class="story">
-              <div class="story_top">
-                <img class="story_photo" src="img/main/story3.png">
-                <div class="story_title">
-                  <div>[와글이 만난 몽상가들]</div>
-                  <div>'공공데이터'는 민주주의로</div>
-                  <div>가는 지름길</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="section6" class="section">
+    <div class="content">
+      <div id="join">
+        더 알고 싶으신가요?
+        <div class="small">
+          다양한 채널로 와글의 소식을 받아보실 수 있습니다.
+        </div>
+      </div>
+      <div id="sns">
+        <a href="https://www.facebook.com/wagl2015/" target="_blank">
+          <img id="facebook" src="img/main/facebook.png">
+        </a>
+        <a href="https://twitter.com/_WAGL" target="_blank">
+          <img id="twitter" src="img/main/twitter.png">
+        </a>
+        <a href="https://www.instagram.com/wagl.insta/" target="_blank">
+          <img id="instagram" src="img/main/instagram.png">
+        </a>
+        <a href="https://www.youtube.com/channel/UChiHajjCsZlMO8rEj6z2YmA" target="_blank">
+          <img id="youtube" src="img/main/youtube.png">
+        </a>
+        <a href="https://medium.com/wagl-art" target="_blank">
+          <img id="medium" src="img/main/medium.png">
+        </a>
+      </div>
+      <!-- Begin MailChimp form -->
+      <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+      <div id="subscribe" style="padding-bottom: 43px;">
+        <div id="mc_embed_signup">
+          <form action="//wag.us13.list-manage.com/subscribe/post?u=089fdffeb728818755616056f&amp;id=3da7d885cd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder=" 메일 주소를 입력해주세요" required style="width: 35%; min-width: 90px; margin: 0 auto 10px auto; padding: 0;">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_089fdffeb728818755616056f_3da7d885cd" tabindex="-1" value=""></div>
+                <div class="clear">
+                  <input type="submit" value="뉴스레터 구독하기" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color: #16b475; font-size: 18px; height: 48px; border-radius: 0; margin: 0 auto;">
                 </div>
               </div>
-              <div class="story_summary">
-                시민은 어떻게 '똑똑한 유권자'가 될 수 있을까요? 나의 한 표가 절실한 정치인들에게 우리의 의견을 정확하게 알릴 방법은 없을까요? '오픈 노스'의 제임스 매키니가 힌트를 알려드립니다.
-              </div>
-              <div class="story_separator"></div>
-              <div class="story_date">
-                2016. 03. 21.
-              </div>
-              <div class="story_source">
-                한겨레21
-              </div>
-            </div>
-          </a>
+            </form>
         </div>
       </div>
+      <!--End MailChimp form-->
     </div>
-    <div id="section6" class="section">
-      <div class="content">
-        <div id="join">
-          더 알고 싶으신가요?
-          <div class="small">
-            다양한 채널로 와글의 소식을 받아보실 수 있습니다.
-          </div>
-        </div>
-        <div id="sns">
-          <a href="https://www.facebook.com/wagl2015/" target="_blank">
-            <img id="facebook" src="img/main/facebook.png">
-          </a>
-          <a href="https://twitter.com/_WAGL" target="_blank">
-            <img id="twitter" src="img/main/twitter.png">
-          </a>
-          <a href="https://www.instagram.com/wagl.insta/" target="_blank">
-            <img id="instagram" src="img/main/instagram.png">
-          </a>
-          <a href="https://www.youtube.com/channel/UChiHajjCsZlMO8rEj6z2YmA" target="_blank">
-            <img id="youtube" src="img/main/youtube.png">
-          </a>
-          <a href="https://medium.com/wagl-art" target="_blank">
-            <img id="medium" src="img/main/medium.png">
-          </a>
-        </div>
-        <!-- Begin MailChimp form -->
-        <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-        <div id="subscribe" style="padding-bottom: 43px;">
-          <div id="mc_embed_signup">
-            <form action="//wag.us13.list-manage.com/subscribe/post?u=089fdffeb728818755616056f&amp;id=3da7d885cd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder=" 메일 주소를 입력해주세요" required style="width: 35%; min-width: 90px; margin: 0 auto 10px auto; padding: 0;">
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_089fdffeb728818755616056f_3da7d885cd" tabindex="-1" value=""></div>
-                  <div class="clear">
-                    <input type="submit" value="뉴스레터 구독하기" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color: #16b475; font-size: 18px; height: 48px; border-radius: 0; margin: 0 auto;">
-                  </div>
-                </div>
-              </form>
-          </div>
-        </div>
-        <!--End MailChimp form-->
-      </div>
+  </div>
+  <div id="footer" class="section">
+    <div class="content">
+      서울특별시 성동구 왕십리로2길 20, CND빌딩 4층<br>
+      T. 070-8250-0346 info@wagl.net<br>
+      ©WAGL since 2015
     </div>
-    <div id="footer" class="section">
-      <div class="content">
-        서울특별시 성동구 왕십리로2길 20, CND빌딩 4층<br>
-        T. 070-8250-0346 info@wagl.net<br>
-        ©WAGL since 2015
-      </div>
-    </div>
-    <script src="js/jquery-2.2.2.min.js"></script>
-    <script>
-      
-      // nav menu button event
-      $('#btn_menu').mouseover(function(){
-        $('#btn_menu').hide()
-        $('#search').hide()
-        $('nav').show()
-      })
-      
-      $('nav').mouseleave(function(){
-        $('#btn_menu').show()
-        $('#search').show()
-        $(this).hide()
-      })
-      
-      // header scroll event
-      $(window).scroll(function(){
-        if($(window).scrollTop() > 250){
-          $('#header').removeClass('transparent')
-        } else {
-          $('#header').addClass('transparent')
-        }
-      })
-      
-    </script>
-  </body>
+  </div>
+  <script src="js/jquery-2.2.2.min.js"></script>
+  <script>
+    
+    // nav menu button event
+    $('#btn_menu').mouseover(function(){
+      $('#btn_menu').hide()
+      $('#search').hide()
+      $('nav').show()
+    })
+    
+    $('nav').mouseleave(function(){
+      $('#btn_menu').show()
+      $('#search').show()
+      $(this).hide()
+    })
+    
+    // header scroll event
+    $(window).scroll(function(){
+      if($(window).scrollTop() > 250){
+        $('#header').removeClass('transparent')
+      } else {
+        $('#header').addClass('transparent')
+      }
+    })
+    
+  </script>
+</body>
 </html>
