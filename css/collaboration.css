@@ -1,0 +1,108 @@
+#main {
+  padding: 135px 0 155px;
+}
+
+.paragraph {
+  padding: 0 122px;
+  margin-bottom: 145px;
+  text-align: left;
+}
+
+.paragraph.small_bot_margin {
+  margin-bottom: 50px;
+}
+
+.header2 {
+  float: left;
+  font-family: 'Noto Sans Korean Bold';
+  font-size: 25px;
+  line-height: 35px;
+  color: #004d2f;
+}
+
+.text {
+  width: 552px;
+  font-family: 'Noto Sans Korean Regular';
+  font-size: 15px;
+  line-height: 25px;
+  color: #414042;
+  margin-left: 326px;
+  border-left: solid 2px #16b475;
+  padding-left: 60px;
+  word-break: keep-all;
+}
+
+.header3 {        
+  font-family: 'Noto Sans Korean Medium';
+  font-size: 18px;
+  line-height: 27px;
+  color: #16b475;
+  margin-bottom: 50px;
+}
+
+.text > img {
+  width: 552px;
+  margin-bottom: 40px;
+}
+
+.text > .video {
+  width: 552px;
+  height: 310.5px;
+  margin-bottom: 40px;
+}
+
+#cover {
+	background: url(../img/project/collaboration/cover.png);
+	background-size: cover;
+	height: 225px;
+	padding-top: 155px;
+}
+
+#lectures {
+	padding: 0 122px;
+}
+
+.lecture {
+	vertical-align: top;
+	display: inline-block;
+	width: 460px;
+	margin-right: 14px;
+	color: #414042;
+}
+
+.lecture:last-of-type {
+	margin-right: 0;
+}
+
+.lecture_photo {
+	width: 460px;
+	margin-bottom: 35.5px;
+}
+
+.lecture_title {
+	margin-bottom: 35px;
+	font-family: 'Noto Sans Korean Bold';
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.lecture_detail {
+	font-size: 15px;
+	line-height: 25px;
+	min-height: 100px;
+	margin-bottom: 20px;
+	word-break: keep-all;
+}
+
+.lecture_link {
+	float: right;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 34px;
+	color: #fff;
+	background: #16b475;
+	width: 84px;
+	height: 34px;
+	text-align: center;
+	margin-left: 12px;
+}

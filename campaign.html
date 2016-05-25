@@ -5,148 +5,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <link href="css/base.css" rel="stylesheet" type="text/css">
-  <link href="css/project.css" rel="stylesheet" type="text/css">
-  <style>
-  
-    #cover {
-      background: url(img/project/campaign/cover.png);
-      background-size: cover;
-      height: 225px;
-      padding-top: 155px;
-    }
-    
-    #main {
-      padding: 135px 0 40px;
-    }
-    
-    .paragraph {
-      margin-bottom: 145px;
-    }
-    
-    .paragraph.small_bot_margin {
-      margin-bottom: 75px; 
-    }
-    
-    .paragraph.small_top_margin {
-      margin-top: 70px;
-    }
-    
-    .btn_small {
-      font-family: 'Noto Sans Korean Bold';
-      font-size: 12px;
-      line-height: 34px;
-      height: 34px;
-      padding: 0 23px;
-      background: #16b475;
-      color: #fff;
-      margin-top: 20px;
-    }
-    
-    .btn_small.right {
-      float: right;
-    }
-    
-    #story {
-      display: inline-block;
-      margin-bottom: 105px;
-      width: 954px;
-      height: 1812px;
-      padding-left: 18px;
-    }
-    
-    .story {
-      position: relative;
-      text-align: left;
-      float: left;
-      margin-right: 18px;
-      width: 300px;
-      height: 453px;
-      color: #414042;
-    }
-    
-    .story_img_bw {
-      width: 300px;
-      height: 230px;
-      margin-bottom: 13px;
-    }
-    
-    .story_img_color {
-      position: absolute;
-      width: 300px;
-      height: 230px;
-      left: 0;
-      top: 0;
-      opacity: 0;
-      -webkit-transition: opacity 250ms ease-in-out;
-      -moz-transition: opacity 250ms ease-in-out;
-      -o-transition: opacity 250ms ease-in-out;
-      transition: opacity 250ms ease-in-out;
-    }
-    
-    .story:hover > .story_img_color {
-      opacity: 1;
-    }
-    
-    .story_episode {
-      font-family: 'Noto Sans Korean Medium';
-      font-size: 12px;
-      line-height: 12px;
-      height: 12px;
-      margin-bottom: 8px;
-      -webkit-transition: color 250ms ease-in-out;
-      -moz-transition: color 250ms ease-in-out;
-      -o-transition: color 250ms ease-in-out;
-      transition: color 250ms ease-in-out;
-    }
-    
-    .story_title {
-      font-family: 'Noto Sans Korean Bold';
-      font-size: 18px;
-      line-height: 26px;
-      height: 26px;
-      margin-bottom: 10px;
-      -webkit-transition: color 250ms ease-in-out;
-      -moz-transition: color 250ms ease-in-out;
-      -o-transition: color 250ms ease-in-out;
-      transition: color 250ms ease-in-out;
-    }
-    
-    .story_subtitle {
-      font-family: 'Noto Sans Korean Medium';
-      font-size: 14px;
-      line-height: 14px;
-      height: 14px;
-      padding-bottom: 11px;
-      border-bottom: solid 1px #bebebe;
-      -webkit-transition: color 250ms ease-in-out;
-      -moz-transition: color 250ms ease-in-out;
-      -o-transition: color 250ms ease-in-out;
-      transition: color 250ms ease-in-out;
-    }
-    
-    .story:hover {
-      color: #16b475;
-    }
-    
-    .story_summary {
-      font-family: 'Noto Sans Korean Regular';
-      font-size: 14px;
-      line-height: 23px;
-      word-break: keep-all;
-      margin-top: 6.5px;
-    }
-    
-    .story:hover > .story_summary {
-      color: #414042;
-    }
-    
-  </style>
   <title>와글 WAGL | 프로젝트</title>
+
+  {% include head.html %}
+
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/campaign.css" />
 </head>
 <body>
   {% include navbar.html %}
+
   <div id="space_header"></div>
   <div id="cover" class="section message">
     <div class="content">
@@ -281,29 +149,9 @@
       </div>
     </div>
   </div>
-  <div id="footer" class="section">
-    <div class="content">
-      서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
-      T. 070-8250-0346 info@wagl.net<br>
-      ©WAGL since 2015
-    </div>
-  </div>
-  <script src="js/jquery-2.2.2.min.js"></script>
-  <script>
-    
-    // nav menu button event
-    $('#btn_menu').mouseover(function(){
-      $('#btn_menu').hide()
-      $('#search').hide()
-      $('nav').show()
-    })
-    
-    $('nav').mouseleave(function(){
-      $('#btn_menu').show()
-      $('#search').show()
-      $(this).hide()
-    })
-    
-  </script>
+
+  {% include footer.html %}
+
+  {% include common_js.html %}
 </body>
 </html>

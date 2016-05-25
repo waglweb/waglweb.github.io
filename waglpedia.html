@@ -5,13 +5,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <link href="css/base.css" rel="stylesheet" type="text/css">
-  <link href="css/waglpedia.css" rel="stylesheet" type="text/css">
   <title>와글 WAGL | 와글피디아</title>
+
+  {% include head.html %}
+
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/waglpedia.css" />
 </head>
 <body>
   {% include navbar.html %}
+
   <div id="space_header"></div>
   <div id="cover" class="section message">
     <div class="content">
@@ -121,29 +124,9 @@
       </div>
     </div>
   </div>
-  <div id="footer" class="section">
-    <div class="content">
-      서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
-      T. 070-8250-0346 info@wagl.net<br>
-      ©WAGL since 2015
-    </div>
-  </div>
-  <script src="js/jquery-2.2.2.min.js"></script>
-  <script>
 
-    // nav menu button event
-    $('#btn_menu').mouseover(function(){
-      $('#btn_menu').hide()
-      $('#search').hide()
-      $('nav').show()
-    })
+  {% include footer.html %}
 
-    $('nav').mouseleave(function(){
-      $('#btn_menu').show()
-      $('#search').show()
-      $(this).hide()
-    })
-
-  </script>
+  {% include common_js.html %}
 </body>
 </html>

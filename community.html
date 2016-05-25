@@ -5,63 +5,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <link href="css/base.css" rel="stylesheet" type="text/css">
-  <link href="css/project.css" rel="stylesheet" type="text/css">
-  <style>
-  
-    #cover {
-      background: url(img/project/community/cover.png);
-      background-size: cover;
-      height: 225px;
-      padding-top: 155px;
-    }
-    
-    #main {
-      padding: 135px 0 162px;
-    }
-    
-    .paragraph {
-      margin-bottom: 162px;
-    }
-    
-    .paragraph.small_bot_margin {
-      margin-bottom: 75px; 
-    }
-    
-    .paragraph.small_top_margin {
-      margin-top: 70px;
-    }
-    
-    .tiles {
-      display: inline-block;
-      border-top: solid 1px #bebebe;
-      width: 938px;
-    }
-    
-    .tile_line {
-      border-bottom: solid 1px #bebebe;
-      height: 227px;
-    }
-    
-    .tile {
-      display: inline-block;
-      width: 312px;
-      height: 227px;
-      border-right: solid 1px #bebebe;
-      overflow: hidden;
-      float: left;
-    }
-    
-    .tile.last {
-      border-right: 0;
-    }
-    
-  </style>
   <title>와글 WAGL | 프로젝트</title>
+
+  {% include head.html %}
+
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/community.css" />
 </head>
 <body>
   {% include navbar.html %}
+
   <div id="space_header"></div>
   <div id="cover" class="section message">
     <div class="content">
@@ -111,29 +64,9 @@
       </div>
     </div>
   </div>
-  <div id="footer" class="section">
-    <div class="content">
-      서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
-      T. 070-8250-0346 info@wagl.net<br>
-      ©WAGL since 2015
-    </div>
-  </div>
-  <script src="js/jquery-2.2.2.min.js"></script>
-  <script>
-    
-    // nav menu button event
-    $('#btn_menu').mouseover(function(){
-      $('#btn_menu').hide()
-      $('#search').hide()
-      $('nav').show()
-    })
-    
-    $('nav').mouseleave(function(){
-      $('#btn_menu').show()
-      $('#search').show()
-      $(this).hide()
-    })
-    
-  </script>
+
+  {% include footer.html %}
+
+  {% include common_js.html %}
 </body>
 </html>

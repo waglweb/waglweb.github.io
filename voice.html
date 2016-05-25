@@ -5,14 +5,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <link href="css/base.css" rel="stylesheet" type="text/css">
-  <link href="css/index.css" rel="stylesheet" type="text/css">
-  <link href="css/voice.css" rel="stylesheet" type="text/css">
   <title>와글 WAGL | 우리의 목소리</title>
+
+  {% include head.html %}
+
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" type="text/css" href="css/voice.css" />
 </head>
 <body>
   {% include navbar.html %}
+
   <div id="space_header"></div>
   <div id="cover" class="section message">
     <div class="content">
@@ -117,49 +120,10 @@
       </div>        
     </div>
   </div>
-  <div id="footer" class="section">
-    <div class="content">
-      서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
-      T. 070-8250-0346 info@wagl.net<br>
-      ©WAGL since 2015
-    </div>
-  </div>
-  <script src="js/jquery-2.2.2.min.js"></script>
-  <script src="js/masonry.pkgd.min.js"></script>
-  <script>
-    
-    // nav menu button event
-    $('#btn_menu').mouseover(function(){
-      $('#btn_menu').hide()
-      $('#search').hide()
-      $('nav').show()
-    })
-    
-    $('nav').mouseleave(function(){
-      $('#btn_menu').show()
-      $('#search').show()
-      $(this).hide()
-    })
-    
-    // count letter      
-    $('#text_speak_voice').on('change keydown keyup paste', function(){
-      $('#letter_count').text($('#text_speak_voice').val().length+'/200')
-    })
-    
-    // masonry
-    function masonry_layout(){
-      $('#voice_container').masonry({
-        itemSelector: '.voice',
-        columnWidth: 375,
-        gutter: 28
-      })
-    }
-    
-    // masonry init
-    $(document).ready(function(){
-      masonry_layout()
-    })
-  
-  </script>
+
+  {% include footer.html %}
+
+  {% include common_js.html %}
+  <script src="static/js/voice.js"></script>
 </body>
 </html>

@@ -5,13 +5,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <link href="css/base.css" rel="stylesheet" type="text/css">
-  <link href="css/about.css" rel="stylesheet" type="text/css">
   <title>와글 WAGL | 와글 소개</title>
+
+  {% include head.html %}
+
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/about.css" />
 </head>
 <body>
   {% include navbar.html %}
+
   <div id="space_header"></div>
   <div id="message1" class="section message">
     <div class="content">
@@ -304,59 +307,10 @@
       </div>
     </div>
   </div>
-  <div id="footer" class="section">
-    <div class="content">
-      서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
-      T. 070-8250-0346<br>
-      info@wagl.net<br>
-      <br>
-      <span id="copyright">©WAGL since 2015</span>
-    </div>
-  </div>
-  <script src="js/jquery-2.2.2.min.js"></script>
-  <script>
-    
-    // nav menu button event
-    $('#btn_menu').mouseover(function(){
-      $('#btn_menu').hide()
-      $('#search').hide()
-      $('nav').show()
-    })
-    
-    $('nav').mouseleave(function(){
-      $('#btn_menu').show()
-      $('#search').show()
-      $(this).hide()
-    })
-    
-    // people click event      
-    function peopleOn() {
-      // 이전 활성화된 프로필 off
-      $('.people').removeClass('on').unbind('click').click(peopleOn)
-      $('.people_detail.on').slideUp(250)
-      // 클릭된 프로필 on
-      $(this).addClass('on')
-      var id = $(this).attr('id')
-      $('#'+id+'_detail').slideDown(250).addClass('on')
-      // 이벤트 리스너 제거        
-      $(this).unbind('click')
-      $(this).click(peopleOff)
-    }
-    
-    function peopleOff() {
-      // 활성화된 프로필 off
-      $('.people').removeClass('on').unbind('click').click(peopleOn)
-      $('.people_detail.on').slideUp(250)
-      // 이벤트 리스너 제거
-      $(this).unbind('click')
-      $(this).click(peopleOn)
-    }
-    
-    $('.people').click(peopleOn)
-    
-    // 지도
-    
-    
-  </script>
+
+  {% include footer.html %}
+
+  {% include common_js.html %}
+  <script src="static/js/about.js"></script>
 </body>
 </html>

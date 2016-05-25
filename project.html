@@ -5,33 +5,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <link href="css/base.css" rel="stylesheet" type="text/css">
-  <link href="css/index.css" rel="stylesheet" type="text/css">
-  <style>
-  
-    #cover {
-      background: url(img/project/cover.png);
-      background-size: cover;
-      height: 225px;
-      padding-top: 182px;
-    }
-    
-    .text {
-      text-align: center;
-      color: #16b475;
-      font-family: 'Noto Sans Korean Medium';
-      font-size: 18px;
-      line-height: 30px;
-      margin-top: -38px;;
-      margin-bottom: 113px;
-    }
-    
-  </style>
   <title>와글 WAGL | 프로젝트</title>
+
+  {% include head.html %}
+
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" type="text/css" href="css/temp.css" />
 </head>
 <body>
   {% include navbar.html %}
+
   <div id="space_header"></div>
   <div id="cover" class="section message">
     <div class="content">
@@ -90,29 +74,9 @@
       </div>
     </div>
   </div>
-  <div id="footer" class="section">
-    <div class="content">
-      서울특별시 성동구 왕십리로2길 20, CND빌딩 3층<br>
-      T. 070-8250-0346 info@wagl.net<br>
-      ©WAGL since 2015
-    </div>
-  </div>
-  <script src="js/jquery-2.2.2.min.js"></script>
-  <script>
-    
-    // nav menu button event
-    $('#btn_menu').mouseover(function(){
-      $('#btn_menu').hide()
-      $('#search').hide()
-      $('nav').show()
-    })
-    
-    $('nav').mouseleave(function(){
-      $('#btn_menu').show()
-      $('#search').show()
-      $(this).hide()
-    })
-    
-  </script>
+
+  {% include footer.html %}
+
+  {% include common_js.html %}
 </body>
 </html>
