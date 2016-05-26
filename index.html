@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>와글 WAGL</title>
+  <title>와글</title>
 
   {% include head.html %}
 
@@ -13,6 +13,9 @@
   <link rel="stylesheet" type="text/css" href="static/css/index.css" />
 </head>
 <body>
+  <input type="hidden" id="title-ko" value="와글" />
+  <input type="hidden" id="title-en" value="WAGL" />
+
   {% include navbar.html %}
 
   <div id="section1" class="section">
@@ -27,13 +30,18 @@
         <div id="slogan">
           We All Govern Lab
         </div>
-        <div id="message">
-          시민 모두가 정치의 주인공이 되는 세상을 꿈꾸는 와글은,<br>
-          와글와글 다양한 목소리로 터져 나오는 군중의 아우성으로<br>
-          <span class="bold">약속한 바에 대해 책임을 지고(Accountable)<br>
-          시민의 요구에 유연하고 기민하게 반응하며(Responsive)<br>
-          정보와 권한행사 과정이 투명하게 드러나는(Transparent)</span><br>
-          A.R.T. 민주주의를 만들어가는 정치 스타트업(Politics Startup)입니다.
+        <div class="message-temp hidden" data-lang="ko">
+          시민 모두가 정치의 주인공이 되는 세상을 꿈꾸는 와글은,<br/>
+          와글와글 다양한 목소리로 터져 나오는 군중의 아우성으로<br/>
+          <span class="bold">약속한 바에 대해 책임을 지고(Accountable)<br/>
+          시민의 요구에 유연하고 기민하게 반응하며(Responsive)<br/>
+          정보와 권한행사 과정이 투명하게 드러나는(Transparent)</span><br/>
+          A.R.T. 민주주의를 만들어가는 정치 스타트업입니다.
+        </div>
+        <div class="message-temp hidden" data-lang="en">
+          WAGL is a politics startup to innovate politics by power of the crowd<br/>
+          and a lab for grassroot politics where anyone can participate to bring<br/>
+          <span class="bold">Accountable, Responsive and Transparent</span> democracy in our daily lives.
         </div>
       </div>
     </div>
@@ -41,124 +49,215 @@
   <!--
   <div id="section2" class="section green">
     <div class="content">
-      <img id="voice_quote" src="static/img/main/quote.png">
-      <img id="voice_before" src="static/img/main/before.png">
-      <img id="voice_next" src="static/img/main/next.png">
+      <img id="voice_quote" src="static/img/main/quote.png" />
+      <img id="voice_before" src="static/img/main/before.png" />
+      <img id="voice_next" src="static/img/main/next.png" />
       <div class="voice_message">
-        사회에 관심을 갖고 내 의견을 내는 것이 정치의 시작이라고<br>
-        생각합니다. 사회에 관심을 갖고 내 의견을 내는 것이 정치의 시작이라고<br>
-        생각합니다. 그렇고 그렇고 그렇습니다.<br>
+        사회에 관심을 갖고 내 의견을 내는 것이 정치의 시작이라고<br/>
+        생각합니다. 사회에 관심을 갖고 내 의견을 내는 것이 정치의 시작이라고<br/>
+        생각합니다. 그렇고 그렇고 그렇습니다.<br/>
       </div>
       <div class="voice_speaker">박아람 님</div>
       <div id="voice_go_container">
-        <a id="voice_go" href="voice.html">우리의 목소리 바로가기</a>
+        <a id="voice_go" href="voice">우리의 목소리 바로가기</a>
       </div>        
     </div>
   </div>
   -->
   <div id="section3" class="section">
     <div class="content">
-      <div class="title">프로젝트</div>
-      <div class="subtitle">와글의 프로젝트를 소개합니다.</div>
+      <div class="title hidden" data-lang="ko">
+        프로젝트
+      </div>
+      <div class="title hidden" data-lang="en">
+        Our Projects
+      </div>
+      <div class="subtitle hidden" data-lang="ko">
+        와글의 프로젝트를 소개합니다.
+      </div>
+      <div class="subtitle hidden" data-lang="en">
+        Working On Democracy
+      </div>
       <div id="projects">
-        <a id="project_collaboration" class="project" href="collaboration.html">
-          <div class="project_category">Collaboration</div>
-          <div class="project_name">협업과 네트워킹</div>
-          <div class="project_explain">
-            세상을 바꾸고자 행동하는 지성과<br>
+        <a id="project_collaboration" class="project" href="collaboration">
+          <div class="project_category">
+            Collaboration
+          </div>
+          <div class="project_name hidden" data-lang="ko">
+            협업과 네트워킹
+          </div>
+          <div class="project_name hidden" data-lang="en">
+            Works and Networks
+          </div>
+          <div class="project_explain hidden" data-lang="ko">
+            세상을 바꾸고자 행동하는 지성과<br/>
             만납니다.
           </div>
-          <img class="project_more" src="static/img/project/btnMore.png">
+          <div class="project_explain hidden" data-lang="en">
+            We connect with the best minds<br/> 
+            ready to improve our system.
+          </div>
+          <img class="project_more" src="static/img/project/btnMore.png" />
         </a>
-        <a id="project_campaign" class="project" href="campaign.html">
-          <div class="project_category">Campaign</div>
-          <div class="project_name">A.R.T. 민주주의 연구와 소개</div>
-          <div class="project_explain">
-            더 나은 민주주의의 구체적인 사례를<br>
+        <a id="project_campaign" class="project" href="campaign">
+          <div class="project_category">
+            Campaign
+          </div>
+          <div class="project_name hidden" data-lang="ko">
+            A.R.T. 민주주의 연구와 소개
+          </div>
+          <div class="project_name hidden" data-lang="en">
+            Research and Introduction
+          </div>
+          <div class="project_explain hidden" data-lang="ko">
+            더 나은 민주주의의 구체적인 사례를<br/>
             발굴하고, 연구하고, 소개합니다.
           </div>
-          <img class="project_more" src="static/img/project/btnMore.png">
+          <div class="project_explain hidden" data-lang="en">
+            We discover, study, and introduce<br/> 
+            specific examples of democracy.
+          </div>
+          <img class="project_more" src="static/img/project/btnMore.png" />
         </a>
-        <a id="project_civictech" class="project" href="civictech.html">
-          <div class="project_category">Civic tech</div>
-          <div class="project_name">일상기술과 민주주의의 만남</div>
-          <div class="project_explain">
-            시민의 목소리를 정치적 자산으로<br>
+        <a id="project_civictech" class="project" href="civictech">
+          <div class="project_category">
+            Civic tech
+          </div>
+          <div class="project_name hidden" data-lang="ko">
+            일상기술과 민주주의의 만남
+          </div>
+          <div class="project_name hidden" data-lang="en">
+            Tech Meets Democracy
+          </div>
+          <div class="project_explain hidden" data-lang="ko">
+            시민의 목소리를 정치적 자산으로<br/>
             만들 일상기술을 제안합니다.
           </div>
-          <img class="project_more" src="static/img/project/btnMore.png">
+          <div class="project_explain hidden" data-lang="en">
+            We suggest humble innovations <br/>
+            that will mature the voice of<br/>
+            the citizenry into a political asset.
+          </div>
+          <img class="project_more" src="static/img/project/btnMore.png" />
         </a>
-        <a id="project_community" class="project" href="community.html">
-          <div class="project_category">Community</div>
-          <div class="project_name">풀뿌리 커뮤니티 지원 및 발굴</div>
-          <div class="project_explain">
-            남녀노소 모든 시민 그룹과 만나<br>
-            아이디어를 구체적인 실천으로<br>
+        <a id="project_community" class="project" href="community">
+          <div class="project_category">
+            Community
+          </div>
+          <div class="project_name hidden" data-lang="ko">
+            풀뿌리 커뮤니티 지원 및 발굴
+          </div>
+          <div class="project_name hidden" data-lang="en">
+            Support For Grassroots
+          </div>
+          <div class="project_explain hidden" data-lang="ko">
+            남녀노소 모든 시민 그룹과 만나<br/>
+            아이디어를 구체적인 실천으로<br/>
             옮깁니다.
           </div>
-          <img class="project_more" src="static/img/project/btnMore.png">
+          <div class="project_explain hidden" data-lang="en">
+            We meet with grassroots groups<br/>
+            of all age, gender and conviction<br/>
+            to support specific action plans. 
+          </div>
+          <img class="project_more" src="static/img/project/btnMore.png" />
         </a>
       </div>
     </div>
   </div>
   <div id="section4" class="section">
     <div class="content">
-      <div class="title">와글피디아</div>
-      <div class="subtitle">당신의 참여를 북돋울 도구를 소개합니다</div>
+      <div class="title hidden" data-lang="ko">
+        와글피디아
+      </div>
+      <div class="title hidden" data-lang="en">
+        WAGL-PEDIA
+      </div>
+      <div class="subtitle hidden" data-lang="ko">
+        당신의 참여를 북돋울 도구를 소개합니다
+      </div>
+      <div class="subtitle hidden" data-lang="en">
+        Participatory Tools and Platform Encyclopedia for Democracy A.R.T.ists
+      </div>
       <div id="actions">
         <div class="action_line">
           <div class="action first">
             <div class="action_logo">
-              <img src="static/img/waglpedia/Parti/parti.png">
+              <img src="static/img/waglpedia/Parti/parti.png" />
             </div>
             <div class="action_detail">
-              <div class="action_name">Parti</div>
-              <div class="action_explain">
+              <div class="action_name">
+                Parti
+              </div>
+              <div class="action_explain hidden" data-lang="ko">
                 이슈 토론과 찬반투표, 자료 아카이빙을 한 번에 할 수 있는 온라인 공론장
               </div>
+              <div class="action_explain hidden" data-lang="en">
+                An online public sphere for debate, yes-or-no vote and archiving 
+              </div>
             </div>
           </div>
           <div class="action">
             <div class="action_logo">
-              <img src="static/img/waglpedia/loomio/loomio.png">
+              <img src="static/img/waglpedia/loomio/loomio.png" />
             </div>
             <div class="action_detail">
-              <div class="action_name">Loomio</div>
-              <div class="action_explain">
+              <div class="action_name">
+                Loomio
+              </div>
+              <div class="action_explain hidden" data-lang="ko">
                 전세계인이 사용하는, 가장 널리 알려진 의사결정 플랫폼
               </div>
-            </div>
-          </div>
-          <div class="action">
-            <div class="action_logo">
-              <img src="static/img/waglpedia/polis/polis.png">
-            </div>
-            <div class="action_detail">
-              <div class="action_name">Polis</div>
-              <div class="action_explain">
-                의사결정에 따라 2차원 매핑 기능을 지원하는 다중 의사결정 플랫폼
+              <div class="action_explain hidden" data-lang="en">
+                An easy-to-use tool for decision making used worldwide.
               </div>
             </div>
           </div>
           <div class="action">
             <div class="action_logo">
-              <img src="static/img/waglpedia/brigade/brigade.png">
+              <img src="static/img/waglpedia/polis/polis.png" />
             </div>
             <div class="action_detail">
-              <div class="action_name">Brigade</div>
-              <div class="action_explain">
+              <div class="action_name">
+                Polis
+              </div>
+              <div class="action_explain hidden" data-lang="ko">
+                의사결정에 따라 2차원 매핑 기능을 지원하는 다중 의사결정 플랫폼
+              </div>
+              <div class="action_explain hidden" data-lang="en">
+                A commenting and survey system with real-time data-mapping visualization.
+              </div>
+            </div>
+          </div>
+          <div class="action">
+            <div class="action_logo">
+              <img src="static/img/waglpedia/brigade/brigade.png" />
+            </div>
+            <div class="action_detail">
+              <div class="action_name">
+                Brigade
+              </div>
+              <div class="action_explain hidden" data-lang="ko">
                 페이스북 공동설립에 참여한 션 파커의 '브리게이드 미디어'가 만든 종합 정치 SNS
+              </div>
+              <div class="action_explain hidden" data-lang="en">
+                A social networking service specialized in news, issues and politics.
               </div>
             </div>
           </div>
           <div class="action last">
             <div class="action_logo last">
-              <img src="static/img/waglpedia/decide_madrid/decide_madrid.png">
+              <img src="static/img/waglpedia/decide_madrid/decide_madrid.png" />
             </div>
             <div class="action_detail">
-              <div class="action_name">Decide Madrid</div>
-              <div class="action_explain">
+              <div class="action_name">
+                Decide Madrid
+              </div>
+              <div class="action_explain hidden" data-lang="ko">
                 마드리드 시를 이끌고 있는 시민 정당 아호라 마드리드의 시민 참여 온라인 플랫폼
+              </div>
+              <div class="action_explain hidden" data-lang="en">
+                An official citizen participation platform of Madrid City governed by Ahora Madrid
               </div>
             </div>
           </div>
@@ -166,45 +265,65 @@
         <div class="action_line">
           <div class="action first">
             <div class="action_logo">
-              <img src="static/img/waglpedia/citizen_budget/citizen_budget.png">
+              <img src="static/img/waglpedia/citizen_budget/citizen_budget.png" />
             </div>
             <div class="action_detail">
-              <div class="action_name">Citizen Budget</div>
-              <div class="action_explain">
+              <div class="action_name">
+                Citizen Budget
+              </div>
+              <div class="action_explain hidden" data-lang="ko">
                 캐나다 비영리 벤처 오픈노스가 개발한 예산 시뮬레이션 프로그램
               </div>
+              <div class="action_explain hidden" data-lang="en">
+                An online budget simulator developed by Open North in Canada
+              </div>
             </div>
           </div>
           <div class="action">
             <div class="action_logo">
-              <img src="static/img/waglpedia/open_ministry/open_ministry.png">
+              <img src="static/img/waglpedia/open_ministry/open_ministry.png" />
             </div>
             <div class="action_detail">
-              <div class="action_name">Open Ministry</div>
-              <div class="action_explain">
+              <div class="action_name">
+                Open Ministry
+              </div>
+              <div class="action_explain hidden" data-lang="ko">
                 핀란드의 국민발의 제도를 정착시킨 위키형 온라인 법안발의 플랫폼
               </div>
-            </div>
-          </div>
-          <div class="action">
-            <div class="action_logo">
-              <img src="static/img/waglpedia/ping/ping.png">
-            </div>
-            <div class="action_detail">
-              <div class="action_name">핑코리아</div>
-              <div class="action_explain">
-                자체 알고리즘을 기반으로 만든 투표 가이드 서비스로 이용자와 정당/정치인을 매칭
+              <div class="action_explain hidden" data-lang="en">
+                An online platform for crowdsourcing legislation and citizens initiatives in Finland
               </div>
             </div>
           </div>
           <div class="action">
             <div class="action_logo">
-              <img src="static/img/waglpedia/g0v/g0v.png">
+              <img src="static/img/waglpedia/ping/ping.png" />
             </div>
             <div class="action_detail">
-              <div class="action_name">g0v</div>
-              <div class="action_explain">
+              <div class="action_name">
+                P!NG KOREA
+              </div>
+              <div class="action_explain hidden" data-lang="ko">
+                자체 알고리즘을 기반으로 만든 투표 가이드 서비스로 이용자와 정당/정치인을 매칭
+              </div>
+              <div class="action_explain hidden" data-lang="en">
+                A vote advisory application (VAA) for votes in Korea for the 20th general election
+              </div>
+            </div>
+          </div>
+          <div class="action">
+            <div class="action_logo">
+              <img src="static/img/waglpedia/g0v/g0v.png" />
+            </div>
+            <div class="action_detail">
+              <div class="action_name">
+                g0v
+              </div>
+              <div class="action_explain hidden" data-lang="ko">
                 대만의 공공 데이터 아카이브이자 개발자 커뮤니티로 다양한 오픈 소스 프로젝트 확인이 가능
+              </div>
+              <div class="action_explain hidden" data-lang="en">
+                A civic tech community in Taiwan with a variaty of open source projects
               </div>
             </div>
           </div>
@@ -242,7 +361,7 @@
         </div>
         <div id="story2" class="story">
           <div class="story_top">
-            <img class="story_photo" src="static/img/main/story2.png">
+            <img class="story_photo" src="static/img/main/story2.png" />
             <div class="story_title">
               <div>"잠깐! 나와 궁합 맞는 정당은</div>
               <div>확인하고 투표하시나요?"</div>
@@ -264,7 +383,7 @@
         <a href="https://medium.com/wagl-art/공공데이터-는-민주주의로-가는-지름길-747718748e50">
           <div id="story3" class="story">
             <div class="story_top">
-              <img class="story_photo" src="static/img/main/story3.png">
+              <img class="story_photo" src="static/img/main/story3.png" />
               <div class="story_title">
                 <div>[와글이 만난 몽상가들]</div>
                 <div>'공공데이터'는 민주주의로</div>
@@ -289,26 +408,34 @@
   <div id="section6" class="section">
     <div class="content">
       <div id="join">
-        더 알고 싶으신가요?
-        <div class="small">
+        <div class="hidden" data-lang="ko">
+          더 알고 싶으신가요?
+        </div>
+        <div class="hidden" data-lang="en">
+          Want to Learn More?
+        </div>
+        <div class="small hidden" data-lang="ko">
           다양한 채널로 와글의 소식을 받아보실 수 있습니다.
+        </div>
+        <div class="small hidden" data-lang="en">
+          Follow us!
         </div>
       </div>
       <div id="sns">
         <a href="https://www.facebook.com/wagl2015/" target="_blank">
-          <img id="facebook" src="static/img/main/facebook.png">
+          <img id="facebook" src="static/img/main/facebook.png" />
         </a>
         <a href="https://twitter.com/_WAGL" target="_blank">
-          <img id="twitter" src="static/img/main/twitter.png">
+          <img id="twitter" src="static/img/main/twitter.png" />
         </a>
         <a href="https://www.instagram.com/wagl.insta/" target="_blank">
-          <img id="instagram" src="static/img/main/instagram.png">
+          <img id="instagram" src="static/img/main/instagram.png" />
         </a>
         <a href="https://www.youtube.com/channel/UChiHajjCsZlMO8rEj6z2YmA" target="_blank">
-          <img id="youtube" src="static/img/main/youtube.png">
+          <img id="youtube" src="static/img/main/youtube.png" />
         </a>
         <a href="https://medium.com/wagl-art" target="_blank">
-          <img id="medium" src="static/img/main/medium.png">
+          <img id="medium" src="static/img/main/medium.png" />
         </a>
       </div>
       <!-- Begin MailChimp form -->

@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>와글 WAGL | 프로젝트</title>
+  <title>와글 프로젝트</title>
 
   {% include head.html %}
 
@@ -14,6 +14,9 @@
   <link rel="stylesheet" type="text/css" href="static/css/temp.css" />
 </head>
 <body>
+  <input type="hidden" id="title-ko" value="와글 프로젝트" />
+  <input type="hidden" id="title-en" value="WAGL Projects" />
+
   {% include navbar.html %}
 
   <div id="space_header"></div>
@@ -25,51 +28,103 @@
   <div id="section3" class="section">
     <div class="content">
       <div class="title">
-        프로젝트
+        <div class="hidden" data-lang="ko">
+          프로젝트
+        </div>
+        <div class="hidden" data-lang="en">
+          Projects
+        </div>
         <div class="decorator"></div>
       </div>
       <div class="text">
-        와글은 "군중의 힘으로 만들어가는 더 나은 민주주의"라는 비전을<br>
-        다양한 프로젝트를 통해 이루어나가고 있습니다.<br>
+        와글은 "군중의 힘으로 만들어가는 더 나은 민주주의"라는 비전을<br/>
+        다양한 프로젝트를 통해 이루어나가고 있습니다.<br/>
         프로젝트에 대한 아이디어와 협업 제안은 언제나 환영합니다.
       </div>
       <div id="projects">
-        <a id="project_collaboration" class="project" href="collaboration.html">
-          <div class="project_category">Collaboration</div>
-          <div class="project_name">협업과 네트워킹</div>
-          <div class="project_explain">
-            세상을 바꾸고자 행동하는 지성과<br>
+        <a id="project_collaboration" class="project" href="collaboration">
+          <div class="project_category">
+            Collaboration
+          </div>
+          <div class="project_name hidden" data-lang="ko">
+            협업과 네트워킹
+          </div>
+          <div class="project_name hidden" data-lang="en">
+            Co-works and Networks
+          </div>
+          <div class="project_explain hidden" data-lang="ko">
+            세상을 바꾸고자 행동하는 지성과<br/>
             만납니다.
           </div>
-          <img class="project_more" src="static/img/project/btnMore.png">
+          <div class="project_explain hidden" data-lang="en">
+            We connect with the best minds<br/>
+            ready to improve our system.
+          </div>
+          <img class="project_more" src="static/img/project/btnMore.png" />
         </a>
         <a id="project_campaign" class="project" href="campaign">
-          <div class="project_category">Campaign</div>
-          <div class="project_name">A.R.T. 민주주의 연구와 소개</div>
-          <div class="project_explain">
-            더 나은 민주주의의 구체적인 사례를<br>
+          <div class="project_category">
+            Campaign
+          </div>
+          <div class="project_name hidden" data-lang="ko">
+            A.R.T. 민주주의 연구와 소개
+          </div>
+          <div class="project_name hidden" data-lang="en">
+            Research and Introduction
+          </div>
+          <div class="project_explain hidden" data-lang="ko">
+            더 나은 민주주의의 구체적인 사례를<br/>
             발굴하고, 연구하고, 소개합니다.
           </div>
-          <img class="project_more" src="static/img/project/btnMore.png">
+          <div class="project_explain hidden" data-lang="en">
+            We suggest humble innovations<br/>
+            that will mature the voice of<br/>
+            the citizenry into a political asset.
+          </div>
+          <img class="project_more" src="static/img/project/btnMore.png" />
         </a>
-        <a id="project_civictech" class="project" href="civictech.html">
-          <div class="project_category">Civic tech</div>
-          <div class="project_name">일상기술과 민주주의의 만남</div>
-          <div class="project_explain">
-            시민의 목소리를 정치적 자산으로<br>
+        <a id="project_civictech" class="project" href="civictech">
+          <div class="project_category">
+            Civic tech
+          </div>
+          <div class="project_name hidden" data-lang="ko">
+            일상기술과 민주주의의 만남
+          </div>
+          <div class="project_name hidden" data-lang="en">
+            Tech Meets Democracy
+          </div>
+          <div class="project_explain hidden" data-lang="ko">
+            시민의 목소리를 정치적 자산으로<br/>
             만들 일상기술을 제안합니다.
           </div>
-          <img class="project_more" src="static/img/project/btnMore.png">
+          <div class="project_explain hidden" data-lang="en">
+            We meet with grassroots groups<br/>
+            of all age, gender and conviction<br/>
+            to support specific action plans.
+          </div>
+          <img class="project_more" src="static/img/project/btnMore.png" />
         </a>
-        <a id="project_community" class="project" href="community.html">
-          <div class="project_category">Community</div>
-          <div class="project_name">풀뿌리 커뮤니티 지원 및 발굴</div>
-          <div class="project_explain">
-            남녀노소 모든 시민 그룹과 만나<br>
-            아이디어를 구체적인 실천으로<br>
+        <a id="project_community" class="project" href="community">
+          <div class="project_category">
+            Community
+          </div>
+          <div class="project_name hidden" data-lang="ko">
+            풀뿌리 커뮤니티 지원 및 발굴
+          </div>
+          <div class="project_name hidden" data-lang="en">
+            Support for Grassroots
+          </div>
+          <div class="project_explain hidden" data-lang="ko">
+            남녀노소 모든 시민 그룹과 만나<br/>
+            아이디어를 구체적인 실천으로<br/>
             옮깁니다.
           </div>
-          <img class="project_more" src="static/img/project/btnMore.png">
+          <div class="project_explain hidden" data-lang="en">
+            We meet with grassroots groups<br/>
+            of all age, gender and conviction<br/>
+            to support specific action plans.
+          </div>
+          <img class="project_more" src="static/img/project/btnMore.png" />
         </a>
       </div>
     </div>

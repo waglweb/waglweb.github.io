@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>와글 WAGL | 프로젝트</title>
+  <title>와글 프로젝트</title>
 
   {% include head.html %}
 
@@ -13,137 +13,252 @@
   <link rel="stylesheet" type="text/css" href="static/css/campaign.css" />
 </head>
 <body>
+  <input type="hidden" id="title-ko" value="와글 프로젝트" />
+  <input type="hidden" id="title-en" value="WAGL Projects" />
+
   {% include navbar.html %}
 
   <div id="space_header"></div>
   <div id="cover" class="section message">
-    <div class="content">
-      Campaign<br>
+    <div class="content hidden" data-lang="ko">
+      Campaign<br/>
       풀뿌리 정치혁신 사례 발굴과 소개
+    </div>
+    <div class="content hidden" data-lang="en">
+      Campaign<br/>
+      Discovering and Introducing Grassroots Political Innovation
     </div>
   </div>
   <div class="section">
     <div id="main" class="content center">
       <div class="paragraph">
-        <div class="header2">
-          A.R.T. 민주주의,<br>
+        <div class="header2 hidden" data-lang="ko">
+          A.R.T. 민주주의,<br/>
           이렇게 만들어 볼까요?
         </div>
+        <div class="header2 hidden" data-lang="en">
+          A.R.T. Democracy
+        </div>
         <div class="text">
-          <img src="static/img/project/campaign/image01.jpg">
-          <div class="header3">
-            시민의 참여로 만들어가는 더 나은 민주주의, A.R.T. 민주주의의 구체적인<br>
+          <img src="static/img/project/campaign/image01.jpg" />
+          <div class="header3 hidden" data-lang="ko">
+            시민의 참여로 만들어가는 더 나은 민주주의, A.R.T. 민주주의의 구체적인<br/>
             사례를 발굴하고, 연구하고, 소개합니다.
           </div>
-          강연, 출판, 전자우편, 블로그, 영상 등 다양한 방법을 통해 시민 여러분과 함께 그 내용을 나눕니다. 여기에는 와글이 직접 생산한 컨텐츠뿐 아니라 공유할 가치가 있는 다양한 자료를 모으고 퍼뜨리는 모든 일이 포함됩니다.
+          <div class="header3 hidden" data-lang="en">
+            WAGL shares the cases on A.R.T. Democracy through various media including lecture, booklet, blog, video clip and etc.
+          </div>
+          <div class="hidden" data-lang="ko">
+            강연, 출판, 전자우편, 블로그, 영상 등 다양한 방법을 통해 시민 여러분과 함께 그 내용을 나눕니다. 여기에는 와글이 직접 생산한 컨텐츠뿐 아니라 공유할 가치가 있는 다양한 자료를 모으고 퍼뜨리는 모든 일이 포함됩니다.
+          </div>
+          <div class="hidden" data-lang="en">
+            WAGL discovers, studies, and introduces specific cases of A.R.T. Democracy, a form of governance that is driven by citizen participation.
+          </div>
         </div>
       </div>
       <div class="paragraph small_bot_margin">
-        <div class="header2">
-          다음 스토리펀딩<br>
+        <div class="header2 hidden" data-lang="ko">
+          다음 스토리펀딩<br/>
           ‘듣도 보도 못한 정치’
         </div>
+        <div class="header2 hidden" data-lang="en">
+          Crowdsourced Publication<br/>
+          'Politics from Nowhere <br/>
+          and Everywhere'
+        </div>
         <div class="text">
-          <div class="header3">
+          <div class="header3 hidden" data-lang="ko">
             2015년 9월부터 12월까지 3개월 동안 포털사이트 다음의 뉴스 크라우드펀딩 서비스인 ‘스토리펀딩’을 통해 해외 시민참여형 풀뿌리 민주주의 사례를 소개했습니다.
           </div>
-          3개월 간 모두 10꼭지를 통해 다양한 형태의 정치혁신과 디지털 참여기술을 통해 A.R.T. 민주주의의 전세계적 흐름을 조명했습니다. 총 391명의 독자 분들께서 8,465,000원을 후원해 주셨습니다.<br>
-          <a class="btn_small right" target="_blank" href="https://storyfunding.daum.net/project/306">다음 스토리펀딩으로 바로가기</a>
+          <div class="header3 hidden" data-lang="en">
+            WAGL introduced grassroots democratic movements from around the world from September to December of 2015 on Korea’s largest crowdfunded publication platform, Daum Storyfunding.
+          </div>
+          <div class="hidden" data-lang="ko">
+            3개월 간 모두 10꼭지를 통해 다양한 형태의 정치혁신과 디지털 참여기술을 통해 A.R.T. 민주주의의 전세계적 흐름을 조명했습니다. 총 391명의 독자 분들께서 8,465,000원을 후원해 주셨습니다.<br/>
+            <a class="btn_small right" target="_blank" href="https://storyfunding.daum.net/project/306">다음 스토리펀딩으로 바로가기</a>
+          </div>
+          <div class="hidden" data-lang="en">
+            Consisting of 10 stories spanning a variety of political experiemtns and digital pariticpatory technologies, this effort shed light on A.R.T. democracies world wide. A total of 391 benefactors have donated 8,465,000 Korean Won to the project.<br/>
+            <a class="btn_small right" target="_blank" href="https://storyfunding.daum.net/project/306">See Publication Page</a>
+          </div>
         </div>
       </div>
       <div id="story">
         <a class="story" target="_blank" href="https://storyfunding.daum.net/episode/1521">
-          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B01.png">
-          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C01.png">
-          <div class="story_episode">스토리펀딩 01화</div>
-          <div class="story_title">밥맛 떨어지는 정치, 달라질 수 있습니다.</div>
-          <div class="story_subtitle">정치 문법을 바꾸기 위한 집단지성</div>
-          <div class="story_summary">그 나물에 그 밥인 흔해 빠진 정치가 아닌, '듣도 보도 못한 정치'로 시민 여러분께 새로운 상상력을 제안합니다.</div>
+          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B01.png" />
+          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C01.png" />
+          <div class="story_episode">
+            스토리펀딩 01화
+          </div>
+          <div class="story_title">
+            밥맛 떨어지는 정치, 달라질 수 있습니다.
+          </div>
+          <div class="story_subtitle">
+            정치 문법을 바꾸기 위한 집단지성
+          </div>
+          <div class="story_summary">
+            그 나물에 그 밥인 흔해 빠진 정치가 아닌, '듣도 보도 못한 정치'로 시민 여러분께 새로운 상상력을 제안합니다.
+          </div>
         </a>
         <a class="story" target="_blank" href="https://storyfunding.daum.net/episode/1626">
-          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B02.png">
-          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C02.png">
-          <div class="story_episode">스토리펀딩 02화</div>
-          <div class="story_title">누가 그녀를 시장으로 만들었나?</div>
-          <div class="story_subtitle">시민운동가에서 시장이 된 아다 콜라우</div>
-          <div class="story_summary">주거권 보장 운동을 벌이던 거리의 운동가가 시민들의 지지로 시장이 되었습니다. 스페인 바르셀로나의 이야기입니다.</div>
+          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B02.png" />
+          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C02.png" />
+          <div class="story_episode">
+            스토리펀딩 02화
+          </div>
+          <div class="story_title">
+            누가 그녀를 시장으로 만들었나?
+          </div>
+          <div class="story_subtitle">
+            시민운동가에서 시장이 된 아다 콜라우
+          </div>
+          <div class="story_summary">
+            주거권 보장 운동을 벌이던 거리의 운동가가 시민들의 지지로 시장이 되었습니다. 스페인 바르셀로나의 이야기입니다.
+          </div>
         </a>
         <a class="story" target="_blank" href="https://storyfunding.daum.net/episode/1673">
-          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B03.png">
-          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C03.png">
-          <div class="story_episode">스토리펀딩 03화</div>
-          <div class="story_title">우리는 게임의 룰을 바꾼다</div>
-          <div class="story_subtitle">풀뿌리 시민 정당, 바르셀로나 엔 꼬뮤</div>
-          <div class="story_summary">아다 콜라우가 소속된 풀뿌리 시민정당 바르셀로나 엔 꼬뮤는 어떤 방법으로 시민들의, 시민들을 위한 정당을 만들어가고 있을까요?</div>
+          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B03.png" />
+          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C03.png" />
+          <div class="story_episode">
+            스토리펀딩 03화
+          </div>
+          <div class="story_title">
+            우리는 게임의 룰을 바꾼다
+          </div>
+          <div class="story_subtitle">
+            풀뿌리 시민 정당, 바르셀로나 엔 꼬뮤
+          </div>
+          <div class="story_summary">
+            아다 콜라우가 소속된 풀뿌리 시민정당 바르셀로나 엔 꼬뮤는 어떤 방법으로 시민들의, 시민들을 위한 정당을 만들어가고 있을까요?
+          </div>
         </a>
         <a class="story" target="_blank" href="https://storyfunding.daum.net/episode/1736">
-          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B04.png">
-          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C04.png">
-          <div class="story_episode">스토리펀딩 04화</div>
-          <div class="story_title">정치인 급구, 경력자 사절</div>
-          <div class="story_subtitle">이탈리아 오성운동과 베페 그릴로</div>
-          <div class="story_summary">유명 코미디언이 만든 운동 단체가 이탈리아 제1야당이 되었습니다. 그들의 정치개혁은 '현재진행형'입니다.</div>
+          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B04.png" />
+          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C04.png" />
+          <div class="story_episode">
+            스토리펀딩 04화
+          </div>
+          <div class="story_title">
+            정치인 급구, 경력자 사절
+          </div>
+          <div class="story_subtitle">
+            이탈리아 오성운동과 베페 그릴로
+          </div>
+          <div class="story_summary">
+            유명 코미디언이 만든 운동 단체가 이탈리아 제1야당이 되었습니다. 그들의 정치개혁은 '현재진행형'입니다.
+          </div>
         </a>
         <a class="story" target="_blank" href="https://storyfunding.daum.net/episode/1816">
-          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B05.png">
-          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C05.png">
-          <div class="story_episode">스토리펀딩 05화</div>
-          <div class="story_title">왜 권력만 잡으면 골룸이 될까</div>
-          <div class="story_subtitle">오성운동과 포데모스, 정치리더십의 명과 암</div>
-          <div class="story_summary">새로운 정치개혁운동도 시민들의 감시와 참여, 견제가 없으면 언제든 위험해질 수 있습니다. 부상하고 있는 유럽 신생정당 리더십의 명과 암을 살펴봅니다.</div>
+          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B05.png" />
+          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C05.png" />
+          <div class="story_episode">
+            스토리펀딩 05화
+          </div>
+          <div class="story_title">
+            왜 권력만 잡으면 골룸이 될까
+          </div>
+          <div class="story_subtitle">
+            오성운동과 포데모스, 정치리더십의 명과 암
+          </div>
+          <div class="story_summary">
+            새로운 정치개혁운동도 시민들의 감시와 참여, 견제가 없으면 언제든 위험해질 수 있습니다. 부상하고 있는 유럽 신생정당 리더십의 명과 암을 살펴봅니다.
+          </div>
         </a>
         <a class="story" target="_blank" href="https://storyfunding.daum.net/episode/1944">
-          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B06.png">
-          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C06.png">
-          <div class="story_episode">스토리펀딩 06화</div>
-          <div class="story_title">네가 하면 '노잼', 내가 하면 '깨잼'</div>
-          <div class="story_subtitle">의사결정 플랫폼 '루미오'를 소개합니다</div>
-          <div class="story_summary">뉴질랜드의 젊은 청년들이 전세계적인 의사결정플랫폼을 만들기까지 어떤 일이 있었을까요?</div>
+          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B06.png" />
+          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C06.png" />
+          <div class="story_episode">
+            스토리펀딩 06화
+          </div>
+          <div class="story_title">
+            네가 하면 '노잼', 내가 하면 '깨잼'
+          </div>
+          <div class="story_subtitle">
+            의사결정 플랫폼 '루미오'를 소개합니다
+          </div>
+          <div class="story_summary">
+            뉴질랜드의 젊은 청년들이 전세계적인 의사결정플랫폼을 만들기까지 어떤 일이 있었을까요?
+          </div>
         </a>
         <a class="story" target="_blank" href="https://storyfunding.daum.net/episode/2053">
-          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B07.png">
-          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C07.png">
-          <div class="story_episode">스토리펀딩 07화</div>
-          <div class="story_title">잠금해제, 엄지들의 힘</div>
-          <div class="story_subtitle">정치참여 온라인 플랫폼</div>
-          <div class="story_summary">"아니, 이것도 정치야?" 생각지도 못한 방식으로 사람들의 참여와 지지를 만들어내는 디지털 도구를 소개합니다.</div>
+          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B07.png" />
+          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C07.png" />
+          <div class="story_episode">
+            스토리펀딩 07화
+          </div>
+          <div class="story_title">
+            잠금해제, 엄지들의 힘
+          </div>
+          <div class="story_subtitle">
+            정치참여 온라인 플랫폼
+          </div>
+          <div class="story_summary">
+            "아니, 이것도 정치야?" 생각지도 못한 방식으로 사람들의 참여와 지지를 만들어내는 디지털 도구를 소개합니다.
+          </div>
         </a>
         <a class="story" target="_blank" href="https://storyfunding.daum.net/episode/2287">
-          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B08.png">
-          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C08.png">
-          <div class="story_episode">스토리펀딩 08화</div>
-          <div class="story_title">당신도 국회의원입니다</div>
-          <div class="story_subtitle">핀란드와 에스토니아의 시민발의 제도</div>
-          <div class="story_summary">시민이 직접 법안 발의와 정치개혁에 나섰던 핀란드와 에스토니아의 시민발의 제도를 살펴봅니다.</div>
+          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B08.png" />
+          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C08.png" />
+          <div class="story_episode">
+            스토리펀딩 08화
+          </div>
+          <div class="story_title">
+            당신도 국회의원입니다
+          </div>
+          <div class="story_subtitle">
+            핀란드와 에스토니아의 시민발의 제도
+          </div>
+          <div class="story_summary">
+            시민이 직접 법안 발의와 정치개혁에 나섰던 핀란드와 에스토니아의 시민발의 제도를 살펴봅니다.
+          </div>
         </a>
         <a class="story" target="_blank" href="https://storyfunding.daum.net/episode/2584">
-          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B09.png">
-          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C09.png">
-          <div class="story_episode">스토리펀딩 09화</div>
-          <div class="story_title">참여는 돈주고 못 삽니다</div>
-          <div class="story_subtitle">시민이 주체가 되는 되는 참여 플랫폼</div>
-          <div class="story_summary">시장, 공무원과 함께 지역 행정의 동등한 파트너로서 시민들이 참여할 수 있는 방법을 만들어낸 온라인 플랫폼들이 있습니다.</div>
+          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B09.png" />
+          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C09.png" />
+          <div class="story_episode">
+            스토리펀딩 09화
+          </div>
+          <div class="story_title">
+            참여는 돈주고 못 삽니다
+          </div>
+          <div class="story_subtitle">
+            시민이 주체가 되는 되는 참여 플랫폼
+          </div>
+          <div class="story_summary">
+            시장, 공무원과 함께 지역 행정의 동등한 파트너로서 시민들이 참여할 수 있는 방법을 만들어낸 온라인 플랫폼들이 있습니다.
+          </div>
         </a>
         <a class="story" target="_blank" href="https://storyfunding.daum.net/episode/3179">
-          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B10.png">
-          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C10.png">
-          <div class="story_episode">스토리펀딩 10화</div>
-          <div class="story_title">응답하라, 한국 정치의 주인공</div>
-          <div class="story_subtitle">와글이 만난 세계 정치혁신가 이야기</div>
-          <div class="story_summary">2015년 12월, '듣도 보도 못한 정치'를 통해 소개한 해외 시민참여/풀뿌리 혁신가들을 국내로 초청해 이야기를 들어보았습니다.</div>
+          <img class="story_img_bw" src="static/img/project/campaign/storyfunding/bw/B10.png" />
+          <img class="story_img_color" src="static/img/project/campaign/storyfunding/color/C10.png" />
+          <div class="story_episode">
+            스토리펀딩 10화
+          </div>
+          <div class="story_title">
+            응답하라, 한국 정치의 주인공
+          </div>
+          <div class="story_subtitle">
+            와글이 만난 세계 정치혁신가 이야기
+          </div>
+          <div class="story_summary">
+            2015년 12월, '듣도 보도 못한 정치'를 통해 소개한 해외 시민참여/풀뿌리 혁신가들을 국내로 초청해 이야기를 들어보았습니다.
+          </div>
         </a>
       </div>
       <div class="paragraph">
-        <div class="header2">
-          도서 출판 준비,<br>
+        <div class="header2 hidden" data-lang="ko">
+          도서 출판 준비,<br/>
           ‘듣도 보도 못한 정치’
         </div>
+        <div class="header2 hidden" data-lang="en">
+          Publications
+        </div>
         <div class="text">
-          <img src="static/img/project/campaign/image02.png">
+          <img src="static/img/project/campaign/image02.png" />
           <div class="header3">
             스토리펀딩 ‘듣도 보도 못한 정치’, 와글 국제 컨퍼런스 발표 내용, 해외 사회혁신가 분들과의 인터뷰를 종합한 도서 ‘듣도 보도 못한 정치(가제)’의 출간을 준비 중입니다.
           </div>
-          정치에 깊은 관심을 가진 분들부터, 정치에 무관심한 모든 분들도 쉽게 이해할 수 있는 더 나은 민주주의와 정치혁신 이야기로 시민 여러분을 찾아뵙겠습니다.<br>
+          정치에 깊은 관심을 가진 분들부터, 정치에 무관심한 모든 분들도 쉽게 이해할 수 있는 더 나은 민주주의와 정치혁신 이야기로 시민 여러분을 찾아뵙겠습니다.<br/>
           <a class="btn_small right" href="javascript: alert('준비중 입니다.');">구매하기</a>
         </div>
       </div>

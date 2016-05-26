@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>와글 WAGL | 프로젝트</title>
+  <title>와글 프로젝트</title>
 
   {% include head.html %}
 
@@ -13,40 +13,70 @@
   <link rel="stylesheet" type="text/css" href="static/css/community.css" />
 </head>
 <body>
+  <input type="hidden" id="title-ko" value="와글 프로젝트" />
+  <input type="hidden" id="title-en" value="WAGL Projects" />
+
   {% include navbar.html %}
 
   <div id="space_header"></div>
   <div id="cover" class="section message">
-    <div class="content">
-      Community<br>
+    <div class="content hidden" data-lang="ko">
+      Community<br/>
       풀뿌리 커뮤니티 지원과 발굴
+    </div>
+    <div class="content hidden" data-lang="en">
+      Community<br/>
+      Support for Grassroots Groups
     </div>
   </div>
   <div class="section">
     <div id="main" class="content center">
       <div class="paragraph">
-        <div class="header2">
+        <div class="header2 hidden" data-lang="ko">
           와글와글, 풀뿌리의 힘
         </div>
+        <div class="header2 hidden" data-lang="en">
+          WAGL WAGL, <br/>
+          The power of Grassroots
+        </div>
         <div class="text">
-          <div class="header3">
-            기존의 정치와 권력으로부터 독립된 풀뿌리 단위야말로<br>
+          <div class="header3 hidden" data-lang="ko">
+            기존의 정치와 권력으로부터 독립된 풀뿌리 단위야말로<br/>
             새로운 정치적 상상력을 공유하고 실현시킬 주체입니다.
           </div>
-          와글은 마을기업, 협동조합, 지역공동체 청년/청소년 네트워크. 사회적기업, 소셜벤처 등 유연하고 자율적인 모임과 함께 가장 아름다운 민주주의 이상을 그려나갑니다.
+          <div class="header3 hidden" data-lang="en">
+            We believe that the grassroot unit, independent of established politics and power structures, is the true subject of new political imagination.
+          </div>
+          <div class="hidden" data-lang="ko">
+            와글은 마을기업, 협동조합, 지역공동체 청년/청소년 네트워크. 사회적기업, 소셜벤처 등 유연하고 자율적인 모임과 함께 가장 아름다운 민주주의 이상을 그려나갑니다.
+          </div>
+          <div class="hidden" data-lang="en">
+          </div>
         </div>
       </div>
       <img src="static/img/project/community/Community_img.png">
       <div class="paragraph small_top_margin small_bot_margin">
-        <div class="header2">
+        <div class="header2 hidden" data-lang="ko">
           청소년 정치참여 프로젝트
         </div>
+        <div class="header2 hidden" data-lang="en">
+          Youth Political <br/>
+          Participation Project
+        </div>
         <div class="text">
-          <div class="header3">
-            청소년들이 가진 문제와 의견을 드러내고 함께 이야기할<br>
+          <div class="header3 hidden" data-lang="ko">
+            청소년들이 가진 문제와 의견을 드러내고 함께 이야기할<br/>
             온라인 청소년 공론장을 만듭니다.
           </div>
-          청소년들이 독자적인 사회 구성원으로 자리매김하기 위해서는 자신들의 이야기를 할 수 있는 공간을 만들고, 이곳에서 적극적인 의견 교류를 통해 청소년의 다양한 목소리를 묶어내고, 이것이 사회적으로 대변될 수 있는 기회를 탐색할 수 있습니다.
+          <div class="header3 hidden" data-lang="en">
+            WAGL is developing an online forum for young people that will help young people voice their opinion on issues specific to their generation.
+          </div>
+          <div class="hidden" data-lang="ko">
+            청소년들이 독자적인 사회 구성원으로 자리매김하기 위해서는 자신들의 이야기를 할 수 있는 공간을 만들고, 이곳에서 적극적인 의견 교류를 통해 청소년의 다양한 목소리를 묶어내고, 이것이 사회적으로 대변될 수 있는 기회를 탐색할 수 있습니다.
+          </div>
+          <div class="hidden" data-lang="en">
+            WAGL’s forum will enable young people to exchange their opinion and give them a place to be heard. Such a forum provides the opportunity for young people to position themselves as full members of our political community.
+          </div>
         </div>
       </div>
       <div class="tiles">

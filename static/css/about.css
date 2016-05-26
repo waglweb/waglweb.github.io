@@ -306,7 +306,7 @@
   margin-right: -4px;
 }
 
-#contact_info {
+.contact_info {
   display: inline-block;
   vertical-align: top;
   width: 422px;
