@@ -13,7 +13,6 @@ function updateLanguageToKorean() {
   $('#lang_kor').addClass('on');
   $('[data-lang="en"]').addClass('hidden');
   $('[data-lang="ko"]').removeClass('hidden');
-  $('#logo').attr('src', 'static/img/Wagl_logo_Kor.png');
 }
 
 // Update language to English
@@ -24,7 +23,6 @@ function updateLanguageToEnglish() {
   $('#lang_eng').addClass('on');
   $('[data-lang="ko"]').addClass('hidden');
   $('[data-lang="en"]').removeClass('hidden');
-  $('#logo').attr('src', 'static/img/Wagl_logo_Eng.png');
 }
 
 // Change language
