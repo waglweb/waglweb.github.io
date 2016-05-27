@@ -1,13 +1,64 @@
-/* init */
+/******************
+ * Google Web Fonts 
+ * Noto Sans KR
+ ******************/
 
-@import url(NotoSansKR-Hestia.css);
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),
+			url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),
+			url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),
+			url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),
+			url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+	src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),
+			url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),
+			url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 700;
+	src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),
+			url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),
+			url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 900;
+	src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),
+			url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),
+			url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
+}
 
 html {
   height: 100%;
 }
 
 body {
-  font-family: 'Noto Sans Korean Regular';
+	font-family: 'Noto Sans KR';
+	font-weight: 400;
   padding: 0;
   margin: 0;
   min-width: 1280px;
@@ -54,10 +105,10 @@ h2 {
 /* title */
 
 .title {
+	font-weight: 700; 
   color: #004d2f;
   font-size: 35px;
   line-height: 35px;
-  font-family: 'Noto Sans Korean Bold';
   text-align: center;
   margin-top: 135px;
 }
@@ -74,11 +125,11 @@ h2 {
 /* message */
 
 .message {
+	font-weight: 700; 
   height: 400px;
   text-align: center;
   font-size: 40px;
   line-height: 50px;
-  font-family: 'Noto Sans Korean Bold';
   background: #16b475;
   background-size: cover;
   color: #fff;
@@ -134,9 +185,9 @@ nav {
 }
 
 nav > a {
+	font-weight: 700; 
   display: inline-block;
   margin-right: 35px;
-  font-family: 'Noto Sans Korean Bold';
   font-size: 14px;
   line-height: 14px;
   color: #16b475;
@@ -179,8 +230,8 @@ a:active {
 }
 
 .lang {
+	font-weight: 500; 
   display: block;
-  font-family: 'Noto Sans Korean Medium';
   font-size: 12px;
   line-height: 12px;
   margin-bottom: 8px;

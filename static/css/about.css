@@ -39,7 +39,7 @@
 .article_title {
   display: inline-block;
   vertical-align: top;
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   font-size: 25px;
   color: #16b475;
   width: 536px;
@@ -49,13 +49,13 @@
   display: inline-block;
   vertical-align: top;
   color: #414042;
-  font-family: 'Noto Sans Korean DemiLight';
+	font-weight: 400;
   font-size: 15px;
   line-height: 25px;
 }
 
 .motto {
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   font-size: 30px;
   line-height: 30px;
   margin-bottom: 45px;
@@ -96,7 +96,7 @@
 .news_source {
   position: absolute;
   display: inline-block;
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   border-bottom: solid 3px #16b475;
@@ -123,7 +123,7 @@
 .news_title > span {
   display: inline-block;
   vertical-align: middle;
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   font-size: 24px;
   line-height: 34px;
 }
@@ -149,7 +149,7 @@
   display: inline-block;
   vertical-align: top;
   width: 550px;
-  font-family: 'Noto Sans Korean Light';
+	font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   margin-left: 388px;
@@ -160,7 +160,7 @@
   display: inline-block;
   width: 98px;
   height: 35px;
-  font-family: 'Noto Sans Korean Medium';
+	font-weight: 500;
   font-size: 15px;
   line-height: 35px;
   text-align: center;
@@ -180,7 +180,7 @@
 
 #news_more {
   display: inline-block;
-  font-family: 'Noto Sans Korean Medium';
+	font-weight: 500;
   color: #808285;
   font-size: 18px;
   line-height: 18px;
@@ -216,7 +216,7 @@
 }
 
 .people .people_name {
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   margin-bottom: 11.5px;
@@ -261,7 +261,7 @@
 }
 
 .people_quote {
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   font-size: 20px;
   line-height: 30px;
   color: #16b475;
@@ -271,7 +271,7 @@
 }
 
 .people_bio {
-  font-family: 'Noto Sans Korean Regular';
+	font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #414042;
@@ -283,7 +283,7 @@
   position: absolute;
   right: 0;
   bottom: 72px;
-  font-family: 'Noto Sans Korean Regular';
+	font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #16b475;
@@ -327,7 +327,7 @@
 
 .big {
   display: inline-block;
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   margin-bottom: 10px;
 }
 

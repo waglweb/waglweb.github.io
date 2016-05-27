@@ -34,14 +34,14 @@
 }
 
 #title {
-  font-family: 'Noto Sans Korean Black';
+	font-weight: 900;
   color: #006633;
   font-size: 90px;
   line-height: 90px;
 }
 
 #slogan {
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   font-size: 38.67px;
   line-height: 38.67px;
   color: #414042;
@@ -49,7 +49,7 @@
 }
 
 .message-temp {
-  font-family: 'Noto Sans Korean Regular';
+	font-weight: 400;
   font-size: 14.54px;
   line-height: 25.45px;
   color: #414042;
@@ -57,7 +57,7 @@
 }
 
 .bold {
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   color: #006633;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .voice_speaker {
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   font-size: 18px;
   line-height: 18px;
 }
@@ -114,10 +114,10 @@
 }
 
 #voice_go {
+	font-weight: 700;
   display: inline-block;
   width: 215px;
   height: 48px;
-  font-family: 'Noto Sans Korean Bold';
   font-size: 18px;
   line-height: 48px;
   color: #fff;
@@ -128,19 +128,19 @@
 /* title - for section3~5 */
 
 .title {
+	font-weight: 700;
   color: #004d2f;
   font-size: 30px;
   line-height: 30px;
-  font-family: 'Noto Sans Korean Bold';
   text-align: center;
   margin-top: 100px;
 }
 
 .subtitle {
+	font-weight: 500;
   color: #414042;
   font-size: 18px;
   line-height: 18px;
-  font-family: 'Noto Sans Korean Medium';
   text-align: center;
   margin-top: 25px;
   margin-bottom: 60px;
@@ -167,30 +167,30 @@
 }
 
 .project_category {
+	font-weight: 700;
   position: absolute;
   left: 25px;
   top: 53px;
-  font-family: 'Noto Sans Korean Bold';
   font-size: 20px;
   line-height: 20px;
   color: #d1d3d4;
 }
 
 .project_name {
+	font-weight: 700;
   position: absolute;
   left: 25px;
   top: 87px;
-  font-family: 'Noto Sans Korean Bold';
   font-size: 18px;
   line-height: 18px;
   color: #fff;
 }
 
 .project_explain {
+	font-weight: 400;
   position: absolute;
   left: 25px;
   top: 334px;
-  font-family: 'Noto Sans Korean Regular';
   font-size: 15px;
   line-height: 25px;
   color: #fff;
@@ -249,6 +249,7 @@
 }
 
 .action {
+	font-weight: 500;
   position: relative;
   display: inline-block;
   height: 227px;
@@ -258,7 +259,6 @@
   margin-right: -3px;
   font-size: 18px;
   color: #939598;
-  font-family: 'Noto Sans Korean Medium';
   vertical-align: top;
   line-height: 227px;
 }
@@ -311,16 +311,16 @@
 }
 
 .action_name {
+	font-weight: 700;
   font-size: 20px;
   line-height: 20px;
-  font-family: 'Noto Sans Korean Bold';
   margin-bottom: 20px;
 }
 
 .action_explain {
+	font-weight: 400;
   font-size: 12px;
   line-height: 22px;
-  font-family: 'Noto Sans Korean Regular';
 }
 
 /* section5 - story */
@@ -362,7 +362,7 @@
 }
 
 .story_top {
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   font-size: 26px;
   line-height: 26px;
   height: 149px;
@@ -426,7 +426,7 @@
 }
 
 #join {
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   font-size: 30px;
   color: #fff;
   text-align: center;
@@ -435,7 +435,7 @@
 }
 
 #join > .small {
-  font-family: 'Noto Sans Korean Medium';
+	font-weight: 500;
   font-size: 18px;
   margin-top: 15px;
 }
@@ -478,8 +478,8 @@
 }
 
 #sub_email_value {
+	font-weight: 400;
   display: inline-block;
-  font-family: 'Noto Sans Korean Regular';
   border: none;
   font-size: 18px;
   line-height: 48px;
@@ -489,8 +489,8 @@
 }
 
 #sub_button {
+	font-weight: 700;
   display: inline-block;
-  font-family: 'Noto Sans Korean Bold';
   height: 48px;
   background: #16b475;
   font-size: 18px;

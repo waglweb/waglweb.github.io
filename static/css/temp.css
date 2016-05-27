@@ -8,7 +8,7 @@
 .text {                                                                                          
 	text-align: center;                                                                            
 	color: #16b475;                                                                                
-	font-family: 'Noto Sans Korean Medium';                                                        
+	font-weight: 500;
 	font-size: 18px;                                                                               
 	line-height: 30px;                                                                             
 	margin-top: -38px;;                                                                            

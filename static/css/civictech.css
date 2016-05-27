@@ -14,7 +14,7 @@
 
 .header2 {
   float: left;
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   font-size: 25px;
   line-height: 35px;
   color: #004d2f;
@@ -22,7 +22,7 @@
 
 .text {
   width: 552px;
-  font-family: 'Noto Sans Korean Regular';
+	font-weight: 400;
   font-size: 15px;
   line-height: 25px;
   color: #414042;
@@ -33,7 +33,7 @@
 }
 
 .header3 {        
-  font-family: 'Noto Sans Korean Medium';
+	font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: #16b475;
@@ -59,7 +59,7 @@
 }
 
 .btn_ping {
-	font-family: 'Noto Sans Korean Medium';
+	font-weight: 500;
 	font-size: 15px;
 	line-height: 35px;
 	color: #fff;
@@ -91,7 +91,7 @@
 .news_source {
 	position: absolute;
 	display: inline-block;
-	font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 25px;
 	border-bottom: solid 3px #16b475;
@@ -126,14 +126,14 @@
 .news_title > span {
 	display: inline-block;
 	vertical-align: middle;
-	font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
 	font-size: 24px;
 	line-height: 34px;
 }
 
 #news_more {
 	display: inline-block;
-	font-family: 'Noto Sans Korean Medium';
+	font-weight: 500;
 	color: #808285;
 	font-size: 18px;
 	line-height: 18px;

@@ -18,7 +18,7 @@
 
 .header2 {
   float: left;
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   font-size: 25px;
   line-height: 35px;
   color: #004d2f;
@@ -26,7 +26,7 @@
 
 .text {
   width: 552px;
-  font-family: 'Noto Sans Korean Regular';
+	font-weight: 400;
   font-size: 15px;
   line-height: 25px;
   color: #414042;
@@ -37,7 +37,7 @@
 }
 
 .header3 {        
-  font-family: 'Noto Sans Korean Medium';
+	font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: #16b475;
@@ -63,7 +63,7 @@
 }
 
 .btn_small {
-	font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
 	font-size: 12px;
 	line-height: 34px;
 	height: 34px;
@@ -120,7 +120,7 @@
 }
 
 .story_episode {
-	font-family: 'Noto Sans Korean Medium';
+	font-weight: 500;
 	font-size: 12px;
 	line-height: 12px;
 	height: 12px;
@@ -132,7 +132,7 @@
 }
 
 .story_title {
-	font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 26px;
 	height: 26px;
@@ -144,7 +144,7 @@
 }
 
 .story_subtitle {
-	font-family: 'Noto Sans Korean Medium';
+	font-weight: 500;
 	font-size: 14px;
 	line-height: 14px;
 	height: 14px;
@@ -161,7 +161,7 @@
 }
 
 .story_summary {
-	font-family: 'Noto Sans Korean Regular';
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 23px;
 	word-break: keep-all;

@@ -14,7 +14,7 @@
 
 .header2 {
   float: left;
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   font-size: 25px;
   line-height: 35px;
   color: #004d2f;
@@ -22,7 +22,7 @@
 
 .text {
   width: 552px;
-  font-family: 'Noto Sans Korean Regular';
+	font-weight: 400;
   font-size: 15px;
   line-height: 25px;
   color: #414042;
@@ -33,7 +33,7 @@
 }
 
 .header3 {        
-  font-family: 'Noto Sans Korean Medium';
+	font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: #16b475;

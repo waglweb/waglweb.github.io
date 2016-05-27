@@ -8,7 +8,7 @@
 .text {
   text-align: center;
   color: #16b475;
-  font-family: 'Noto Sans Korean Medium';
+	font-weight: 500;
   font-size: 18px;
   line-height: 30px;
 }
@@ -21,7 +21,7 @@
 #tags > .tag {
   height: 42px;
   color: #bcbec0;
-  font-family: 'Noto Sans Korean Medium';
+	font-weight: 500;
   font-size: 20px;
   background-color: #16b475;
   display: inline-block;
@@ -67,7 +67,7 @@
 
 .action > .action_name_kor {
   margin-top: 154px;
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   font-size: 40px;
   line-height: 40px;
   color: #004d2f;
@@ -75,7 +75,7 @@
 
 .action > .action_name_eng {
   margin-top: 18px;
-  font-family: 'Noto Sans Korean Bold';
+	font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   color: #004d2f;
@@ -87,7 +87,7 @@
 
 .action > .action_tags > .action_tag {
   display: inline-block;
-  font-family: 'Noto Sans Korean Regular';
+	font-weight: 400;
   font-size: 14.55px;
   line-height: 31px;
   color: #fff;
