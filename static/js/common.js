@@ -35,9 +35,12 @@ $(document).on('click', '#lang_eng', function(event) {
   updateLanguageToEnglish();
 });
 
-// Translate contents when window loaded
-// TODO Auto detect language
 $(window).load(function() {
+  // Translate contents when window loaded
+  // TODO Auto detect language
   if (localStorage.getItem('lang') == 'en') updateLanguageToEnglish();
   else updateLanguageToKorean();
+
+  // Hide loading icon
+  $('#loading-icon').addClass('hidden');
 });

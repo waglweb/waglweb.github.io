@@ -34,3 +34,154 @@ a, a:focus, a:hover, a:active, a:visited {
 	cursor: pointer;
 	outline: 0;
 }
+
+/* ================
+ * Common attribute
+ * ================ */
+
+.full-width {
+	width: 100%;
+}
+
+.hidden {
+	display: none !important;
+}
+
+/* ======
+ * Header
+ * ====== */
+
+
+/* ======
+ * Footer
+ * ====== */
+
+
+/* ============
+ * Landing page
+ * ============ */
+
+
+/* ==========
+ * About page
+ * ========== */
+
+
+/* ==============
+ * Manifesto page
+ * ============== */
+
+
+/* ============
+ * Project page
+ * ============ */
+
+
+/* ============
+ * WAGLPEDIA page
+ * ============ */
+
+
+/* ===============================
+ * Loading icon - 3rd party 
+ * Generated at http://loading.io/
+ * =============================== */
+
+#loading-icon  {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	top: 50%;
+	left: 50%;
+	margin-top: -30px;
+	margin-left: -30px;
+  border-radius: 80px;
+  box-shadow: 0 6px 0 0 #16b475;
+	z-index: 9999;
+  -webkit-animation: loading-anim 1s linear infinite;
+  -moz-animation: loading-anim 1s linear infinite;
+  -ms-animation: loading-anim 1s linear infinite;
+  -o-animation: loading-anim 1s linear infinite;
+  animation: loading-anim 1s linear infinite;
+}
+
+@-webkit-keyframes loading-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes loading-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes loading-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes loading-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
