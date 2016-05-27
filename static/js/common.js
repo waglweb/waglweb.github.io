@@ -36,6 +36,7 @@ $(document).on('click', '#lang_eng', function(event) {
 });
 
 // Translate contents when window loaded
+// TODO Auto detect language
 $(window).load(function() {
   if (localStorage.getItem('lang') == 'en') updateLanguageToEnglish();
   else updateLanguageToKorean();
