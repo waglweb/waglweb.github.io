@@ -162,26 +162,6 @@ a:active {
     text-decoration: none;
 }
 
-#search {
-  float: right;
-  height: 35px;
-  width: 160px;
-  line-height: 35px;
-  font-size: 15px;
-  padding: 0 20px;
-  border: 0;
-  border-radius: 4px;
-  background-color: #f1f1f1;
-  color: #999898;
-}
-
-#btn_menu {
-  float: right;
-  width: 98px;
-  height: 35px;
-  margin-left: 18px;
-}
-
 #space_header {
   height: 100px;
 }
