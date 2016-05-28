@@ -183,7 +183,7 @@ body {
   display: block;
 }
 
-#news_more {
+.news_more {
   display: inline-block;
 	font-weight: 500;
   color: #808285;
