@@ -1,3 +1,8 @@
+body {
+  min-width: 1280px;
+  letter-spacing: -0.02em;
+}
+
 /* header */
 
 #header {

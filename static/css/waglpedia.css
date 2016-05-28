@@ -1,3 +1,8 @@
+body {
+  min-width: 1280px;
+  letter-spacing: -0.02em;
+}
+
 #cover {
   background: url(../img/waglpedia/cover.png);
   background-size: cover;
