@@ -1,16 +1,16 @@
 // Make header tranparent when scroll downwards
 // TODO Use throttle
 $(window).scroll(function() {
-  if ($(window).scrollTop() > 250) $('#header').removeClass('transparent');
-  else $('#header').addClass('transparent');
+  if ($(window).scrollTop() > 250) $('.navbar').removeClass('navbar--transparent');
+  else $('.navbar').addClass('navbar--transparent');
 });
 
 // Update language to Korean
 function updateLanguageToKorean() {
   localStorage.setItem('lang', 'ko');
   document.title = $('#title-ko').val();
-  $('#lang_eng').removeClass('on');
-  $('#lang_kor').addClass('on');
+  $('.navbar__language--english').removeClass('language--active');
+  $('.navbar__language--korean').addClass('language--active');
   $('[data-lang="en"]').addClass('hidden');
   $('[data-lang="ko"]').removeClass('hidden');
 }
@@ -19,27 +19,32 @@ function updateLanguageToKorean() {
 function updateLanguageToEnglish() {
   localStorage.setItem('lang', 'en');
   document.title = $('#title-en').val();
-  $('#lang_kor').removeClass('on');
-  $('#lang_eng').addClass('on');
+  $('.navbar__language--korean').removeClass('language--active');
+  $('.navbar__language--english').addClass('language--active');
   $('[data-lang="ko"]').addClass('hidden');
   $('[data-lang="en"]').removeClass('hidden');
 }
 
-// Change language
-$(document).on('click', '#lang_kor', function(event) {
+// Change language configuration
+$(document).on('click', '.navbar__language--korean', function(event) {
   event.preventDefault();
   updateLanguageToKorean();
 });
-$(document).on('click', '#lang_eng', function(event) {
+$(document).on('click', '.navbar__language--english', function(event) {
   event.preventDefault();
   updateLanguageToEnglish();
 });
 
 $(window).load(function() {
-  // Translate contents when window loaded
-  // TODO Auto detect language
+  // Translate contents
   if (localStorage.getItem('lang') == 'en') updateLanguageToEnglish();
-  else updateLanguageToKorean();
+  else if (localStorage.getItem('lang') == 'ko') updateLanguageToKorean();
+  // Detect language when user first visited site
+  else {
+    var language = navigator.language || navigator.userLanguage;
+    if (language == 'ko') updateLanguageToKorean();
+    else updateLanguageToEnglish();
+  }
 
   // Hide loading icon
   $('#loading-icon').addClass('hidden');
