@@ -136,6 +136,12 @@ a, a:focus, a:hover, a:active, a:visited {
  * Footer
  * ====== */
 
+.footer {
+	padding: 20px 0;
+  background-color: #d1d3d4;
+	color: #7B7B7D;
+  line-height: 2.0;
+}
 
 /* ============
  * Landing page

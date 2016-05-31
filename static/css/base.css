@@ -82,25 +82,3 @@
   float: right;
   margin-top: 10px;
 }
-
-/* footer */
-
-#footer {
-  background: #d1d3d4;
-  color: #414042;
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: normal;
-}
-
-#footer > .content {
-  padding: 30px 49px 40px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#footer > .content > .icon {
-  float: right;
-  margin-left: 15px;
-}
