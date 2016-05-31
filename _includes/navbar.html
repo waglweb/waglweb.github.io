@@ -1,32 +1,86 @@
-<!-- Header with navigation bar -->
-<div id="header" class="section transparent">
-  <div class="content">
-    <a href="/">
-      <img src="static/img/logo/korean_version.png" class="logo hidden" data-lang="ko" />
-      <img src="static/img/logo/english_version.png" class="logo hidden" data-lang="en" />
-    </a>
-    <nav>
-      <a href="index" class="hidden" data-lang="ko">처음으로</a>
-      <a href="index" class="hidden" data-lang="en">Home</a>
-      <a href="about" class="hidden" data-lang="ko">와글 소개</a>
-      <a href="about" class="hidden" data-lang="en">About</a>
-      <a href="manifesto" class="hidden" data-lang="ko">매니페스토</a>
-      <a href="manifesto" class="hidden" data-lang="en">Manifesto</a>
-      <!--
-      <a href="waglpedia" class="hidden" data-lang="ko">와글피디아</a>
-      <a href="waglpedia" class="hidden" data-lang="en">WAGL-PEDIA</a>
-      -->
-      <a href="project" class="hidden" data-lang="ko">프로젝트</a>
-      <a href="project" class="hidden" data-lang="en">Projects</a>
-      <a href="https://medium.com/wagl-art" target="_blank" class="hidden" data-lang="ko">블로그</a>
-      <a href="https://medium.com/wagl-art" target="_blank" class="hidden" data-lang="en">Blog</a>
-    </nav>
-    <div id="lang">
-      <a id="lang_kor" class="lang on">KOR</a>
-      <a id="lang_eng" class="lang" href="en/index">ENG</a>
+<!-- Fixed navigation bar -->
+<nav class="navbar navbar-default navbar-fixed-top navbar--transparent">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="icon-bar navbar__icon-bar"></span>
+        <span class="icon-bar navbar__icon-bar"></span>
+        <span class="icon-bar navbar__icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">
+        <img src="static/img/logo/korean_version.png" class="navbar__logo hidden" data-lang="ko" />
+        <img src="static/img/logo/english_version.png" class="navbar__logo hidden" data-lang="en" />
+      </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <div class="visible-xs row navbar__language--mobile">
+          <div class="col-xs-6 navbar__language--korean">
+            한글
+          </div>
+          <div class="col-xs-6 navbar__language--english">
+            English
+          </div>
+        </div>
+        <li>
+          <a href="/" class="navbar__menu hidden" data-lang="ko">처음으로</a>
+          <a href="/" class="navbar__menu hidden" data-lang="en">Home</a>
+        </li>
+        <li>
+          <a href="/about" class="navbar__menu hidden" data-lang="ko">와글 소개</a>
+          <a href="/about" class="navbar__menu hidden" data-lang="en">About</a>
+        </li>
+        <li>
+          <a href="/manifesto" class="navbar__menu hidden" data-lang="ko">매니페스토</a>
+          <a href="/manifesto" class="navbar__menu hidden" data-lang="en">Manifesto</a>
+        </li>
+        <!--
+        <li>
+          <a href="/waglpedia" class="navbar__menu hidden" data-lang="ko">와글피디아</a>
+          <a href="/waglpedia" class="navbar__menu hidden" data-lang="en">WAGL-PEDIA</a>
+        </li>
+        -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle navbar__menu hidden" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-lang="ko">프로젝트 <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle navbar__menu hidden" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-lang="en">Projects <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="/project" class="hidden" data-lang="ko">전체 프로젝트</a>
+              <a href="/project" class="hidden" data-lang="en">Whole projects</a>
+            </li>
+            <li role="separator" class="divider"></li>
+            <li>
+              <a href="/collaboration" class="hidden" data-lang="ko">협업과 네트워킹</a>
+              <a href="/collaboration" class="hidden" data-lang="en">Collaboration</a>
+            </li>
+            <li>
+              <a href="/campaign" class="hidden" data-lang="ko">A.R.T. 민주주의 연구와 소개</a>
+              <a href="/campaign" class="hidden" data-lang="en">Campaign</a>
+            </li>
+            <li>
+              <a href="/civictech" class="hidden" data-lang="ko">일상기술과 민주주의의 만남</a>
+              <a href="/civictech" class="hidden" data-lang="en">Civic tech</a>
+            </li>
+            <li>
+              <a href="/community" class="hidden" data-lang="ko">풀뿌리 커뮤니티 지원 및 발굴</a>
+              <a href="/community" class="hidden" data-lang="en">Community</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://medium.com/wagl-art" target="_blank" class="navbar__menu hidden" data-lang="ko">블로그</a>
+          <a href="https://medium.com/wagl-art" target="_blank" class="navbar__menu hidden" data-lang="en">Blog</a>
+        </li>
+        <li>
+          <div class="hidden-xs navbar__language--desktop">
+            <div class="navbar__language--korean">한글</div>
+            <div class="navbar__language--english">English</div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
+</nav>
 
 <!-- Loading icon -->
 <div id="loading-icon"></div>

@@ -47,10 +47,90 @@ a, a:focus, a:hover, a:active, a:visited {
 	display: none !important;
 }
 
-/* ======
- * Header
- * ====== */
+.language--active {
+	color: #16b475 !important;
+}
 
+/* ==============
+ * Navigation bar
+ * ============== */
+
+.navbar {
+  background-color: rgba(255, 255, 255, 1);
+	background-image: none;
+	border: none;
+}
+@media only screen and (min-width: 768px) {
+	.navbar {
+		background-color: rgba(255, 255, 255, 0.75);
+		padding: 20px 0;
+		-webkit-transition: background-color 0.65s ease-in-out;
+		-moz-transition: background-color 0.65s ease-in-out;
+		-ms-transition: background-color 0.65s ease-in-out;
+		-o-transition: background-color 0.65s ease-in-out;
+		transition: background-color 0.65s ease-in-out;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.navbar--transparent {
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+
+.navbar-collapse {
+	max-height: 500px !important;
+}
+
+.navbar-brand {
+	padding-top: 12px;
+}
+@media only screen and (min-width: 768px) {
+	.navbar-brand {
+		padding-top: 5px;
+	}
+}
+
+.navbar__logo {
+	height: 30px;
+}
+@media only screen and (min-width: 768px) {
+	.navbar__logo {
+		height: 42px; 
+	}
+}
+
+.navbar-toggle {
+	border: none;
+}
+
+.navbar__icon-bar {
+	background-color: #00BE77 !important;
+	height: 3px !important;
+}
+
+.navbar__menu {
+	color: #16b475 !important;
+	font-weight: 500 !important;
+}
+
+.navbar__language--mobile {
+	padding: 5px 0 14px 0;
+	border-bottom: 1px solid #e7e7e7;
+	text-align: center;
+}
+
+.navbar__language--desktop {
+	padding: 0 30px;
+	font-size: 0.9em;
+	line-height: 2.0;
+	text-align: center;
+}
+
+.navbar__language--korean, .navbar__language--english {
+	color: #999999;
+	cursor: pointer;
+}
 
 /* ======
  * Footer
