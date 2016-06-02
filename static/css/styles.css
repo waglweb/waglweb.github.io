@@ -35,6 +35,28 @@ a, a:focus, a:hover, a:active, a:visited {
 	outline: 0;
 }
 
+/* ==================
+ * Override bootstrap
+ * ================== */
+
+.carousel-control {
+	background-image: none !important;
+}
+
+.carousel-indicators {
+	bottom: -30px;
+}
+
+.carousel-indicators li {
+	border: none;
+	background-color: #BCBDBF;
+}
+
+.carousel-indicators li.active {
+	border: none;
+	background-color: #58595B;
+}
+
 /* ================
  * Common attribute
  * ================ */
@@ -70,9 +92,6 @@ a, a:focus, a:hover, a:active, a:visited {
 		-o-transition: background-color 0.65s ease-in-out;
 		transition: background-color 0.65s ease-in-out;
 	}
-}
-
-@media only screen and (min-width: 768px) {
 	.navbar--transparent {
 		background-color: rgba(255, 255, 255, 0);
 	}
@@ -147,6 +166,484 @@ a, a:focus, a:hover, a:active, a:visited {
  * Landing page
  * ============ */
 
+.landing__intro {
+	position: relative;
+	overflow: hidden;
+}
+
+.intro__background-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+@media only screen and (max-width: 767px) {
+	.intro__background-video {
+		height: 100%;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.intro__background-video {
+		width: 100%;
+	}
+}
+
+.intro__name {
+	margin-top: 100px;
+	font-size: 4.0em;
+	font-weight: 900;
+  color: #006633;
+}
+@media only screen and (min-width: 768px) {
+	.intro__name {
+		margin-top: 200px;
+		font-size: 6.5em;
+		font-weight: 900;
+	}
+}
+
+.intro__fullname {
+	margin: -5px 0 30px 0;
+	font-size: 2.0em;
+	font-weight: 700;
+  color: #414042;
+}
+@media only screen and (min-width: 768px) {
+	.intro__fullname {
+		margin: -20px 0 30px 0;
+		font-size: 2.5em;
+		font-weight: 700;
+	}
+}
+
+.intro__vision {
+	padding-bottom: 30px;
+	font-weight: 400;
+  color: #414042;
+	line-height: 2.0;
+}
+@media only screen and (min-width: 768px) {
+	.intro__vision {
+		padding-bottom: 80px;
+		font-weight: 400;
+		color: #414042;
+	}
+}
+
+.intro__vision--emphasize {
+	display: inline-block;
+	font-weight: 700;
+  color: #006633;
+	word-break: break-all;
+}
+
+.landing__feedback {
+	position: relative;
+	padding: 80px 0 50px 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+.feedback__background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+@media only screen and (max-width: 767px) {
+	.feedback__background-image {
+		height: 100%;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.feedback__background-image {
+		width: 100%;
+	}
+}
+
+.feedback__decorator--head {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	margin-left: -16px;
+	width: 32px;
+}
+
+.feedback__carousel {
+	padding: 30px 0;
+}
+@media only screen and (min-width: 768px) {
+	.feedback__carousel {
+		padding: 60px 0;
+	}
+}
+
+.feedback__carousel .carousel-inner {
+	margin: 0 auto;
+	width: 75%;
+}
+
+.feedback__content {
+	font-size: 1.2em;
+	line-height: 1.6;
+	color: white;
+}
+@media only screen and (min-width: 768px) {
+	.feedback__content {
+		font-size: 1.5em;
+		line-height: 1.8;
+	}
+}
+
+.feedback__author {
+	margin-top: 15px;
+	font-size: 1.0em;
+	font-weight: 700;
+	color: white;
+}
+@media only screen and (min-width: 768px) {
+	.feedback__author {
+		margin-top: 30px;
+		font-size: 1.4em;
+	}
+}
+
+.feedback__link-btn {
+	width: 215px;
+	height: 48px;
+	border: none;
+	font-size: 1.2em;
+	color: white;
+	background-color: rgba(0, 77, 47, 0.4);
+}
+@media only screen and (min-width: 768px) {
+	.feedback__link-btn {
+		font-size: 1.4em;
+	}
+}
+
+.landing__section {
+	padding-top: 50px;
+}
+@media only screen and (min-width: 768px) {
+	.landing__section {
+		padding-top: 100px;
+	}
+}
+
+.landing__section--wagl-story {
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+@media only screen and (min-width: 768px) {
+	.landing__section--wagl-story {
+		padding-bottom: 100px;
+	}
+}
+
+.section__title {
+  font-size: 2.1em;
+	font-weight: 700;
+  color: #004d2f;
+  text-align: center;
+}
+
+.section__subtitle {
+  margin: 25px 0;
+  font-size: 1.3em;
+	font-weight: 500;
+  color: #414042;
+  text-align: center;
+}
+
+.project__detail {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 5px;
+	padding: 0;
+}
+@media only screen and (min-width: 768px) {
+	.project__detail {
+		padding: 0 5px;
+		height: 395px;
+	}
+}
+
+.project__background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: -180px;
+	width: 100%;
+	z-index: -100;
+}
+@media only screen and (min-width: 768px) {
+	.project__background-image {
+		margin-top: -70px;
+		padding: 0 5px;
+	}
+}
+
+.project__link {
+	display: block;
+	padding: 50px 15px 70px 15px;
+  background-color: black;
+	opacity: 0.6;
+	text-align: center;
+}
+@media only screen and (min-width: 768px) {
+	.project__link {
+		height: 400px;
+	}
+}
+.project__link:hover, .project__link:active {
+  background-color: rgb(22, 160, 117);
+	opacity: 0.6;
+}
+
+.project__category {
+  font-size: 1.4em;
+	font-weight: 700;
+  color: #d1d3d4;
+}
+
+.project__name {
+	margin: 10px 0 30px 0;
+  font-size: 1.3em;
+	font-weight: 700;
+  color: white;
+}
+@media only screen and (min-width: 768px) {
+	.project__name {
+		margin: 10px 0 180px 0;
+	}
+}
+
+.project__explain {
+	font-weight: 400;
+	color: white;
+}
+
+.project__more-btn {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	padding: 3px 10px 5px 10px;
+	border: none;
+	font-size: 0.8em;
+	background-color: #004D2F;
+	color: white;
+}
+@media only screen and (min-width: 768px) {
+	.project__more-btn {
+		right: 20px;
+	}
+}
+
+.waglpedia__carousel {
+	padding: 0;
+}
+
+.waglpedia--mobile {
+	padding: 0 15px;
+}
+
+.waglpedia__text-container--mobile {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	height: 50vw;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	border: 1px solid #D3D3D5;
+	background-color: #16b475;
+	color: white;
+	text-align: left;
+}
+
+.waglpedia__text--emphasize {
+	font-weight: 700;
+	font-size: 1.4em;
+	line-height: 40px;
+}
+
+.waglpedia__image-container--mobile {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	height: 50vw;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	border: 1px solid #D3D3D5;
+	text-align: center;
+}
+
+.waglpedia__image--mobile {
+	width: 80%;
+	opacity: 0.6;
+}
+
+.waglpedia__item {
+	position: relative;
+	padding: 0;
+	height: 200px;
+}
+
+.waglpedia__text-container--desktop {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	height: 200px;
+	padding: 15px;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	border: 1px solid #D3D3D5;
+	background-color: #16b475;
+	color: white;
+	text-align: left;
+}
+
+.waglpedia__image-container--desktop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	height: 200px;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	border: 1px solid #D3D3D5;
+	text-align: center;
+}
+
+.waglpedia__image--desktop {
+	width: 80%;
+	opacity: 0.6;
+}
+
+.wagl-story {
+	display: block;
+	padding: 5px 0;
+}
+@media only screen and (min-width: 768px) {
+	.wagl-story {
+		padding: 0 5px;
+	}
+}
+
+.wagl-story__summary {
+	position: relative;
+	height: 200px;
+}
+
+.wagl-story__background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -100;
+}
+
+.wagl-story__title {
+  display: inline-block;
+	margin: 15px 0 0 15px;
+	padding: 0 5px;
+	font-size: 1.5em;
+  background-color: rgba(51, 51, 51, 0.9);
+	color: white;
+}
+
+.wagl-story__detail {
+	padding: 15px;
+	background-color: #00BE77;
+	color: white;
+}
+
+.wagl-story__content {
+	padding-bottom: 15px;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 768px) {
+	.wagl-story__content {
+		padding: 30px 0 50px 0;
+	}
+}
+
+.wagl-story__created-at {
+	padding-top: 15px;
+	border-top: 1px solid white;
+}
+
+.wagl-story__author {
+	padding-top: 5px;
+}
+
+.landing__social-media {
+	padding: 50px 0;
+  background-color: #414042;
+	text-align: center;
+}
+
+.social-media__title {
+	font-weight: 700;
+	font-size: 2.1em;
+	color: white;
+}
+
+.social-media__subtitle {
+	padding-top: 30px;
+	font-weight: 700;
+	font-size: 1.3em;
+	color: white;
+}
+
+.social-media__icon-container {
+	margin: 40px 0;
+}
+@media only screen and (min-width: 768px) {
+	.social-media__icon-container {
+		margin: 65px 0;
+	}
+}
+
+.social-media__icon {
+	padding: 0 10px;
+}
+@media only screen and (min-width: 768px) {
+	.social-media__icon {
+		padding: 0 40px;
+	}
+}
 
 /* ==========
  * About page
