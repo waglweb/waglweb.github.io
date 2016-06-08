@@ -73,6 +73,113 @@ a, a:focus, a:hover, a:active, a:visited {
 	color: #16b475 !important;
 }
 
+.section__foreground-image {
+	width: 100%;
+}
+
+.section__background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -100;
+}
+@media only screen and (max-width: 767px) {
+	.section__background-image {
+		height: 100%;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.section__background-image {
+		width: 100%;
+	}
+}
+
+.page-name {
+	padding: 80px 0 30px 0;
+	font-weight: 700;
+	font-size: 2.0em;
+	color: #004d2f; 
+	text-align: center;
+}
+@media only screen and (min-width: 768px) {
+	.page-name {
+		padding: 100px 0 50px 0;
+		font-size: 2.5em;
+	}
+}
+
+.page-name--bottom-border {
+	margin: 0 auto 50px auto;
+	width: 50px;
+  border-top: 2px solid #004d2f;
+}
+@media only screen and (min-width: 768px) {
+	.page-name--bottom-border {
+		margin: 0 auto 100px auto;
+	}
+}
+
+.title {
+	margin-bottom: 70px;
+	font-weight: 700;
+	font-size: 2.0em;
+	color: #004d2f; 
+}
+@media only screen and (min-width: 768px) {
+	.title {
+		font-size: 2.5em;
+	}
+}
+
+.title--emphasized {
+	padding: 100px 0;
+	font-weight: 700;
+	font-size: 1.4em;
+	color: white;
+	text-align: center;
+}
+@media only screen and (min-width: 768px) {
+	.title--emphasized {
+		padding: 250px 0;
+		font-size: 2.85em;
+	}
+}
+
+.title--prefix {
+	margin-bottom: 18px;
+	font-weight: 700;
+	font-size: 1.8em;
+  color: #16b475;
+}
+@media only screen and (min-width: 768px) {
+	.title--prefix {
+		margin-top: 70px;
+	}
+}
+
+.subtitle {
+	margin-bottom: 50px;
+	font-weight: 500;
+	font-size: 1.3em;
+  color: #16b475;
+}
+@media only screen and (min-width: 768px) {
+	.subtitle {
+		font-size: 1.5em;
+	}
+}
+
+.normal-text {
+	margin-bottom: 30px;
+	line-height: 1.6em;
+}
+@media only screen and (min-width: 768px) {
+	.normal-text {
+		font-size: 1.2em;
+	}
+}
+
 /* ==============
  * Navigation bar
  * ============== */
@@ -230,7 +337,7 @@ a, a:focus, a:hover, a:active, a:visited {
 	}
 }
 
-.intro__vision--emphasize {
+.intro__vision--emphasized {
 	display: inline-block;
 	font-weight: 700;
   color: #006633;
@@ -242,23 +349,6 @@ a, a:focus, a:hover, a:active, a:visited {
 	padding: 80px 0 50px 0;
 	overflow: hidden;
 	text-align: center;
-}
-
-.feedback__background-image {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -100;
-}
-@media only screen and (max-width: 767px) {
-	.feedback__background-image {
-		height: 100%;
-	}
-}
-@media only screen and (min-width: 768px) {
-	.feedback__background-image {
-		width: 100%;
-	}
 }
 
 .feedback__decorator--head {
@@ -468,7 +558,7 @@ a, a:focus, a:hover, a:active, a:visited {
 	text-align: left;
 }
 
-.waglpedia__text--emphasize {
+.waglpedia__text--emphasized {
 	font-weight: 700;
 	font-size: 1.4em;
 	line-height: 40px;
@@ -501,6 +591,7 @@ a, a:focus, a:hover, a:active, a:visited {
 	position: relative;
 	padding: 0;
 	height: 200px;
+	cursor: pointer;
 }
 
 .waglpedia__text-container--desktop {
@@ -654,6 +745,16 @@ a, a:focus, a:hover, a:active, a:visited {
  * Manifesto page
  * ============== */
 
+.manifesto__intro {
+	position: relative;
+	margin-top: 60px;
+	overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+	.manifesto__intro {
+		margin-top: 100px;
+	}
+}
 
 /* ============
  * Project page
