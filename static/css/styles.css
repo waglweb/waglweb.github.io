@@ -20,6 +20,8 @@ html, body {
 }
 
 body {
+	overflow-x: hidden;
+
 	// Disable double-tap-to-zoom in IE 10, 11 for fast-click
 	-ms-touch-action: manipulation;
 	touch-action: manipulation;
@@ -38,6 +40,10 @@ a, a:focus, a:hover, a:active, a:visited {
 /* ==================
  * Override bootstrap
  * ================== */
+
+.hidden {
+	display: none !important;
+}
 
 .carousel-control {
 	background-image: none !important;
@@ -65,16 +71,12 @@ a, a:focus, a:hover, a:active, a:visited {
 	width: 100%;
 }
 
-.hidden {
-	display: none !important;
+.space {
+	height: 30px;
 }
 
 .language--active {
 	color: #16b475 !important;
-}
-
-.section__foreground-image {
-	width: 100%;
 }
 
 .section__background-image {
@@ -155,6 +157,19 @@ a, a:focus, a:hover, a:active, a:visited {
 @media only screen and (min-width: 768px) {
 	.title--prefix {
 		margin-top: 70px;
+	}
+}
+
+.title--black {
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 1.5em;
+	color: #414042; 
+}
+@media only screen and (min-width: 768px) {
+	.title--black {
+		margin-bottom: 45px;
+		font-size: 2.2em;
 	}
 }
 
@@ -686,7 +701,8 @@ a, a:focus, a:hover, a:active, a:visited {
 }
 @media only screen and (min-width: 768px) {
 	.wagl-story__content {
-		padding: 30px 0 50px 0;
+		height: 170px;
+		padding-top: 30px;
 	}
 }
 
@@ -740,6 +756,204 @@ a, a:focus, a:hover, a:active, a:visited {
  * About page
  * ========== */
 
+.about__intro, .about__vision {
+	position: relative;
+	margin-top: 60px;
+	overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+	.about__intro, .about__vision {
+		margin-top: 100px;
+	}
+}
+
+.about__title--prefix {
+	margin-bottom: 18px;
+	font-weight: 700;
+	font-size: 1.5em;
+  color: #16b475;
+}
+@media only screen and (min-width: 768px) {
+	.about__title--prefix {
+		font-size: 1.8em;
+	}
+}
+
+.about__news {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.news {
+	display: block;
+	padding: 25px 0;
+	border-bottom: solid 1px #b0b1b4;
+	color: #414042;
+}
+@media only screen and (min-width: 768px) {
+	.news {
+		padding: 20px 0;
+	}
+}
+
+.news__press-name {
+	display: inline-block;
+	margin-bottom: 8px;
+	border-bottom: solid 3px #16b475;
+	font-weight: 700;
+	font-size: 1.0em;
+}
+@media only screen and (min-width: 768px) {
+	.news__press-name {
+		margin-bottom: 12px;
+		font-size: 1.3em;
+	}
+}
+
+.news__created-at {
+	font-size: 0.9em;
+}
+@media only screen and (min-width: 768px) {
+	.news__created-at {
+		font-size: 1.25em;
+	}
+}
+
+.news__title {
+	font-weight: 700;
+	font-size: 1.2em;
+}
+@media only screen and (min-width: 768px) {
+	.news__title {
+		font-size: 1.7em;
+	}
+}
+
+.news__more {
+	padding: 15px 0 5px 0;
+	float: right;
+	font-weight: 500;
+	font-size: 1.1em;
+	color: #808285;
+	border-bottom: solid 1px #b0b1b4;
+	cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+	.news__more {
+		margin-right: -15px;
+		padding: 25px 0 10px 0;
+		font-size: 1.3em;
+	}
+}
+
+.about__profile {
+	margin: 30px 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.profile__picture {
+	width: 80%;
+}
+@media only screen and (min-width: 768px) {
+	.profile__picture {
+		width: 65%;
+	}
+}
+
+.about__profile.collapse.in .profile__picture {
+	border: solid 5px #16b475;
+}
+
+.profile__name {
+	margin: 10px 0;
+	font-weight: 700;
+	font-size: 1.3em;
+}
+
+.profile__role {
+	color: #414042;
+}
+
+.profile__email-address {
+	color: #414042;
+}
+
+.profile--collapsed {
+	border-top: solid 1px #16b475;
+	border-bottom: solid 1px #16b475;
+}
+
+.profile__vision {
+	margin: 60px 0 40px 0;
+	font-weight: 700;
+	font-size: 1.2em;
+	line-height: 1.7em;
+	color: #16b475;
+}
+@media only screen and (min-width: 768px) {
+	.profile__vision {
+		font-size: 1.4em;
+	}
+}
+
+.profile__self-introduction {
+	margin-bottom: 40px;
+	color: #414042;
+	line-height: 1.7em;
+}
+
+.profile__career {
+	margin-bottom: 60px;
+	color: #16b475;
+}
+
+.profile__career li {
+	list-style: none;
+}
+
+.contact--mobile {
+	padding: 40px 0 30px 0;
+	background-color: #16b475;
+}
+
+.contact--desktop {
+	position: relative;
+	padding: 90px 0 0 50px;
+	background-color: #16b475;
+}
+
+.contact__logo {
+	position: absolute;
+	width: 100px;
+	top: 20px;
+	right: 20px;
+}
+
+.contact__info {
+	color: white;
+}
+@media only screen and (min-width: 768px) {
+	.contact__info {
+		font-size: 1.3em;
+	}
+}
+
+.contact__info--emphasized {
+	margin-bottom: 15px;
+	font-weight: 700;
+	font-size: 1.3em;
+	color: white;
+}
+@media only screen and (min-width: 768px) {
+	.contact__info--emphasized {
+		font-size: 1.5em;
+	}
+}
+
+.contact__google-map {
+	padding: 0;
+}
 
 /* ==============
  * Manifesto page

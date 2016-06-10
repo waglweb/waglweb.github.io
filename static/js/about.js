@@ -1,24 +1,14 @@
-// people click event      
-function peopleOn() {
-  // 이전 활성화된 프로필 off
-  $('.people').removeClass('on').unbind('click').click(peopleOn);
-  $('.people_detail.on').slideUp(250);
-  // 클릭된 프로필 on
-  $(this).addClass('on');
-  var id = $(this).attr('id');
-  $('#'+id+'_detail').slideDown(250).addClass('on');
-  // 이벤트 리스너 제거        
-  $(this).unbind('click');
-  $(this).click(peopleOff);
-}
+// Show user profile and hide other profiles
+$(document).on('click', '.about__profile', function(event) {
+  event.preventDefault();
 
-function peopleOff() {
-  // 활성화된 프로필 off
-  $('.people').removeClass('on').unbind('click').click(peopleOn);
-  $('.people_detail.on').slideUp(250);
-  // 이벤트 리스너 제거
-  $(this).unbind('click');
-  $(this).click(peopleOn);
-}
+  $('.profile--collapsed').collapse('hide');
+  $('.about__profile').removeClass('collapse').removeClass('in');
 
-$('.people').click(peopleOn);
+  $(this).collapse('show');
+});
+
+// Adjust contact info box to get same height with google map
+$(window).load(function() {
+  $('.contact--desktop').css('height', $('.contact__google-map').height() - 4);
+});
