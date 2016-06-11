@@ -974,6 +974,92 @@ a, a:focus, a:hover, a:active, a:visited {
  * Project page
  * ============ */
 
+.project__title-container {
+	padding: 80px 15px 50px 15px;
+	text-align: left;
+}
+@media only screen and (min-width: 768px) {
+	.project__title-container {
+		padding: 0;
+		text-align: center;
+	}
+}
+
+.project__subtitle-container {
+	margin-left: 15px;
+	padding-right: 30px;
+	border-left: solid 2px #16b475;
+}
+@media only screen and (min-width: 768px) {
+	.project__subtitle-container {
+		margin: 0;
+		padding: 0 100px;
+	}
+}
+
+.project__title {
+	font-weight: 700;
+	font-size: 1.8em;
+	color: #004d2f;
+}
+
+.project__subtitle {
+	margin-bottom: 30px;
+	font-weight: 500;
+	font-size: 1.3em;
+	color: #16b475;
+	line-height: 1.6em;
+}
+@media only screen and (min-width: 768px) {
+	.project__subtitle {
+		margin-bottom: 50px;
+	}
+}
+
+.project__content {
+	line-height: 1.6em;
+}
+
+/* =============
+ * Campaign page
+ * ============= */
+
+
+/* ==============
+ * Civictech page
+ * ============== */
+
+
+/* =================
+ * Collaboration page
+ * ================== */
+
+
+/* ==============
+ * Community page
+ * ============== */
+
+.community__intro {
+	position: relative;
+	margin-top: 60px;
+	overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+	.community__intro {
+		margin-top: 100px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.community__partners {
+		padding: 0;
+	}
+}
+
+.community__partner-logo {
+	display: block;
+	border: solid 1px #bebebe;
+}
 
 /* ============
  * WAGLPEDIA page
