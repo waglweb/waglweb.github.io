@@ -779,7 +779,7 @@ a, a:focus, a:hover, a:active, a:visited {
 	}
 }
 
-.about__news {
+.news-container {
 	max-width: 900px;
 	margin: 0 auto;
 }
@@ -975,13 +975,11 @@ a, a:focus, a:hover, a:active, a:visited {
  * ============ */
 
 .project__title-container {
-	padding: 80px 15px 50px 15px;
-	text-align: left;
+	padding: 50px 15px 30px 15px;
 }
 @media only screen and (min-width: 768px) {
 	.project__title-container {
-		padding: 0;
-		text-align: center;
+		padding: 0 50px;
 	}
 }
 
@@ -1006,7 +1004,7 @@ a, a:focus, a:hover, a:active, a:visited {
 .project__subtitle {
 	margin-bottom: 30px;
 	font-weight: 500;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	color: #16b475;
 	line-height: 1.6em;
 }
@@ -1020,6 +1018,16 @@ a, a:focus, a:hover, a:active, a:visited {
 	line-height: 1.6em;
 }
 
+.project__image-container {
+	width: 100%;
+}
+@media only screen and (min-width: 768px) {
+	.project__image-container {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
 /* =============
  * Campaign page
  * ============= */
@@ -1029,6 +1037,31 @@ a, a:focus, a:hover, a:active, a:visited {
  * Civictech page
  * ============== */
 
+.civictech__intro {
+	position: relative;
+	margin-top: 60px;
+	overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+	.civictech__intro {
+		margin-top: 100px;
+	}
+}
+
+.civictech__pingkorea-link {
+	margin: 20px 0;
+	padding: 5px 10px;
+	float: right;
+	background-color: #16b475;
+	font-weight: 500;
+	font-size: 1.1em;
+	color: white;
+}
+@media only screen and (min-width: 768px) {
+	.civictech__pingkorea-link {
+		margin: 35px 90px;
+	}
+}
 
 /* =================
  * Collaboration page
