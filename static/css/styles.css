@@ -1018,6 +1018,17 @@ a, a:focus, a:hover, a:active, a:visited {
 	line-height: 1.6em;
 }
 
+.project__video {
+	width: 100%;
+	min-height: 200px;
+	margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+	.project__video {
+		min-height: 320px;
+	}
+}
+
 .project__image-container {
 	width: 100%;
 }
@@ -1050,7 +1061,7 @@ a, a:focus, a:hover, a:active, a:visited {
 
 .civictech__pingkorea-link {
 	margin: 20px 0;
-	padding: 5px 10px;
+	padding: 8px 10px;
 	float: right;
 	background-color: #16b475;
 	font-weight: 500;
@@ -1067,6 +1078,39 @@ a, a:focus, a:hover, a:active, a:visited {
  * Collaboration page
  * ================== */
 
+.collaboration__intro {
+	position: relative;
+	margin-top: 60px;
+	overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+	.collaboration__intro {
+		margin-top: 100px;
+	}
+}
+
+.collaboration__lecture-title {
+	margin: 35px 0;
+	font-weight: 700;
+	font-size: 1.3em;
+	color: #414042;
+}
+
+.collaboration__lecture-detail {
+	margin-bottom: 20px;
+	line-height: 1.8em;	
+	color: #414042;
+}
+
+.collaboration__news-link {
+	margin: 0 0 40px 12px; 
+	padding: 8px 10px;
+	float: right;
+	background-color: #16b475;
+	font-weight: 500;
+	font-size: 1.1em;
+	color: white;
+}
 
 /* ==============
  * Community page
