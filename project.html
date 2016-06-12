@@ -10,9 +10,6 @@
   {% include head.html %}
 
   <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
-  <link rel="stylesheet" type="text/css" href="static/css/base.css" />
-  <link rel="stylesheet" type="text/css" href="static/css/index.css" />
-  <link rel="stylesheet" type="text/css" href="static/css/temp.css" />
 </head>
 <body>
   <input type="hidden" id="title-ko" value="와글 프로젝트" />
@@ -20,124 +17,57 @@
 
   {% include navbar.html %}
 
-  <div id="space_header"></div>
-  <div id="cover" class="section message">
-    <div class="content hidden" data-lang="ko">
+  <div class="project__intro">
+    <img src="/static/img/project/intro_background_image.png" class="section__background-image" />
+    
+    <div class="title--emphasized hidden" data-lang="ko">
       더 나은 민주주의, 이렇게 만들어갑니다
     </div>
-    <div class="content hidden" data-lang="en">
-      Our Projects for A.R.T. Politics<br/>
-      through the Power of the Crowd
+    <div class="title--emphasized hidden" data-lang="en">
+      Our Projects for A.R.T. Politics through the Power of the Crowd
     </div>
   </div>
-  <div id="section3" class="section">
-    <div class="content">
-      <div class="title">
-        <div class="hidden" data-lang="ko">
-          프로젝트
-        </div>
-        <div class="hidden" data-lang="en">
-          Projects
-        </div>
-        <div class="decorator"></div>
-      </div>
-      <div class="text hidden" data-lang="ko">
-        와글은 "군중의 힘으로 만들어가는 더 나은 민주주의"라는 비전을<br/>
-        다양한 프로젝트를 통해 이루어나가고 있습니다.<br/>
-        프로젝트에 대한 아이디어와 협업 제안은 언제나 환영합니다.
-      </div>
-      <div class="text hidden" data-lang="en">
-        WAGL is engaged in projects<br/>
-        that materialize our vision of creating a better democracy through the power of the crowd. <br/>
-        We always welcome innovative ideas and collaborations that further our cause.
-      </div>
-      <div id="projects">
-        <a id="project_collaboration" class="project" href="/collaboration">
-          <div class="project_category">
-            Collaboration
-          </div>
-          <div class="project_name hidden" data-lang="ko">
-            협업과 네트워킹
-          </div>
-          <div class="project_name hidden" data-lang="en">
-            Co-works and Networks
-          </div>
-          <div class="project_explain hidden" data-lang="ko">
-            세상을 바꾸고자 행동하는 지성과<br/>
-            만납니다.
-          </div>
-          <div class="project_explain hidden" data-lang="en">
-            We connect with the best minds<br/>
-            ready to improve our system.
-          </div>
-          <img class="project_more" src="static/img/project/btnMore.png" />
-        </a>
-        <a id="project_campaign" class="project" href="/campaign">
-          <div class="project_category">
-            Campaign
-          </div>
-          <div class="project_name hidden" data-lang="ko">
-            A.R.T. 민주주의 연구와 소개
-          </div>
-          <div class="project_name hidden" data-lang="en">
-            Research and Introduction
-          </div>
-          <div class="project_explain hidden" data-lang="ko">
-            더 나은 민주주의의 구체적인 사례를<br/>
-            발굴하고, 연구하고, 소개합니다.
-          </div>
-          <div class="project_explain hidden" data-lang="en">
-            We suggest humble innovations<br/>
-            that will mature the voice of<br/>
-            the citizenry into a political asset.
-          </div>
-          <img class="project_more" src="static/img/project/btnMore.png" />
-        </a>
-        <a id="project_civictech" class="project" href="/civictech">
-          <div class="project_category">
-            Civic tech
-          </div>
-          <div class="project_name hidden" data-lang="ko">
-            일상기술과 민주주의의 만남
-          </div>
-          <div class="project_name hidden" data-lang="en">
-            Tech Meets Democracy
-          </div>
-          <div class="project_explain hidden" data-lang="ko">
-            시민의 목소리를 정치적 자산으로<br/>
-            만들 일상기술을 제안합니다.
-          </div>
-          <div class="project_explain hidden" data-lang="en">
-            We meet with grassroots groups<br/>
-            of all age, gender and conviction<br/>
-            to support specific action plans.
-          </div>
-          <img class="project_more" src="static/img/project/btnMore.png" />
-        </a>
-        <a id="project_community" class="project" href="/community">
-          <div class="project_category">
-            Community
-          </div>
-          <div class="project_name hidden" data-lang="ko">
-            풀뿌리 커뮤니티 지원 및 발굴
-          </div>
-          <div class="project_name hidden" data-lang="en">
-            Support for Grassroots
-          </div>
-          <div class="project_explain hidden" data-lang="ko">
-            남녀노소 모든 시민 그룹과 만나<br/>
-            아이디어를 구체적인 실천으로<br/>
-            옮깁니다.
-          </div>
-          <div class="project_explain hidden" data-lang="en">
-            We meet with grassroots groups<br/>
-            of all age, gender and conviction<br/>
-            to support specific action plans.
-          </div>
-          <img class="project_more" src="static/img/project/btnMore.png" />
-        </a>
-      </div>
+
+  <div class="container">
+    <div class="page-name hidden" data-lang="ko">
+      프로젝트
     </div>
+    <div class="page-name hidden" data-lang="en">
+      Projects
+    </div>
+    
+    <hr class="page-name--bottom-border" />
+    
+    <div class="project__intro-explanation hidden" data-lang="ko">
+      와글은 "군중의 힘으로 만들어가는 더 나은 민주주의"라는 비전을 
+      <div class="hidden-xs"></div>
+      다양한 프로젝트를 통해 이루어나가고 있습니다. 
+      <div class="hidden-xs"></div>
+      프로젝트에 대한 아이디어와 협업 제안은 언제나 환영합니다.
+    </div>
+    <div class="project__intro-explanation hidden" data-lang="en">
+      WAGL is engaged in projects that materialize our vision of 
+      <div class="hidden-xs"></div>
+      creating a better democracy through the power of the crowd. 
+      <div class="hidden-xs"></div>
+      We always welcome innovative ideas and collaborations 
+      <div class="hidden-xs"></div>
+      that further our cause.
+    </div>
+  </div>
+
+  <div class="space"></div>
+  <div class="space"></div>
+  <div class="space"></div>
+
+  <div class="container">
+    {% include project_list.html %}
+  </div>
+
+  <div class="space"></div>
+  <div class="hidden-xs">
+    <div class="space"></div>
+    <div class="space"></div>
   </div>
 
   {% include footer.html %}
