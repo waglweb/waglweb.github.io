@@ -9,6 +9,7 @@
 	padding: 0;
 
 	font-family: 'Noto Sans KR';
+	word-break: keep-all; 
 
 	// Prevent from blinking when clicked
 	-webkit-tap-highbase-color-light: $full-transparent;
@@ -35,6 +36,10 @@ a, a:focus, a:hover, a:active, a:visited {
 	text-decoration: none !important;
 	cursor: pointer;
 	outline: 0;
+}
+
+a:hover {
+	color: #16b475;
 }
 
 /* ==================
@@ -281,7 +286,7 @@ a, a:focus, a:hover, a:active, a:visited {
 	padding: 20px 0;
   background-color: #d1d3d4;
 	color: #7B7B7D;
-  line-height: 2.0;
+  line-height: 1.7;
 }
 
 /* ============
@@ -550,6 +555,7 @@ a, a:focus, a:hover, a:active, a:visited {
 }
 
 .waglpedia--mobile {
+	display: block;
 	padding: 0 15px;
 }
 
@@ -576,7 +582,6 @@ a, a:focus, a:hover, a:active, a:visited {
 .waglpedia__text--emphasized {
 	font-weight: 700;
 	font-size: 1.4em;
-	line-height: 40px;
 }
 
 .waglpedia__image-container--mobile {
@@ -603,9 +608,11 @@ a, a:focus, a:hover, a:active, a:visited {
 }
 
 .waglpedia__item {
+	display: block;
 	position: relative;
 	padding: 0;
 	height: 200px;
+	border: 1px solid #D3D3D5;
 	cursor: pointer;
 }
 
@@ -624,7 +631,6 @@ a, a:focus, a:hover, a:active, a:visited {
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	align-items: center;
-	border: 1px solid #D3D3D5;
 	background-color: #16b475;
 	color: white;
 	text-align: left;
@@ -648,13 +654,29 @@ a, a:focus, a:hover, a:active, a:visited {
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	align-items: center;
-	border: 1px solid #D3D3D5;
 	text-align: center;
 }
 
 .waglpedia__image--desktop {
 	width: 80%;
 	opacity: 0.6;
+}
+
+.waglpedia__see-more-container {
+  display: table; 
+	border: 1px solid #D3D3D5;
+}
+
+.waglpedia__see-more {
+  display: table-cell; 
+	font-size: 1.5em;
+	color: #8D8C8D; 
+	vertical-align: middle; 
+	text-align: center; 
+}
+.waglpedia__see-more:hover {
+	background-color: #16b475; 
+	color: white;
 }
 
 .wagl-story {
@@ -670,6 +692,7 @@ a, a:focus, a:hover, a:active, a:visited {
 .wagl-story__summary {
 	position: relative;
 	height: 200px;
+	padding-top: 15px;
 }
 
 .wagl-story__background-image {
@@ -682,7 +705,7 @@ a, a:focus, a:hover, a:active, a:visited {
 
 .wagl-story__title {
   display: inline-block;
-	margin: 15px 0 0 15px;
+	margin: 6px 0 0 15px;
 	padding: 0 5px;
 	font-size: 1.5em;
   background-color: rgba(51, 51, 51, 0.9);
@@ -729,7 +752,7 @@ a, a:focus, a:hover, a:active, a:visited {
 
 .social-media__subtitle {
 	padding-top: 30px;
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 1.3em;
 	color: white;
 }
@@ -744,11 +767,13 @@ a, a:focus, a:hover, a:active, a:visited {
 }
 
 .social-media__icon {
-	padding: 0 10px;
+	padding: 0 15px;
+	height: 27px;
 }
 @media only screen and (min-width: 768px) {
 	.social-media__icon {
 		padding: 0 40px;
+		height: 34px;
 	}
 }
 
@@ -815,6 +840,7 @@ a, a:focus, a:hover, a:active, a:visited {
 .news-container {
 	max-width: 900px;
 	margin: 0 auto;
+	border-top: solid 1px #b0b1b4;
 }
 
 .news {
@@ -895,7 +921,7 @@ a, a:focus, a:hover, a:active, a:visited {
 }
 
 .about__profile.collapse.in .profile__picture {
-	border: solid 5px #16b475;
+	outline: solid 5px #16b475;
 }
 
 .profile__name {
@@ -938,6 +964,7 @@ a, a:focus, a:hover, a:active, a:visited {
 
 .profile__career {
 	margin-bottom: 60px;
+	font-size: 0.9em;
 	color: #16b475;
 }
 
@@ -1019,14 +1046,16 @@ a, a:focus, a:hover, a:active, a:visited {
 }
 
 .project__intro-explanation {
-	margin: -50px auto 0 auto;
+	margin: 0 auto;
 	font-weight: 500;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	color: #16b475;
 	line-height: 1.8em;
 }
 @media only screen and (min-width: 768px) {
 	.project__intro-explanation {
+		margin: -50px auto 0 auto;
+		font-size: 1.3em;
 		text-align: center;
 	}
 }
@@ -1174,6 +1203,7 @@ a, a:focus, a:hover, a:active, a:visited {
 
 .story-funding__subtitle {
 	margin-bottom: 10px;
+	padding-bottom: 10px;
 	font-weight: 500;
 	border-bottom: solid 1px #bebebe;
 }
