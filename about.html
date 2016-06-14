@@ -246,6 +246,25 @@
       </div>
       <!-- End of 1st collapsing row for mobile -->
       
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".sinaeju">
+        <img src="/static/img/profile/sinaeju.jpg" class="profile__picture" />
+        
+        <div class="profile__name hidden" data-lang="ko">
+          주신애
+        </div>
+        <div class="profile__name hidden" data-lang="en">
+          Sinae Ju
+        </div>
+        
+        <div class="profile__role">
+          Illustrator
+        </div>
+        
+        <div class="profile__email-address">
+          skyseado@wagl.net
+        </div>
+      </div>
+      
       <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".younghwancheon">
         <img src="/static/img/profile/younghwancheon.png" class="profile__picture" />
         
@@ -265,32 +284,13 @@
         </div>
       </div>
       
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".jungkyusuh">
-        <img src="/static/img/profile/jungkyusuh.jpg" class="profile__picture" />
-        
-        <div class="profile__name hidden" data-lang="ko">
-          서정규
-        </div>
-        <div class="profile__name hidden" data-lang="en">
-          JK Suh
-        </div>
-        
-        <div class="profile__role">
-          Project Manager
-        </div>
-        
-        <div class="profile__email-address">
-          jk.suh@wagl.net
-        </div>
-      </div>
-      
       <!-- 2nd collapsing row for mobile -->
       <div class="visible-xs col-xs-12">
-        {% include profile/younghwancheon.html %}
+        {% include profile/sinaeju.html %}
       </div>
       
       <div class="visible-xs col-xs-12">
-        {% include profile/jungkyusuh.html %}
+        {% include profile/younghwancheon.html %}
       </div>
       <!-- End of 2nd collapsing row for mobile -->
       
@@ -304,32 +304,13 @@
       </div>
       
       <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
-        {% include profile/younghwancheon.html %}
+        {% include profile/sinaeju.html %}
       </div>
       
       <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
-        {% include profile/jungkyusuh.html %}
+        {% include profile/younghwancheon.html %}
       </div>
       <!-- End of 1st collapsing row for desktop -->
-      
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".ukjinyang">
-        <img src="/static/img/profile/ukjinyang.jpg" class="profile__picture" />
-        
-        <div class="profile__name hidden" data-lang="ko">
-          양욱진
-        </div>
-        <div class="profile__name hidden" data-lang="en">
-          Uk-Jin Yang
-        </div>
-        
-        <div class="profile__role">
-          Software Engineer
-        </div>
-        
-        <div class="profile__email-address">
-          ukjinyang@wagl.net
-        </div>
-      </div>
       
       <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".juyeonhan">
         <img src="/static/img/profile/juyeonhan.jpg" class="profile__picture" />
@@ -350,51 +331,70 @@
         </div>
       </div>
       
-      <!-- 3rd collapsing row for mobile -->
-      <div class="visible-xs col-xs-12">
-        {% include profile/ukjinyang.html %}
-      </div>
-      
-      <div class="visible-xs col-xs-12">
-        {% include profile/juyeonhan.html %}
-      </div>
-      <!-- End of 3rd collapsing row for mobile -->
-      
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".sinaeju">
-        <img src="/static/img/profile/sinaeju.jpg" class="profile__picture" />
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".ukjinyang">
+        <img src="/static/img/profile/ukjinyang.jpg" class="profile__picture" />
         
         <div class="profile__name hidden" data-lang="ko">
-          주신애
+          양욱진
         </div>
         <div class="profile__name hidden" data-lang="en">
-          Sinae Ju
+          Uk-Jin Yang
         </div>
         
         <div class="profile__role">
-          Illustrator
+          Software Engineer
         </div>
         
         <div class="profile__email-address">
-          skyseado@wagl.net
+          ukjinyang@wagl.net
+        </div>
+      </div>
+      
+      <!-- 3rd collapsing row for mobile -->
+      <div class="visible-xs col-xs-12">
+        {% include profile/juyeonhan.html %}
+      </div>
+      
+      <div class="visible-xs col-xs-12">
+        {% include profile/ukjinyang.html %}
+      </div>
+      <!-- End of 3rd collapsing row for mobile -->
+      
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".jungkyusuh">
+        <img src="/static/img/profile/jungkyusuh.jpg" class="profile__picture" />
+        
+        <div class="profile__name hidden" data-lang="ko">
+          서정규 (Fellow)
+        </div>
+        <div class="profile__name hidden" data-lang="en">
+          JK Suh (Fellow)
+        </div>
+        
+        <div class="profile__role">
+          Project Manager
+        </div>
+        
+        <div class="profile__email-address">
+          jk.suh@wagl.net
         </div>
       </div>
       
       <!-- 4th collapsing row for mobile -->
       <div class="visible-xs col-xs-12">
-        {% include profile/sinaeju.html %}
+        {% include profile/jungkyusuh.html %}
       </div>
       
       <!-- 2nd collapsing row for desktop -->
-      <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
-        {% include profile/ukjinyang.html %}
-      </div>
-      
       <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
         {% include profile/juyeonhan.html %}
       </div>
       
       <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
-        {% include profile/sinaeju.html %}
+        {% include profile/ukjinyang.html %}
+      </div>
+      
+      <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+        {% include profile/jungkyusuh.html %}
       </div>
       <!-- End of 2nd collapsing row for desktop -->
     </div>
