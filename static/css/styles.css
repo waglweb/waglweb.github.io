@@ -752,6 +752,39 @@ a, a:focus, a:hover, a:active, a:visited {
 	}
 }
 
+.landing__mailchimp-form {
+	max-width: 550px;
+	margin: 0 auto;
+}
+
+.mailchimp-form__email {
+	width: 100%;
+	padding: 5px 10px;
+	font-size: 1.2em;
+}
+
+@media only screen and (min-width: 768px) {
+	.mailchimp-form__submit-btn-container {
+		padding-left: 0;
+	}
+}
+
+.mailchimp-form__submit-btn {
+	width: 100%;
+	margin-top: 15px;
+	padding: 10px;
+	border: none;
+	font-size: 1.2em;
+	background-color: #16b475;
+	color: white;
+}
+@media only screen and (min-width: 768px) {
+	.mailchimp-form__submit-btn {
+		margin-top: 0;
+		padding: 7px 10px;
+	}
+}
+
 /* ==========
  * About page
  * ========== */
