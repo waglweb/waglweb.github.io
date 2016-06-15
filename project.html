@@ -15,61 +15,67 @@
   <input type="hidden" id="title-ko" value="와글 프로젝트" />
   <input type="hidden" id="title-en" value="WAGL Projects" />
 
-  {% include navbar.html %}
+  <!-- Loading icon -->
+  <div id="loading-icon"></div>
 
-  <div class="project__intro">
-    <img src="/static/img/project/intro_background_image.png" class="section__background-image" />
-    
-    <div class="title--emphasized hidden" data-lang="ko">
-      더 나은 민주주의, 이렇게 만들어갑니다
-    </div>
-    <div class="title--emphasized hidden" data-lang="en">
-      Our Projects for A.R.T. Politics through the Power of the Crowd
-    </div>
-  </div>
+  <div id="main-container" style="opacity: 0;">
 
-  <div class="container">
-    <div class="page-name hidden" data-lang="ko">
-      프로젝트
-    </div>
-    <div class="page-name hidden" data-lang="en">
-      Projects
-    </div>
-    
-    <hr class="page-name--bottom-border" />
-    
-    <div class="project__intro-explanation hidden" data-lang="ko">
-      와글은 "군중의 힘으로 만들어가는 더 나은 민주주의"라는 비전을 
-      <div class="hidden-xs"></div>
-      다양한 프로젝트를 통해 이루어나가고 있습니다. 
-      <div class="hidden-xs"></div>
-      프로젝트에 대한 아이디어와 협업 제안은 언제나 환영합니다.
-    </div>
-    <div class="project__intro-explanation hidden" data-lang="en">
-      WAGL is engaged in projects that materialize our vision of 
-      <div class="hidden-xs"></div>
-      creating a better democracy through the power of the crowd. 
-      <div class="hidden-xs"></div>
-      We always welcome innovative ideas and collaborations 
-      <div class="hidden-xs"></div>
-      that further our cause.
-    </div>
-  </div>
+    {% include navbar.html %}
 
-  <div class="space"></div>
-  <div class="space"></div>
-  <div class="space"></div>
+    <div class="project__intro">
+      <img src="/static/img/project/intro_background_image.png" class="section__background-image" />
+      
+      <div class="title--emphasized hidden" data-lang="ko">
+        더 나은 민주주의, 이렇게 만들어갑니다
+      </div>
+      <div class="title--emphasized hidden" data-lang="en">
+        Our Projects for A.R.T. Politics through the Power of the Crowd
+      </div>
+    </div>
 
-  <div class="container">
-    {% include project_list.html %}
-  </div>
+    <div class="container">
+      <div class="page-name hidden" data-lang="ko">
+        프로젝트
+      </div>
+      <div class="page-name hidden" data-lang="en">
+        Projects
+      </div>
+      
+      <hr class="page-name--bottom-border" />
+      
+      <div class="project__intro-explanation hidden" data-lang="ko">
+        와글은 "군중의 힘으로 만들어가는 더 나은 민주주의"라는 비전을 
+        <div class="hidden-xs"></div>
+        다양한 프로젝트를 통해 이루어나가고 있습니다. 
+        <div class="hidden-xs"></div>
+        프로젝트에 대한 아이디어와 협업 제안은 언제나 환영합니다.
+      </div>
+      <div class="project__intro-explanation hidden" data-lang="en">
+        WAGL is engaged in projects that materialize our vision of 
+        <div class="hidden-xs"></div>
+        creating a better democracy through the power of the crowd. 
+        <div class="hidden-xs"></div>
+        We always welcome innovative ideas and collaborations 
+        <div class="hidden-xs"></div>
+        that further our cause.
+      </div>
+    </div>
 
-  <div class="hidden-xs">
     <div class="space"></div>
     <div class="space"></div>
-  </div>
+    <div class="space"></div>
 
-  {% include footer.html %}
+    <div class="container">
+      {% include project_list.html %}
+    </div>
+
+    <div class="hidden-xs">
+      <div class="space"></div>
+      <div class="space"></div>
+    </div>
+
+    {% include footer.html %}
+  </div>
 
   {% include common_js.html %}
 </body>

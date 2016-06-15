@@ -46,6 +46,9 @@ $(window).load(function() {
     else updateLanguageToEnglish();
   }
 
+  // Ease effect when body DOM loads
+  $('#main-container').animate({opacity: 1}, 700);
+
   // Hide loading icon
   $('#loading-icon').addClass('hidden');
 });

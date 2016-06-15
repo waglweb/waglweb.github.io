@@ -15,495 +15,501 @@
   <input type="hidden" id="title-ko" value="와글 소개" />
   <input type="hidden" id="title-en" value="About WAGL" />
 
-  {% include navbar.html %}
+  <!-- Loading icon -->
+  <div id="loading-icon"></div>
 
-  <div class="about__intro">
-    <img src="/static/img/about/intro_background_image.png" class="section__background-image" />
-    
-    <div class="title--emphasized hidden" data-lang="ko">
-      와글와글한 군중의 힘으로 만들어가는<br/>
-      더 나은 민주주의
-    </div>
-    <div class="title--emphasized hidden" data-lang="en">
-      I'm a Democracy Artist.<br/>
-      We Make Art Politics.
-    </div>
-  </div>
+  <div id="main-container" style="opacity: 0;">
 
-  <div class="container">
-    <div class="page-name hidden" data-lang="ko">
-      와글 소개
-    </div>
-    <div class="page-name hidden" data-lang="en">
-      About WAGL
-    </div>
-    
-    <hr class="page-name--bottom-border" />
-  </div>
+    {% include navbar.html %}
 
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <div class="about__title--prefix hidden" data-lang="ko">
-          정치 스타트업 와글을 소개합니다.
-        </div>
-        <div class="about__title--prefix hidden" data-lang="en">
-          WAGL, Politics Start-up
-        </div>
-        
-        <div class="title--black">
-          We All Govern Lab
-        </div>
-        
-        <div class="normal-text hidden" data-lang="ko">
-          와글(WAGL)은 '와글와글한 군중의 힘으로 세상을 바꾸는 실험'을 하는 정치 스타트업으로 2015년 8월 설립되었습니다.
-        </div>
-        <div class="normal-text hidden" data-lang="ko">
-          시민 모두가 정치의 주체가 되어 우리 사회를 운영하는 세상을 꿈꾸는 와글은, 와글와글 다양한 목소리로 터져 나오는 군중들의 아우성을 영양가 있는 우리 시대의 자산으로 만들고, 이를 통해 정치혁신과 더 나은 민주주의를 만들어가는 실험실입니다.
-        </div>
-        <div class="normal-text hidden" data-lang="en">
-          WAGL is a democracy lab dedicated to transforming the political status quo and ushering a better kind of democracy. 
-        </div>
-        <div class="normal-text hidden" data-lang="en">
-          We capitalize on the collective intelligence of the crowd, which we believe should be the principal agent of change in this century.
-        </div>
-        
-        <div class="visible-xs">
-          <div class="space"></div>
-          <hr/>
-        </div>
+    <div class="about__intro">
+      <img src="/static/img/about/intro_background_image.png" class="section__background-image" />
+      
+      <div class="title--emphasized hidden" data-lang="ko">
+        와글와글한 군중의 힘으로 만들어가는<br/>
+        더 나은 민주주의
       </div>
-      <div class="col-xs-12 col-sm-offset-1 col-sm-5 col-md-offset-1 col-md-5 col-lg-offset-1 col-lg-5">
-        <img src="/static/img/about/logo_collections.png" class="full-width" />
+      <div class="title--emphasized hidden" data-lang="en">
+        I'm a Democracy Artist.<br/>
+        We Make Art Politics.
       </div>
     </div>
-    
+
+    <div class="container">
+      <div class="page-name hidden" data-lang="ko">
+        와글 소개
+      </div>
+      <div class="page-name hidden" data-lang="en">
+        About WAGL
+      </div>
+      
+      <hr class="page-name--bottom-border" />
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="about__title--prefix hidden" data-lang="ko">
+            정치 스타트업 와글을 소개합니다.
+          </div>
+          <div class="about__title--prefix hidden" data-lang="en">
+            WAGL, Politics Start-up
+          </div>
+          
+          <div class="title--black">
+            We All Govern Lab
+          </div>
+          
+          <div class="normal-text hidden" data-lang="ko">
+            와글(WAGL)은 '와글와글한 군중의 힘으로 세상을 바꾸는 실험'을 하는 정치 스타트업으로 2015년 8월 설립되었습니다.
+          </div>
+          <div class="normal-text hidden" data-lang="ko">
+            시민 모두가 정치의 주체가 되어 우리 사회를 운영하는 세상을 꿈꾸는 와글은, 와글와글 다양한 목소리로 터져 나오는 군중들의 아우성을 영양가 있는 우리 시대의 자산으로 만들고, 이를 통해 정치혁신과 더 나은 민주주의를 만들어가는 실험실입니다.
+          </div>
+          <div class="normal-text hidden" data-lang="en">
+            WAGL is a democracy lab dedicated to transforming the political status quo and ushering a better kind of democracy. 
+          </div>
+          <div class="normal-text hidden" data-lang="en">
+            We capitalize on the collective intelligence of the crowd, which we believe should be the principal agent of change in this century.
+          </div>
+          
+          <div class="visible-xs">
+            <div class="space"></div>
+            <hr/>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-offset-1 col-sm-5 col-md-offset-1 col-md-5 col-lg-offset-1 col-lg-5">
+          <img src="/static/img/about/logo_collections.png" class="full-width" />
+        </div>
+      </div>
+      
+      <div class="hidden-xs">
+        <div class="space"></div>
+        <div class="space"></div>
+      </div>
+      
+      <div class="row">
+        <div class="col-xs-12 col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4">
+          <div class="visible-xs">
+            <div class="space"></div>
+          </div>
+          
+          <img src="/static/img/about/applications.png" class="full-width" />
+          
+          <div class="visible-xs">
+            <div class="space"></div>
+            <div class="space"></div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-offset-1 col-md-6 col-lg-offset-1 col-lg-6">
+          <div class="title--black hidden" data-lang="ko">
+            와글와글, 시민들의 목소리
+          </div>
+          <div class="title--black hidden" data-lang="en">
+            Your Voice for All
+          </div>
+          
+          <div class="normal-text hidden" data-lang="ko">
+            와글은 시민들의 목소리야말로 곧 정치를 바꾸어낼 원동력이자 소중한 자산이라고 생각합니다. 따옴표는 바로 그러한 시민들의 목소리를 가리키는 동시에 그 목소리를 담아낼 그릇으로서 와글의 비전을 드러냅니다. 동시에 와글와글한 군중의 역동적인 에너지와 아우성을 정치의 장으로 따옴으로써 더 나은 민주주의를 만들겠다는 와글의 미션을 담고 있습니다.
+          </div>
+          <div class="normal-text hidden" data-lang="en">
+            WAGL believes that the voice of the citizens offer our best chance of meaningful political change. Our logo - the quotation mark - refers not only to the voice of the citizen, but also to our vision to become a vessel for those voices. In the same time, the quotation mark signifies WAGL’s mission, which is to quote the clamor and dynamism of the masses in the established politcial arena.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__vision">
+      <img src="/static/img/about/vision_background_image.png" class="section__background-image" />
+      
+      <div class="title--emphasized hidden" data-lang="ko">
+        와글은 세상을 보다<br/>
+        더 나은곳으로 변화시킬 수 있다는 믿음을<br/>
+        가진 사람들과 함께합니다.
+      </div>
+      <div class="title--emphasized hidden" data-lang="en">
+        WAGL is a group of people <br/>
+        that believe a better future is possible.
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="page-name hidden" data-lang="ko">
+        언론에서 본 와글
+      </div>
+      <div class="page-name hidden" data-lang="en">
+        WAGL in the press
+      </div>
+      
+      <hr class="page-name--bottom-border" />
+    </div>
+
+    <div class="container news-container">
+      <a href="http://bit.ly/1sy6fxD" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__press-name">
+            조선일보
+          </div>
+          <div class="news__created-at">
+            2016.03.29
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          [더 나은 미래] 20대 총선, 어디까지 알고 있니
+        </div>
+      </a>
+      <a href="http://bit.ly/1sy7LQn" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__press-name">
+            경향신문
+          </div>
+          <div class="news__created-at">
+            2016.01.25
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          와글 이진순 대표 "정치에 대한 패러다임 자체가 총체적으로 바뀌어야 한다"
+        </div>
+      </a>
+      <a href="http://bit.ly/22Xhg8h" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__press-name">
+            블로터
+          </div>
+          <div class="news__created-at">
+            2015.12.04
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          정치벤처 와글의 '듣도 보도 못한 정치' 실험
+        </div>
+      </a>
+      <a href="https://medium.com/wagl-art" target="_blank" class="news__more">
+        <span class="hidden" data-lang="ko">+ 와글 관련 소식 더 보기</span>
+        <span class="hidden" data-lang="en">+ More news about WAGL</span>
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="page-name hidden" data-lang="ko">
+        함께하는 사람들
+      </div>
+      <div class="page-name hidden" data-lang="en">
+        About Us
+      </div>
+      
+      <hr class="page-name--bottom-border" />
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".jinsunlee">
+          <img src="/static/img/profile/jinsunlee.png" class="profile__picture" />
+          
+          <div class="profile__name hidden" data-lang="ko">
+            이진순
+          </div>
+          <div class="profile__name hidden" data-lang="en">
+            Jinsun Lee
+          </div>
+          
+          <div class="profile__role">
+            Founder
+          </div>
+          
+          <div class="profile__email-address">
+            jinny@wagl.net
+          </div>
+        </div>
+        
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".junghyunkim">
+          <img src="/static/img/profile/junghyunkim.png" class="profile__picture" />
+          
+          <div class="profile__name hidden" data-lang="ko">
+            김정현
+          </div>
+          <div class="profile__name hidden" data-lang="en">
+            Joseph Kim
+          </div>
+          
+          <div class="profile__role">
+            Project Manager
+          </div>
+          
+          <div class="profile__email-address">
+            joseph@wagl.net
+          </div>
+        </div>
+        
+        <!-- 1st collapsing row for mobile -->
+        <div class="visible-xs col-xs-12">
+          {% include profile/jinsunlee.html %}
+        </div>
+        
+        <div class="visible-xs col-xs-12">
+          {% include profile/junghyunkim.html %}
+        </div>
+        <!-- End of 1st collapsing row for mobile -->
+        
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".sinaeju">
+          <img src="/static/img/profile/sinaeju.jpg" class="profile__picture" />
+          
+          <div class="profile__name hidden" data-lang="ko">
+            주신애
+          </div>
+          <div class="profile__name hidden" data-lang="en">
+            Sinae Ju
+          </div>
+          
+          <div class="profile__role">
+            Illustrator
+          </div>
+          
+          <div class="profile__email-address">
+            skyseado@wagl.net
+          </div>
+        </div>
+        
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".younghwancheon">
+          <img src="/static/img/profile/younghwancheon.png" class="profile__picture" />
+          
+          <div class="profile__name hidden" data-lang="ko">
+            천영환
+          </div>
+          <div class="profile__name hidden" data-lang="en">
+            Young-hwan Cheon
+          </div>
+          
+          <div class="profile__role">
+            Senior Manager
+          </div>
+          
+          <div class="profile__email-address">
+            bee@wagl.net
+          </div>
+        </div>
+        
+        <!-- 2nd collapsing row for mobile -->
+        <div class="visible-xs col-xs-12">
+          {% include profile/sinaeju.html %}
+        </div>
+        
+        <div class="visible-xs col-xs-12">
+          {% include profile/younghwancheon.html %}
+        </div>
+        <!-- End of 2nd collapsing row for mobile -->
+        
+        <!-- 1st collapsing row for desktop -->
+        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+          {% include profile/jinsunlee.html %}
+        </div>
+        
+        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+          {% include profile/junghyunkim.html %}
+        </div>
+        
+        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+          {% include profile/sinaeju.html %}
+        </div>
+        
+        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+          {% include profile/younghwancheon.html %}
+        </div>
+        <!-- End of 1st collapsing row for desktop -->
+        
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".juyeonhan">
+          <img src="/static/img/profile/juyeonhan.jpg" class="profile__picture" />
+          
+          <div class="profile__name hidden" data-lang="ko">
+            한주연
+          </div>
+          <div class="profile__name hidden" data-lang="en">
+            Jennybe Han
+          </div>
+          
+          <div class="profile__role">
+            Project Manager
+          </div>
+          
+          <div class="profile__email-address">
+            jennybe@wagl.net
+          </div>
+        </div>
+        
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".ukjinyang">
+          <img src="/static/img/profile/ukjinyang.jpg" class="profile__picture" />
+          
+          <div class="profile__name hidden" data-lang="ko">
+            양욱진
+          </div>
+          <div class="profile__name hidden" data-lang="en">
+            Uk-Jin Yang
+          </div>
+          
+          <div class="profile__role">
+            Software Engineer
+          </div>
+          
+          <div class="profile__email-address">
+            ukjinyang@wagl.net
+          </div>
+        </div>
+        
+        <!-- 3rd collapsing row for mobile -->
+        <div class="visible-xs col-xs-12">
+          {% include profile/juyeonhan.html %}
+        </div>
+        
+        <div class="visible-xs col-xs-12">
+          {% include profile/ukjinyang.html %}
+        </div>
+        <!-- End of 3rd collapsing row for mobile -->
+        
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".jungkyusuh">
+          <img src="/static/img/profile/jungkyusuh.jpg" class="profile__picture" />
+          
+          <div class="profile__name hidden" data-lang="ko">
+            서정규 (Fellow)
+          </div>
+          <div class="profile__name hidden" data-lang="en">
+            JK Suh (Fellow)
+          </div>
+          
+          <div class="profile__role">
+            Project Manager
+          </div>
+          
+          <div class="profile__email-address">
+            jk.suh@wagl.net
+          </div>
+        </div>
+        
+        <!-- 4th collapsing row for mobile -->
+        <div class="visible-xs col-xs-12">
+          {% include profile/jungkyusuh.html %}
+        </div>
+        
+        <!-- 2nd collapsing row for desktop -->
+        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+          {% include profile/juyeonhan.html %}
+        </div>
+        
+        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+          {% include profile/ukjinyang.html %}
+        </div>
+        
+        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+          {% include profile/jungkyusuh.html %}
+        </div>
+        <!-- End of 2nd collapsing row for desktop -->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="page-name hidden" data-lang="ko">
+        주소와 연락처
+      </div>
+      <div class="page-name hidden" data-lang="en">
+        Contact Us
+      </div>
+      
+      <hr class="page-name--bottom-border" />
+    </div>
+
+    <div class="container about__contact">
+      <div class="visible-xs row contact--mobile">
+        <div class="col-xs-6">
+          <div class="contact__info--emphasized hidden" data-lang="ko">
+            주소
+          </div>
+          <div class="contact__info--emphasized hidden" data-lang="en">
+            Address
+          </div>
+          
+          <div class="contact__info hidden" data-lang="ko">
+            서울특별시 성동구<br/>
+            성수1가1동 656-1212,<br/>
+            (우편번호 04779)
+          </div>
+          <div class="contact__info hidden" data-lang="en">
+            4F, CND Bdg., 20, Wangsimni-ro 2-gil, Seoul, S.Korea<br/>
+            (Postal Code 04779)
+          </div>
+        </div>
+        
+        <div class="col-xs-6">
+          <div class="contact__info--emphasized hidden" data-lang="ko">
+            연락처
+          </div>
+          <div class="contact__info--emphasized hidden" data-lang="en">
+            Number &amp; E-mail
+          </div>
+          
+          <div class="contact__info hidden" data-lang="ko">
+            대표전화 070-8250-0346<br/>
+            대표메일 info@wagl.net
+          </div>
+          <div class="contact__info hidden" data-lang="en">
+            T. 070-8250-0346<br/>
+            M. info@wagl.net
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 contact__google-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12654.05089735375!2d127.03821624132283!3d37.54298224060264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca49b12422361%3A0x4189d28b32c71f49!2z7ISc7Jq47Yq567OE7IucIOyEseuPmeq1rCDshLHsiJgx6rCAMeuPmSA2NTYtMTIxMg!5e0!3m2!1sko!2skr!4v1445929427017" width="469" height="428" frameborder="0" style="width: 100%; border: 0;" allowfullscreen></iframe>
+        </div>
+        <div class="hidden-xs col-sm-6 col-md-6 col-lg-6 contact--desktop">
+          <img src="/static/img/about/contact_info_logo.png" class="contact__logo" />
+          
+          <div class="contact__info--emphasized hidden" data-lang="ko">
+            주소
+          </div>
+          <div class="contact__info--emphasized hidden" data-lang="en">
+            Address
+          </div>
+          
+          <div class="contact__info hidden" data-lang="ko">
+            서울특별시 성동구<br/>
+            성수1가1동 656-1212,<br/>
+            (우편번호 04779)
+          </div>
+          <div class="contact__info hidden" data-lang="en">
+            4F, CND Bdg., 20, Wangsimni-ro 2-gil, Seoul, S.Korea<br/>
+            (Postal Code 04779)
+          </div>
+          
+          <div class="hidden-xs">
+            <div class="space"></div>
+          </div>
+          
+          <div class="contact__info--emphasized hidden" data-lang="ko">
+            연락처
+          </div>
+          <div class="contact__info--emphasized hidden" data-lang="en">
+            Number &amp; E-mail
+          </div>
+          
+          <div class="contact__info hidden" data-lang="ko">
+            대표전화 070-8250-0346<br/>
+            대표메일 info@wagl.net
+          </div>
+          <div class="contact__info hidden" data-lang="en">
+            T. 070-8250-0346<br/>
+            M. info@wagl.net
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="hidden-xs">
       <div class="space"></div>
       <div class="space"></div>
     </div>
-    
-    <div class="row">
-      <div class="col-xs-12 col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4">
-        <div class="visible-xs">
-          <div class="space"></div>
-        </div>
-        
-        <img src="/static/img/about/applications.png" class="full-width" />
-        
-        <div class="visible-xs">
-          <div class="space"></div>
-          <div class="space"></div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-offset-1 col-md-6 col-lg-offset-1 col-lg-6">
-        <div class="title--black hidden" data-lang="ko">
-          와글와글, 시민들의 목소리
-        </div>
-        <div class="title--black hidden" data-lang="en">
-          Your Voice for All
-        </div>
-        
-        <div class="normal-text hidden" data-lang="ko">
-          와글은 시민들의 목소리야말로 곧 정치를 바꾸어낼 원동력이자 소중한 자산이라고 생각합니다. 따옴표는 바로 그러한 시민들의 목소리를 가리키는 동시에 그 목소리를 담아낼 그릇으로서 와글의 비전을 드러냅니다. 동시에 와글와글한 군중의 역동적인 에너지와 아우성을 정치의 장으로 따옴으로써 더 나은 민주주의를 만들겠다는 와글의 미션을 담고 있습니다.
-        </div>
-        <div class="normal-text hidden" data-lang="en">
-          WAGL believes that the voice of the citizens offer our best chance of meaningful political change. Our logo - the quotation mark - refers not only to the voice of the citizen, but also to our vision to become a vessel for those voices. In the same time, the quotation mark signifies WAGL’s mission, which is to quote the clamor and dynamism of the masses in the established politcial arena.
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="about__vision">
-    <img src="/static/img/about/vision_background_image.png" class="section__background-image" />
-    
-    <div class="title--emphasized hidden" data-lang="ko">
-      와글은 세상을 보다<br/>
-      더 나은곳으로 변화시킬 수 있다는 믿음을<br/>
-      가진 사람들과 함께합니다.
-    </div>
-    <div class="title--emphasized hidden" data-lang="en">
-      WAGL is a group of people <br/>
-      that believe a better future is possible.
-    </div>
+    {% include footer.html %}
   </div>
-
-  <div class="container">
-    <div class="page-name hidden" data-lang="ko">
-      언론에서 본 와글
-    </div>
-    <div class="page-name hidden" data-lang="en">
-      WAGL in the press
-    </div>
-    
-    <hr class="page-name--bottom-border" />
-  </div>
-
-  <div class="container news-container">
-    <a href="http://bit.ly/1sy6fxD" target="_blank"class="row news">
-      <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
-        <div class="news__press-name">
-          조선일보
-        </div>
-        <div class="news__created-at">
-          2016.03.29
-        </div>
-      </div>
-      <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
-        [더 나은 미래] 20대 총선, 어디까지 알고 있니
-      </div>
-    </a>
-    <a href="http://bit.ly/1sy7LQn" target="_blank"class="row news">
-      <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
-        <div class="news__press-name">
-          경향신문
-        </div>
-        <div class="news__created-at">
-          2016.01.25
-        </div>
-      </div>
-      <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
-        와글 이진순 대표 "정치에 대한 패러다임 자체가 총체적으로 바뀌어야 한다"
-      </div>
-    </a>
-    <a href="http://bit.ly/22Xhg8h" target="_blank"class="row news">
-      <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
-        <div class="news__press-name">
-          블로터
-        </div>
-        <div class="news__created-at">
-          2015.12.04
-        </div>
-      </div>
-      <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
-        정치벤처 와글의 '듣도 보도 못한 정치' 실험
-      </div>
-    </a>
-    <a href="https://medium.com/wagl-art" target="_blank" class="news__more">
-      <span class="hidden" data-lang="ko">+ 와글 관련 소식 더 보기</span>
-      <span class="hidden" data-lang="en">+ More news about WAGL</span>
-    </a>
-  </div>
-
-  <div class="container">
-    <div class="page-name hidden" data-lang="ko">
-      함께하는 사람들
-    </div>
-    <div class="page-name hidden" data-lang="en">
-      About Us
-    </div>
-    
-    <hr class="page-name--bottom-border" />
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".jinsunlee">
-        <img src="/static/img/profile/jinsunlee.png" class="profile__picture" />
-        
-        <div class="profile__name hidden" data-lang="ko">
-          이진순
-        </div>
-        <div class="profile__name hidden" data-lang="en">
-          Jinsun Lee
-        </div>
-        
-        <div class="profile__role">
-          Founder
-        </div>
-        
-        <div class="profile__email-address">
-          jinny@wagl.net
-        </div>
-      </div>
-      
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".junghyunkim">
-        <img src="/static/img/profile/junghyunkim.png" class="profile__picture" />
-        
-        <div class="profile__name hidden" data-lang="ko">
-          김정현
-        </div>
-        <div class="profile__name hidden" data-lang="en">
-          Joseph Kim
-        </div>
-        
-        <div class="profile__role">
-          Project Manager
-        </div>
-        
-        <div class="profile__email-address">
-          joseph@wagl.net
-        </div>
-      </div>
-      
-      <!-- 1st collapsing row for mobile -->
-      <div class="visible-xs col-xs-12">
-        {% include profile/jinsunlee.html %}
-      </div>
-      
-      <div class="visible-xs col-xs-12">
-        {% include profile/junghyunkim.html %}
-      </div>
-      <!-- End of 1st collapsing row for mobile -->
-      
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".sinaeju">
-        <img src="/static/img/profile/sinaeju.jpg" class="profile__picture" />
-        
-        <div class="profile__name hidden" data-lang="ko">
-          주신애
-        </div>
-        <div class="profile__name hidden" data-lang="en">
-          Sinae Ju
-        </div>
-        
-        <div class="profile__role">
-          Illustrator
-        </div>
-        
-        <div class="profile__email-address">
-          skyseado@wagl.net
-        </div>
-      </div>
-      
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".younghwancheon">
-        <img src="/static/img/profile/younghwancheon.png" class="profile__picture" />
-        
-        <div class="profile__name hidden" data-lang="ko">
-          천영환
-        </div>
-        <div class="profile__name hidden" data-lang="en">
-          Young-hwan Cheon
-        </div>
-        
-        <div class="profile__role">
-          Senior Manager
-        </div>
-        
-        <div class="profile__email-address">
-          bee@wagl.net
-        </div>
-      </div>
-      
-      <!-- 2nd collapsing row for mobile -->
-      <div class="visible-xs col-xs-12">
-        {% include profile/sinaeju.html %}
-      </div>
-      
-      <div class="visible-xs col-xs-12">
-        {% include profile/younghwancheon.html %}
-      </div>
-      <!-- End of 2nd collapsing row for mobile -->
-      
-      <!-- 1st collapsing row for desktop -->
-      <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
-        {% include profile/jinsunlee.html %}
-      </div>
-      
-      <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
-        {% include profile/junghyunkim.html %}
-      </div>
-      
-      <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
-        {% include profile/sinaeju.html %}
-      </div>
-      
-      <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
-        {% include profile/younghwancheon.html %}
-      </div>
-      <!-- End of 1st collapsing row for desktop -->
-      
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".juyeonhan">
-        <img src="/static/img/profile/juyeonhan.jpg" class="profile__picture" />
-        
-        <div class="profile__name hidden" data-lang="ko">
-          한주연
-        </div>
-        <div class="profile__name hidden" data-lang="en">
-          Jennybe Han
-        </div>
-        
-        <div class="profile__role">
-          Project Manager
-        </div>
-        
-        <div class="profile__email-address">
-          jennybe@wagl.net
-        </div>
-      </div>
-      
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".ukjinyang">
-        <img src="/static/img/profile/ukjinyang.jpg" class="profile__picture" />
-        
-        <div class="profile__name hidden" data-lang="ko">
-          양욱진
-        </div>
-        <div class="profile__name hidden" data-lang="en">
-          Uk-Jin Yang
-        </div>
-        
-        <div class="profile__role">
-          Software Engineer
-        </div>
-        
-        <div class="profile__email-address">
-          ukjinyang@wagl.net
-        </div>
-      </div>
-      
-      <!-- 3rd collapsing row for mobile -->
-      <div class="visible-xs col-xs-12">
-        {% include profile/juyeonhan.html %}
-      </div>
-      
-      <div class="visible-xs col-xs-12">
-        {% include profile/ukjinyang.html %}
-      </div>
-      <!-- End of 3rd collapsing row for mobile -->
-      
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".jungkyusuh">
-        <img src="/static/img/profile/jungkyusuh.jpg" class="profile__picture" />
-        
-        <div class="profile__name hidden" data-lang="ko">
-          서정규 (Fellow)
-        </div>
-        <div class="profile__name hidden" data-lang="en">
-          JK Suh (Fellow)
-        </div>
-        
-        <div class="profile__role">
-          Project Manager
-        </div>
-        
-        <div class="profile__email-address">
-          jk.suh@wagl.net
-        </div>
-      </div>
-      
-      <!-- 4th collapsing row for mobile -->
-      <div class="visible-xs col-xs-12">
-        {% include profile/jungkyusuh.html %}
-      </div>
-      
-      <!-- 2nd collapsing row for desktop -->
-      <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
-        {% include profile/juyeonhan.html %}
-      </div>
-      
-      <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
-        {% include profile/ukjinyang.html %}
-      </div>
-      
-      <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
-        {% include profile/jungkyusuh.html %}
-      </div>
-      <!-- End of 2nd collapsing row for desktop -->
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="page-name hidden" data-lang="ko">
-      주소와 연락처
-    </div>
-    <div class="page-name hidden" data-lang="en">
-      Contact Us
-    </div>
-    
-    <hr class="page-name--bottom-border" />
-  </div>
-
-  <div class="container about__contact">
-    <div class="visible-xs row contact--mobile">
-      <div class="col-xs-6">
-        <div class="contact__info--emphasized hidden" data-lang="ko">
-          주소
-        </div>
-        <div class="contact__info--emphasized hidden" data-lang="en">
-          Address
-        </div>
-        
-        <div class="contact__info hidden" data-lang="ko">
-          서울특별시 성동구<br/>
-          성수1가1동 656-1212,<br/>
-          (우편번호 04779)
-        </div>
-        <div class="contact__info hidden" data-lang="en">
-          4F, CND Bdg., 20, Wangsimni-ro 2-gil, Seoul, S.Korea<br/>
-          (Postal Code 04779)
-        </div>
-      </div>
-      
-      <div class="col-xs-6">
-        <div class="contact__info--emphasized hidden" data-lang="ko">
-          연락처
-        </div>
-        <div class="contact__info--emphasized hidden" data-lang="en">
-          Number &amp; E-mail
-        </div>
-        
-        <div class="contact__info hidden" data-lang="ko">
-          대표전화 070-8250-0346<br/>
-          대표메일 info@wagl.net
-        </div>
-        <div class="contact__info hidden" data-lang="en">
-          T. 070-8250-0346<br/>
-          M. info@wagl.net
-        </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 contact__google-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12654.05089735375!2d127.03821624132283!3d37.54298224060264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca49b12422361%3A0x4189d28b32c71f49!2z7ISc7Jq47Yq567OE7IucIOyEseuPmeq1rCDshLHsiJgx6rCAMeuPmSA2NTYtMTIxMg!5e0!3m2!1sko!2skr!4v1445929427017" width="469" height="428" frameborder="0" style="width: 100%; border: 0;" allowfullscreen></iframe>
-      </div>
-      <div class="hidden-xs col-sm-6 col-md-6 col-lg-6 contact--desktop">
-        <img src="/static/img/about/contact_info_logo.png" class="contact__logo" />
-        
-        <div class="contact__info--emphasized hidden" data-lang="ko">
-          주소
-        </div>
-        <div class="contact__info--emphasized hidden" data-lang="en">
-          Address
-        </div>
-        
-        <div class="contact__info hidden" data-lang="ko">
-          서울특별시 성동구<br/>
-          성수1가1동 656-1212,<br/>
-          (우편번호 04779)
-        </div>
-        <div class="contact__info hidden" data-lang="en">
-          4F, CND Bdg., 20, Wangsimni-ro 2-gil, Seoul, S.Korea<br/>
-          (Postal Code 04779)
-        </div>
-        
-        <div class="hidden-xs">
-          <div class="space"></div>
-        </div>
-        
-        <div class="contact__info--emphasized hidden" data-lang="ko">
-          연락처
-        </div>
-        <div class="contact__info--emphasized hidden" data-lang="en">
-          Number &amp; E-mail
-        </div>
-        
-        <div class="contact__info hidden" data-lang="ko">
-          대표전화 070-8250-0346<br/>
-          대표메일 info@wagl.net
-        </div>
-        <div class="contact__info hidden" data-lang="en">
-          T. 070-8250-0346<br/>
-          M. info@wagl.net
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="hidden-xs">
-    <div class="space"></div>
-    <div class="space"></div>
-  </div>
-
-  {% include footer.html %}
 
   {% include common_js.html %}
   <script src="/static/js/about.js"></script>

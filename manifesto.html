@@ -15,87 +15,93 @@
   <input type="hidden" id="title-ko" value="와글 매니페스토" />
   <input type="hidden" id="title-en" value="WAGL Manifesto" />
 
-  {% include navbar.html %}
+  <!-- Loading icon -->
+  <div id="loading-icon"></div>
 
-  <div class="manifesto__intro">
-    <img src="/static/img/manifesto/intro_background_image.png" class="section__background-image" />
-    
-    <div class="title--emphasized hidden" data-lang="ko">
-      와글와글한 군중의 힘으로 만들어가는<br/>
-      더 나은 민주주의
-    </div>
-    <div class="title--emphasized hidden" data-lang="en">
-      I'm a Democracy Artist.<br/>
-      We Make Art Politics.
-    </div>
-  </div>
+  <div id="main-container" style="opacity: 0;">
 
-  <div class="container">
-    <div class="page-name hidden" data-lang="ko">
-      와글 매니페스토
-    </div>
-    <div class="page-name hidden" data-lang="en">
-      WAGL's Manifesto
-    </div>
-    
-    <hr class="page-name--bottom-border" />
-  </div>
+    {% include navbar.html %}
 
-  <div class="visible-xs">
-    <img src="/static/img/manifesto/why_wagl_mobile.png" class="full-width" />
-    
+    <div class="manifesto__intro">
+      <img src="/static/img/manifesto/intro_background_image.png" class="section__background-image" />
+      
+      <div class="title--emphasized hidden" data-lang="ko">
+        와글와글한 군중의 힘으로 만들어가는<br/>
+        더 나은 민주주의
+      </div>
+      <div class="title--emphasized hidden" data-lang="en">
+        I'm a Democracy Artist.<br/>
+        We Make Art Politics.
+      </div>
+    </div>
+
     <div class="container">
-      {% include manifesto_why_wagl.html %}
+      <div class="page-name hidden" data-lang="ko">
+        와글 매니페스토
+      </div>
+      <div class="page-name hidden" data-lang="en">
+        WAGL's Manifesto
+      </div>
+      
+      <hr class="page-name--bottom-border" />
     </div>
-  </div>
-  <div class="hidden-xs">
-    <div class="row">
-      <div class="col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4">
+
+    <div class="visible-xs">
+      <img src="/static/img/manifesto/why_wagl_mobile.png" class="full-width" />
+      
+      <div class="container">
         {% include manifesto_why_wagl.html %}
       </div>
-      <div class="col-sm-offset-1 col-sm-6 col-md-offset-1 col-md-6 col-lg-offset-1 col-lg-6">
-        <img src="/static/img/manifesto/why_wagl_desktop.png" class="full-width" />
+    </div>
+    <div class="hidden-xs">
+      <div class="row">
+        <div class="col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4">
+          {% include manifesto_why_wagl.html %}
+        </div>
+        <div class="col-sm-offset-1 col-sm-6 col-md-offset-1 col-md-6 col-lg-offset-1 col-lg-6">
+          <img src="/static/img/manifesto/why_wagl_desktop.png" class="full-width" />
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="visible-xs">
-    <img src="/static/img/manifesto/how_mobile.png" class="full-width" />
-    
-    <div class="container">
-      {% include manifesto_how.html %}
-    </div>
-  </div>
-  <div class="hidden-xs">
-    <div class="row">
-      <div class="col-sm-6 col-md-6 col-lg-6">
-        <img src="/static/img/manifesto/how_desktop.png" class="full-width" />
-      </div>
-      <div class="col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4">
+    <div class="visible-xs">
+      <img src="/static/img/manifesto/how_mobile.png" class="full-width" />
+      
+      <div class="container">
         {% include manifesto_how.html %}
       </div>
     </div>
-  </div>
-
-  <div class="visible-xs">
-    <img src="/static/img/manifesto/so_what_mobile.png" class="full-width" />
-    
-    <div class="container">
-      {% include manifesto_so_what.html %}
+    <div class="hidden-xs">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <img src="/static/img/manifesto/how_desktop.png" class="full-width" />
+        </div>
+        <div class="col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4">
+          {% include manifesto_how.html %}
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="hidden-xs">
-    <div class="row">
-      <div class="col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4">
+
+    <div class="visible-xs">
+      <img src="/static/img/manifesto/so_what_mobile.png" class="full-width" />
+      
+      <div class="container">
         {% include manifesto_so_what.html %}
       </div>
-      <div class="col-sm-offset-1 col-sm-6 col-md-offset-1 col-md-6 col-lg-offset-1 col-lg-6">
-        <img src="/static/img/manifesto/so_what_desktop.png" class="full-width" />
+    </div>
+    <div class="hidden-xs">
+      <div class="row">
+        <div class="col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4">
+          {% include manifesto_so_what.html %}
+        </div>
+        <div class="col-sm-offset-1 col-sm-6 col-md-offset-1 col-md-6 col-lg-offset-1 col-lg-6">
+          <img src="/static/img/manifesto/so_what_desktop.png" class="full-width" />
+        </div>
       </div>
     </div>
-  </div>
 
-  {% include footer.html %}
+    {% include footer.html %}
+  </div>
 
   {% include common_js.html %}
 </body>

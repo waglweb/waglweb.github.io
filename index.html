@@ -15,613 +15,619 @@
   <input type="hidden" id="title-ko" value="와글" />
   <input type="hidden" id="title-en" value="WAGL" />
 
-  {% include navbar.html %}
+  <!-- Loading icon -->
+  <div id="loading-icon"></div>
 
-  <div class="landing__intro">
-    <video class="intro__background-video" muted autoplay loop>
-      <source src="static/video/intro.mp4" type="video/mp4" />
-    </video>
-    <div class="container">
-      <div class="intro__name">
-        WAGL
-      </div>
-      <div class="intro__fullname">
-        We All Govern Lab
-      </div>
-      <div class="intro__vision hidden" data-lang="ko">
-        <div class="visible-xs">
-          시민 모두가 정치의 주인공이 되는 세상을 꿈꾸는 와글은, 와글와글 다양한 목소리로 터져 나오는 군중의 아우성으로 <span class="intro__vision--emphasized">약속한 바에 대해 책임을 지고 (Accountable) 시민의 요구에 유연하고 기민하게 반응하며 (Responsive) 정보와 권한행사 과정이 투명하게 드러나는 (Transparent)</span> A.R.T. 정치를 만들어가는 정치 스타트업입니다.
-        </div>
-        <div class="hidden-xs">
-          시민 모두가 정치의 주인공이 되는 세상을 꿈꾸는 와글은,<br/>
-          와글와글 다양한 목소리로 터져 나오는 군중의 아우성으로<br/>
-          <span class="intro__vision--emphasized">
-            약속한 바에 대해 책임을 지고 (Accountable)<br/>
-            시민의 요구에 유연하고 기민하게 반응하며 (Responsive)<br/>
-            정보와 권한행사 과정이 투명하게 드러나는 (Transparent)
-          </span><br/>
-          A.R.T. 정치를 만들어가는 정치 스타트업입니다.
-        </div>
-      </div>
-      <div class="intro__vision hidden" data-lang="en">
-        <div class="visible-xs">
-          WAGL is a politics startup to innovate politics by power of the crowd and a lab for grassroot politics where anyone can participate to bring <span class="intro__vision--emphasized">Accountable, Responsive and Transparent</span> politics for better democracy in our daily lives.
-        </div>
-        <div class="hidden-xs">
-          WAGL is a politics startup to innovate politics by power of the crowd<br/>
-          and a lab for grassroot politics where anyone can participate to bring<br/>
-          <span class="intro__vision--emphasized">Accountable, Responsive and Transparent</span> politics for better democracy in our daily lives.
-        </div>
-      </div>
-    </div>
-  </div>
+  <div id="main-container" style="opacity: 0;">
 
-  <div class="landing__feedback">
-    <img src="/static/img/landing/feedback_background_image.png" class="section__background-image" />
-    <img src="/static/img/landing/carousel_decorator.png" class="feedback__decorator--head" />
-    
-    <div class="container feedback__carousel">
-      <div id="feedback-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-        <div class="carousel-inner" role="listbox">
-          <div class="item text-center active">
-            <div class="feedback__content">
-              정치에 답답한 마음만 느꼈지 참여할 생각은 잘 못했는데 와글에서 시민들의 놀라운 능력과 힘에 대해 배우고 갑니다. 앞으로는 사회에 관심을 갖는 적극적인 시민이 되고 싶네요.
-            </div>
-            <div class="feedback__author">
-              좋은마음 님
-            </div>
+    {% include navbar.html %}
+
+    <div class="landing__intro">
+      <video class="intro__background-video" muted autoplay loop>
+        <source src="static/video/intro.mp4" type="video/mp4" />
+      </video>
+      <div class="container">
+        <div class="intro__name">
+          WAGL
+        </div>
+        <div class="intro__fullname">
+          We All Govern Lab
+        </div>
+        <div class="intro__vision hidden" data-lang="ko">
+          <div class="visible-xs">
+            시민 모두가 정치의 주인공이 되는 세상을 꿈꾸는 와글은, 와글와글 다양한 목소리로 터져 나오는 군중의 아우성으로 <span class="intro__vision--emphasized">약속한 바에 대해 책임을 지고 (Accountable) 시민의 요구에 유연하고 기민하게 반응하며 (Responsive) 정보와 권한행사 과정이 투명하게 드러나는 (Transparent)</span> A.R.T. 정치를 만들어가는 정치 스타트업입니다.
           </div>
-          <div class="item text-center">
-            <div class="feedback__content">
-              풀뿌리 민주주의의 말라붙은 줄기에서 새싹들이 아름답게 올라오기를 간절히 바라며.
-            </div>
-            <div class="feedback__author">
-              자연농 성재삼촌 님
-            </div>
-          </div>
-          <div class="item text-center">
-            <div class="feedback__content">
-              아무리 훌륭한 사람이라도 잘못된 시스템안에서는 계란으로 바위치기처럼 좌절하고 동화되어 가는것 같습니다. 절대선은 없다. 우리 모두가 감시자가 되어야겠습니다.
-            </div>
-            <div class="feedback__author">
-              사노 님
-            </div>
-          </div>
-          <div class="item text-center">
-            <div class="feedback__content">
-              나서기는 싫고 알아서 잘 해주는 누군가 있었으면 하는 마음이 영웅적인 정치인을 바라게 만드는 것 같습니다. 그런데 어느날 갑자기 공명 정대한 누군가 등장해 이 나라를 바꿔주기를 기대하는 것은 어리석은 일입니다. 우리 정치에는 사람이 아닌 시스템의 변화가 필요하고 그 변화를 위해 국민들의 끊임없는 관심이 필요하다고 생각합니다. 
-            </div>
-            <div class="feedback__author">
-              후원자 moha 님
-            </div>
+          <div class="hidden-xs">
+            시민 모두가 정치의 주인공이 되는 세상을 꿈꾸는 와글은,<br/>
+            와글와글 다양한 목소리로 터져 나오는 군중의 아우성으로<br/>
+            <span class="intro__vision--emphasized">
+              약속한 바에 대해 책임을 지고 (Accountable)<br/>
+              시민의 요구에 유연하고 기민하게 반응하며 (Responsive)<br/>
+              정보와 권한행사 과정이 투명하게 드러나는 (Transparent)
+            </span><br/>
+            A.R.T. 정치를 만들어가는 정치 스타트업입니다.
           </div>
         </div>
-        
-        <a class="left carousel-control" href="#feedback-carousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        </a>
-        <a class="right carousel-control" href="#feedback-carousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        </a>
+        <div class="intro__vision hidden" data-lang="en">
+          <div class="visible-xs">
+            WAGL is a politics startup to innovate politics by power of the crowd and a lab for grassroot politics where anyone can participate to bring <span class="intro__vision--emphasized">Accountable, Responsive and Transparent</span> politics for better democracy in our daily lives.
+          </div>
+          <div class="hidden-xs">
+            WAGL is a politics startup to innovate politics by power of the crowd<br/>
+            and a lab for grassroot politics where anyone can participate to bring<br/>
+            <span class="intro__vision--emphasized">Accountable, Responsive and Transparent</span> politics for better democracy in our daily lives.
+          </div>
+        </div>
       </div>
     </div>
-    
-    <a href="https://storyfunding.daum.net/project/306" target="_blank">
-      <button class="feedback__link-btn">
-        스토리펀딩 바로가기
-      </button>
-    </a>
-  </div>
 
-  <div class="container landing__section">
-    <div class="section__title hidden" data-lang="ko">
-      프로젝트
-    </div>
-    <div class="section__title hidden" data-lang="en">
-      Our Projects
-    </div>
-    <div class="section__subtitle hidden" data-lang="ko">
-      와글의 프로젝트를 소개합니다.
-    </div>
-    <div class="section__subtitle hidden" data-lang="en">
-      Working On Democracy
-    </div>
-    
-    {% include project_list.html %}
-  </div>
-
-  <div class="container landing__section">
-    <div class="section__title hidden" data-lang="ko">
-      와글피디아
-    </div>
-    <div class="section__title hidden" data-lang="en">
-      WAGL-PEDIA
-    </div>
-    <div class="section__subtitle hidden" data-lang="ko">
-      당신의 참여를 북돋울 도구를 소개합니다
-    </div>
-    <div class="section__subtitle hidden" data-lang="en">
-      Participatory Tools and Platform Encyclopedia for Democracy A.R.T.ists
-    </div>
-    
-    <div class="visible-xs">
-      <div class="container waglpedia__carousel">
-        <div id="waglpedia-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-          <ol class="carousel-indicators">
-            <li data-target="#waglpedia-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#waglpedia-carousel" data-slide-to="1"></li>
-            <li data-target="#waglpedia-carousel" data-slide-to="2"></li>
-            <li data-target="#waglpedia-carousel" data-slide-to="3"></li>
-            <li data-target="#waglpedia-carousel" data-slide-to="4"></li>
-            <li data-target="#waglpedia-carousel" data-slide-to="5"></li>
-            <li data-target="#waglpedia-carousel" data-slide-to="6"></li>
-            <li data-target="#waglpedia-carousel" data-slide-to="7"></li>
-            <li data-target="#waglpedia-carousel" data-slide-to="8"></li>
-          </ol>
-          
+    <div class="landing__feedback">
+      <img src="/static/img/landing/feedback_background_image.png" class="section__background-image" />
+      <img src="/static/img/landing/carousel_decorator.png" class="feedback__decorator--head" />
+      
+      <div class="container feedback__carousel">
+        <div id="feedback-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
           <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <a href="#" class="row waglpedia--mobile">
-              <!-- <a href="/waglpedia#parti" class="row waglpedia--mobile"> -->
-                <div class="col-xs-6 waglpedia__text-container--mobile">
-                  <div class="waglpedia__text hidden" data-lang="ko">
-                    <span class="waglpedia__text--emphasized">Parti</span><br/><br/>
-                    이슈 토론과 찬반투표, 자료 아카이빙을 한 번에 할 수 있는 온라인 공론장
-                  </div>
-                  <div class="waglpedia__text hidden" data-lang="en">
-                    <span class="waglpedia__text--emphasized">Parti</span><br/><br/>
-                    An online public sphere for debate, yes-or-no vote and archiving 
-                  </div>
-                </div>
-                <div class="col-xs-6 waglpedia__image-container--mobile">
-                  <img src="/static/img/waglpedia/parti.png" class="waglpedia__image--mobile" />
-                </div>
-              </a>
+            <div class="item text-center active">
+              <div class="feedback__content">
+                정치에 답답한 마음만 느꼈지 참여할 생각은 잘 못했는데 와글에서 시민들의 놀라운 능력과 힘에 대해 배우고 갑니다. 앞으로는 사회에 관심을 갖는 적극적인 시민이 되고 싶네요.
+              </div>
+              <div class="feedback__author">
+                좋은마음 님
+              </div>
             </div>
-            <div class="item">
-              <a href="#" class="row waglpedia--mobile">
-              <!-- <a href="/waglpedia#loomio" class="row waglpedia--mobile"> -->
-                <div class="col-xs-6 waglpedia__text-container--mobile">
-                  <div class="waglpedia__text hidden" data-lang="ko">
-                    <span class="waglpedia__text--emphasized">Loomio</span><br/><br/>
-                    전세계인이 사용하는, 가장 널리 알려진 의사결정 플랫폼
-                  </div>
-                  <div class="waglpedia__text hidden" data-lang="en">
-                    <span class="waglpedia__text--emphasized">Loomio</span><br/><br/>
-                    An easy-to-use tool for decision making used worldwide.
-                  </div>
-                </div>
-                <div class="col-xs-6 waglpedia__image-container--mobile">
-                  <img src="/static/img/waglpedia/loomio.png" class="waglpedia__image--mobile" />
-                </div>
-              </a>
+            <div class="item text-center">
+              <div class="feedback__content">
+                풀뿌리 민주주의의 말라붙은 줄기에서 새싹들이 아름답게 올라오기를 간절히 바라며.
+              </div>
+              <div class="feedback__author">
+                자연농 성재삼촌 님
+              </div>
             </div>
-            <div class="item">
-              <a href="#" class="row waglpedia--mobile">
-              <!-- <a href="/waglpedia#polis" class="row waglpedia--mobile"> -->
-                <div class="col-xs-6 waglpedia__text-container--mobile">
-                  <div class="waglpedia__text hidden" data-lang="ko">
-                    <span class="waglpedia__text--emphasized">Polis</span><br/><br/>
-                    의사결정에 따라 2차원 매핑 기능을 지원하는 다중 의사결정 플랫폼
-                  </div>
-                  <div class="waglpedia__text hidden" data-lang="en">
-                    <span class="waglpedia__text--emphasized">Polis</span><br/><br/>
-                    A commenting and survey system with real-time data-mapping visualization.
-                  </div>
-                </div>
-                <div class="col-xs-6 waglpedia__image-container--mobile">
-                  <img src="/static/img/waglpedia/polis.png" class="waglpedia__image--mobile" />
-                </div>
-              </a>
+            <div class="item text-center">
+              <div class="feedback__content">
+                아무리 훌륭한 사람이라도 잘못된 시스템안에서는 계란으로 바위치기처럼 좌절하고 동화되어 가는것 같습니다. 절대선은 없다. 우리 모두가 감시자가 되어야겠습니다.
+              </div>
+              <div class="feedback__author">
+                사노 님
+              </div>
             </div>
-            <div class="item">
-              <a href="#" class="row waglpedia--mobile">
-              <!-- <a href="/waglpedia#brigade" class="row waglpedia--mobile"> -->
-                <div class="col-xs-6 waglpedia__text-container--mobile">
-                  <div class="waglpedia__text hidden" data-lang="ko">
-                    <span class="waglpedia__text--emphasized">Brigade</span><br/><br/>
-                    페이스북 공동설립에 참여한 션 파커의 '브리게이드 미디어'가 만든 종합 정치 SNS
-                  </div>
-                  <div class="waglpedia__text hidden" data-lang="en">
-                    <span class="waglpedia__text--emphasized">Brigade</span><br/><br/>
-                    A social networking service specialized in news, issues and politics.
-                  </div>
-                </div>
-                <div class="col-xs-6 waglpedia__image-container--mobile">
-                  <img src="/static/img/waglpedia/brigade.png" class="waglpedia__image--mobile" />
-                </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#" class="row waglpedia--mobile">
-              <!-- <a href="/waglpedia#decide_madrid" class="row waglpedia--mobile"> -->
-                <div class="col-xs-6 waglpedia__text-container--mobile">
-                  <div class="waglpedia__text hidden" data-lang="ko">
-                    <span class="waglpedia__text--emphasized">Decide Madrid</span><br/><br/>
-                    마드리드 시를 이끌고 있는 시민 정당 아호라 마드리드의 시민 참여 온라인 플랫폼
-                  </div>
-                  <div class="waglpedia__text hidden" data-lang="en">
-                    <span class="waglpedia__text--emphasized">Decide Madrid</span><br/><br/>
-                    An official citizen participation platform of Madrid City governed by Ahora Madrid
-                  </div>
-                </div>
-                <div class="col-xs-6 waglpedia__image-container--mobile">
-                  <img src="/static/img/waglpedia/decide_madrid.png" class="waglpedia__image--mobile" />
-                </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#" class="row waglpedia--mobile">
-              <!-- <a href="/waglpedia#citizen_budget" class="row waglpedia--mobile"> -->
-                <div class="col-xs-6 waglpedia__text-container--mobile">
-                  <div class="waglpedia__text hidden" data-lang="ko">
-                    <span class="waglpedia__text--emphasized">Citizen Budget</span><br/><br/>
-                    캐나다 비영리 벤처 오픈노스가 개발한 예산 시뮬레이션 프로그램
-                  </div>
-                  <div class="waglpedia__text hidden" data-lang="en">
-                    <span class="waglpedia__text--emphasized">Citizen Budget</span><br/><br/>
-                    An online budget simulator developed by Open North in Canada
-                  </div>
-                </div>
-                <div class="col-xs-6 waglpedia__image-container--mobile">
-                  <img src="/static/img/waglpedia/citizen_budget.png" class="waglpedia__image--mobile" />
-                </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#" class="row waglpedia--mobile">
-              <!-- <a href="/waglpedia#open_ministry" class="row waglpedia--mobile"> -->
-                <div class="col-xs-6 waglpedia__text-container--mobile">
-                  <div class="waglpedia__text hidden" data-lang="ko">
-                    <span class="waglpedia__text--emphasized">Open Ministry</span><br/><br/>
-                    핀란드의 국민발의 제도를 정착시킨 위키형 온라인 법안발의 플랫폼
-                  </div>
-                  <div class="waglpedia__text hidden" data-lang="en">
-                    <span class="waglpedia__text--emphasized">Open Ministry</span><br/><br/>
-                    An online platform for crowdsourcing legislation and citizens initiatives in Finland
-                  </div>
-                </div>
-                <div class="col-xs-6 waglpedia__image-container--mobile">
-                  <img src="/static/img/waglpedia/open_ministry.png" class="waglpedia__image--mobile" />
-                </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#" class="row waglpedia--mobile">
-              <!-- <a href="/waglpedia#ping_korea" class="row waglpedia--mobile"> -->
-                <div class="col-xs-6 waglpedia__text-container--mobile">
-                  <div class="waglpedia__text hidden" data-lang="ko">
-                    <span class="waglpedia__text--emphasized">P!NG Korea</span><br/><br/>
-                    자체 알고리즘을 기반으로 만든 투표 가이드 서비스로 이용자와 정당/정치인을 매칭
-                  </div>
-                  <div class="waglpedia__text hidden" data-lang="en">
-                    <span class="waglpedia__text--emphasized">P!NG Korea</span><br/><br/>
-                    A vote advisory application (VAA) for votes in Korea for the 20th general election
-                  </div>
-                </div>
-                <div class="col-xs-6 waglpedia__image-container--mobile">
-                  <img src="/static/img/waglpedia/ping_korea.png" class="waglpedia__image--mobile" />
-                </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#" class="row waglpedia--mobile">
-              <!-- <a href="/waglpedia#g0v" class="row waglpedia--mobile"> -->
-                <div class="col-xs-6 waglpedia__text-container--mobile">
-                  <div class="waglpedia__text hidden" data-lang="ko">
-                    <span class="waglpedia__text--emphasized">g0v</span><br/><br/>
-                    대만의 공공 데이터 아카이브이자 개발자 커뮤니티로 다양한 오픈 소스 프로젝트 확인이 가능
-                  </div>
-                  <div class="waglpedia__text hidden" data-lang="en">
-                    <span class="waglpedia__text--emphasized">g0v</span><br/><br/>
-                    A civic tech community in Taiwan with a variaty of open source projects
-                  </div>
-                </div>
-                <div class="col-xs-6 waglpedia__image-container--mobile">
-                  <img src="/static/img/waglpedia/g0v.png" class="waglpedia__image--mobile" />
-                </div>
-              </a>
+            <div class="item text-center">
+              <div class="feedback__content">
+                나서기는 싫고 알아서 잘 해주는 누군가 있었으면 하는 마음이 영웅적인 정치인을 바라게 만드는 것 같습니다. 그런데 어느날 갑자기 공명 정대한 누군가 등장해 이 나라를 바꿔주기를 기대하는 것은 어리석은 일입니다. 우리 정치에는 사람이 아닌 시스템의 변화가 필요하고 그 변화를 위해 국민들의 끊임없는 관심이 필요하다고 생각합니다. 
+              </div>
+              <div class="feedback__author">
+                후원자 moha 님
+              </div>
             </div>
           </div>
           
-          <a class="left carousel-control" href="#waglpedia-carousel" role="button" data-slide="prev">
+          <a class="left carousel-control" href="#feedback-carousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
           </a>
-          <a class="right carousel-control" href="#waglpedia-carousel" role="button" data-slide="next">
+          <a class="right carousel-control" href="#feedback-carousel" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
           </a>
         </div>
       </div>
+      
+      <a href="https://storyfunding.daum.net/project/306" target="_blank">
+        <button class="feedback__link-btn">
+          스토리펀딩 바로가기
+        </button>
+      </a>
     </div>
-    
-    <div class="hidden-xs">
-      <div class="container">
-        <div class="row waglpedia--desktop">
-          <a href="#" class="col-sm-4 col-md-3 col-lg-offset-1 col-lg-2 waglpedia__item">
-          <!-- <a href="/waglpedia#parti" class="col-sm-4 col-md-3 col-lg-offset-1 col-lg-2 waglpedia__item"> -->
-            <div class="waglpedia__image-container--desktop">
-              <img src="/static/img/waglpedia/parti.png" class="waglpedia__image--desktop" />
-            </div>
-            <div class="waglpedia__text-container--desktop hidden">
-              <div class="waglpedia__text--desktop hidden" data-lang="ko">
-                <span class="waglpedia__text--emphasized">Parti</span><br/>
-                이슈 토론과 찬반투표, 자료 아카이빙을 한 번에 할 수 있는 온라인 공론장
-              </div>
-              <div class="waglpedia__text--desktop hidden" data-lang="en">
-                <span class="waglpedia__text--emphasized">Parti</span><br/>
-                An online public sphere for debate, yes-or-no vote and archiving 
-              </div>
-            </div>
-          </a>
-          <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item">
-          <!-- <a href="/waglpedia#loomio" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item"> -->
-            <div class="waglpedia__image-container--desktop">
-              <img src="/static/img/waglpedia/loomio.png" class="waglpedia__image--desktop" />
-            </div>
-            <div class="waglpedia__text-container--desktop hidden">
-              <div class="waglpedia__text--desktop hidden" data-lang="ko">
-                <span class="waglpedia__text--emphasized">Loomio</span><br/>
-                전세계인이 사용하는, 가장 널리 알려진 의사결정 플랫폼
-              </div>
-              <div class="waglpedia__text--desktop hidden" data-lang="en">
-                <span class="waglpedia__text--emphasized">Loomio</span><br/>
-                An easy-to-use tool for decision making used worldwide.
-              </div>
-            </div>
-          </a>
-          <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item">
-          <!-- <a href="/waglpedia#polis" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item"> -->
-            <div class="waglpedia__image-container--desktop">
-              <img src="/static/img/waglpedia/polis.png" class="waglpedia__image--desktop" />
-            </div>
-            <div class="waglpedia__text-container--desktop hidden">
-              <div class="waglpedia__text--desktop hidden" data-lang="ko">
-                <span class="waglpedia__text--emphasized">Polis</span><br/>
-                의사결정에 따라 2차원 매핑 기능을 지원하는 다중 의사결정 플랫폼
-              </div>
-              <div class="waglpedia__text--desktop hidden" data-lang="en">
-                <span class="waglpedia__text--emphasized">Polis</span><br/>
-                A commenting and survey system with real-time data-mapping visualization.
-              </div>
-            </div>
-          </a>
-          <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item">
-          <!-- <a href="/waglpedia#brigade" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item"> -->
-            <div class="waglpedia__image-container--desktop">
-              <img src="/static/img/waglpedia/brigade.png" class="waglpedia__image--desktop" />
-            </div>
-            <div class="waglpedia__text-container--desktop hidden">
-              <div class="waglpedia__text--desktop hidden" data-lang="ko">
-                <span class="waglpedia__text--emphasized">Brigade</span><br/>
-                페이스북 공동설립에 참여한 션 파커의 '브리게이드 미디어'가 만든 종합 정치 SNS
-              </div>
-              <div class="waglpedia__text--desktop hidden" data-lang="en">
-                <span class="waglpedia__text--emphasized">Brigade</span><br/>
-                A social networking service specialized in news, issues and politics.
-              </div>
-            </div>
-          </a>
-          <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item">
-          <!-- <a href="/waglpedia#decide_madrid" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item"> -->
-            <div class="waglpedia__image-container--desktop">
-              <img src="/static/img/waglpedia/decide_madrid.png" class="waglpedia__image--mobile" />
-            </div>
-            <div class="waglpedia__text-container--desktop hidden">
-              <div class="waglpedia__text--desktop hidden" data-lang="ko">
-                <span class="waglpedia__text--emphasized">Decide Madrid</span><br/>
-                마드리드 시를 이끌고 있는 시민 정당 아호라 마드리드의 시민 참여 온라인 플랫폼
-              </div>
-              <div class="waglpedia__text--desktop hidden" data-lang="en">
-                <span class="waglpedia__text--emphasized">Decide Madrid</span><br/>
-                An official citizen participation platform of Madrid City governed by Ahora Madrid
-              </div>
-            </div>
-          </a>
-          <a href="#" class="col-sm-4 col-md-3 col-lg-offset-1 col-lg-2 waglpedia__item">
-          <!-- <a href="/waglpedia#citizen_budget" class="col-sm-4 col-md-3 col-lg-offset-1 col-lg-2 waglpedia__item"> -->
-            <div class="waglpedia__image-container--desktop">
-              <img src="/static/img/waglpedia/citizen_budget.png" class="waglpedia__image--desktop" />
-            </div>
-            <div class="waglpedia__text-container--desktop hidden">
-              <div class="waglpedia__text--desktop hidden" data-lang="ko">
-                <span class="waglpedia__text--emphasized">Citizen Budget</span><br/>
-                캐나다 비영리 벤처 오픈노스가 개발한 예산 시뮬레이션 프로그램
-              </div>
-              <div class="waglpedia__text--desktop hidden" data-lang="en">
-                <span class="waglpedia__text--emphasized">Citizen Budget</span><br/>
-                An online budget simulator developed by Open North in Canada
-              </div>
-            </div>
-          </a>
-          <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item">
-          <!-- <a href="/waglpedia#open_ministry" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item"> -->
-            <div class="waglpedia__image-container--desktop">
-              <img src="/static/img/waglpedia/open_ministry.png" class="waglpedia__image--desktop" />
-            </div>
-            <div class="waglpedia__text-container--desktop hidden">
-              <div class="waglpedia__text--desktop hidden" data-lang="ko">
-                <span class="waglpedia__text--emphasized">Open Ministry</span><br/>
-                핀란드의 국민발의 제도를 정착시킨 위키형 온라인 법안발의 플랫폼
-              </div>
-              <div class="waglpedia__text--desktop hidden" data-lang="en">
-                <span class="waglpedia__text--emphasized">Open Ministry</span><br/>
-                An online platform for crowdsourcing legislation and citizens initiatives in Finland
-              </div>
-            </div>
-          </a>
-          <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item">
-          <!-- <a href="/waglpedia#ping_korea" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item"> -->
-            <div class="waglpedia__image-container--desktop">
-              <img src="/static/img/waglpedia/ping_korea.png" class="waglpedia__image--desktop" />
-            </div>
-            <div class="waglpedia__text-container--desktop hidden">
-              <div class="waglpedia__text--desktop hidden" data-lang="ko">
-                <span class="waglpedia__text--emphasized">P!NG Korea</span><br/>
-                자체 알고리즘을 기반으로 만든 투표 가이드 서비스로 이용자와 정당/정치인을 매칭
-              </div>
-              <div class="waglpedia__text--desktop hidden" data-lang="en">
-                <span class="waglpedia__text--emphasized">P!NG Korea</span><br/>
-                A vote advisory application (VAA) for votes in Korea for the 20th general election
-              </div>
-            </div>
-          </a>
-          <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item">
-          <!-- <a href="/waglpedia#g0v" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item"> -->
-            <div class="waglpedia__image-container--desktop">
-              <img src="/static/img/waglpedia/g0v.png" class="waglpedia__image--desktop" />
-            </div>
-            <div class="waglpedia__text-container--desktop hidden">
-              <div class="waglpedia__text--desktop hidden" data-lang="ko">
-                <span class="waglpedia__text--emphasized">g0v</span><br/>
-                대만의 공공 데이터 아카이브이자 개발자 커뮤니티로 다양한 오픈 소스 프로젝트 확인이 가능
-              </div>
-              <div class="waglpedia__text--desktop hidden" data-lang="en">
-                <span class="waglpedia__text--emphasized">g0v</span><br/>
-                A civic tech community in Taiwan with a variaty of open source projects
-              </div>
-            </div>
-          </a>
-          <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item waglpedia__see-more-container">
-          <!-- <a href="/waglpedia" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item waglpedia__see-more-container"> -->
-            <div class="waglpedia__see-more">
-              <span class="hidden" data-lang="ko">더보기</span>
-              <span class="hidden" data-lang="en">See more</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="container landing__section landing__section--wagl-story">
-    <div class="section__title hidden" data-lang="ko">
-      와글 스토리
-    </div>
-    <div class="section__title hidden" data-lang="en">
-      WAGL Story
-    </div>
-    <div class="section__subtitle hidden" data-lang="ko">
-      와글이 전하는 따끈따끈한 소식들
-    </div>
-    <div class="section__subtitle hidden" data-lang="en">
-      News from WAGL
-    </div>
-    
-    <div class="row">
-      <a href="http://wag.us13.list-manage.com/subscribe/post?u=089fdffeb728818755616056f&id=3da7d885cd" target="_blank" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 wagl-story">
-        <div class="wagl-story__summary">
-          <img src="/static/img/landing/wagl_story_homepage_renewal.png" class="wagl-story__background-image" />
-          <span class="wagl-story__title">와글에서 주간 뉴스레터</span><br/>
-          <span class="wagl-story__title">발행을 시작합니다.</span>
-        </div>
-        <div class="wagl-story__detail">
-          <div class="wagl-story__content">
-            나은 민주주의를 꿈꾸는 정치 스타트업 와글이 6월부터 주간 뉴스레터 발행을 시작합니다. 국내외 정치동향, 시빅 테크, 더 나은 민주주의 소식을 한 번에 받아보세요! 와글이 전할 소식이 시민을 위한 공동자산으로 새로운 시대의 정치를 만드는 밑거름이 되기를 희망합니다.
-          </div>
-          <div class="wagl-story__created-at">
-            2016. 06. 14.
-          </div>
-          <div class="wagl-story__author">
-            WAGL
-          </div>
-        </div>
-      </a>
-      <a href="http://www.bloter.net/archives/253185" target="_blank" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 wagl-story">
-        <div class="wagl-story__summary">
-          <img src="/static/img/landing/wagl_story_ping_korea.png" class="wagl-story__background-image" />
-          <span class="wagl-story__title">"잠깐! 나와 궁합 맞는 정당은</span><br/>
-          <span class="wagl-story__title">확인하고 투표하시나요?"</span><br/>
-          <span class="wagl-story__title">투표가이드 서비스</span><br/>
-          <span class="wagl-story__title">P!NG Korea 소개</span>
-        </div>
-        <div class="wagl-story__detail">
-          <div class="wagl-story__content">
-            와글이 인큐베이팅한 정치 앱 프로젝트 팀 '핑코리아' 서비스가 개시되었습니다. 여러 정책 분야에 대한 간단한 설문으로 자신과 맞는 2016 총선의 정당과 19대 국회의원을 찾아드립니다.
-          </div>
-          <div class="wagl-story__created-at">
-            2016. 03. 30.
-          </div>
-          <div class="wagl-story__author">
-            블로터
-          </div>
-        </div>
-      </a>
-      <a href="https://bit.ly/1WxYNz0" target="_blank" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 wagl-story">
-        <div class="wagl-story__summary">
-          <img src="/static/img/landing/wagl_story_open_north.png" class="wagl-story__background-image" />
-          <span class="wagl-story__title">[와글이 만난 몽상가들]</span><br/>
-          <span class="wagl-story__title">'공공데이터'는 민주주의로</span><br/>
-          <span class="wagl-story__title">가는 지름길</span>
-        </div>
-        <div class="wagl-story__detail">
-          <div class="wagl-story__content">
-            시민은 어떻게 '똑똑한 유권자'가 될 수 있을까요? 나의 한 표가 절실한 정치인들에게 우리의 의견을 정확하게 알릴 방법은 없을까요? '오픈 노스'의 제임스 매키니가 힌트를 알려드립니다.
-          </div>
-          <div class="wagl-story__created-at">
-            2016. 03. 21.
-          </div>
-          <div class="wagl-story__author">
-            한겨레21
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="landing__section landing__social-media">
-    <div class="container">
-      <div class="social-media__title hidden" data-lang="ko">
-        더 알고 싶으신가요?
+    <div class="container landing__section">
+      <div class="section__title hidden" data-lang="ko">
+        프로젝트
       </div>
-      <div class="social-media__title hidden" data-lang="en">
-        Want to Learn More?
+      <div class="section__title hidden" data-lang="en">
+        Our Projects
       </div>
-      <div class="social-media__subtitle hidden" data-lang="ko">
-        다양한 채널로 와글의 소식을 
-        <div class="visible-xs"></div>
-        받아보실 수 있습니다.
+      <div class="section__subtitle hidden" data-lang="ko">
+        와글의 프로젝트를 소개합니다.
       </div>
-      <div class="social-media__subtitle hidden" data-lang="en">
-        Follow us!
-      </div>
-    
-      <div class="social-media__icon-container--big">
-        <a href="https://www.facebook.com/wagl2015/" target="_blank">
-          <img src="/static/img/socialmedia/white/facebook.png" class="social-media__icon--big" />
-        </a>
-        <a href="https://twitter.com/_WAGL" target="_blank">
-          <img src="/static/img/socialmedia/white/twitter.png" class="social-media__icon--big" />
-        </a>
-        <a href="https://www.instagram.com/wagl.insta/" target="_blank">
-          <img src="/static/img/socialmedia/white/instagram.png" class="social-media__icon--big" />
-        </a>
-        <a href="https://www.youtube.com/channel/UChiHajjCsZlMO8rEj6z2YmA" target="_blank">
-          <img src="/static/img/socialmedia/white/youtube.png" class="social-media__icon--big" />
-        </a>
-        <a href="https://medium.com/wagl-art" target="_blank">
-          <img src="/static/img/socialmedia/white/medium.png" class="social-media__icon--big" />
-        </a>
+      <div class="section__subtitle hidden" data-lang="en">
+        Working On Democracy
       </div>
       
-      <!-- Mailchimp subscribe form -->
-      <form action="//wag.us13.list-manage.com/subscribe/post?u=089fdffeb728818755616056f&amp;id=3da7d885cd" method="post" target="_blank" novalidate>
-        <div class="row landing__mailchimp-form">
-          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <input type="email" value="" name="EMAIL" class="mailchimp-form__email" placeholder="메일 주소를 입력해주세요" required />
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mailchimp-form__submit-btn-container">
-            <input type="submit" value="뉴스레터 구독하기" name="subscribe" class="mailchimp-form__submit-btn" />
-          </div>
-        </div>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-          <input type="text" name="b_089fdffeb728818755616056f_9c47163a3f" tabindex="-1" value="" />
-        </div>
-      </form>
+      {% include project_list.html %}
     </div>
-  </div>
 
-  {% include footer.html %}
+    <div class="container landing__section">
+      <div class="section__title hidden" data-lang="ko">
+        와글피디아
+      </div>
+      <div class="section__title hidden" data-lang="en">
+        WAGL-PEDIA
+      </div>
+      <div class="section__subtitle hidden" data-lang="ko">
+        당신의 참여를 북돋울 도구를 소개합니다
+      </div>
+      <div class="section__subtitle hidden" data-lang="en">
+        Participatory Tools and Platform Encyclopedia for Democracy A.R.T.ists
+      </div>
+      
+      <div class="visible-xs">
+        <div class="container waglpedia__carousel">
+          <div id="waglpedia-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+              <li data-target="#waglpedia-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#waglpedia-carousel" data-slide-to="1"></li>
+              <li data-target="#waglpedia-carousel" data-slide-to="2"></li>
+              <li data-target="#waglpedia-carousel" data-slide-to="3"></li>
+              <li data-target="#waglpedia-carousel" data-slide-to="4"></li>
+              <li data-target="#waglpedia-carousel" data-slide-to="5"></li>
+              <li data-target="#waglpedia-carousel" data-slide-to="6"></li>
+              <li data-target="#waglpedia-carousel" data-slide-to="7"></li>
+              <li data-target="#waglpedia-carousel" data-slide-to="8"></li>
+            </ol>
+            
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <a href="#" class="row waglpedia--mobile">
+                <!-- <a href="/waglpedia#parti" class="row waglpedia--mobile"> -->
+                  <div class="col-xs-6 waglpedia__text-container--mobile">
+                    <div class="waglpedia__text hidden" data-lang="ko">
+                      <span class="waglpedia__text--emphasized">Parti</span><br/><br/>
+                      이슈 토론과 찬반투표, 자료 아카이빙을 한 번에 할 수 있는 온라인 공론장
+                    </div>
+                    <div class="waglpedia__text hidden" data-lang="en">
+                      <span class="waglpedia__text--emphasized">Parti</span><br/><br/>
+                      An online public sphere for debate, yes-or-no vote and archiving 
+                    </div>
+                  </div>
+                  <div class="col-xs-6 waglpedia__image-container--mobile">
+                    <img src="/static/img/waglpedia/parti.png" class="waglpedia__image--mobile" />
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="row waglpedia--mobile">
+                <!-- <a href="/waglpedia#loomio" class="row waglpedia--mobile"> -->
+                  <div class="col-xs-6 waglpedia__text-container--mobile">
+                    <div class="waglpedia__text hidden" data-lang="ko">
+                      <span class="waglpedia__text--emphasized">Loomio</span><br/><br/>
+                      전세계인이 사용하는, 가장 널리 알려진 의사결정 플랫폼
+                    </div>
+                    <div class="waglpedia__text hidden" data-lang="en">
+                      <span class="waglpedia__text--emphasized">Loomio</span><br/><br/>
+                      An easy-to-use tool for decision making used worldwide.
+                    </div>
+                  </div>
+                  <div class="col-xs-6 waglpedia__image-container--mobile">
+                    <img src="/static/img/waglpedia/loomio.png" class="waglpedia__image--mobile" />
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="row waglpedia--mobile">
+                <!-- <a href="/waglpedia#polis" class="row waglpedia--mobile"> -->
+                  <div class="col-xs-6 waglpedia__text-container--mobile">
+                    <div class="waglpedia__text hidden" data-lang="ko">
+                      <span class="waglpedia__text--emphasized">Polis</span><br/><br/>
+                      의사결정에 따라 2차원 매핑 기능을 지원하는 다중 의사결정 플랫폼
+                    </div>
+                    <div class="waglpedia__text hidden" data-lang="en">
+                      <span class="waglpedia__text--emphasized">Polis</span><br/><br/>
+                      A commenting and survey system with real-time data-mapping visualization.
+                    </div>
+                  </div>
+                  <div class="col-xs-6 waglpedia__image-container--mobile">
+                    <img src="/static/img/waglpedia/polis.png" class="waglpedia__image--mobile" />
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="row waglpedia--mobile">
+                <!-- <a href="/waglpedia#brigade" class="row waglpedia--mobile"> -->
+                  <div class="col-xs-6 waglpedia__text-container--mobile">
+                    <div class="waglpedia__text hidden" data-lang="ko">
+                      <span class="waglpedia__text--emphasized">Brigade</span><br/><br/>
+                      페이스북 공동설립에 참여한 션 파커의 '브리게이드 미디어'가 만든 종합 정치 SNS
+                    </div>
+                    <div class="waglpedia__text hidden" data-lang="en">
+                      <span class="waglpedia__text--emphasized">Brigade</span><br/><br/>
+                      A social networking service specialized in news, issues and politics.
+                    </div>
+                  </div>
+                  <div class="col-xs-6 waglpedia__image-container--mobile">
+                    <img src="/static/img/waglpedia/brigade.png" class="waglpedia__image--mobile" />
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="row waglpedia--mobile">
+                <!-- <a href="/waglpedia#decide_madrid" class="row waglpedia--mobile"> -->
+                  <div class="col-xs-6 waglpedia__text-container--mobile">
+                    <div class="waglpedia__text hidden" data-lang="ko">
+                      <span class="waglpedia__text--emphasized">Decide Madrid</span><br/><br/>
+                      마드리드 시를 이끌고 있는 시민 정당 아호라 마드리드의 시민 참여 온라인 플랫폼
+                    </div>
+                    <div class="waglpedia__text hidden" data-lang="en">
+                      <span class="waglpedia__text--emphasized">Decide Madrid</span><br/><br/>
+                      An official citizen participation platform of Madrid City governed by Ahora Madrid
+                    </div>
+                  </div>
+                  <div class="col-xs-6 waglpedia__image-container--mobile">
+                    <img src="/static/img/waglpedia/decide_madrid.png" class="waglpedia__image--mobile" />
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="row waglpedia--mobile">
+                <!-- <a href="/waglpedia#citizen_budget" class="row waglpedia--mobile"> -->
+                  <div class="col-xs-6 waglpedia__text-container--mobile">
+                    <div class="waglpedia__text hidden" data-lang="ko">
+                      <span class="waglpedia__text--emphasized">Citizen Budget</span><br/><br/>
+                      캐나다 비영리 벤처 오픈노스가 개발한 예산 시뮬레이션 프로그램
+                    </div>
+                    <div class="waglpedia__text hidden" data-lang="en">
+                      <span class="waglpedia__text--emphasized">Citizen Budget</span><br/><br/>
+                      An online budget simulator developed by Open North in Canada
+                    </div>
+                  </div>
+                  <div class="col-xs-6 waglpedia__image-container--mobile">
+                    <img src="/static/img/waglpedia/citizen_budget.png" class="waglpedia__image--mobile" />
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="row waglpedia--mobile">
+                <!-- <a href="/waglpedia#open_ministry" class="row waglpedia--mobile"> -->
+                  <div class="col-xs-6 waglpedia__text-container--mobile">
+                    <div class="waglpedia__text hidden" data-lang="ko">
+                      <span class="waglpedia__text--emphasized">Open Ministry</span><br/><br/>
+                      핀란드의 국민발의 제도를 정착시킨 위키형 온라인 법안발의 플랫폼
+                    </div>
+                    <div class="waglpedia__text hidden" data-lang="en">
+                      <span class="waglpedia__text--emphasized">Open Ministry</span><br/><br/>
+                      An online platform for crowdsourcing legislation and citizens initiatives in Finland
+                    </div>
+                  </div>
+                  <div class="col-xs-6 waglpedia__image-container--mobile">
+                    <img src="/static/img/waglpedia/open_ministry.png" class="waglpedia__image--mobile" />
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="row waglpedia--mobile">
+                <!-- <a href="/waglpedia#ping_korea" class="row waglpedia--mobile"> -->
+                  <div class="col-xs-6 waglpedia__text-container--mobile">
+                    <div class="waglpedia__text hidden" data-lang="ko">
+                      <span class="waglpedia__text--emphasized">P!NG Korea</span><br/><br/>
+                      자체 알고리즘을 기반으로 만든 투표 가이드 서비스로 이용자와 정당/정치인을 매칭
+                    </div>
+                    <div class="waglpedia__text hidden" data-lang="en">
+                      <span class="waglpedia__text--emphasized">P!NG Korea</span><br/><br/>
+                      A vote advisory application (VAA) for votes in Korea for the 20th general election
+                    </div>
+                  </div>
+                  <div class="col-xs-6 waglpedia__image-container--mobile">
+                    <img src="/static/img/waglpedia/ping_korea.png" class="waglpedia__image--mobile" />
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="row waglpedia--mobile">
+                <!-- <a href="/waglpedia#g0v" class="row waglpedia--mobile"> -->
+                  <div class="col-xs-6 waglpedia__text-container--mobile">
+                    <div class="waglpedia__text hidden" data-lang="ko">
+                      <span class="waglpedia__text--emphasized">g0v</span><br/><br/>
+                      대만의 공공 데이터 아카이브이자 개발자 커뮤니티로 다양한 오픈 소스 프로젝트 확인이 가능
+                    </div>
+                    <div class="waglpedia__text hidden" data-lang="en">
+                      <span class="waglpedia__text--emphasized">g0v</span><br/><br/>
+                      A civic tech community in Taiwan with a variaty of open source projects
+                    </div>
+                  </div>
+                  <div class="col-xs-6 waglpedia__image-container--mobile">
+                    <img src="/static/img/waglpedia/g0v.png" class="waglpedia__image--mobile" />
+                  </div>
+                </a>
+              </div>
+            </div>
+            
+            <a class="left carousel-control" href="#waglpedia-carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a class="right carousel-control" href="#waglpedia-carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hidden-xs">
+        <div class="container">
+          <div class="row waglpedia--desktop">
+            <a href="#" class="col-sm-4 col-md-3 col-lg-offset-1 col-lg-2 waglpedia__item">
+            <!-- <a href="/waglpedia#parti" class="col-sm-4 col-md-3 col-lg-offset-1 col-lg-2 waglpedia__item"> -->
+              <div class="waglpedia__image-container--desktop">
+                <img src="/static/img/waglpedia/parti.png" class="waglpedia__image--desktop" />
+              </div>
+              <div class="waglpedia__text-container--desktop hidden">
+                <div class="waglpedia__text--desktop hidden" data-lang="ko">
+                  <span class="waglpedia__text--emphasized">Parti</span><br/>
+                  이슈 토론과 찬반투표, 자료 아카이빙을 한 번에 할 수 있는 온라인 공론장
+                </div>
+                <div class="waglpedia__text--desktop hidden" data-lang="en">
+                  <span class="waglpedia__text--emphasized">Parti</span><br/>
+                  An online public sphere for debate, yes-or-no vote and archiving 
+                </div>
+              </div>
+            </a>
+            <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item">
+            <!-- <a href="/waglpedia#loomio" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item"> -->
+              <div class="waglpedia__image-container--desktop">
+                <img src="/static/img/waglpedia/loomio.png" class="waglpedia__image--desktop" />
+              </div>
+              <div class="waglpedia__text-container--desktop hidden">
+                <div class="waglpedia__text--desktop hidden" data-lang="ko">
+                  <span class="waglpedia__text--emphasized">Loomio</span><br/>
+                  전세계인이 사용하는, 가장 널리 알려진 의사결정 플랫폼
+                </div>
+                <div class="waglpedia__text--desktop hidden" data-lang="en">
+                  <span class="waglpedia__text--emphasized">Loomio</span><br/>
+                  An easy-to-use tool for decision making used worldwide.
+                </div>
+              </div>
+            </a>
+            <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item">
+            <!-- <a href="/waglpedia#polis" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item"> -->
+              <div class="waglpedia__image-container--desktop">
+                <img src="/static/img/waglpedia/polis.png" class="waglpedia__image--desktop" />
+              </div>
+              <div class="waglpedia__text-container--desktop hidden">
+                <div class="waglpedia__text--desktop hidden" data-lang="ko">
+                  <span class="waglpedia__text--emphasized">Polis</span><br/>
+                  의사결정에 따라 2차원 매핑 기능을 지원하는 다중 의사결정 플랫폼
+                </div>
+                <div class="waglpedia__text--desktop hidden" data-lang="en">
+                  <span class="waglpedia__text--emphasized">Polis</span><br/>
+                  A commenting and survey system with real-time data-mapping visualization.
+                </div>
+              </div>
+            </a>
+            <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item">
+            <!-- <a href="/waglpedia#brigade" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item"> -->
+              <div class="waglpedia__image-container--desktop">
+                <img src="/static/img/waglpedia/brigade.png" class="waglpedia__image--desktop" />
+              </div>
+              <div class="waglpedia__text-container--desktop hidden">
+                <div class="waglpedia__text--desktop hidden" data-lang="ko">
+                  <span class="waglpedia__text--emphasized">Brigade</span><br/>
+                  페이스북 공동설립에 참여한 션 파커의 '브리게이드 미디어'가 만든 종합 정치 SNS
+                </div>
+                <div class="waglpedia__text--desktop hidden" data-lang="en">
+                  <span class="waglpedia__text--emphasized">Brigade</span><br/>
+                  A social networking service specialized in news, issues and politics.
+                </div>
+              </div>
+            </a>
+            <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item">
+            <!-- <a href="/waglpedia#decide_madrid" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item"> -->
+              <div class="waglpedia__image-container--desktop">
+                <img src="/static/img/waglpedia/decide_madrid.png" class="waglpedia__image--mobile" />
+              </div>
+              <div class="waglpedia__text-container--desktop hidden">
+                <div class="waglpedia__text--desktop hidden" data-lang="ko">
+                  <span class="waglpedia__text--emphasized">Decide Madrid</span><br/>
+                  마드리드 시를 이끌고 있는 시민 정당 아호라 마드리드의 시민 참여 온라인 플랫폼
+                </div>
+                <div class="waglpedia__text--desktop hidden" data-lang="en">
+                  <span class="waglpedia__text--emphasized">Decide Madrid</span><br/>
+                  An official citizen participation platform of Madrid City governed by Ahora Madrid
+                </div>
+              </div>
+            </a>
+            <a href="#" class="col-sm-4 col-md-3 col-lg-offset-1 col-lg-2 waglpedia__item">
+            <!-- <a href="/waglpedia#citizen_budget" class="col-sm-4 col-md-3 col-lg-offset-1 col-lg-2 waglpedia__item"> -->
+              <div class="waglpedia__image-container--desktop">
+                <img src="/static/img/waglpedia/citizen_budget.png" class="waglpedia__image--desktop" />
+              </div>
+              <div class="waglpedia__text-container--desktop hidden">
+                <div class="waglpedia__text--desktop hidden" data-lang="ko">
+                  <span class="waglpedia__text--emphasized">Citizen Budget</span><br/>
+                  캐나다 비영리 벤처 오픈노스가 개발한 예산 시뮬레이션 프로그램
+                </div>
+                <div class="waglpedia__text--desktop hidden" data-lang="en">
+                  <span class="waglpedia__text--emphasized">Citizen Budget</span><br/>
+                  An online budget simulator developed by Open North in Canada
+                </div>
+              </div>
+            </a>
+            <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item">
+            <!-- <a href="/waglpedia#open_ministry" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item"> -->
+              <div class="waglpedia__image-container--desktop">
+                <img src="/static/img/waglpedia/open_ministry.png" class="waglpedia__image--desktop" />
+              </div>
+              <div class="waglpedia__text-container--desktop hidden">
+                <div class="waglpedia__text--desktop hidden" data-lang="ko">
+                  <span class="waglpedia__text--emphasized">Open Ministry</span><br/>
+                  핀란드의 국민발의 제도를 정착시킨 위키형 온라인 법안발의 플랫폼
+                </div>
+                <div class="waglpedia__text--desktop hidden" data-lang="en">
+                  <span class="waglpedia__text--emphasized">Open Ministry</span><br/>
+                  An online platform for crowdsourcing legislation and citizens initiatives in Finland
+                </div>
+              </div>
+            </a>
+            <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item">
+            <!-- <a href="/waglpedia#ping_korea" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item"> -->
+              <div class="waglpedia__image-container--desktop">
+                <img src="/static/img/waglpedia/ping_korea.png" class="waglpedia__image--desktop" />
+              </div>
+              <div class="waglpedia__text-container--desktop hidden">
+                <div class="waglpedia__text--desktop hidden" data-lang="ko">
+                  <span class="waglpedia__text--emphasized">P!NG Korea</span><br/>
+                  자체 알고리즘을 기반으로 만든 투표 가이드 서비스로 이용자와 정당/정치인을 매칭
+                </div>
+                <div class="waglpedia__text--desktop hidden" data-lang="en">
+                  <span class="waglpedia__text--emphasized">P!NG Korea</span><br/>
+                  A vote advisory application (VAA) for votes in Korea for the 20th general election
+                </div>
+              </div>
+            </a>
+            <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item">
+            <!-- <a href="/waglpedia#g0v" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item"> -->
+              <div class="waglpedia__image-container--desktop">
+                <img src="/static/img/waglpedia/g0v.png" class="waglpedia__image--desktop" />
+              </div>
+              <div class="waglpedia__text-container--desktop hidden">
+                <div class="waglpedia__text--desktop hidden" data-lang="ko">
+                  <span class="waglpedia__text--emphasized">g0v</span><br/>
+                  대만의 공공 데이터 아카이브이자 개발자 커뮤니티로 다양한 오픈 소스 프로젝트 확인이 가능
+                </div>
+                <div class="waglpedia__text--desktop hidden" data-lang="en">
+                  <span class="waglpedia__text--emphasized">g0v</span><br/>
+                  A civic tech community in Taiwan with a variaty of open source projects
+                </div>
+              </div>
+            </a>
+            <a href="#" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item waglpedia__see-more-container">
+            <!-- <a href="/waglpedia" class="col-sm-4 col-md-3 col-lg-2 waglpedia__item waglpedia__see-more-container"> -->
+              <div class="waglpedia__see-more">
+                <span class="hidden" data-lang="ko">더보기</span>
+                <span class="hidden" data-lang="en">See more</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container landing__section landing__section--wagl-story">
+      <div class="section__title hidden" data-lang="ko">
+        와글 스토리
+      </div>
+      <div class="section__title hidden" data-lang="en">
+        WAGL Story
+      </div>
+      <div class="section__subtitle hidden" data-lang="ko">
+        와글이 전하는 따끈따끈한 소식들
+      </div>
+      <div class="section__subtitle hidden" data-lang="en">
+        News from WAGL
+      </div>
+      
+      <div class="row">
+        <a href="http://wag.us13.list-manage.com/subscribe/post?u=089fdffeb728818755616056f&id=3da7d885cd" target="_blank" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 wagl-story">
+          <div class="wagl-story__summary">
+            <img src="/static/img/landing/wagl_story_homepage_renewal.png" class="wagl-story__background-image" />
+            <span class="wagl-story__title">와글에서 주간 뉴스레터</span><br/>
+            <span class="wagl-story__title">발행을 시작합니다.</span>
+          </div>
+          <div class="wagl-story__detail">
+            <div class="wagl-story__content">
+              나은 민주주의를 꿈꾸는 정치 스타트업 와글이 6월부터 주간 뉴스레터 발행을 시작합니다. 국내외 정치동향, 시빅 테크, 더 나은 민주주의 소식을 한 번에 받아보세요! 와글이 전할 소식이 시민을 위한 공동자산으로 새로운 시대의 정치를 만드는 밑거름이 되기를 희망합니다.
+            </div>
+            <div class="wagl-story__created-at">
+              2016. 06. 14.
+            </div>
+            <div class="wagl-story__author">
+              WAGL
+            </div>
+          </div>
+        </a>
+        <a href="http://www.bloter.net/archives/253185" target="_blank" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 wagl-story">
+          <div class="wagl-story__summary">
+            <img src="/static/img/landing/wagl_story_ping_korea.png" class="wagl-story__background-image" />
+            <span class="wagl-story__title">"잠깐! 나와 궁합 맞는 정당은</span><br/>
+            <span class="wagl-story__title">확인하고 투표하시나요?"</span><br/>
+            <span class="wagl-story__title">투표가이드 서비스</span><br/>
+            <span class="wagl-story__title">P!NG Korea 소개</span>
+          </div>
+          <div class="wagl-story__detail">
+            <div class="wagl-story__content">
+              와글이 인큐베이팅한 정치 앱 프로젝트 팀 '핑코리아' 서비스가 개시되었습니다. 여러 정책 분야에 대한 간단한 설문으로 자신과 맞는 2016 총선의 정당과 19대 국회의원을 찾아드립니다.
+            </div>
+            <div class="wagl-story__created-at">
+              2016. 03. 30.
+            </div>
+            <div class="wagl-story__author">
+              블로터
+            </div>
+          </div>
+        </a>
+        <a href="https://bit.ly/1WxYNz0" target="_blank" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 wagl-story">
+          <div class="wagl-story__summary">
+            <img src="/static/img/landing/wagl_story_open_north.png" class="wagl-story__background-image" />
+            <span class="wagl-story__title">[와글이 만난 몽상가들]</span><br/>
+            <span class="wagl-story__title">'공공데이터'는 민주주의로</span><br/>
+            <span class="wagl-story__title">가는 지름길</span>
+          </div>
+          <div class="wagl-story__detail">
+            <div class="wagl-story__content">
+              시민은 어떻게 '똑똑한 유권자'가 될 수 있을까요? 나의 한 표가 절실한 정치인들에게 우리의 의견을 정확하게 알릴 방법은 없을까요? '오픈 노스'의 제임스 매키니가 힌트를 알려드립니다.
+            </div>
+            <div class="wagl-story__created-at">
+              2016. 03. 21.
+            </div>
+            <div class="wagl-story__author">
+              한겨레21
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="landing__section landing__social-media">
+      <div class="container">
+        <div class="social-media__title hidden" data-lang="ko">
+          더 알고 싶으신가요?
+        </div>
+        <div class="social-media__title hidden" data-lang="en">
+          Want to Learn More?
+        </div>
+        <div class="social-media__subtitle hidden" data-lang="ko">
+          다양한 채널로 와글의 소식을 
+          <div class="visible-xs"></div>
+          받아보실 수 있습니다.
+        </div>
+        <div class="social-media__subtitle hidden" data-lang="en">
+          Follow us!
+        </div>
+      
+        <div class="social-media__icon-container--big">
+          <a href="https://www.facebook.com/wagl2015/" target="_blank">
+            <img src="/static/img/socialmedia/white/facebook.png" class="social-media__icon--big" />
+          </a>
+          <a href="https://twitter.com/_WAGL" target="_blank">
+            <img src="/static/img/socialmedia/white/twitter.png" class="social-media__icon--big" />
+          </a>
+          <a href="https://www.instagram.com/wagl.insta/" target="_blank">
+            <img src="/static/img/socialmedia/white/instagram.png" class="social-media__icon--big" />
+          </a>
+          <a href="https://www.youtube.com/channel/UChiHajjCsZlMO8rEj6z2YmA" target="_blank">
+            <img src="/static/img/socialmedia/white/youtube.png" class="social-media__icon--big" />
+          </a>
+          <a href="https://medium.com/wagl-art" target="_blank">
+            <img src="/static/img/socialmedia/white/medium.png" class="social-media__icon--big" />
+          </a>
+        </div>
+        
+        <!-- Mailchimp subscribe form -->
+        <form action="//wag.us13.list-manage.com/subscribe/post?u=089fdffeb728818755616056f&amp;id=3da7d885cd" method="post" target="_blank" novalidate>
+          <div class="row landing__mailchimp-form">
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+              <input type="email" value="" name="EMAIL" class="mailchimp-form__email" placeholder="메일 주소를 입력해주세요" required />
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mailchimp-form__submit-btn-container">
+              <input type="submit" value="뉴스레터 구독하기" name="subscribe" class="mailchimp-form__submit-btn" />
+            </div>
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_089fdffeb728818755616056f_9c47163a3f" tabindex="-1" value="" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </div>
 
   {% include common_js.html %}
   <script src="/static/js/index.js"></script>
