@@ -1,10 +1,11 @@
 // Make navigation bar tranparent when scroll downwards
-$(window).on('scroll', _.throttle(updateNavigationBarTransparency, 1000));
-
 function updateNavigationBarTransparency() {
   if ($(window).scrollTop() > 100) $('.navbar').removeClass('navbar--transparent');
   else $('.navbar').addClass('navbar--transparent');
 }
+
+// Adapt throttle function when scrolling
+$(window).on('scroll', _.throttle(updateNavigationBarTransparency, 1000));
 
 // Update language to Korean
 function updateLanguageToKorean() {
@@ -36,6 +37,16 @@ $(document).on('click', '.navbar__language--english', function(event) {
   updateLanguageToEnglish();
 });
 
+// Slide down effect when drop down
+$('.dropdown').on('show.bs.dropdown', function(e){
+  $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+});
+
+// Slide up effect when drop up
+$('.dropdown').on('hide.bs.dropdown', function(e){
+  $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+});
+
 $(window).load(function() {
   // Translate contents
   if (localStorage.getItem('lang') == 'en') updateLanguageToEnglish();
@@ -53,3 +64,5 @@ $(window).load(function() {
   // Hide loading icon
   $('#loading-icon').addClass('hidden');
 });
+
+
