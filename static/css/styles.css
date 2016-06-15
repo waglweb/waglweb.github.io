@@ -115,6 +115,20 @@ a:hover {
 	}
 }
 
+.page-intro {
+	display: table;
+	position: relative;
+	margin-top: 60px;
+	width: 100vw;
+	height: 32vw;
+	overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+	.page-intro {
+		margin-top: 100px;
+	}
+}
+
 .page-name {
 	padding: 80px 0 30px 0;
 	font-weight: 700;
@@ -153,15 +167,18 @@ a:hover {
 }
 
 .title--emphasized {
-	padding: 100px 0;
+	display: table-cell;
+	width: 100vw;
+	height: 50vw;
 	font-weight: 700;
 	font-size: 1.4em;
 	color: white;
 	text-align: center;
+	vertical-align: middle;
 }
 @media only screen and (min-width: 768px) {
 	.title--emphasized {
-		padding: 250px 0;
+		height: 32vw;
 		font-size: 2.85em;
 	}
 }
@@ -889,17 +906,6 @@ a:hover {
  * About page
  * ========== */
 
-.about__intro, .about__vision {
-	position: relative;
-	margin-top: 60px;
-	overflow: hidden;
-}
-@media only screen and (min-width: 768px) {
-	.about__intro, .about__vision {
-		margin-top: 100px;
-	}
-}
-
 .about__title--prefix {
 	margin-bottom: 18px;
 	font-weight: 700;
@@ -1090,37 +1096,11 @@ a:hover {
 	padding: 0;
 }
 
-/* ==============
- * Manifesto page
- * ============== */
-
-.manifesto__intro {
-	position: relative;
-	margin-top: 60px;
-	overflow: hidden;
-}
-@media only screen and (min-width: 768px) {
-	.manifesto__intro {
-		margin-top: 100px;
-	}
-}
-
 /* ============
  * Project page
  * ============ */
 
 .project__intro {
-	position: relative;
-	margin-top: 60px;
-	overflow: hidden;
-}
-@media only screen and (min-width: 768px) {
-	.project__intro {
-		margin-top: 100px;
-	}
-}
-
-.project__intro-explanation {
 	margin: 0 auto;
 	font-weight: 500;
 	font-size: 1.1em;
@@ -1128,7 +1108,7 @@ a:hover {
 	line-height: 1.8em;
 }
 @media only screen and (min-width: 768px) {
-	.project__intro-explanation {
+	.project__intro {
 		margin: -50px auto 0 auto;
 		font-size: 1.3em;
 		text-align: center;
@@ -1204,17 +1184,6 @@ a:hover {
  * Campaign page
  * ============= */
 
-.campaign__intro {
-	position: relative;
-	margin-top: 60px;
-	overflow: hidden;
-}
-@media only screen and (min-width: 768px) {
-	.campaign__intro {
-		margin-top: 100px;
-	}
-}
-
 .campaign__external-link {
 	margin: 20px 15px;
 	padding: 8px 10px;
@@ -1228,6 +1197,9 @@ a:hover {
 	.campaign__external-link {
 		margin: 35px 90px;
 	}
+}
+.campaign__external-link:hover {
+	color: white;
 }
 
 .story-funding__carousel {
@@ -1291,17 +1263,6 @@ a:hover {
  * Civictech page
  * ============== */
 
-.civictech__intro {
-	position: relative;
-	margin-top: 60px;
-	overflow: hidden;
-}
-@media only screen and (min-width: 768px) {
-	.civictech__intro {
-		margin-top: 100px;
-	}
-}
-
 .civictech__pingkorea-link {
 	margin: 20px 0;
 	padding: 8px 10px;
@@ -1316,21 +1277,13 @@ a:hover {
 		margin: 35px 90px;
 	}
 }
+.civictech__pingkorea-link:hover {
+	color: white;
+}
 
 /* =================
  * Collaboration page
  * ================== */
-
-.collaboration__intro {
-	position: relative;
-	margin-top: 60px;
-	overflow: hidden;
-}
-@media only screen and (min-width: 768px) {
-	.collaboration__intro {
-		margin-top: 100px;
-	}
-}
 
 .collaboration__lecture-title {
 	margin: 35px 0;
@@ -1354,21 +1307,13 @@ a:hover {
 	font-size: 1.1em;
 	color: white;
 }
+.collaboration__news-link:hover {
+	color: white;
+}
 
 /* ==============
  * Community page
  * ============== */
-
-.community__intro {
-	position: relative;
-	margin-top: 60px;
-	overflow: hidden;
-}
-@media only screen and (min-width: 768px) {
-	.community__intro {
-		margin-top: 100px;
-	}
-}
 
 @media only screen and (max-width: 767px) {
 	.community__partners {
