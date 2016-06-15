@@ -1,5 +1,5 @@
 <footer class="footer">
-  <div class="container">
+  <div class="container footer__container">
     <div class="hidden" data-lang="ko">
       서울특별시 성동구 왕십리로2길 20, CND빌딩 4층
     </div>
@@ -18,5 +18,27 @@
     <div>
       ©WAGL since 2015
     </div>
+    {% if page.url != '/' %}
+    <div class="visible-xs">
+      <div class="space"></div>
+    </div>
+    <div class="social-media__icon-container--small">
+      <a href="https://www.facebook.com/wagl2015/" target="_blank">
+        <img src="/static/img/socialmedia/grey/facebook.png" class="social-media__icon--small" />
+      </a>
+      <a href="https://twitter.com/_WAGL" target="_blank">
+        <img src="/static/img/socialmedia/grey/twitter.png" class="social-media__icon--small" />
+      </a>
+      <a href="https://www.instagram.com/wagl.insta/" target="_blank">
+        <img src="/static/img/socialmedia/grey/instagram.png" class="social-media__icon--small" />
+      </a>
+      <a href="https://www.youtube.com/channel/UChiHajjCsZlMO8rEj6z2YmA" target="_blank">
+        <img src="/static/img/socialmedia/grey/youtube.png" class="social-media__icon--small" />
+      </a>
+      <a href="https://medium.com/wagl-art" target="_blank">
+        <img src="/static/img/socialmedia/grey/medium.png" class="social-media__icon--small" />
+      </a>
+    </div>
+    {% endif %}
   </div>
 </div>

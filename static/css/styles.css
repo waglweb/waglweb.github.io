@@ -289,6 +289,33 @@ a:hover {
   line-height: 1.7;
 }
 
+.footer__container {
+	position: relative;
+}
+
+.social-media__icon-container--small {
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+}
+@media only screen and (min-width: 768px) {
+	.social-media__icon-container--small {
+		top: 5px;
+		right: 0;
+	}
+}
+
+.social-media__icon--small {
+	padding: 0 10px;
+	height: 16px;
+}
+@media only screen and (min-width: 768px) {
+	.social-media__icon--small {
+		padding: 0 13px;
+		height: 25px;
+	}
+}
+
 /* ============
  * Landing page
  * ============ */
@@ -757,21 +784,21 @@ a:hover {
 	color: white;
 }
 
-.social-media__icon-container {
+.social-media__icon-container--big {
 	margin: 40px 0;
 }
 @media only screen and (min-width: 768px) {
-	.social-media__icon-container {
+	.social-media__icon-container--big {
 		margin: 65px 0;
 	}
 }
 
-.social-media__icon {
+.social-media__icon--big {
 	padding: 0 15px;
 	height: 27px;
 }
 @media only screen and (min-width: 768px) {
-	.social-media__icon {
+	.social-media__icon--big {
 		padding: 0 40px;
 		height: 34px;
 	}
