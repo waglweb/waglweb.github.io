@@ -22,6 +22,7 @@ html, body {
 
 body {
 	overflow-x: hidden;
+	opacity: 0;
 
 	// Disable double-tap-to-zoom in IE 10, 11 for fast-click
 	-ms-touch-action: manipulation;
