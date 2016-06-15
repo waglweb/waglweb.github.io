@@ -1,9 +1,10 @@
-// Make header tranparent when scroll downwards
-// TODO Use throttle
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 250) $('.navbar').removeClass('navbar--transparent');
+// Make navigation bar tranparent when scroll downwards
+$(window).on('scroll', _.throttle(updateNavigationBarTransparency, 1000));
+
+function updateNavigationBarTransparency() {
+  if ($(window).scrollTop() > 100) $('.navbar').removeClass('navbar--transparent');
   else $('.navbar').addClass('navbar--transparent');
-});
+}
 
 // Update language to Korean
 function updateLanguageToKorean() {
