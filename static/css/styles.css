@@ -494,7 +494,6 @@ a:hover {
 }
 
 .project__detail {
-	position: relative;
 	overflow: hidden;
 	margin-bottom: 5px;
 	padding: 0;
@@ -524,8 +523,9 @@ a:hover {
 .project__link {
 	display: block;
 	padding: 50px 15px 70px 15px;
-  background-color: black;
-	opacity: 0.6;
+	background-color: #77787b;
+	background-blend-mode: multiply;
+	background-repeat: round;
 	text-align: center;
 }
 @media only screen and (min-width: 768px) {
@@ -534,8 +534,43 @@ a:hover {
 	}
 }
 .project__link:hover, .project__link:active {
-  background-color: rgb(22, 160, 117);
-	opacity: 0.6;
+	background-color: #16b475;
+}
+
+.project__link--collaboration {
+	background-image: url('../img/project/collaboration_landscape.png');
+}
+@media only screen and (min-width: 768px) {
+	.project__link--collaboration {
+		background-image: url('../img/project/collaboration_portrait.png');
+	}
+}
+
+.project__link--campaign {
+	background-image: url('../img/project/campaign_landscape.png');
+}
+@media only screen and (min-width: 768px) {
+	.project__link--campaign {
+		background-image: url('../img/project/campaign_portrait.png');
+	}
+}
+
+.project__link--civictech {
+	background-image: url('../img/project/civictech_landscape.png');
+}
+@media only screen and (min-width: 768px) {
+	.project__link--civictech {
+		background-image: url('../img/project/civictech_portrait.png');
+	}
+}
+
+.project__link--community {
+	background-image: url('../img/project/community_landscape.png');
+}
+@media only screen and (min-width: 768px) {
+	.project__link--community {
+		background-image: url('../img/project/community_portrait.png');
+	}
 }
 
 .project__category {
