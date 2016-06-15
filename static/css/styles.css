@@ -1096,6 +1096,22 @@ a:hover {
 	padding: 0;
 }
 
+/* ==============
+ * Manifesto page
+ * ============== */
+
+.manifesto__title--prefix {
+	margin-bottom: 18px;
+	font-weight: 700;
+	font-size: 1.8em;
+  color: #16b475;
+}
+@media only screen and (min-width: 768px) {
+	.manifesto__title--prefix {
+		margin-top: 20px;
+	}
+}
+
 /* ============
  * Project page
  * ============ */
