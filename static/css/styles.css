@@ -68,6 +68,19 @@ a:hover {
 	background-color: #58595B;
 }
 
+.dropdown-menu {
+	border-top: none;
+	background-color: #e7e7e7;
+}
+
+.dropdown-menu > li > a {
+	color: #16b475 !important;
+}
+.dropdown-menu > li > a:hover {
+	background-color: #e7e7e7;
+	color: #16b475;
+}
+
 /* ================
  * Common attribute
  * ================ */
