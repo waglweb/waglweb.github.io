@@ -1342,10 +1342,218 @@ a:hover {
 	border: solid 1px #bebebe;
 }
 
-/* ============
- * WAGLPEDIA page
- * ============ */
+/* ===============
+ * WAGL-PEDIA page
+ * =============== */
 
+.waglpedia__intro {
+	margin: 0 auto;
+	font-weight: 500;
+	font-size: 1.1em;
+	color: #16b475;
+	line-height: 1.8em;
+}
+@media only screen and (min-width: 768px) {
+	.waglpedia__intro {
+		margin: -50px auto 0 auto;
+		font-size: 1.3em;
+		text-align: center;
+	}
+}
+
+.waglpedia__intro--light {
+	margin-top: 10px;
+	font-weight: 500;
+	font-size: 0.9em;
+	color: #bcbec0;
+	cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+	.waglpedia__intro--light {
+		text-align: center;
+	}
+}
+
+.waglpedia__tags {
+	margin-bottom: 10px;
+	font-size: 0.8em;
+	color: #bcbec0;
+}
+@media only screen and (min-width: 768px) {
+	.waglpedia__tags {
+		font-size: 1.0em;
+	}
+}
+
+.waglpedia__tag--active {
+	color: #16b475;
+}
+
+.waglpedia__service {
+	margin-bottom: -2px;
+	border-top: 1px solid #D3D3D5;
+	border-bottom: 1px solid #D3D3D5;
+	text-align: center;
+	cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+	.waglpedia__service {
+		margin-bottom: -4px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.waglpedia__service--center {
+		border-left: 1px solid #D3D3D5;
+		border-right: 1px solid #D3D3D5;
+	}
+}
+
+.waglpedia__service-summary--default {
+	padding: 30px 0;
+}
+@media only screen and (min-width: 768px) {
+	.waglpedia__service-summary--default {
+		height: 350px;
+		padding: 60px 0;
+	}
+}
+
+.waglpedia__service-summary--active {
+	margin: 0 -15px;
+	padding: 30px 15px;
+	background-color: #16b475;
+	color: white;
+}
+@media only screen and (min-width: 768px) {
+	.waglpedia__service-summary--active {
+		height: 350px;
+		padding: 60px 0;
+	}
+}
+
+.service-summary__title {
+	font-weight: 700;
+	font-size: 2.5em;
+}
+
+.service-summary__content {
+	margin-top: 30px;
+	line-height: 1.7em;
+}
+@media only screen and (min-width: 768px) {
+	.service-summary__content {
+		margin-top: 60px;
+	}
+}
+
+.waglpedia__service--collapsed {
+	margin: 0 -15px;
+	padding: 50px 15px;
+	background-color: #ECFAF5;
+}
+@media only screen and (min-width: 768px) {
+	.waglpedia__service--collapsed {
+		padding: 70px 100px;
+	}
+}
+
+.waglpedia__service-image {
+	width: 20%;
+	margin-bottom: 30px;
+	opacity: 0.6;
+}
+@media only screen and (min-width: 768px) {
+	.waglpedia__service-image {
+		margin-bottom: 60px 0;
+	}
+}
+
+.waglpedia__service-name {
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: 2.5em;
+	color: #004d2f;
+	text-align: center;
+}
+@media only screen and (min-width: 768px) {
+	.waglpedia__service-name {
+		margin-bottom: 60px;
+	}
+}
+
+.waglpedia__service-name--collapsed {
+	font-weight: 700;
+	font-size: 2.0em;
+	color: #004d2f;
+}
+@media only screen and (min-width: 768px) {
+	.waglpedia__service-name--collapsed {
+		font-size: 2.5em;
+	}
+}
+
+.waglpedia__service-tags--collapsed {
+	margin: 20px 0 25px 0;
+}
+
+.waglpedia__service-tag {
+	display: inline-block;
+	margin: 5px;
+	padding: 5px 10px;
+	border-radius: 15px;
+	background-color: #16b475;
+	font-size: 0.9em;
+	color: white;
+}
+
+.waglpedia__service-screenshot {
+	width: 100%;
+}
+@media only screen and (min-width: 768px) {
+	.waglpedia__service-screenshot {
+		width: 70%;
+		margin: 15px auto;
+	}
+}
+
+.waglpedia__explanation-category {
+	margin: 30px 0 20px 0;
+	font-weight: 700;
+	font-size: 1.3em;
+	color: #16b475;
+}
+@media only screen and (min-width: 768px) {
+	.waglpedia__explanation-category {
+		font-size: 2.0em;
+	}
+}
+
+.waglpedia__service-explanation {
+	color: #747474;
+	line-height: 1.7em;
+}
+@media only screen and (min-width: 768px) {
+	.waglpedia__service-explanation {
+		font-size: 1.1em;
+	}
+}
+
+.waglpedia__service-link-container {
+	margin-top: 75px;
+	text-align: center;
+}
+
+.waglpedia__service-link {
+	padding: 8px 10px;
+	background-color: #16b475;
+	font-weight: 500;
+	font-size: 1.1em;
+	color: white;
+}
+.waglpedia__service-link:hover {
+	color: white;
+}
 
 /* ===============================
  * Loading icon - 3rd party 
