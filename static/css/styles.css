@@ -1385,6 +1385,14 @@ a:hover {
 	}
 }
 
+.waglpedia__tag {
+	cursor: pointer;
+}
+
+.waglpedia__tag:hover {
+	color: #16b475;
+}
+
 .waglpedia__tag--active {
 	color: #16b475;
 }
