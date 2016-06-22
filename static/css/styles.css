@@ -1410,6 +1410,10 @@ a:hover {
 	}
 }
 
+.waglpedia__service--inactive {
+	opacity: 0.2;
+}
+
 @media only screen and (min-width: 768px) {
 	.waglpedia__service--center {
 		border-left: 1px solid #D3D3D5;

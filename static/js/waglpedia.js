@@ -43,7 +43,7 @@ $(document).on('click', '.waglpedia__tag', function() {
   
   // Initialize
   $('.waglpedia__tag').removeClass('waglpedia__tag--active');
-  $('.waglpedia__service').addClass('hidden');
+  $('.waglpedia__service').addClass('waglpedia__service--inactive');
 
   var $waglpediaTag = $(this);
   var category = $waglpediaTag.data('category');
@@ -51,9 +51,9 @@ $(document).on('click', '.waglpedia__tag', function() {
   $waglpediaTag.addClass('waglpedia__tag--active');
 
   if (category == 'all') {
-    $('.waglpedia__service').removeClass('hidden');
+    $('.waglpedia__service').removeClass('waglpedia__service--inactive');
   } else {
     var $selectedTags = $('.waglpedia__service-tag[data-category="' + category + '"]');
-    $selectedTags.closest('.waglpedia__service').removeClass('hidden');
+    $selectedTags.closest('.waglpedia__service').removeClass('waglpedia__service--inactive');
   }
 });
