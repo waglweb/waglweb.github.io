@@ -23,9 +23,14 @@
     {% include navbar.html %}
 
     <div class="landing__intro">
-      <video class="intro__background-video" muted autoplay loop>
-        <source src="static/video/intro.mp4" type="video/mp4" />
-      </video>
+      <div class="hidden-xs hidden-sm">
+        <video class="intro__background-video" poster="/static/img/landing/replacement_for_video.png" muted autoplay loop>
+          <source src="static/video/intro.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="hidden-md hidden-lg">
+        <img src="/static/img/landing/replacement_for_video.png" class="intro__background-video--replacement" />
+      </div>
       <div class="container">
         <div class="intro__name">
           WAGL
@@ -502,7 +507,7 @@
           </div>
           <div class="wagl-story__detail">
             <div class="wagl-story__content">
-              나은 민주주의를 꿈꾸는 정치 스타트업 와글이 6월부터 주간 뉴스레터 발행을 시작합니다. 국내외 정치동향, 시빅 테크, 더 나은 민주주의 소식을 한 번에 받아보세요! 와글이 전할 소식이 시민을 위한 공동자산으로 새로운 시대의 정치를 만드는 밑거름이 되기를 희망합니다.
+              더 나은 민주주의를 꿈꾸는 정치 스타트업 와글이 6월부터 주간 뉴스레터 발행을 시작합니다. 국내외 정치동향, 시빅 테크, 더 나은 민주주의 소식을 한 번에 받아보세요! 와글이 전할 소식이 시민을 위한 공동자산으로 새로운 시대의 정치를 만드는 밑거름이 되기를 희망합니다.
             </div>
             <div class="wagl-story__created-at">
               2016. 06. 14.

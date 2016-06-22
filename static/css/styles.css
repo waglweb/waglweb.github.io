@@ -372,6 +372,23 @@ a:hover {
 	}
 }
 
+.intro__background-video--replacement {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+@media only screen and (max-width: 767px) {
+	.intro__background-video--replacement {
+		height: 100%;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.intro__background-video--replacement {
+		width: 100%;
+	}
+}
+
 .intro__name {
 	margin-top: 100px;
 	font-size: 4.0em;
