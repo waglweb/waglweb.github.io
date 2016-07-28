@@ -1119,8 +1119,8 @@ a:hover {
 @media only screen and (min-width: 768px) {
 	.about__container {
 		margin-top: 100px;
-		margin-left: 250px;
-		margin-right: 250px;
+		margin-left: 200px;
+		margin-right: 200px;
 		padding: 0 50px;
 	}
 }
@@ -1151,6 +1151,7 @@ a:hover {
 	font-weight: 700;
 	font-size: 1.8em;
 	color: #004d2f;
+	text-align: right;
 }
 
 .about__subtitle {
@@ -1182,13 +1183,13 @@ a:hover {
 }
 @media only screen and (min-width: 768px) {
 	.about__recruit-link {
-		margin: 35px 0px;
+		margin: 35px 90px;
+		margin-right: 70px;
 	}
 }
 .about__recruit-link:hover {
 	color: white;
 }
-
 
 /* ==============
  * Manifesto page
