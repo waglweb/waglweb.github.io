@@ -1119,7 +1119,8 @@ a:hover {
 @media only screen and (min-width: 768px) {
 	.about__container {
 		margin-top: 100px;
-		margin-left: 200px;
+		margin-left: 250px;
+		margin-right: 250px;
 		padding: 0 50px;
 	}
 }
@@ -1181,7 +1182,7 @@ a:hover {
 }
 @media only screen and (min-width: 768px) {
 	.about__recruit-link {
-		margin: 35px 140px;
+		margin: 35px 0px;
 	}
 }
 .about__recruit-link:hover {
