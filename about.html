@@ -355,6 +355,16 @@
           </div>
         </div>
 
+        <!-- 2nd collapsing row for mobile -->
+        <div class="visible-xs col-xs-12">
+          {% include profile/juyeonhan.html %}
+        </div>
+
+        <div class="visible-xs col-xs-12">
+          {% include profile/yeokyunglee.html %}
+        </div>
+        <!-- End of 2nd collapsing row for mobile -->
+
         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".jungkyusuh">
           <img src="/static/img/profile/jungkyusuh.jpg" class="profile__picture" />
 
@@ -373,16 +383,6 @@
             jk.suh@wagl.net
           </div>
         </div>
-
-        <!-- 5th collapsing row for mobile -->
-        <div class="visible-xs col-xs-12">
-          {% include profile/yeokyunglee.html %}
-        </div>
-
-        <div class="visible-xs col-xs-12">
-          {% include profile/jungkyusuh.html %}
-        </div>
-        <!-- End of 5th collapsing row for mobile -->
 
         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".ukjinyang">
           <img src="/static/img/profile/ukjinyang.jpg" class="profile__picture" />
@@ -403,13 +403,21 @@
           </div>
         </div>
 
-        <!-- 6th collapsing row for mobile -->
+        <!-- 4th collapsing row for mobile -->
+        <div class="visible-xs col-xs-12">
+          {% include profile/jungkyusuh.html %}
+        </div>
+
         <div class="visible-xs col-xs-12">
           {% include profile/ukjinyang.html %}
         </div>
-        <!-- End of 5th collapsing row for mobile -->
+        <!-- End of 4th collapsing row for mobile -->
 
-        <!-- 3rd collapsing row for desktop -->
+        <!-- 2nd collapsing row for desktop -->
+        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+          {% include profile/juyeonhan.html %}
+        </div>
+
         <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
           {% include profile/yeokyunglee.html %}
         </div>
@@ -421,7 +429,7 @@
         <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
           {% include profile/ukjinyang.html %}
         </div>
-        <!-- End of 3rd collapsing row for desktop -->
+        <!-- End of 2nd collapsing row for desktop -->
 
       </div>
     </div>
