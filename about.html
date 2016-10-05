@@ -145,6 +145,19 @@
     </div>
 
     <div class="container news-container">
+      <a href="http://www.nocutnews.co.kr/news/4656897" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__press-name">
+            노컷뉴스
+          </div>
+          <div class="news__created-at">
+            2016.09.21
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          "와글와글한 힘으로 정치를, 세상을 바꿔보자"
+        </div>
+      </a>
       <a href="http://bit.ly/1sy6fxD" target="_blank"class="row news">
         <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
           <div class="news__press-name">
@@ -158,20 +171,7 @@
           [더 나은 미래] 20대 총선, 어디까지 알고 있니
         </div>
       </a>
-      <a href="http://bit.ly/1sy7LQn" target="_blank"class="row news">
-        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
-          <div class="news__press-name">
-            경향신문
-          </div>
-          <div class="news__created-at">
-            2016.01.25
-          </div>
-        </div>
-        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
-          와글 이진순 대표 "정치에 대한 패러다임 자체가 총체적으로 바뀌어야 한다"
-        </div>
-      </a>
-      <a href="http://bit.ly/22Xhg8h" target="_blank"class="row news">
+      <a href="http://www.bloter.net/archives/242631" target="_blank"class="row news">
         <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
           <div class="news__press-name">
             블로터
@@ -184,7 +184,7 @@
           정치벤처 와글의 '듣도 보도 못한 정치' 실험
         </div>
       </a>
-      <a href="https://medium.com/wagl-art" target="_blank" class="news__more">
+      <a href="https://brunch.co.kr/magazine/waglog" target="_blank" class="news__more">
         <span class="hidden" data-lang="ko">+ 와글 관련 소식 더 보기</span>
         <span class="hidden" data-lang="en">+ More news about WAGL</span>
       </a>
@@ -317,6 +317,73 @@
         </div>
         <!-- End of 1st collapsing row for desktop -->
 
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".jiyounghwang">
+          <img src="/static/img/profile/jiyounghwang.png" class="profile__picture" />
+
+          <div class="profile__name hidden" data-lang="ko">
+            황지영
+          </div>
+          <div class="profile__name hidden" data-lang="en">
+            Jiyoung Hwang
+          </div>
+
+          <div class="profile__role">
+            Project Manager
+          </div>
+
+          <div class="profile__email-address">
+            jiyoung@wagl.net
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".soyeonjin">
+          <img src="/static/img/profile/soyeonjin.png" class="profile__picture" />
+
+          <div class="profile__name hidden" data-lang="ko">
+            진소연
+          </div>
+          <div class="profile__name hidden" data-lang="en">
+            Soyeon Jin
+          </div>
+
+          <div class="profile__role">
+            Project Manager
+          </div>
+
+          <div class="profile__email-address">
+            soso@wagl.net
+          </div>
+        </div>
+
+        <!-- 3rd collapsing row for mobile -->
+        <div class="visible-xs col-xs-12">
+          {% include profile/jiyounghwang.html %}
+        </div>
+
+        <div class="visible-xs col-xs-12">
+          {% include profile/soyeonjin.html %}
+        </div>
+        <!-- End of 3rd collapsing row for mobile -->
+
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".yoonjungpark">
+          <img src="/static/img/profile/yoonjungpark.jpg" class="profile__picture" />
+
+          <div class="profile__name hidden" data-lang="ko">
+            박윤중
+          </div>
+          <div class="profile__name hidden" data-lang="en">
+            Yoonjung Park
+          </div>
+
+          <div class="profile__role">
+            Project Manager
+          </div>
+
+          <div class="profile__email-address">
+            yoonjung@wagl.net
+          </div>
+        </div>
+
         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".juyeonhan">
           <img src="/static/img/profile/juyeonhan.jpg" class="profile__picture" />
 
@@ -328,13 +395,41 @@
           </div>
 
           <div class="profile__role">
-            Project Manager
+            Fellow
           </div>
 
           <div class="profile__email-address">
             jennybe@wagl.net
           </div>
         </div>
+
+        <!-- 4th collapsing row for mobile -->
+        <div class="visible-xs col-xs-12">
+          {% include profile/yoonjungpark.html %}
+        </div>
+
+        <div class="visible-xs col-xs-12">
+          {% include profile/juyeonhan.html %}
+        </div>
+        <!-- End of 4th collapsing row for mobile -->
+
+        <!-- 2nd collapsing row for desktop -->
+        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+          {% include profile/jiyounghwang.html %}
+        </div>
+
+        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+          {% include profile/soyeonjin.html %}
+        </div>
+
+        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+          {% include profile/yoonjungpark.html %}
+        </div>
+
+        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+          {% include profile/juyeonhan.html %}
+        </div>
+        <!-- End of 2nd collapsing row for desktop -->
 
         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".yeokyunglee">
           <img src="/static/img/profile/yeokyunglee.jpg" class="profile__picture" />
@@ -355,16 +450,6 @@
           </div>
         </div>
 
-        <!-- 2nd collapsing row for mobile -->
-        <div class="visible-xs col-xs-12">
-          {% include profile/juyeonhan.html %}
-        </div>
-
-        <div class="visible-xs col-xs-12">
-          {% include profile/yeokyunglee.html %}
-        </div>
-        <!-- End of 2nd collapsing row for mobile -->
-
         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".jungkyusuh">
           <img src="/static/img/profile/jungkyusuh.jpg" class="profile__picture" />
 
@@ -383,6 +468,16 @@
             jk.suh@wagl.net
           </div>
         </div>
+
+        <!-- 5th collapsing row for mobile -->
+        <div class="visible-xs col-xs-12">
+          {% include profile/yeokyunglee.html %}
+        </div>
+
+        <div class="visible-xs col-xs-12">
+          {% include profile/jungkyusuh.html %}
+        </div>
+        <!-- End of 5th collapsing row for mobile -->
 
         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 about__profile" data-toggle="collapse" data-target=".ukjinyang">
           <img src="/static/img/profile/ukjinyang.jpg" class="profile__picture" />
@@ -403,21 +498,14 @@
           </div>
         </div>
 
-        <!-- 4th collapsing row for mobile -->
-        <div class="visible-xs col-xs-12">
-          {% include profile/jungkyusuh.html %}
-        </div>
+        <!-- 6th collapsing row for mobile -->
 
         <div class="visible-xs col-xs-12">
           {% include profile/ukjinyang.html %}
         </div>
-        <!-- End of 4th collapsing row for mobile -->
+        <!-- End of 6th collapsing row for mobile -->
 
-        <!-- 2nd collapsing row for desktop -->
-        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
-          {% include profile/juyeonhan.html %}
-        </div>
-
+        <!-- 3rd collapsing row for desktop -->
         <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
           {% include profile/yeokyunglee.html %}
         </div>
@@ -429,7 +517,7 @@
         <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
           {% include profile/ukjinyang.html %}
         </div>
-        <!-- End of 2nd collapsing row for desktop -->
+        <!-- End of 3rd collapsing row for desktop -->
 
       </div>
     </div>
