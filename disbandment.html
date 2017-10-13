@@ -1,0 +1,102 @@
+---
+# Front matter block to use liquid tags
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>와글 소개</title>
+
+  {% include head.html %}
+
+  <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+</head>
+<body>
+  <input type="hidden" id="title-ko" value="와글 소개" />
+  <input type="hidden" id="title-en" value="About WAGL" />
+
+  <!-- Loading icon -->
+  <div id="loading-icon"></div>
+
+  <div id="main-container" style="opacity: 0;">
+
+    {% include navbar.html %}
+
+    <div class="page-intro">
+      <img src="/static/img/about/intro_background_image.png" class="section__background-image" />
+
+      <div class="title--emphasized hidden" data-lang="ko">
+        와글와글한 군중의 힘으로 만들어가는<br/>
+        더 나은 민주주의
+      </div>
+      <div class="title--emphasized hidden" data-lang="en">
+        I'm a Democracy Artist.<br/>
+        We Make Art Politics.
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="page-name hidden" data-lang="ko">
+        공고
+      </div>
+      <div class="page-name hidden" data-lang="en">
+        Announcement
+      </div>
+
+      <hr class="page-name--bottom-border" />
+    </div>
+
+    <div class="container">
+      <div class="title--black">
+        해산 및 채권제출공고(1차)
+      </div>
+      <div>
+        본 회사는 2010년10월10일 임시사원총회에서 해산을 결의하고 현재 청산절차를 진행중인바 본 회사해산에 대하여 이의가 있는 분이나 채권이 있는 분은 이 공고일로부터 2개월 이내에 이의 및 그 채권액을 제출하여 주시기 바랍니다. 만약 위 기간 내에 제출이 없으면 청산에서 제외됨을 공고합니다.
+      </div>
+      <div>
+        2017. 10. 11.
+      </div>
+      <div>
+        유한회사 더블유에이지엘
+      </div>
+      <div>
+        서울특별시 성동구 왕십리로2길 20, 4층(성수동1가)
+      </div>
+      <div>
+        청산인 이 진 순
+      </div>
+      
+      <hr/>
+      
+      <div class="title--black">
+        해산 및 채권제출공고(2차)
+      </div>
+      <div>
+        본 회사는 2010년10월10일 임시사원총회에서 해산을 결의하고 현재 청산절차를 진행중인바 본 회사해산에 대하여 이의가 있는 분이나 채권이 있는 분은 이 공고일로부터 2개월 이내에 이의 및 그 채권액을 제출하여 주시기 바랍니다. 만약 위 기간 내에 제출이 없으면 청산에서 제외됨을 공고합니다.
+      </div>
+      <div>
+        2017. 10. 12.
+      </div>
+      <div>
+        유한회사 더블유에이지엘
+      </div>
+      <div>
+        서울특별시 성동구 왕십리로2길 20, 4층(성수동1가)
+      </div>
+      <div>
+        청산인 이 진 순
+      </div>
+    </div>
+
+    <div class="hidden-xs">
+      <div class="space"></div>
+      <div class="space"></div>
+    </div>
+
+    {% include footer.html %}
+  </div>
+
+  {% include common_js.html %}
+  <script src="/static/js/about.js"></script>
+</body>
+</html>
