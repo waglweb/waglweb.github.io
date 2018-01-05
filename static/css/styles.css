@@ -77,21 +77,11 @@ img.modal-img:hover {
 	display: block;
 }
 
-button.close-modal {
-	margin: -10px -10px 0 0;
-	z-index: 1100;
-	right: 15%;
-	position: fixed;
-	float: right;
-	border-radius: 3em;
-	width: 40px;
-	height: 40px;
-	border: solid;
-	border-width: 2px;
-	border-color: #00aa75;
-	color: #00aa75;
-	font-weight: 400;
-	font-size: 20px;
+@media screen and (max-width:800px){
+	.modal {
+		margin: 45vh 0 0 0;
+		width: 100%;
+	}
 }
 
 /* ==================
