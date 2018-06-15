@@ -26,9 +26,19 @@
           <a href="/" class="navbar__menu hidden" data-lang="ko">처음으로</a>
           <a href="/" class="navbar__menu hidden" data-lang="en">Home</a>
         </li>
-        <li>
-          <a href="/about" class="navbar__menu hidden" data-lang="ko">와글 소개</a>
-          <a href="/about" class="navbar__menu hidden" data-lang="en">About</a>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle navbar__menu hidden" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-lang="ko">와글 소개 <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle navbar__menu hidden" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-lang="en">About <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="/about" class="hidden" data-lang="ko">와글 소개</a>
+              <a href="/about" class="hidden" data-lang="en">About</a>
+            </li>
+            <li>
+              <a href="https://docs.google.com/spreadsheets/d/1YMJ3Qm_EewvxIsCsfXnVsKJgtsx8qcPnX1dWx_cvi30/edit?usp=sharing" class="hidden" data-lang="ko">예산 공개</a>
+              <a href="https://docs.google.com/spreadsheets/d/1YMJ3Qm_EewvxIsCsfXnVsKJgtsx8qcPnX1dWx_cvi30/edit?usp=sharing" class="hidden" data-lang="en">Buget</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a href="/manifesto" class="navbar__menu hidden" data-lang="ko">매니페스토</a>
@@ -47,33 +57,33 @@
               <a href="/project" class="hidden" data-lang="en">Whole projects</a>
             </li>
             <li>
-              <a href="/collaboration" class="hidden" data-lang="ko">협업과 네트워킹</a>
+              <a href="/collaboration" class="hidden" data-lang="ko">리더십</a>
               <a href="/collaboration" class="hidden" data-lang="en">Collaboration</a>
             </li>
             <li>
-              <a href="/campaign" class="hidden" data-lang="ko">A.R.T. 민주주의 연구와 소개</a>
+              <a href="/campaign" class="hidden" data-lang="ko">플랫폼</a>
               <a href="/campaign" class="hidden" data-lang="en">Campaign</a>
             </li>
             <li>
-              <a href="/civictech" class="hidden" data-lang="ko">일상기술과 민주주의의 만남</a>
+              <a href="/civictech" class="hidden" data-lang="ko">연구</a>
               <a href="/civictech" class="hidden" data-lang="en">Civic tech</a>
             </li>
             <li>
-              <a href="/community" class="hidden" data-lang="ko">풀뿌리 커뮤니티 지원 및 발굴</a>
-              <a href="/community" class="hidden" data-lang="en">Community</a>
+              <a href="/community" class="hidden" data-lang="ko">네트워킹</a>
+              <a href="/community" class="hidden" data-lang="en">Networking</a>
             </li>
           </ul>
         </li>
-        <li>
-          <a href="https://brunch.co.kr/magazine/waglog" target="_blank" class="navbar__menu hidden" data-lang="ko">블로그</a>
-          <a href="https://brunch.co.kr/magazine/waglog" target="_blank" class="navbar__menu hidden" data-lang="en">Blog</a>
-        </li>
-        <li>
-          <div class="hidden-xs navbar__language--desktop">
-            <div class="navbar__language--korean">한글</div>
-            <div class="navbar__language--english">English</div>
-          </div>
-        </li>
+        <!--<li>-->
+          <!--<a href="https://brunch.co.kr/magazine/waglog" target="_blank" class="navbar__menu hidden" data-lang="ko">블로그</a>-->
+          <!--<a href="https://brunch.co.kr/magazine/waglog" target="_blank" class="navbar__menu hidden" data-lang="en">Blog</a>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<div class="hidden-xs navbar__language&#45;&#45;desktop">-->
+            <!--<div class="navbar__language&#45;&#45;korean">한글</div>-->
+            <!--<div class="navbar__language&#45;&#45;english">English</div>-->
+          <!--</div>-->
+        <!--</li>-->
       </ul>
     </div>
   </div>

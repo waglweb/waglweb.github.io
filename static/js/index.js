@@ -15,14 +15,3 @@ $(document).on('mouseleave', '.waglpedia__item', function() {
 // $(window).load(function() {
 //   window.open('http://www.wagl.net/static/img/landing/disbandment_announcement.png');
 // });
-
-$('.dim').on('click', function() {
-  $('.dim.is-visible').removeClass('is-visible');
-  $('.modal').removeClass('is-visible');
-});
-
-$(document).on('click', function() {
-  $('.dim.is-visible').removeClass('is-visible');
-  $('.modal').removeClass('is-visible');
-  $('body').removeClass('no-scroll');
-});
