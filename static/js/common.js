@@ -48,15 +48,16 @@ $('.dropdown').on('hide.bs.dropdown', function(e){
 });
 
 $(window).load(function() {
+  updateLanguageToKorean();
   // Translate contents
-  if (localStorage.getItem('lang') == 'en') updateLanguageToEnglish();
-  else if (localStorage.getItem('lang') == 'ko') updateLanguageToKorean();
+  // if (localStorage.getItem('lang') == 'en') updateLanguageToEnglish();
+  // else if (localStorage.getItem('lang') == 'ko') updateLanguageToKorean();
   // Detect language when user first visited site
-  else {
-    var language = navigator.language || navigator.userLanguage;
-    if (language == 'ko') updateLanguageToKorean();
-    else updateLanguageToEnglish();
-  }
+  // else {
+  //   var language = navigator.language || navigator.userLanguage;
+  //   if (language == 'ko') updateLanguageToKorean();
+  //   else updateLanguageToEnglish();
+  // }
 
   // Ease effect when body DOM loads
   $('#main-container').animate({opacity: 1}, 700);
