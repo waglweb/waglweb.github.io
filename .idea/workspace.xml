@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95a01307-c84f-406a-af54-8be99519d8d5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/_includes/ceo_greeting.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_includes/organization_chart.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ceo.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/contact.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/history.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/organization.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/organization.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/ceo/ceo.png" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/_includes/navbar.html" afterPath="$PROJECT_DIR$/_includes/navbar.html" />
-      <change beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
-      <change beforePath="$PROJECT_DIR$/collaboration.html" afterPath="$PROJECT_DIR$/collaboration.html" />
-      <change beforePath="$PROJECT_DIR$/project.html" afterPath="$PROJECT_DIR$/project.html" />
+      <change beforePath="$PROJECT_DIR$/static/css/organization.css" afterPath="$PROJECT_DIR$/static/css/organization.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,61 +13,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="64" column="12" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ceo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ceo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/navbar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="63" column="68" lean-forward="false" selection-start-line="63" selection-start-column="68" selection-end-line="63" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="project.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
+            <state relative-caret-position="288">
               <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="collaboration.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/collaboration.html">
+      <file leaf-file-name="organization.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/organization.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="-535">
+              <caret line="38" column="38" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ceo_greeting.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/ceo_greeting.html">
+      <file leaf-file-name="organization.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/organization.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+            <state relative-caret-position="255">
+              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -125,13 +83,13 @@
         <option value="$PROJECT_DIR$/_includes/organization_ceo.html" />
         <option value="$PROJECT_DIR$/_includes/manifesto_why_wagl.html" />
         <option value="$PROJECT_DIR$/organization.html" />
-        <option value="$PROJECT_DIR$/static/css/organization.css" />
         <option value="$PROJECT_DIR$/ceo.html" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/_includes/ceo_greeting.html" />
         <option value="$PROJECT_DIR$/_includes/navbar.html" />
         <option value="$PROJECT_DIR$/project.html" />
         <option value="$PROJECT_DIR$/collaboration.html" />
+        <option value="$PROJECT_DIR$/static/css/organization.css" />
       </list>
     </option>
   </component>
@@ -142,7 +100,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="127" />
+    <option name="x" value="120" />
     <option name="y" value="23" />
     <option name="width" value="1109" />
     <option name="height" value="777" />
@@ -656,15 +614,15 @@
       <workItem from="1528941407983" duration="7584000" />
       <workItem from="1529031974289" duration="297000" />
       <workItem from="1530513147490" duration="1625000" />
-      <workItem from="1531022852578" duration="14942000" />
+      <workItem from="1531022852578" duration="15798000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31861000" />
+    <option name="totallyTimeSpent" value="32717000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="127" y="23" width="1109" height="777" extended-state="0" />
+    <frame x="120" y="23" width="1109" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1030,22 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/organization.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="102" column="10" lean-forward="false" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/organization.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1078,18 +1020,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/collaboration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="288">
           <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collaboration.html">
+    <entry file="file://$PROJECT_DIR$/static/css/organization.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        <state relative-caret-position="255">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/organization.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-535">
+          <caret line="38" column="38" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="38" />
           <folding />
         </state>
       </provider>

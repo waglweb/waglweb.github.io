@@ -8,13 +8,14 @@
 
 table {
     text-align: left;
-    width: 90%;
+    width: 100%;
 }
 
 th, td {
     border: solid #b2b2b2 1px;
     padding: 5px 0 5px 10px;
     font-weight: 500;
+    font-size: 0.9em;
 }
 
 .row {
@@ -24,4 +25,11 @@ th, td {
 img.organization-chart {
     width: 60%;
     margin: -20px 0 0 0;
+}
+
+@media (max-width: 400px) {
+    img.organization-chart {
+        width: 130%;
+        margin-left: -15%;
+    }
 }
