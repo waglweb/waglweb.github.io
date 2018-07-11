@@ -1,0 +1,110 @@
+---
+# Front matter block to use liquid tags
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>조직도</title>
+
+  {% include head.html %}
+
+  <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="static/css/organization.css" />
+</head>
+<body>
+  <input type="hidden" id="title-ko" value="조직도" />
+  <input type="hidden" id="title-en" value="Organization" />
+
+  <!-- Loading icon -->
+  <div id="loading-icon"></div>
+
+  <div id="main-container" style="opacity: 0;">
+
+    {% include navbar.html %}
+
+    <div class="container">
+      <div class="page-name hidden" data-lang="ko">
+        조직도
+      </div>
+      <div class="page-name hidden" data-lang="en">
+        Organization chart
+      </div>
+
+      <hr class="page-name--bottom-border"/>
+    </div>
+
+    <div class="visible-xs">
+      <div class="container">
+        <img class="organization-chart" src="/static/img/organization/organization_map.png">
+
+      </div>
+    </div>
+
+    <div class="hidden-xs">
+      <div class="row">
+        <img class="organization-chart" src="/static/img/organization/organization_map.png">
+      </div>
+    </div>
+    <div class="hidden-xs">
+      <div class="space"></div>
+      <div class="space"></div>
+    </div>
+
+    <div class="container composition">
+      <div class="title hidden" data-lang="ko">
+        이사회 구성
+      </div>
+      <div class="title hidden" data-lang="en">
+        Board composition
+      </div>
+      <table>
+        <tr>
+          <th>이름</th>
+          <th>직책</th>
+        </tr>
+        <tr>
+          <td>이진순(이사장)</td>
+          <td>재단법인 와글 이사장</td>
+        </tr>
+        <tr>
+          <td>유종오</td>
+          <td>인성회계법인 이사</td>
+        </tr>
+        <tr>
+          <td>이민철</td>
+          <td>광주교육시민청 대표</td>
+        </tr>
+        <tr>
+          <td>정은령</td>
+          <td>서울대학교 언론정보연구소 팩트체크센터 센터장</td>
+        </tr>
+        <tr>
+          <td>정은숙</td>
+          <td>법무법인 태영 대표변호사</td>
+        </tr>
+        <tr>
+          <td>한상엽</td>
+          <td>에스오피오오엔지 대표</td>
+        </tr>
+        <tr>
+          <td>한종호</td>
+          <td>강원창조경제혁신센터 센터장</td>
+        </tr>
+        <tr>
+          <td>박은경(감사)</td>
+          <td>주성 세무회계 사무소 대표</td>
+        </tr>
+      </table>
+    </div>
+    <div class="hidden-xs">
+      <div class="space"></div>
+      <div class="space"></div>
+    </div>
+    {% include footer.html %}
+  </div>
+
+
+  {% include common_js.html %}
+</body>
+</html>

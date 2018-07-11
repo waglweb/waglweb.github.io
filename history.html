@@ -1,0 +1,186 @@
+---
+# Front matter block to use liquid tags
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>연혁</title>
+
+  {% include head.html %}
+
+  <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+</head>
+<body>
+  <input type="hidden" id="title-ko" value="연혁" />
+  <input type="hidden" id="title-en" value="History" />
+
+  <!-- Loading icon -->
+  <div id="loading-icon"></div>
+
+  <div id="main-container" style="opacity: 0;">
+
+    {% include navbar.html %}
+
+    <div class="container">
+      <div class="page-name hidden" data-lang="ko">
+        연혁
+      </div>
+      <div class="page-name hidden" data-lang="en">
+        History
+      </div>
+
+      <hr class="page-name--bottom-border" />
+    </div>
+
+    <div class="container news-container">
+      <a href="#" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__created-at">
+            17.06.05.
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          재단법인 와글(WAGL) 창립 발기인 대회
+        </div>
+      </a>
+      <a href="#" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__created-at">
+            17.09.27.
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          국회사무처 소관 비영리법인 설립허가
+        </div>
+      </a>
+      <a href="#" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__created-at">
+            17.10.20.
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          재단법인 와글 법인 설립(서울동부지방법원)
+        </div>
+      </a>
+
+      <a href="#" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__created-at">
+            17.12.19.
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          시민정치 네트워크 파티 '레알씨알 정치파티' 개최
+        </div>
+      </a>
+
+      <a href="#" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__created-at">
+            18.02.09.
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          청년 예비후보 교육 및 플랫폼 제작 워크샵 ‘슬기로운 출마생활’ 개최
+        </div>
+      </a>
+
+      <a href="#" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__created-at">
+            18.02.21.
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          청소년YMCA 전국임원수련회 교육 실시
+        </div>
+      </a>
+
+      <a href="#" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__created-at">
+            18.02.23.
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          청년 출마자 선거교육 ‘선거는 처음이라’ 실시
+        </div>
+      </a>
+
+      <a href="#" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__created-at">
+            18.04.05.
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          6.13청소년모의투표운동본부 발족 기자회견
+        </div>
+      </a>
+      <a href="#" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__created-at">
+            18.04.22.
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          청년 출마자 펀딩 홍보 플랫폼 ‘청치펀딩’ 런칭
+        </div>
+      </a>
+
+      <a href="#" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__created-at">
+            18.05.05.
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          청소년 모의투표 플랫폼 ‘18VOTE' 런칭
+        </div>
+      </a>
+      <a href="#" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__created-at">
+            18.05.12.~18.05.29.
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          전국 12개 지역 청소년 민주시민학교 교육 실시
+        </div>
+      </a>
+      <a href="#" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__created-at">
+            18.08.08.~18.08.13.
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          디지털 민주주의 국회연수과정(국회시민정치포럼 협업)(예정)
+        </div>
+      </a>
+      <a href="#" target="_blank"class="row news">
+        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+          <div class="news__created-at">
+            18.08.26.~18.08.30.
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8 news__title">
+          청년평화캠프‘18 개최(예정)
+        </div>
+      </a>
+    </div>
+
+    <div class="hidden-xs">
+      <div class="space"></div>
+      <div class="space"></div>
+    </div>
+
+    {% include footer.html %}
+  </div>
+
+  {% include common_js.html %}
+  <script src="/static/js/about.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+---
+# Front matter block to use liquid tags
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>대표 인사말</title>
+
+    {% include head.html %}
+
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css"/>
+    <style>
+        .title {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+<input type="hidden" id="title-ko" value="대표 인사말"/>
+<input type="hidden" id="title-en" value="CEO's greeting"/>
+
+<!-- Loading icon -->
+<div id="loading-icon"></div>
+
+<div id="main-container" style="opacity: 0;">
+
+    {% include navbar.html %}
+
+    <div class="container">
+        <div class="page-name hidden" data-lang="ko">
+            대표 인사말
+        </div>
+        <div class="page-name hidden" data-lang="en">
+            CEO's greeting
+        </div>
+
+        <hr class="page-name--bottom-border"/>
+    </div>
+
+    <div class="visible-xs">
+        <img src="/static/img/ceo/ceo.png" class="full-width"/>
+
+        <div class="container">
+            {% include ceo_greeting.html %}
+        </div>
+    </div>
+    <div class="hidden-xs">
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-5 col-md-offset-1 col-md-5 col-lg-offset-1 col-lg-5">
+                {% include ceo_greeting.html %}
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <img src="/static/img/ceo/ceo.png" class="full-width"/>
+            </div>
+        </div>
+    </div>
+    <div class="hidden-xs">
+        <div class="space"></div>
+        <div class="space"></div>
+    </div>
+
+    {% include footer.html %}
+</div>
+
+{% include common_js.html %}
+</body>
+</html>
