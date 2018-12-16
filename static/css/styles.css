@@ -1313,6 +1313,13 @@ img.modal-img:hover {
 	line-height: 1.6em;
 }
 
+.project__content a {
+	color: #000;
+}
+/*.project__content a:hover {
+	text-decoration: none;
+}*/
+
 .project__video {
 	width: 100%;
 	min-height: 200px;
